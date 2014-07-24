@@ -1,0 +1,1461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <meta http-equiv="charset" content="gbk">
+    <script type="text/javascript">
+        var domainName = '.jd.com', paras=(location.href.split(".html")[0]).split("-");
+        var urlArr = (location.href.split(".html")[0]).split("-");
+        var psid1 = 737;
+        var psid2 = 738;
+        var psid3 = 751;
+
+        var jd = {}; jd.plist = {}; jd.iplocation = { "北京": 1, "上海": 2, "天津": 3, "重庆": 4, "河北": 5, "山西": 6, "河南": 7, "辽宁": 8, "吉林": 9, "黑龙江": 10, "内蒙古": 11, "江苏": 12, "山东": 13, "安徽": 14, "浙江": 15, "福建": 16, "湖北": 17, "湖南": 18, "广东": 19, "广西": 20, "江西": 21, "四川": 22, "海南": 23, "贵州": 24, "云南": 25, "西藏": 26, "陕西": 27, "甘肃": 28, "青海": 29, "宁夏": 30, "新疆": 31, "台湾": 32, "香港": 42, "澳门": 43 };
+        jd.plist.getNameById = function(id) { for (var o in jd.iplocation) { if (jd.iplocation[o] == id) return o;} return "北京" ;};
+        jd.plist.cookieEditer = {
+            getCookie: function(name) { var start = document.cookie.indexOf(name + "="); var len = start + name.length + 1; if ((!start) && (name != document.cookie.substring(0, name.length))) return null; if (start == -1) return null; var end = document.cookie.indexOf(';', len); if (end == -1) end = document.cookie.length; return unescape(document.cookie.substring(len, end)) },
+            setCookie: function(name, value, expires, path, domain, secure) {
+                var today = new Date();
+                today.setTime(today.getTime());
+                if (expires)
+                    expires = expires * 1000 * 60 * 60 * 24;
+                var expires_date = new Date(today.getTime() + (expires));
+                document.cookie = name + '=' + escape(value) + ((expires) ? ';expires=' + expires_date.toGMTString() : '') + ((path) ? ';path=' + path : '') + ((domain) ? ';domain=' + domain : '') + ((secure) ? ';secure' : '');
+            }
+        };
+            jd.plist.locationProcess = function() {
+
+                var proid;
+
+                if(paras[1]==6880||paras[2]==655 || paras[1]==794){
+                    proid  = this.cookieEditer.getCookie("ipLoc-djd");
+
+
+                    if (!proid||proid=="0-0-0"||proid.split("-").length < 3) {
+                        proid = "1-72-4137".split('-');
+                    } else {
+                        proid = proid.split("-");
+                    }
+
+                    proid[3] = "33"
+                }else{
+                    proid  = this.cookieEditer.getCookie("ipLoc-djd");
+
+                    if (!proid||proid=="0-0-0"||proid.split("-").length < 3) {
+                        proid = "1-72-4137".split('-');
+                    } else {
+                        proid = proid.split("-");
+                    }
+
+                    proid[3] = "0"
+                }
+
+
+                var url = location.href.toLowerCase(),pl=paras.length;
+            if (pl == 3) {
+                url = url.replace(".html", "-0-0-0-0-0-0-0-1-1-1-1-" + proid[0] + "-"+proid[1] + "-" + proid[2] + "-" + proid[3] + ".html");
+            } else if (pl == 13) { //手机、运营商支持一品多商和分区之前的不带库存的url长度=13
+                paras[13]=1;paras[14]=proid[0]; paras[15]=proid[1];paras[16]=proid[2]; paras[17]=proid[3]; url=paras.join("-")+".html";
+            } else if (pl == 14) { //手机、运营商支持一品多商至支持分区之间的不带库存的url长度=14
+                paras[14]=proid[0]; paras[15]=proid[1];paras[16]=proid[2]; paras[17]=proid[3]; url=paras.join("-")+".html";
+            } else if (pl == 16) { //手机、运营商支持一品多商和分区之前带库存的url长度=15
+                paras[13]=1;paras[14]=proid[0]; paras[15]=proid[1];paras[16]=proid[2]; paras[17]=proid[3]; url=paras.join("-")+".html";
+            } else if (pl == 17 && paras[1]=="794") { //大家电支持一品多商之前带库存的url长度=16
+                paras[17]=paras[16]; paras[16]=paras[15]; paras[15]=paras[14]; paras[14]=paras[13]; paras[13]=1;url=paras.join("-")+".html";
+            } else if (pl == 17 && paras[1]!="794") { //手机、运营商支持一品多商至分区之间带库存的url长度=16
+                paras[17]=paras[16]; paras[14]=proid[0]; paras[15]=proid[1];paras[16]=proid[2];  url=paras.join("-")+".html";
+            } else if (pl == 18 && (paras[14]!=proid[0])||paras[15]!=proid[1]||paras[16]!=proid[2]) {
+                this.cookieEditer.setCookie("ipLoc-djd", paras[14]+"-"+paras[15]+"-"+paras[16], 30, "/", domainName, false);
+                var proname = jd.plist.getNameById(paras[14]);
+                this.cookieEditer.setCookie("ipLocation", proname, 30, "/", domainName, false);
+                this.cookieEditer.setCookie("areaId", paras[14], 30, "/", domainName, false);
+            }
+            if (url != location.href.toLowerCase()) {
+                window.location = url;
+            }
+        };
+        jd.plist.locationProcess();
+    </script>
+    <title>电风扇 【行情 价格 评价 正品行货】-京东商城</title>
+<meta name="keywords" content="家用电器,生活电器,电风扇,电风扇报价、促销、新闻、评论、导购、图片" />
+<meta name="description" content="京东JD.COM是国内最专业的家用电器,生活电器,电风扇,电风扇网上购物商城，本频道提供家用电器,生活电器,电风扇,电风扇的最新报价、促销、评论、导购、图片等相关信息" />
+
+    <script>var jdpts = new Object(); jdpts._st = new Date().getTime();</script>
+    <link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/lib/skin/2013/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/201007/skin/df/plist20131112.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/contrast/skin/2012/pop_compare.css?t=20121220" media="all" />
+
+    
+    <script type="text/javascript" src="http://misc.360buyimg.com/lib/js/e/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript">window.pageConfig = { compatible: true }; </script>
+</head>
+<body>
+<script type="text/javascript" src="http://misc.360buyimg.com/lib/js/2012/base-2011.js" charset="gb2312"></script>
+<div id="shortcut-2013">
+    <div class="w">
+        <ul class="fl lh">
+            <li class="fore1 ld"><b></b><a href="javascript:addToFavorite()" rel="nofollow">收藏京东</a></li>
+        </ul>
+        <ul class="fr lh">
+            <li class="fore1" id="loginbar">您好！欢迎来到京东！<a href="javascript:login()">[登录]</a>&nbsp;<a href="javascript:regist()">[免费注册]</a></li>
+            <li class="fore2 ld">
+                <s></s>
+                <a href="http://jd2008.jd.com/JdHome/OrderList.aspx" rel="nofollow">我的订单</a>
+            </li>
+            <li class="fore2-1 ld" id="jd-vip">
+                <s></s>
+                <a target="_blank" rel="nofollow" clstag="homepage|keycount|home2013|huiyuanjulebu" href="http://vip.jd.com">会员俱乐部</a>
+            </li>
+            <li class="fore3 ld menu" id="app-jd" data-widget="dropdown" clstag="homepage|keycount|home2013|01d">
+                <s></s><i></i><span class="outline"></span><span class="blank"></span>
+                <a href="http://app.jd.com/" target="_blank">手机京东</a><b></b>
+                <div class="dd lh">
+                    <div class="qr-code">
+                        <img id="app-qrcode-img" data-img="1" trigger-lazy-img="done" class="err-product" width="76" height="76" alt="手机京东" src="http://misc.360buyimg.com/lib/skin/2013/i/app_QRcode.png"><i></i>
+                        <div class="details"><em>扫描我，即刻下载</em><strong>京东客户端</strong></div>
+                    </div>
+                    <div class="app-btn">
+                        <a href="http://itunes.apple.com/cn/app/id414245413" target="_blank" class="btn-app-apple"></a>
+                        <a href="http://app.jd.com/download/android/360buy.apk" target="_blank" class="btn-app-android"></a>
+                    </div>
+                </div>
+            </li>
+            <li class="fore4 ld menu" id="biz-service" data-widget="dropdown">
+                <s></s>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                客户服务
+                <b></b>
+                <div class="dd">
+                    <div><a href="http://help.jd.com/index.html" target="_blank">帮助中心</a></div>
+                    <div><a href="http://myjd.jd.com/repair/orderlist.action" target="_blank" rel="nofollow">售后服务</a></div>
+                    <div><a href="http://chat.jd.com/jdchat/custom.action" target="_blank" rel="nofollow">在线客服</a></div>
+                    <div><a href="http://myjd.jd.com/opinion/list.action" target="_blank" rel="nofollow">投诉中心</a></div>
+                    <div><a href="http://www.jd.com/contact/service.html" target="_blank">客服邮箱</a></div>
+                </div>
+            </li>
+            <li class="fore5 ld menu" id="site-nav" data-widget="dropdown">
+                <s></s>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                网站导航
+                <b></b>
+                <div class="dd lh">
+                    <dl class="item fore1">
+                        <dt>特色栏目</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://my.jd.com/personal/guess.html">为我推荐</a></div>
+                            <div><a target="_blank" href="http://shipingou.jd.com/">视频购物</a></div>
+                            <div><a target="_blank" href="http://club.jd.com/">京东社区</a></div>
+                            <div><a target="_blank" href="http://xiaoyuan.jd.com/">校园频道</a></div>
+                            <div><a target="_blank" href="http://read.jd.com/">在线读书</a></div>
+                            <div><a target="_blank" href="http://diy.jd.com/">装机大师</a></div>
+                            <div><a target="_blank" href="http://market.jd.com/giftcard/">京东卡</a></div>
+                            <div><a target="_blank" href="http://channel.jd.com/jiazhuang.html">家装城</a></div>
+                            <div><a target="_blank" href="http://dapeigou.jd.com/">搭配购</a></div>
+                            <div><a target="_blank" href="http://xihuan.jd.com/">我喜欢</a></div>
+                        </dd>
+                    </dl>
+                    <dl class="item fore2">
+                        <dt>企业服务</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://giftcard.jd.com/company/index">企业客户</a></div>
+                            <div><a target="_blank" href="http://sale.jd.com/p10997.html">办公直通车</a></div>
+                        </dd>
+                    </dl>
+                    <dl class="item fore3">
+                        <dt>旗下网站</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://www.360top.com/">360TOP</a></div>
+                            <div><a target="_blank" href="http://en.jd.com/">English Site</a></div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>
+<!--shortcut end-->
+<!-- header start -->
+<div id="o-header-2013">
+    <div class="w" id="header-2013">
+        <div id="logo-2013" class="ld"><a href="http://www.jd.com/" hidefocus="true"><b></b><img src="http://misc.360buyimg.com/lib/img/e/logo-201305.png" width="270" height="60" alt="京东"></a></div>
+        <!--logo end-->
+        <div id="search-2013">
+            <div class="i-search ld">
+                <ul id="shelper" class="hide">
+                </ul>
+                <div class="form">
+                    <input type="text" class="text" accesskey="s" id="key" autocomplete="off" onkeydown="javascript:if(event.keyCode==13) search('key');">
+                    <input type="button" value="搜索" class="button" onclick="search('key');return false;">
+                </div>
+            </div>
+            <div id="hotwords"></div>
+        </div>
+        <!--search end-->
+        <div id="my360buy-2013">
+            <dl>
+                <dt class="ld"><s></s><a href="http://home.jd.com/">我的京东</a><b></b></dt>
+                <dd>
+                    <div class="loading-style1"><b></b>加载中，请稍候...</div>
+                </dd>
+            </dl>
+        </div>
+        <!--my360buy end-->
+        <div id="settleup-2013">
+            <dl>
+                <dt class="ld"><s></s><span class="shopping"><span id="shopping-amount"></span></span><a href="http://cart.jd.com/cart/cart.html" id="settleup-url">去购物车结算</a> <b></b> </dt>
+                <dd>
+                    <div class="prompt">
+                        <div class="loading-style1"><b></b>加载中，请稍候...</div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <!--settleup end-->
+    </div>
+    <!--header end-->
+    <div class="w">
+        <div id="nav-2013">
+            <div id="categorys-2013">
+                <div class="mt ld">
+                    <h2><a href="http://www.jd.com/allSort.aspx">全部商品分类<b></b></a></h2>
+                </div>
+                <div id="_JD_ALLSORT" class="mc"></div>
+            </div>
+            <div id="treasure"></div>
+            <ul id="navitems-2013">
+                <li class="fore1" id="nav-home"><a href="http://www.jd.com/">首页</a></li>
+                <li class="fore2" id="nav-fashion"><a href="http://fashion.jd.com/">服装城</a></li>
+                <li class="fore3" id="nav-chaoshi"><a href="http://channel.jd.com/chaoshi.html">京东超市</a></li>
+                <li class="fore4" id="nav-tuan"><a href="http://tuan.jd.com/" target="_blank">团购</a></li>
+                <li class="fore5" id="nav-auction"><a href="http://auction.jd.com/">夺宝岛</a></li>
+                <li class="fore6" id="nav-shan"><a href="http://red.jd.com/">闪购</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function(){if(pageConfig.navId){var object=document.getElementById("nav-"+pageConfig.navId);if(object)object.className+=" curr";}})();
+</script>
+<!-- header end -->
+
+<div class="w">
+    <div class="breadcrumb">
+        <strong><a href="http://channel.jd.com/electronic.html" >家用电器</a></strong><span>&nbsp;&gt;&nbsp;<a href="http://channel.jd.com/737-738.html" >生活电器</a>&nbsp;&gt;&nbsp;<a href="http://list.jd.com/737-738-751.html" >电风扇</a></span>
+
+    </div>
+</div>
+<!--crumb end-->
+<div class="w main">
+    <div class="right-extra">
+        <div class="m" id="i-right">
+            <div id="hotsale" clstag="thirdtype|keycount|thirdtype|hotsaleM" reco_id="3">
+                <div class="mt"><h2>热卖推荐</h2></div>
+
+                <!--热销商品-->
+                
+<div class="mc list-h" rfid="0"><dl><dt><a href="http://item.jd.com/595936.html" target="_blank"><img alt="艾美特(Airmate) FSW52R 电风扇/遥控落地扇"src="http://img11.360buyimg.com/n4/g16/M00/0B/13/rBEbRlN9ugYIAAAAAAC8By88YbsAACQvgKyORkAALwf355.jpg"width="100" height="100"/></a></dt><dd><div class="p-name"><a href="http://item.jd.com/595936.html" target="_blank">艾美特(Airmate) FSW52R 电风扇/遥控落地扇<font color="#ff6600"></font></a></div><div class="p-price"  sku='595936'>特价：<strong></strong></div><div class="btns"><a href="http://gate.jd.com/InitCart.aspx?pid=595936&amp;pcount=1&amp;ptype=1" target="_blank">立即抢购</a></div></dd></dl><dl><dt><a href="http://item.jd.com/861100.html" target="_blank"><img alt="美的（Midea）FS40-11L1 机械电风扇/落地扇"src="http://img10.360buyimg.com/n4/g14/M0A/02/0E/rBEhVlNoWq4IAAAAAAFgjxpiHhsAANDigANe78AAWCn590.jpg"width="100" height="100"/></a></dt><dd><div class="p-name"><a href="http://item.jd.com/861100.html" target="_blank">美的（Midea）FS40-11L1 机械电风扇/落地扇<font color="#ff6600"></font></a></div><div class="p-price"  sku='861100'>特价：<strong></strong></div><div class="btns"><a href="http://gate.jd.com/InitCart.aspx?pid=861100&amp;pcount=1&amp;ptype=1" target="_blank">立即抢购</a></div></dd></dl><dl><dt><a href="http://item.jd.com/829765.html" target="_blank"><img alt="艾美特(Airmate) FSW65R-5 电风扇/遥控落地扇"src="http://img10.360buyimg.com/n4/g14/M07/02/06/rBEhV1NnPd0IAAAAAAHQmH3xibYAANAfwL8o-QAAdCw526.jpg"width="100" height="100"/></a></dt><dd><div class="p-name"><a href="http://item.jd.com/829765.html" target="_blank">艾美特(Airmate) FSW65R-5 电风扇/遥控落地扇<font color="#ff6600"></font></a></div><div class="p-price"  sku='829765'>特价：<strong></strong></div><div class="btns"><a href="http://gate.jd.com/InitCart.aspx?pid=829765&amp;pcount=1&amp;ptype=1" target="_blank">立即抢购</a></div></dd></dl></div>
+
+            </div>
+            <script type="text/javascript" >
+
+
+                if("1315,11729,6144,9855,1320,1319,6233,1318,1672,5025,1316,9847,6994,1620,6728,6196,9987,670,652,737,12259,12218,9192".indexOf(psid1) != -1 && "2641,1502,1503,1505,1507,1504,794,798,870,1300,1706,1301".indexOf(psid3) == -1) {
+                        if( window.screen.width < 1210 ) {
+                            $('<iframe id="hotsaleFrame" onload="showHotsaleFrame();" scrolling="no" frameborder="0" style="width:590px;height: 153px;" class="hide" marginheight="0" marginwidth="0" src="http://x.jd.com/ad?ad_id=69&hj_id=46&tag=' + psid3 +  '&cid=' + psid1 + '-' + psid2 + '-' + psid3 + '"></iframe>')
+                                    .prependTo("#hotsale");
+                        } else {
+                            $('<iframe id="hotsaleFrame" onload="showHotsaleFrame();" scrolling="no" frameborder="0" style="width:810px;height: 153px;" class="hide" marginheight="0" marginwidth="0" src="http://x.jd.com/ad?ad_id=71&hj_id=46&tag=' + psid3 +  '&cid=' + psid1 + '-' + psid2 + '-' + psid3 + '"></iframe>')
+                                    .prependTo("#hotsale");
+                        }
+                }
+
+                function showHotsaleFrame(){
+                    $("#hotsale .mt").remove();
+                    $("#hotsale .mc").remove();
+
+                    $("#hotsaleFrame").show();
+                }
+
+
+
+
+            </script>
+            <div id="market" clstag="thirdtype|keycount|thirdtype|market"><div class="mt"><h2>促销活动</h2></div>
+                <div class="mc">
+                    <!--促销活动-->
+                    
+<ul><li>·<a href="http://www.jd.com/news.aspx?id=18930" target="_blank">6.18错过，模卡放价别错过</a></li><li>·<a href="http://www.jd.com/news.aspx?id=18925" target="_blank">618返场归来！39全高清1599！</a></li><li>·<a href="http://www.jd.com/news.aspx?id=18924" target="_blank">烟机、消毒柜298元疯抢不限量！ </a></li><li>·<a href="http://www.jd.com/news.aspx?id=18905" target="_blank">方太爆款加赠送不停</a></li><li>·<a href="http://www.jd.com/news.aspx?id=18902" target="_blank">预约抢购！康佳KKTV万台爆款王者归来</a></li></ul>
+
+                </div>
+            </div>
+        </div>
+        <div id='select' class='m' clstag='thirdtype|keycount|thirdtype|select'>
+<div class='mt'><h1>电风扇<strong>&nbsp;-&nbsp;商品筛选</strong></h1></div>
+<div class='mc attrs'><div class="brand-attr"><div class="attr"><div class="a-key">品牌：</div><div class="a-values"><div class="v-option"><span class="o-more" option="more" onclick="moreBrand();"><b></b>更多</span><span class="o-more fold hide" option="less" onclick="lessBrand();"><b></b>收起</span></div><div class="v-tabs"><ul class="tab hide"><li class="curr" rel="0">所有品牌<b></b></li><li rel="a" >A<b></b></li><li rel="b">B<b></b></li><li rel="c">C<b></b></li><li rel="d">D<b></b></li><li rel="e">E<b></b></li><li rel="f">F<b></b></li><li rel="g">G<b></b></li><li rel="h">H<b></b></li><li rel="i">I<b></b></li><li rel="j">J<b></b></li><li rel="k">K<b></b></li><li rel="l">L<b></b></li><li rel="m">M<b></b></li><li rel="n">N<b></b></li><li rel="o">O<b></b></li><li rel="p">P<b></b></li><li rel="q">Q<b></b></li><li rel="r">R<b></b></li><li rel="s">S<b></b></li><li rel="t">T<b></b></li><li rel="u">U<b></b></li><li rel="v">V<b></b></li><li rel="w">W<b></b></li><li rel="x">X<b></b></li><li rel="y">Y<b></b></li><li rel="z">Z<b></b></li><li rel="other">其它<b></b></li></ul><div class="tabcon undefined "><div style="display: block;"brand="less" rel="a" id="brand_id_ 3085"><a title="艾美特（AIRMATE）"  href="737-738-751-3085-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">艾美特（AIRMATE）</a></div><div style="display: block;"brand="less" rel="m" id="brand_id_ 12380"><a title="美的（Midea）"  href="737-738-751-12380-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">美的（Midea）</a></div><div style="display: block;"brand="less" rel="y" id="brand_id_ 58714"><a title="永怡御风"  href="737-738-751-58714-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">永怡御风</a></div><div style="display: block;"brand="less" rel="h" id="brand_id_ 8544"><a title="华生（Wahson）"  href="737-738-751-8544-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">华生（Wahson）</a></div><div style="display: block;"brand="less" rel="s" id="brand_id_ 15035"><a title="赛亿（Shinee）"  href="737-738-751-15035-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">赛亿（Shinee）</a></div><div style="display: block;"brand="less" rel="g" id="brand_id_ 7420"><a title="格力（GREE）"  href="737-738-751-7420-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">格力（GREE）</a></div><div style="display: block;"brand="less" rel="k" id="brand_id_ 10317"><a title="康佳（KONKA）"  href="737-738-751-10317-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">康佳（KONKA）</a></div><div style="display: block;"brand="less" rel="x" id="brand_id_ 18136"><a title="先锋（SINGFUN）"  href="737-738-751-18136-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">先锋（SINGFUN）</a></div><div style="display: block;"brand="less" rel="e" id="brand_id_ 58415"><a title="永生（eosin）"  href="737-738-751-58415-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">永生（eosin）</a></div><div style="display: block;"brand="less" rel="c" id="brand_id_ 29078"><a title="长城"  href="737-738-751-29078-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">长城</a></div><div style="display: block;"brand="less" rel="t" id="brand_id_ 2505"><a title="TCL"  href="737-738-751-2505-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">TCL</a></div><div style="display: block;"brand="less" rel="z" id="brand_id_ 20988"><a title="中联（ZOLEE）"  href="737-738-751-20988-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">中联（ZOLEE）</a></div><div style="display: block;"brand="less" rel="c" id="brand_id_ 20710"><a title="长虹（CHANGHONG）"  href="737-738-751-20710-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">长虹（CHANGHONG）</a></div><div style="display: block;"brand="less" rel="a" id="brand_id_ 3659"><a title="奥克斯（AUX）"  href="737-738-751-3659-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">奥克斯（AUX）</a></div><div style="display: block;"brand="less" rel="r" id="brand_id_ 14734"><a title="荣事达（Royalstar）"  href="737-738-751-14734-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">荣事达（Royalstar）</a></div><div  style="display: none;"brand="more" rel="h" id="brand_id_ 7817"><a title="海尔（Haier）"  href="737-738-751-7817-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">海尔（Haier）</a></div><div  style="display: none;"brand="more" rel="b" id="brand_id_ 4642"><a title="贝丽（BFREE）"  href="737-738-751-4642-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">贝丽（BFREE）</a></div><div  style="display: none;"brand="more" rel="l" id="brand_id_ 11505"><a title="联创（Lianc）"  href="737-738-751-11505-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">联创（Lianc）</a></div><div  style="display: none;"brand="more" rel="s" id="brand_id_ 67657"><a title="丝雨"  href="737-738-751-67657-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">丝雨</a></div><div  style="display: none;"brand="more" rel="z" id="brand_id_ 20918"><a title="志高（CHIGO）"  href="737-738-751-20918-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">志高（CHIGO）</a></div><div  style="display: none;"brand="more" rel="d" id="brand_id_ 39125"><a title="戴森（dyson）"  href="737-738-751-39125-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">戴森（dyson）</a></div><div  style="display: none;"brand="more" rel="l" id="brand_id_ 67272"><a title="乐迪（Natridy）"  href="737-738-751-67272-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">乐迪（Natridy）</a></div><div  style="display: none;"brand="more" rel="x" id="brand_id_ 43043"><a title="欣禾（Xinhe）"  href="737-738-751-43043-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">欣禾（Xinhe）</a></div><div  style="display: none;"brand="more" rel="t" id="brand_id_ 42007"><a title="大松（TOSOT）"  href="737-738-751-42007-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">大松（TOSOT）</a></div><div  style="display: none;"brand="more" rel="b" id="brand_id_ 38469"><a title="宝尔玛（Baoerma）"  href="737-738-751-38469-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">宝尔玛（Baoerma）</a></div><div  style="display: none;"brand="more" rel="k" id="brand_id_ 9963"><a title="卡帝亚（Kadeer）"  href="737-738-751-9963-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">卡帝亚（Kadeer）</a></div><div  style="display: none;"brand="more" rel="k" id="brand_id_ 10566"><a title="客浦（caple）"  href="737-738-751-10566-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">客浦（caple）</a></div><div  style="display: none;"brand="more" rel="h" id="brand_id_ 48873"><a title="华宝"  href="737-738-751-48873-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">华宝</a></div><div  style="display: none;"brand="more" rel="t" id="brand_id_ 21838"><a title="天骏小天使"  href="737-738-751-21838-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">天骏小天使</a></div><div  style="display: none;"brand="more" rel="a" id="brand_id_ 3777"><a title="澳柯玛（AUCMA）"  href="737-738-751-3777-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">澳柯玛（AUCMA）</a></div><div  style="display: none;"brand="more" rel="f" id="brand_id_ 7196"><a title="富士宝（FUSHIBAO）"  href="737-738-751-7196-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">富士宝（FUSHIBAO）</a></div><div  style="display: none;"brand="more" rel="b" id="brand_id_ 4533"><a title="北欧欧慕（nathome）"  href="737-738-751-4533-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">北欧欧慕（nathome）</a></div><div  style="display: none;"brand="more" rel="h" id="brand_id_ 54690"><a title="Homeleader"  href="737-738-751-54690-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">Homeleader</a></div><div  style="display: none;"brand="more" rel="c" id="brand_id_ 5245"><a title="灿坤（EUPA）"  href="737-738-751-5245-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">灿坤（EUPA）</a></div><div  style="display: none;"brand="more" rel="l" id="brand_id_ 10764"><a title="莱弗凯"  href="737-738-751-10764-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">莱弗凯</a></div><div  style="display: none;"brand="more" rel="m" id="brand_id_ 47021"><a title="森田（MORITA）"  href="737-738-751-47021-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">森田（MORITA）</a></div><div  style="display: none;"brand="more" rel="s" id="brand_id_ 61020"><a title="斯泰得乐（Stadler Form）"  href="737-738-751-61020-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">斯泰得乐（Stadler Form）</a></div><div  style="display: none;"brand="more" rel="p" id="brand_id_ 27119"><a title="品诺"  href="737-738-751-27119-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">品诺</a></div><div  style="display: none;"brand="more" rel="o" id="brand_id_ 26438"><a title="奥德尔（odor）"  href="737-738-751-26438-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">奥德尔（odor）</a></div><div  style="display: none;"brand="more" rel="z" id="brand_id_ 69794"><a title="兆城邑（ZEI）"  href="737-738-751-69794-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">兆城邑（ZEI）</a></div><div  style="display: none;"brand="more" rel="d" id="brand_id_ 67966"><a title="德努希"  href="737-738-751-67966-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">德努希</a></div><div  style="display: none;"brand="more" rel="j" id="brand_id_ 8993"><a title="佳星（JASUN）"  href="737-738-751-8993-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">佳星（JASUN）</a></div><div  style="display: none;"brand="more" rel="q" id="brand_id_ 68284"><a title="QUANLI"  href="737-738-751-68284-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">QUANLI</a></div><div  style="display: none;"brand="more" rel="k" id="brand_id_ 43911"><a title="科立泰"  href="737-738-751-43911-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">科立泰</a></div><div  style="display: none;"brand="more" rel="j" id="brand_id_ 9571"><a title="金正（NINTAUS）"  href="737-738-751-9571-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">金正（NINTAUS）</a></div><div  style="display: none;"brand="more" rel="h" id="brand_id_ 8786"><a title="霍尼韦尔（Honeywell）"  href="737-738-751-8786-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html">霍尼韦尔（Honeywell）</a></div></div></div></div></div></div><div class='prop-attrs ' ><div class='attr'><div class='a-key'>类别：</div><div class='a-values'><div class='v-fold'><ul class='f-list'><li><a href='737-738-751-0-2689-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>落地扇</a></li><li><a href='737-738-751-0-2696-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>台扇</a></li><li><a href='737-738-751-0-4953-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>转页扇</a></li><li><a href='737-738-751-0-4014-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>塔扇</a></li><li><a href='737-738-751-0-2694-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>夹\壁扇</a></li><li><a href='737-738-751-0-4952-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>吊顶扇</a></li><li><a href='737-738-751-0-63775-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>空气循环扇</a></li></ul></div><div class='v-option hide' option='more' onclick='moreExpandValue(this);'><span class='o-more unfold'><b></b>更多</span></div><div class='v-option hide' onclick='lessExpandValue(this);'><span class='o-more fold'><b></b>收起</span></div></div></div></div><div class='prop-attrs ' ><div class='attr'><div class='a-key'>价格：</div><div class='a-values'><div class='v-fold'><ul class='f-list'><li><a href='737-738-751-0-2579-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>100以下</a></li><li><a href='737-738-751-0-2582-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>100-199</a></li><li><a href='737-738-751-0-2585-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>200-299</a></li><li><a href='737-738-751-0-2592-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>300-499</a></li><li><a href='737-738-751-0-2598-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>500以上</a></li></ul></div><div class='v-option hide' option='more' onclick='moreExpandValue(this);'><span class='o-more unfold'><b></b>更多</span></div><div class='v-option hide' onclick='lessExpandValue(this);'><span class='o-more fold'><b></b>收起</span></div></div></div></div><div class='prop-attrs ' ><div class='attr'><div class='a-key'>控制类型：</div><div class='a-values'><div class='v-fold'><ul class='f-list'><li><a href='737-738-751-0-12789-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>遥控版</a></li><li><a href='737-738-751-0-12790-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>机械版</a></li></ul></div><div class='v-option hide' option='more' onclick='moreExpandValue(this);'><span class='o-more unfold'><b></b>更多</span></div><div class='v-option hide' onclick='lessExpandValue(this);'><span class='o-more fold'><b></b>收起</span></div></div></div></div></div><div id="advanced" class="mb" style="margin-bottom: 10px;"></div></div><div id='filter'  clstag='thirdtype|keycount|thirdtype|filter'>
+<div class='cls'></div><div class='fore1'>
+<dl class='order'><dt>排序：</dt>
+<dd class='curr' ><a href='737-738-751-0-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'>销量</a><b></b></dd>
+<dd><b></b><a href='737-738-751-0-0-0-0-0-0-0-1-3-1-1-1-72-4137-0.html' rel='nofollow'>价格</a><b></b></dd>
+<dd><a href='737-738-751-0-0-0-0-0-0-0-1-4-1-1-1-72-4137-0.html' rel='nofollow'>评论数</a><b></b></dd>
+<dd><a href='737-738-751-0-0-0-0-0-0-0-1-5-1-1-1-72-4137-0.html' rel='nofollow'>上架时间</a><b></b></dd>
+</dl>
+<div class='pagin pagin-m'><span class='text'><i>1</i>/20</span>
+<span class="prev-disabled">上一页<b></b></span>
+<a class="next" href="737-738-751-0-0-0-0-0-0-0-1-1-2-1-1-72-4137-0.html">下一页<b></b></a>
+</div>
+<div class='total'><span>共<strong>687</strong>个商品</span></div>
+<span class='clr'></span>
+</div>
+<div class='fore2 form'>
+<dl class='store'>
+<dt>库存：</dt>
+<dd id='store-selector'>
+<div class='text'>请选择<b></b></div>
+<div class='content'>
+<div data-widget='tabs' class='m JD-stock' id='JD-stock'>
+<div class='mt'>
+<ul class='tab'>
+<li class='curr' onClick='selectStoreTab(0)' data-widget='tab-item'><a href='#none'><em>请选择</em><i></i></a></li>
+<li class='hide' onClick='selectStoreTab(1)' data-widget='tab-item' ><a href='#none'><em>请选择</em><i></i></a></li>
+<li class='hide' onClick='selectStoreTab(2)' data-widget='tab-item' ><a href='#none'><em>请选择</em><i></i></a></li>
+</ul>
+<div class='stock-line'></div>
+</div>
+<div class='mc' data-area='0' data-widget='tab-content'>
+<ul class='area-list'>
+</ul>
+</div>
+<div class='mc hide' data-area='1' data-widget='tab-content' >
+<ul class='area-list'>
+</ul>
+<p class='ac'>请选择一级地区...</p>
+</div>
+<div class='mc hide' data-area='2' data-widget='tab-content' >
+<ul class='area-list'>
+</ul>
+<p class='ac'>请选择二级地区...</p>
+</div>
+</div>
+</div>
+<div onclick="$('#store-selector').removeClass('hover')" class='close'></div>
+</dd>
+<dd class='instock'><div ><a href='737-738-751-0-0-0-0-0-0-0-1-1-1-1-1-72-4137-33.html'><b></b>仅显示有货</a></div></dd>
+</dl>
+<dl class='type'>
+<dt>商品类型：</dt>
+<dd class='selected'><a href='737-738-751-0-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html'><b></b>全部</a></dd>
+<dd><a href='737-738-751-0-0-0-0-0-0-0-4-1-1-1-1-72-4137-0.html'><b></b>京东配送</a></dd>
+<dd><a href='737-738-751-0-0-0-0-0-0-0-3-1-1-1-1-72-4137-0.html'><b></b>第三方配送</a></dd>
+</dl>
+<span class='clr'></span>
+</div>
+</div>
+<div class="m plist-n7a ordinary-prebuy" id="plist" clstag="thirdtype|keycount|thirdtype|plist">
+<ul class="list-h">
+<li index='0' onclick='log(7,3,595936)' sku='595936'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/595936.html'><img width='220' height='220' alt='艾美特(Airmate) FSW52R 电风扇/遥控落地扇' src='http://img11.360buyimg.com/n7/g16/M00/0B/13/rBEbRlN9ugYIAAAAAAC8By88YbsAACQvgKyORkAALwf355.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/595936.html'>艾美特(Airmate) FSW52R 电风扇/遥控落地扇<font style='color: #ff0000' class='adwords' name='595936'></font></a></div><div id='djd595936' class='p-price'><strong></strong><span id='p595936'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/595936-1-1.html'>已有78368人评价</a></span><span class='reputation'>(96%好评)</span></div><div class='stocklist' stock='595936'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,595936)' stock='595936' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=595936&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll595936' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_595936' skuid='595936'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='1' onclick='log(7,3,829765)' sku='829765'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/829765.html'><img width='220' height='220' alt='艾美特(Airmate) FSW65R-5 电风扇/遥控落地扇' src='http://img10.360buyimg.com/n7/g14/M07/02/06/rBEhV1NnPd0IAAAAAAHQmH3xibYAANAfwL8o-QAAdCw526.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/829765.html'>艾美特(Airmate) FSW65R-5 电风扇/遥控落地扇<font style='color: #ff0000' class='adwords' name='829765'></font></a></div><div id='djd829765' class='p-price'><strong></strong><span id='p829765'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/829765-1-1.html'>已有20165人评价</a></span><span class='reputation'>(92%好评)</span></div><div class='stocklist' stock='829765'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,829765)' stock='829765' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=829765&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll829765' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_829765' skuid='829765'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='2' onclick='log(7,3,861100)' sku='861100'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/861100.html'><img width='220' height='220' alt='美的（Midea）FS40-11L1 机械电风扇/落地扇' src='http://img10.360buyimg.com/n7/g14/M0A/02/0E/rBEhVlNoWq4IAAAAAAFgjxpiHhsAANDigANe78AAWCn590.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/861100.html'>美的（Midea）FS40-11L1 机械电风扇/落地扇<font style='color: #ff0000' class='adwords' name='861100'></font></a></div><div id='djd861100' class='p-price'><strong></strong><span id='p861100'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/861100-1-1.html'>已有27676人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='861100'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,861100)' stock='861100' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=861100&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll861100' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_861100' skuid='861100'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='3' onclick='log(7,3,216705)' sku='216705'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/216705.html'><img width='220' height='220' alt='艾美特(Airmate) FTW36R-A 电风扇/遥控塔扇' src='http://img10.360buyimg.com/n7/g16/M00/00/1A/rBEbRVNq5UcIAAAAAAEbxRzBZR4AAAKJwF-hF8AARvd950.jpg' data-img="1"/></a><div class='picon pi3'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/216705.html'>艾美特(Airmate) FTW36R-A 电风扇/遥控塔扇<font style='color: #ff0000' class='adwords' name='216705'></font></a></div><div id='djd216705' class='p-price'><strong></strong><span id='p216705'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/216705-1-1.html'>已有11667人评价</a></span><span class='reputation'>(92%好评)</span></div><div class='stocklist' stock='216705'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,216705)' stock='216705' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=216705&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll216705' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_216705' skuid='216705'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='4' onclick='log(7,3,597426)' sku='597426'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/597426.html'><img width='220' height='220' alt='美的（Midea）FS40-8B1 5叶机械电风扇/落地扇' src='http://img11.360buyimg.com/n7/g14/M08/1D/0D/rBEhVVNObUQIAAAAAAFQo5yRSaAAAME2gC3gy0AAVC7829.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/597426.html'>美的（Midea）FS40-8B1 5叶机械电风扇/落地扇<font style='color: #ff0000' class='adwords' name='597426'></font></a></div><div id='djd597426' class='p-price'><strong></strong><span id='p597426'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/597426-1-1.html'>已有24602人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='597426'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,597426)' stock='597426' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=597426&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll597426' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_597426' skuid='597426'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='5' onclick='log(7,3,594183)' sku='594183'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/594183.html'><img width='220' height='220' alt='艾美特(Airmate) FSW27T2-5 电风扇/落地扇' src='http://img13.360buyimg.com/n7/jfs/t145/326/816170432/51982/a41f49e0/53984147Nd1cfec92.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/594183.html'>艾美特(Airmate) FSW27T2-5 电风扇/落地扇<font style='color: #ff0000' class='adwords' name='594183'></font></a></div><div id='djd594183' class='p-price'><strong></strong><span id='p594183'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/594183-1-1.html'>已有22796人评价</a></span><span class='reputation'>(95%好评)</span></div><div class='stocklist' stock='594183'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,594183)' stock='594183' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=594183&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll594183' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_594183' skuid='594183'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='6' onclick='log(7,3,1077868)' sku='1077868'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1077868.html'><img width='220' height='220' alt='美的（Midea）FS40-13C 5叶机械电风扇/落地扇' src='http://img13.360buyimg.com/n7/g12/M00/0F/0F/rBEQYFNolG8IAAAAAAIGFDD9b_EAAFjvAIBULMAAgYs788.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1077868.html'>美的（Midea）FS40-13C 5叶机械电风扇/落地扇<font style='color: #ff0000' class='adwords' name='1077868'></font></a></div><div id='djd1077868' class='p-price'><strong></strong><span id='p1077868'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1077868-1-1.html'>已有4640人评价</a></span><span class='reputation'>(95%好评)</span></div><div class='stocklist' stock='1077868'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1077868)' stock='1077868' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1077868&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1077868' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1077868' skuid='1077868'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='7' onclick='log(7,3,383871)' sku='383871'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/383871.html'><img width='220' height='220' alt='华生（Wahson）FS40-1102 电风扇/落地扇' src='http://img11.360buyimg.com/n7/g13/M03/00/10/rBEhU1Nl00kIAAAAAAH_O3jhmfMAAMzlQDmEb8AAf9T305.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/383871.html'>华生（Wahson）FS40-1102 电风扇/落地扇<font style='color: #ff0000' class='adwords' name='383871'></font></a></div><div id='djd383871' class='p-price'><strong></strong><span id='p383871'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/383871-1-1.html'>已有39472人评价</a></span><span class='reputation'>(89%好评)</span></div><div class='stocklist' stock='383871'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,383871)' stock='383871' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=383871&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll383871' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_383871' skuid='383871'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='8' onclick='log(7,3,857963)' sku='857963'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/857963.html'><img width='220' height='220' alt='美的（Midea）FS40-6AR 遥控电风扇/落地扇' data-lazyload='http://img13.360buyimg.com/n7/g14/M0A/02/0D/rBEhVVNoVdIIAAAAAAF1MdQLlrEAANDRgCBOKIAAXVJ609.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/857963.html'>美的（Midea）FS40-6AR 遥控电风扇/落地扇<font style='color: #ff0000' class='adwords' name='857963'></font></a></div><div id='djd857963' class='p-price'><strong></strong><span id='p857963'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/857963-1-1.html'>已有12937人评价</a></span><span class='reputation'>(95%好评)</span></div><div class='stocklist' stock='857963'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,857963)' stock='857963' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=857963&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll857963' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_857963' skuid='857963'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='9' onclick='log(7,3,857982)' sku='857982'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/857982.html'><img width='220' height='220' alt='美的（Midea）KYS30-5A 电风扇/升降转页扇' data-lazyload='http://img12.360buyimg.com/n7/g13/M0A/01/06/rBEhU1NoVewIAAAAAAGrmXGLxCcAAM8mwLjJA8AAaux868.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/857982.html'>美的（Midea）KYS30-5A 电风扇/升降转页扇<font style='color: #ff0000' class='adwords' name='857982'></font></a></div><div id='djd857982' class='p-price'><strong></strong><span id='p857982'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/857982-1-1.html'>已有6162人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='857982'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,857982)' stock='857982' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=857982&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll857982' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_857982' skuid='857982'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='10' onclick='log(7,3,216706)' sku='216706'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/216706.html'><img width='220' height='220' alt='艾美特(Airmate) FTW36T2-A 电风扇/塔扇' data-lazyload='http://img11.360buyimg.com/n7/g17/M00/00/1A/rBEbR1Nq5U4IAAAAAAEsiot6hcQAAAKJAKSgtYAASyi498.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/216706.html'>艾美特(Airmate) FTW36T2-A 电风扇/塔扇<font style='color: #ff0000' class='adwords' name='216706'></font></a></div><div id='djd216706' class='p-price'><strong></strong><span id='p216706'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/216706-1-1.html'>已有12553人评价</a></span><span class='reputation'>(95%好评)</span></div><div class='stocklist' stock='216706'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,216706)' stock='216706' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=216706&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll216706' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_216706' skuid='216706'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='11' onclick='log(7,3,1069555)' sku='1069555'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1069555.html'><img width='220' height='220' alt='美的（Midea）FS40-13ER 5叶遥控电风扇/落地扇' data-lazyload='http://img10.360buyimg.com/n7/g14/M0A/02/11/rBEhV1NoeN0IAAAAAAHh158wxwIAANE1wDYDPwAAeHv503.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1069555.html'>美的（Midea）FS40-13ER 5叶遥控电风扇/落地扇<font style='color: #ff0000' class='adwords' name='1069555'></font></a></div><div id='djd1069555' class='p-price'><strong></strong><span id='p1069555'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1069555-1-1.html'>已有9188人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='1069555'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1069555)' stock='1069555' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1069555&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1069555' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1069555' skuid='1069555'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='12' onclick='log(7,3,152826)' sku='152826'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/152826.html'><img width='220' height='220' alt='美的（midea）KYT25-6A 电风扇/ 台式转页扇 蓝色' data-lazyload='http://img11.360buyimg.com/n7/g16/M00/00/13/rBEbRlNqFNsIAAAAAALn3CQHls8AAAHhgIMCdEAAuf0775.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/152826.html'>美的（midea）KYT25-6A 电风扇/ 台式转页扇 蓝色<font style='color: #ff0000' class='adwords' name='152826'></font></a></div><div id='djd152826' class='p-price'><strong></strong><span id='p152826'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/152826-1-1.html'>已有16731人评价</a></span><span class='reputation'>(96%好评)</span></div><div class='stocklist' stock='152826'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,152826)' stock='152826' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=152826&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll152826' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_152826' skuid='152826'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='13' onclick='log(7,3,365910)' sku='365910'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/365910.html'><img width='220' height='220' alt='美的（Midea）KYT30-10A 台式电风扇/转页扇' data-lazyload='http://img10.360buyimg.com/n7/g10/M00/1E/09/rBEQWVNlzK0IAAAAAAOKudKK-eUAAF7yALwQq8AA4rR850.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/365910.html'>美的（Midea）KYT30-10A 台式电风扇/转页扇<font style='color: #ff0000' class='adwords' name='365910'></font></a></div><div id='djd365910' class='p-price'><strong></strong><span id='p365910'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/365910-1-1.html'>已有17745人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='365910'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,365910)' stock='365910' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=365910&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll365910' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_365910' skuid='365910'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='14' onclick='log(7,3,595935)' sku='595935'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/595935.html'><img width='220' height='220' alt='艾美特(Airmate) FT42R 电风扇/遥控塔扇' data-lazyload='http://img10.360buyimg.com/n7/g12/M00/0F/03/rBEQYVNmFcAIAAAAAALmqvulk9YAAFevgCKjAgAAubC679.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/595935.html'>艾美特(Airmate) FT42R 电风扇/遥控塔扇<font style='color: #ff0000' class='adwords' name='595935'></font></a></div><div id='djd595935' class='p-price'><strong></strong><span id='p595935'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/595935-1-1.html'>已有9572人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='595935'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,595935)' stock='595935' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=595935&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll595935' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_595935' skuid='595935'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='15' onclick='log(7,3,1093076)' sku='1093076'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1093076.html'><img width='220' height='220' alt='康佳（KONKA）电风扇/机械落地扇KF-40L01' data-lazyload='http://img11.360buyimg.com/n7/g12/M00/0F/11/rBEQYFNoqQMIAAAAAAE94ndIWYUAAFkTAKcJYUAAT36156.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1093076.html'>康佳（KONKA）电风扇/机械落地扇KF-40L01<font style='color: #ff0000' class='adwords' name='1093076'></font></a></div><div id='djd1093076' class='p-price'><strong></strong><span id='p1093076'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1093076-1-1.html'>已有2377人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='1093076'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1093076)' stock='1093076' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1093076&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1093076' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1093076' skuid='1093076'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='16' onclick='log(7,3,598507)' sku='598507'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/598507.html'><img width='220' height='220' alt='赛亿 (shinee) KYT25-1 电风扇/定时台式转页扇' data-lazyload='http://img12.360buyimg.com/n7/g14/M05/02/02/rBEhVVNm3U0IAAAAAAaF_b9xGs0AAM-3wGyw6kABoYV548.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/598507.html'>赛亿 (shinee) KYT25-1 电风扇/定时台式转页扇<font style='color: #ff0000' class='adwords' name='598507'></font></a></div><div id='djd598507' class='p-price'><strong></strong><span id='p598507'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/598507-1-1.html'>已有12857人评价</a></span><span class='reputation'>(90%好评)</span></div><div class='stocklist' stock='598507'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,598507)' stock='598507' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=598507&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll598507' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_598507' skuid='598507'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='17' onclick='log(7,3,1058052)' sku='1058052'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1058052.html'><img width='220' height='220' alt='TCL FS-40-AT1634 电风扇/四扇叶落地扇' data-lazyload='http://img12.360buyimg.com/n7/g12/M00/0F/0D/rBEQYVNnfd4IAAAAAAG2-PyP7vsAAFi2gNfOwUAAbcQ422.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1058052.html'>TCL FS-40-AT1634 电风扇/四扇叶落地扇<font style='color: #ff0000' class='adwords' name='1058052'></font></a></div><div id='djd1058052' class='p-price'><strong></strong><span id='p1058052'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1058052-1-1.html'>已有6772人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='1058052'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1058052)' stock='1058052' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1058052&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1058052' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1058052' skuid='1058052'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='18' onclick='log(7,3,1079663)' sku='1079663'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1079663.html'><img width='220' height='220' alt='荣事达（Royalstar） FS09-16F 五叶  16寸 机械式落地扇' data-lazyload='http://img13.360buyimg.com/n7/g10/M00/1C/02/rBEQWFNaNkQIAAAAAAD2qQ6HYrwAAFgFgI5j6AAAPbB069.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1079663.html'>荣事达（Royalstar） FS09-16F 五叶  16寸 机械式落地扇<font style='color: #ff0000' class='adwords' name='1079663'></font></a></div><div id='djd1079663' class='p-price'><strong></strong><span id='p1079663'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1079663-1-1.html'>已有2219人评价</a></span><span class='reputation'>(90%好评)</span></div><div class='stocklist' stock='1079663'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1079663)' stock='1079663' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1079663&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1079663' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1079663' skuid='1079663'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='19' onclick='log(7,3,1074619)' sku='1074619'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1074619.html'><img width='220' height='220' alt='海尔（Haier） FSJ4021E 3叶按键机械电风扇/落地扇' data-lazyload='http://img14.360buyimg.com/n7/g13/M0A/01/0B/rBEhU1NogKEIAAAAAAHba5D9M6kAAM-sAALITYAAduD540.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1074619.html'>海尔（Haier） FSJ4021E 3叶按键机械电风扇/落地扇<font style='color: #ff0000' class='adwords' name='1074619'></font></a></div><div id='djd1074619' class='p-price'><strong></strong><span id='p1074619'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1074619-1-1.html'>已有6067人评价</a></span><span class='reputation'>(92%好评)</span></div><div class='stocklist' stock='1074619'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1074619)' stock='1074619' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1074619&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1074619' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1074619' skuid='1074619'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='20' onclick='log(7,3,608031)' sku='608031'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/608031.html'><img width='220' height='220' alt='华生（Wahson）FS40-1201Y 电风扇/五风叶遥控落地扇 ' data-lazyload='http://img11.360buyimg.com/n7/g15/M01/1B/1A/rBEhWFNnV6AIAAAAAANTj7EEnI8AAM5RQKxe7kAA1On653.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/608031.html'>华生（Wahson）FS40-1201Y 电风扇/五风叶遥控落地扇 <font style='color: #ff0000' class='adwords' name='608031'></font></a></div><div id='djd608031' class='p-price'><strong></strong><span id='p608031'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/608031-1-1.html'>已有4601人评价</a></span><span class='reputation'>(86%好评)</span></div><div class='stocklist' stock='608031'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,608031)' stock='608031' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=608031&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll608031' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_608031' skuid='608031'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='21' onclick='log(7,3,365888)' sku='365888'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/365888.html'><img width='220' height='220' alt='美的（Midea）KYS30-10CR 遥控电风扇/升降转页扇' data-lazyload='http://img13.360buyimg.com/n7/g10/M00/1E/09/rBEQWFNlzJ0IAAAAAAIFQnWxqK0AAF7yAEOi20AAgVa355.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/365888.html'>美的（Midea）KYS30-10CR 遥控电风扇/升降转页扇<font style='color: #ff0000' class='adwords' name='365888'></font></a></div><div id='djd365888' class='p-price'><strong></strong><span id='p365888'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/365888-1-1.html'>已有2537人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='365888'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,365888)' stock='365888' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=365888&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll365888' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_365888' skuid='365888'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='22' onclick='log(7,3,646240)' sku='646240'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/646240.html'><img width='220' height='220' alt='美的（Midea）FS40-10DR 5叶遥控电风扇/落地扇' data-lazyload='http://img10.360buyimg.com/n7/g13/M0A/01/00/rBEhU1NoOi4IAAAAAAHXfyMaT9gAAM6LwHvywsAAdeX284.jpg' data-img="1"/></a><div class='picon pi3'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/646240.html'>美的（Midea）FS40-10DR 5叶遥控电风扇/落地扇<font style='color: #ff0000' class='adwords' name='646240'></font></a></div><div id='djd646240' class='p-price'><strong></strong><span id='p646240'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/646240-1-1.html'>已有3482人评价</a></span><span class='reputation'>(92%好评)</span></div><div class='stocklist' stock='646240'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,646240)' stock='646240' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=646240&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll646240' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_646240' skuid='646240'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='23' onclick='log(7,3,365702)' sku='365702'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/365702.html'><img width='220' height='220' alt='美的（Midea）FS40-10FR 遥控电风扇/落地扇' data-lazyload='http://img12.360buyimg.com/n7/g13/M03/00/10/rBEhVFNlzH8IAAAAAAIMzwCM11MAAMzfwJJ1WIAAgzn614.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/365702.html'>美的（Midea）FS40-10FR 遥控电风扇/落地扇<font style='color: #ff0000' class='adwords' name='365702'></font></a></div><div id='djd365702' class='p-price'><strong></strong><span id='p365702'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/365702-1-1.html'>已有4762人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='365702'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,365702)' stock='365702' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=365702&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll365702' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_365702' skuid='365702'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='24' onclick='log(7,3,1102138)' sku='1102138'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1102138.html'><img width='220' height='220' alt='长虹（CHANGHONG）FD-40WT 电风扇/落地扇' data-lazyload='http://img13.360buyimg.com/n7/g16/M00/06/15/rBEbRlN0n8MIAAAAAAEyFnOU_rgAABTLAJ3zE8AATIu894.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1102138.html'>长虹（CHANGHONG）FD-40WT 电风扇/落地扇<font style='color: #ff0000' class='adwords' name='1102138'></font></a></div><div id='djd1102138' class='p-price'><strong></strong><span id='p1102138'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1102138-1-1.html'>已有2118人评价</a></span><span class='reputation'>(87%好评)</span></div><div class='stocklist' stock='1102138'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1102138)' stock='1102138' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1102138&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1102138' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1102138' skuid='1102138'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='25' onclick='log(7,3,1058012)' sku='1058012'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1058012.html'><img width='220' height='220' alt='奥克斯（AUX）FS-40-A1626RC 电风扇/四扇叶遥控落地扇' data-lazyload='http://img12.360buyimg.com/n7/g10/M00/1E/15/rBEQWFNnfHoIAAAAAAG9WfOnIyAAAGA8QGk7JgAAb1x184.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1058012.html'>奥克斯（AUX）FS-40-A1626RC 电风扇/四扇叶遥控落地扇<font style='color: #ff0000' class='adwords' name='1058012'></font></a></div><div id='djd1058012' class='p-price'><strong></strong><span id='p1058012'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1058012-1-1.html'>已有1629人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='1058012'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1058012)' stock='1058012' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1058012&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1058012' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1058012' skuid='1058012'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='26' onclick='log(7,3,602285)' sku='602285'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/602285.html'><img width='220' height='220' alt='先锋（Singfun）DD1009 机械三风叶电风扇/落地扇' data-lazyload='http://img10.360buyimg.com/n7/g12/M00/0F/07/rBEQYVNnCK8IAAAAAALiT0vw_UwAAFgiAK9nN8AAuJn120.jpg' data-img="1"/></a><div class='picon pi8'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/602285.html'>先锋（Singfun）DD1009 机械三风叶电风扇/落地扇<font style='color: #ff0000' class='adwords' name='602285'></font></a></div><div id='djd602285' class='p-price'><strong></strong><span id='p602285'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/602285-1-1.html'>已有12094人评价</a></span><span class='reputation'>(92%好评)</span></div><div class='stocklist' stock='602285'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,602285)' stock='602285' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=602285&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll602285' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_602285' skuid='602285'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='27' onclick='log(7,3,166225)' sku='166225'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/166225.html'><img width='220' height='220' alt='美的（Midea）FZ10-8B 塔扇/电风扇' data-lazyload='http://img10.360buyimg.com/n7/g17/M00/00/13/rBEbR1NqFbIIAAAAAAE9KeggMPgAAAHiQGnEEAAAT1B510.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/166225.html'>美的（Midea）FZ10-8B 塔扇/电风扇<font style='color: #ff0000' class='adwords' name='166225'></font></a></div><div id='djd166225' class='p-price'><strong></strong><span id='p166225'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/166225-1-1.html'>已有1215人评价</a></span><span class='reputation'>(92%好评)</span></div><div class='stocklist' stock='166225'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,166225)' stock='166225' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=166225&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll166225' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_166225' skuid='166225'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='28' onclick='log(7,3,1093078)' sku='1093078'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1093078.html'><img width='220' height='220' alt='康佳（KONKA）电风扇/五风叶台式转页扇KF-25HY37' data-lazyload='http://img13.360buyimg.com/n7/g12/M00/0F/11/rBEQYVNoqRMIAAAAAALi8z-xdq8AAFkTgGHseoAAuML551.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1093078.html'>康佳（KONKA）电风扇/五风叶台式转页扇KF-25HY37<font style='color: #ff0000' class='adwords' name='1093078'></font></a></div><div id='djd1093078' class='p-price'><strong></strong><span id='p1093078'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1093078-1-1.html'>已有3595人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='1093078'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1093078)' stock='1093078' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1093078&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1093078' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1093078' skuid='1093078'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='29' onclick='log(7,3,365775)' sku='365775'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/365775.html'><img width='220' height='220' alt='美的（Midea）FT30-10A 3叶电风扇/台扇 紫色可定时' data-lazyload='http://img10.360buyimg.com/n7/g13/M0A/00/10/rBEhU1NlzI8IAAAAAANZoATWr5wAAMzgAJn3NAAA1m4599.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/365775.html'>美的（Midea）FT30-10A 3叶电风扇/台扇 紫色可定时<font style='color: #ff0000' class='adwords' name='365775'></font></a></div><div id='djd365775' class='p-price'><strong></strong><span id='p365775'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/365775-1-1.html'>已有4963人评价</a></span><span class='reputation'>(95%好评)</span></div><div class='stocklist' stock='365775'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,365775)' stock='365775' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=365775&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll365775' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_365775' skuid='365775'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='30' onclick='log(7,3,857958)' sku='857958'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/857958.html'><img width='220' height='220' alt='美的（Midea）FS40-12E 机械电风扇/落地扇' data-lazyload='http://img13.360buyimg.com/n7/g14/M0A/02/0D/rBEhVVNoVaQIAAAAAAFMUHVDA5EAANDQQBS4kYAAUxo502.jpg' data-img="1"/></a><div class='picon pi2'><b></b></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/857958.html'>美的（Midea）FS40-12E 机械电风扇/落地扇<font style='color: #ff0000' class='adwords' name='857958'></font></a></div><div id='djd857958' class='p-price'><strong></strong><span id='p857958'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/857958-1-1.html'>已有5697人评价</a></span><span class='reputation'>(95%好评)</span></div><div class='stocklist' stock='857958'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,857958)' stock='857958' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=857958&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll857958' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_857958' skuid='857958'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='31' onclick='log(7,3,216696)' sku='216696'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/216696.html'><img width='220' height='220' alt='艾美特（Airmate）FBW09RS 电风扇/立式遥控转页扇' data-lazyload='http://img11.360buyimg.com/n7/g16/M00/00/1A/rBEbRVNq5TkIAAAAAAGSMkthaukAAAKJQJgBisAAZJK430.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/216696.html'>艾美特（Airmate）FBW09RS 电风扇/立式遥控转页扇<font style='color: #ff0000' class='adwords' name='216696'></font></a></div><div id='djd216696' class='p-price'><strong></strong><span id='p216696'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/216696-1-1.html'>已有1694人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='216696'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,216696)' stock='216696' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=216696&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll216696' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_216696' skuid='216696'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='32' onclick='log(7,3,838041)' sku='838041'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/838041.html'><img width='220' height='220' alt='先锋（Singfun）DD1219 遥控式电风扇/落地扇' data-lazyload='http://img11.360buyimg.com/n7/g14/M0A/02/07/rBEhVVNnRkQIAAAAAAHttH8y8FsAANAwAGhD5YAAe3M040.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/838041.html'>先锋（Singfun）DD1219 遥控式电风扇/落地扇<font style='color: #ff0000' class='adwords' name='838041'></font></a></div><div id='djd838041' class='p-price'><strong></strong><span id='p838041'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/838041-1-1.html'>已有6406人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='838041'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,838041)' stock='838041' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=838041&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll838041' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_838041' skuid='838041'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='33' onclick='log(7,3,829770)' sku='829770'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/829770.html'><img width='220' height='220' alt='艾美特(Airmate) SW35R 电风扇/遥控台立扇' data-lazyload='http://img10.360buyimg.com/n7/jfs/t181/72/751673906/76943/17fc4473/5398415bN7f7e4e42.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/829770.html'>艾美特(Airmate) SW35R 电风扇/遥控台立扇<font style='color: #ff0000' class='adwords' name='829770'></font></a></div><div id='djd829770' class='p-price'><strong></strong><span id='p829770'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/829770-1-1.html'>已有1498人评价</a></span><span class='reputation'>(93%好评)</span></div><div class='stocklist' stock='829770'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,829770)' stock='829770' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=829770&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll829770' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_829770' skuid='829770'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='34' onclick='log(7,3,1093073)' sku='1093073'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1093073.html'><img width='220' height='220' alt='康佳（KONKA）电风扇/五风叶遥控落地扇KF-40LY01' data-lazyload='http://img13.360buyimg.com/n7/g10/M00/1E/19/rBEQWFNoqPAIAAAAAAFqJfDvoeUAAGCYgN_4fEAAWo9994.jpg' data-img="1"/></a><div style="background:url(http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img30.360buyimg.com/jgsq-productsoa/g14/M05/07/09/rBEhVlHxBQUIAAAAAAAOcsbGGCkAABbJwGIhWYAAA6K407.png',sizingMethod='noscale');" class="picon" shop_id="0"></div></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1093073.html'>康佳（KONKA）电风扇/五风叶遥控落地扇KF-40LY01<font style='color: #ff0000' class='adwords' name='1093073'></font></a></div><div id='djd1093073' class='p-price'><strong></strong><span id='p1093073'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1093073-1-1.html'>已有1166人评价</a></span><span class='reputation'>(89%好评)</span></div><div class='stocklist' stock='1093073'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1093073)' stock='1093073' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1093073&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1093073' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1093073' skuid='1093073'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+<li index='35' onclick='log(7,3,1084113)' sku='1084113'><div class='lh-wrap'><div class='p-img'><a target='_blank'  href='http://item.jd.com/1084113.html'><img width='220' height='220' alt='艾美特（Airmate）FTW57T2-A 电风扇/机械塔扇' data-lazyload='http://img13.360buyimg.com/n7/g16/M00/00/02/rBEbRlNpi4EIAAAAAACvfhmLiY8AAAA5wEPnw0AAK-W300.jpg' data-img="1"/></a></div><div class='p-name'><a target='_blank' href='http://item.jd.com/1084113.html'>艾美特（Airmate）FTW57T2-A 电风扇/机械塔扇<font style='color: #ff0000' class='adwords' name='1084113'></font></a></div><div id='djd1084113' class='p-price'><strong></strong><span id='p1084113'></span></div><div class='extra'><span class='evaluate'><a target='_blank' href='http://club.jd.com/review/1084113-1-1.html'>已有287人评价</a></span><span class='reputation'>(94%好评)</span></div><div class='stocklist' stock='1084113'><span class='st33'>北京有货</span></div><div class='btns'><a onclick='log(1,7,1084113)' stock='1084113' tpl='1' href='http://gate.jd.com/InitCart.aspx?pid=1084113&pcount=1&ptype=1' target='_blank' class='btn-buy'>加入购物车</a><a id='coll1084113' href='javascript:;' class='btn-coll'>关注</a><a class='btn-compare btn-compare-s' id='comp_1084113' skuid='1084113'><span></span>对比</a></div><div class="p-shopnum"></div></div></li>
+</ul>
+</div>
+<script type="text/javascript">var jdwsment = {"key":"58EF1C60BC544BE0699FB74B6C4336D060298C44","skuids":"595936,829765,861100,216705,597426,594183,1077868,383871,857963,857982,216706,1069555,152826,365910,595935,1093076,598507,1058052,1079663,1074619,608031,365888,646240,365702,1102138,1058012,602285,166225,1093078,365775,857958,216696,838041,829770,1093073,1084113"};</script>
+<script type="text/javascript">var yushowSkuIds = "";</script>
+<script>(function() {var plist = $('#plist'),ul = plist.children('.list-h'),li = ul.children('li'),skuids = [], res = [], flag = 0;if ( typeof jdwsment !== 'undefined') {skuids = jdwsment.skuids.split(',');} else {for (var i = 0; i < li.length; i++) {skuids.push( li.eq(i).attr('sku') );}}function getPrice(skuids) {var areaId = '1_72_4137';$.ajax({url: 'http://p.3.cn/prices/mgets?skuIds=J_' + skuids.join(',J_') + '&type=1&area=' + areaId ,dataType: 'jsonp',success: function(r) {if ( !r && !r.length ) { return false; }for ( var i = 0; i < r.length; i++ ) {var sku = r[i].id.replace('J_', '');var price = r[i].p;if ( price > 0 ) {ul.children('li[sku="'+ sku +'"]').find('.p-price strong').html( '￥' + price + '' );} else {ul.children('li[sku="'+ sku +'"]').find('.p-price strong').html( '暂无报价' );}}}});}getPrice(skuids);})();</script>
+<div class="m clearfix">
+<div class="pagin fr"><span class='prev-disabled'>上一页<b></b></span>
+<a href='737-738-751-0-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html' class='current'>1</a>
+<a href='737-738-751-0-0-0-0-0-0-0-1-1-2-1-1-72-4137-0.html'>2</a>
+<a href='737-738-751-0-0-0-0-0-0-0-1-1-3-1-1-72-4137-0.html'>3</a>
+<span class='text'>…</span>
+<a href='737-738-751-0-0-0-0-0-0-0-1-1-20-1-1-72-4137-0.html'>20</a>
+<a href='737-738-751-0-0-0-0-0-0-0-1-1-2-1-1-72-4137-0.html' class='next' >下一页<b></b></a>
+</div>
+</div>
+<div reco_id="2" class="shop-choice hide" id="shop-choice"></div>
+
+    </div>
+
+    <script type="text/javascript">
+        /*商品精选bigen*/
+
+
+        if("1315,11729,6144,9855,1320,1319,6233,1318,1672,5025,1316,9847,6994,1620,6728,6196,9987,670,652,737,12259,12218,9192".indexOf(psid1) != -1 && "2641,1502,1503,1505,1507,1504".indexOf(psid3) == -1 ) {
+            if( window.screen.width < 1210 ) {
+                $('<iframe id="shopChoiceFrame" onload="showShopChoiceFrmae()" scrolling="no" frameborder="0" class="hide" style="width:770px;height:290px;" marginheight="0" marginwidth="0" src="http://x.jd.com/ad?ad_id=70&hj_id=48&tag=' + psid3+ '&cid=' + psid1 + '-' + psid2 + '-' + psid3 + '"></iframe>')
+                        .appendTo(".right-extra");
+            } else {
+                $('<iframe id="shopChoiceFrame" onload="showShopChoiceFrmae()" scrolling="no" frameborder="0" class="hide" style="width:990px;height:290px;" marginheight="0" marginwidth="0" src="http://x.jd.com/ad?ad_id=73&hj_id=48&tag=' + psid3+ '&cid=' + psid1 + '-' + psid2 + '-' + psid3 + '"></iframe>')
+                        .appendTo(".right-extra");
+            }
+
+        }
+
+
+        function showShopChoiceFrmae(){
+            $('#shopChoiceFrame').show();
+        }
+        /*商品精选end*/
+
+       /* 扩展属性 begin*/
+       if( window.screen.width < 1210 ) {
+           $('div[rel]').each(function(i){
+              if( i>=10 ) {
+                  $(this).attr('brand','more');
+                  $(this).hide();
+              }
+           });
+
+       }
+
+       $('.brand-attr li[rel]:not(:first)').each(function(){
+           var rel = $(this).attr('rel');
+           if ( $('.brand-attr .tabcon div[rel=' + rel + ']').length == 0 ) {
+               $(this).hide();
+           }
+
+       });
+
+        $('li[rel]').bind('mouseover',function(){
+            var rel = $(this).attr('rel');
+            $(this).addClass('curr');
+            $('li:not([rel='+rel+'])').removeClass('curr');
+
+            if( rel==0 ) {
+                $('div[rel]').show();
+            } else {
+                $('div[rel='+rel+']').show();
+                $('div[rel]:not([rel='+rel+'])').hide();
+
+            }
+        });
+
+       $('.prop-attrs:not(.hide) .f-list').each(function(){
+
+           if( $(this).find('li:last').position().top > 0 ){
+               $(this).parent().parent().find('[option=more]').show();
+           }
+
+       });
+
+        $(".show-logo div:not(.curr)").bind("mouseover",function(){
+            $(this).addClass("hover");
+        }).bind("mouseout",function(){
+                    $(this).removeClass("hover")
+        });
+
+        function moreProp(t){
+            $(t).hide();
+            $('#lessProp').show();
+
+            $('[overFour]').show();
+            $('.prop-attrs[overFour] .f-list').each(function(){
+                if( $(this).find('li:last').position().top > 0 ){
+                    $(this).parent().parent().find('[option=more]').show();
+                }
+
+            });
+
+        }
+
+        function lessProp(t){
+            $(t).hide();
+            $('#moreProp').show();
+            $('[overFour]').hide();
+
+        }
+
+        function moreBrand(){
+            $('.brand-attr ul.tab').show();
+
+            $('.brand-attr [option=more]').hide();
+            $('.brand-attr [option=less]').show();
+
+            $('.brand-attr div[brand=more]').show();
+
+            $('.brand-attr div.tabcon').addClass('tabcon-multi');
+            if(psid3 == 655) {
+                $('.brand-attr div.tabcon').addClass('height185');
+            }
+
+
+            $('li[rel].curr').removeClass('curr');
+            $('li[rel]:first').addClass('curr');
+        }
+
+
+
+        function lessBrand(){
+            $('.brand-attr ul.tab').hide();
+
+            $('.brand-attr [option=more]').show();
+            $('.brand-attr [option=less]').hide();
+
+            $('.brand-attr div[brand=less]').show();
+            $('.brand-attr div[brand=more]').hide();
+
+            $('.brand-attr div.tabcon').removeClass('tabcon-multi');
+            if(psid3 == 655) {
+                $('.brand-attr div.tabcon').removeClass('height185');
+            }
+
+        }
+        function moreExpandValue(t){
+            $(t).hide().next().show();
+            $(t).parent().find('.v-fold').addClass('v-unfold');
+
+        }
+        function lessExpandValue(t){
+            $(t).parent().find('.v-fold').removeClass('v-unfold');
+            $(t).hide().prev().show();
+
+        }
+
+
+        $('#select-tv a.fore:not(.curr)').bind('mouseover',function(){
+            $(this).addClass('curr');
+        }).bind('mouseout',function(){
+            $(this).removeClass('curr');
+        });
+
+
+        $('#video-card div.fore:not(.curr)').bind('mouseover',function(){
+            $(this).addClass('curr');
+        }).bind('mouseout',function(){
+            $(this).removeClass('curr');
+        });
+
+
+        /* 扩展属性 end*/
+
+        /*预售 begin*/
+       var yushouTimerList = [];
+       function convertSecond2Date(ms) {//将毫秒数换算成x天x时x分x秒x毫秒
+           var mi = 60;
+           var hh = mi * 60;
+           var dd = hh * 24;
+
+           var day = Math.floor(ms / dd);
+           var hour = Math.floor((ms - day * dd) / hh);
+           var minute = Math.floor((ms - day * dd - hour * hh) / mi);
+           var second = Math.floor(ms - day * dd - hour * hh - minute * mi);
+
+           if(day == 0) {
+               return hour + "时" + minute + "分" + second + "秒";
+           }else{
+               return day + "天" + hour + "时" + minute + "分";
+           }
+       }
+
+       if(yushowSkuIds) {
+           var yushowSkuIdsArr = yushowSkuIds.split(",");
+
+           for( var i = 0; i < yushowSkuIdsArr.length; i++ ) {
+               var skuId = yushowSkuIdsArr[i];
+
+               if(skuId&&skuId!=""){
+                   $.getJSONP('http://soa.yushou.jd.com/yushoulistinfo.action?sku=' + skuId + '&callback=yushou');
+               }
+           }
+       }
+
+
+       function showYushouTime(){
+           for(var i = 0; i < yushouTimerList.length; i++){
+               var yushowTimer = yushouTimerList[i];
+               yushowTimer.d--;
+               if(yushowTimer.t < 0){
+                   return;
+               }
+
+               var yushouEl = $('#plist .list-h li[sku=' + yushowTimer.w + ']');
+               if( yushowTimer.s == 0 ) {
+                   yushouEl.find('.p-img a em').html(convertSecond2Date(yushowTimer.d)+"后开始");
+
+               } else {
+                   yushouEl.find('.p-img a em').html('剩余'+convertSecond2Date(yushowTimer.d));
+               }
+
+
+           }
+           setTimeout(showYushouTime,1000);
+
+       }
+
+       setTimeout(showYushouTime,1000);
+
+       function yushou( data ){
+
+            if(data.type == 2){
+                var ret = data.ret;
+                var skuId = ret.w;
+                var yushouEl = $('#plist .list-h li[sku=' + skuId + ']');
+
+                yushouTimerList[yushouTimerList.length] = {w:skuId,d:ret.d,s:ret.s};
+                if( ret.s == 0 ) {
+                    yushouEl.find('.p-img a').append('<div class="prebuy-time"><div class="pt-bg"></div><i></i><span>等待预售</span><em>' + convertSecond2Date(data.ret.d) + '后开始</em></div>');
+
+                } else {
+                    yushouEl.find('.p-img a').append('<div class="prebuy-time"><div class="pt-bg"></div><i></i><span>预售中</span><em>剩余' + convertSecond2Date(data.ret.d) + '</em></div>');
+
+                }
+
+
+                if (ret.t==2 ){
+                    var html = '<div clstag="" class="sp-stage clearfix">';
+
+                    for(var i = 0; i < ret.sa.length; i++) {
+                        var sa = ret.sa[i];
+                        var currCls = "";
+                        var timeoutCls = "";
+
+                        var hoverd = "";
+                        if ( i == (ret.cs-1) ) {
+                            currCls = " curr";
+                            hoverd = '<em class="hoverd">预订' + ret.cc + '人</em>';
+                        }
+
+                        if(i)
+
+                        html += '<span class="item  ' + currCls + '"><a href="javascript:void(0)"><em>满' + sa.c + '人</em>' + hoverd + '<strong>￥' + sa.m + '</strong></a><i class="bottom"><em></em></i></span>';
+                    }
+
+                    html += '</div>'
+
+                    $(html).insertAfter(yushouEl.find('.p-price'));
+
+                }
+
+
+                yushouEl.find('.p-price').append('<i class="prebuy-num">（已有' + ret.cc + '人预订）</i>');
+                yushouEl.find('.p-price strong').html(ret.cp);
+
+                yushouEl.find('.btn-buy').attr('href','http://cart.jd.com/cart/dynamic/presale.action?pid=' + skuId + '&pcount=1&ptype=1');
+
+
+                if( ret.s == 0 ) {
+                    yushouEl.find('.btn-buy').text('等待支付定金').addClass('disable');
+                } else {
+                    yushouEl.find('.btn-buy').text('支付定金');
+
+                }
+
+
+
+                yushouEl.addClass('prebuy-item');
+
+                yushouEl.bind('mouseover',function(){
+                    $(this).addClass('hover');
+                })
+
+                yushouEl.bind('mouseout',function(){
+                    $(this).removeClass('hover');
+                })
+
+            }
+
+        }
+
+        /*预售 end*/
+
+    </script>
+    <!--right-extra end-->
+    <script type="text/javascript"> function lazyload(option) { var settings = { defObj: null, defHeight: 0 }; settings = $.extend(settings, option || {}); var defHeight = settings.defHeight, defObj = (typeof settings.defObj == "object") ? settings.defObj.find("img") : $(settings.defObj).find("img"); var pageTop = function() { var d = document, y = (navigator.userAgent.toLowerCase().match(/iPad/i) == "ipad") ? window.pageYOffset : Math.max(d.documentElement.scrollTop, d.body.scrollTop); return d.documentElement.clientHeight + y - settings.defHeight }; var imgLoad = function() { defObj.each(function() { if ($(this).offset().top <= pageTop()) { var src2 = $(this).attr("src2"); if (src2) { $(this).attr("src", src2).removeAttr("src2") } } }) }; imgLoad(); $(window).bind("scroll", function() { imgLoad() }) } lazyload({ defObj: "#plist" })</script>
+    <div class="left">
+        <div class="m" id="sortlist" clstag="thirdtype|keycount|thirdtype|sortlist">
+            
+<div class="mt"><h2>家用电器</h2></div><DIV class=mc><DIV class=item><H3><B></B>大 家 电</H3>
+<UL>
+<LI><a href='http://list.jd.com/737-794-798.html'>平板电视</a></LI>
+<LI><a href='http://list.jd.com/737-794-870.html'>空调</a></LI>
+<LI><a href='http://list.jd.com/737-794-878.html'>冰箱</a></LI>
+<LI><a href='http://list.jd.com/737-794-880.html'>洗衣机</a></LI>
+<LI><a href='http://list.jd.com/737-794-823.html'>家庭影院</a></LI>
+<LI><a href='http://list.jd.com/737-794-965.html'>DVD播放机</a></LI>
+<LI><a href='http://list.jd.com/737-794-1199.html'>迷你音响</a></LI>
+<LI><a href='http://list.jd.com/737-794-1300.html'>烟机/灶具</a></LI>
+<LI><a href='http://list.jd.com/737-794-1706.html'>热水器</a></LI>
+<LI><a href='http://list.jd.com/737-794-1301.html'>消毒柜/洗碗机</a></LI>
+<LI><a href='http://list.jd.com/737-794-1707.html'>酒柜/冰吧/冷柜</a></LI>
+<LI><a href='http://list.jd.com/737-794-877.html'>家电配件</a></LI>
+<LI><a href='http://list.jd.com/737-794-1013.html'>家电下乡</a></LI>
+</UL></DIV><DIV class="item current"><H3><B></B>生活电器</H3>
+<UL>
+<LI><a href='http://list.jd.com/737-738-751.html'>电风扇</a></LI>
+<LI><a href='http://list.jd.com/737-738-1278.html'>冷风扇</a></LI>
+<LI><a href='http://list.jd.com/737-738-749.html'>净化器</a></LI>
+<LI><a href='http://list.jd.com/737-738-750.html'>饮水机</a></LI>
+<LI><a href='http://list.jd.com/737-738-898.html'>净水设备</a></LI>
+<LI><a href='http://list.jd.com/737-738-1279.html'>挂烫机/熨斗</a></LI>
+<LI><a href='http://list.jd.com/737-738-745.html'>吸尘器</a></LI>
+<LI><a href='http://list.jd.com/737-738-806.html'>电话机</a></LI>
+<LI><a href='http://list.jd.com/737-738-1052.html'>插座</a></LI>
+<LI><a href='http://list.jd.com/737-738-801.html'>收录/音机</a></LI>
+<LI><a href='http://list.jd.com/737-738-897.html'>清洁机</a></LI>
+<LI><a href='http://list.jd.com/737-738-748.html'>加湿器</a></LI>
+<LI><a href='http://list.jd.com/737-738-1283.html'>除湿/干衣机</a></LI>
+<LI><a href='http://list.jd.com/737-738-747.html'>取暖电器</a></LI>
+<LI><a href='http://list.jd.com/737-738-825.html'>其它生活电器</a></LI>
+</UL></DIV><DIV class=item><H3><B></B>厨房电器</H3>
+<UL>
+<LI><a href='http://list.jd.com/737-752-755.html'>料理/榨汁机</a></LI>
+<LI><a href='http://list.jd.com/737-752-756.html'>豆浆机</a></LI>
+<LI><a href='http://list.jd.com/737-752-753.html'>电饭煲</a></LI>
+<LI><a href='http://list.jd.com/737-752-881.html'>电压力锅</a></LI>
+<LI><a href='http://list.jd.com/737-752-899.html'>面包机</a></LI>
+<LI><a href='http://list.jd.com/737-752-761.html'>咖啡机</a></LI>
+<LI><a href='http://list.jd.com/737-752-758.html'>微波炉</a></LI>
+<LI><a href='http://list.jd.com/737-752-759.html'>电烤箱</a></LI>
+<LI><a href='http://list.jd.com/737-752-757.html'>电磁炉</a></LI>
+<LI><a href='http://list.jd.com/737-752-882.html'>电饼铛/烧烤盘</a></LI>
+<LI><a href='http://list.jd.com/737-752-902.html'>煮蛋器</a></LI>
+<LI><a href='http://list.jd.com/737-752-762.html'>酸奶机</a></LI>
+<LI><a href='http://list.jd.com/737-752-9249.html'>电炖锅</a></LI>
+<LI><a href='http://list.jd.com/737-752-760.html'>电水壶/热水瓶</a></LI>
+<LI><a href='http://list.jd.com/737-752-754.html'>多用途锅</a></LI>
+<LI><a href='http://list.jd.com/737-752-901.html'>果蔬解毒机</a></LI>
+<LI><a href='http://list.jd.com/737-752-803.html'>其它厨房电器</a></LI>
+</UL></DIV><DIV class=item><H3><B></B>个护健康</H3>
+<UL>
+<LI><a href='http://list.jd.com/737-1276-739.html'>剃须刀</a></LI>
+<LI><a href='http://list.jd.com/737-1276-742.html'>剃/脱毛器</a></LI>
+<LI><a href='http://list.jd.com/737-1276-741.html'>口腔护理</a></LI>
+<LI><a href='http://list.jd.com/737-1276-740.html'>电吹风</a></LI>
+<LI><a href='http://list.jd.com/737-1276-795.html'>美容器</a></LI>
+<LI><a href='http://list.jd.com/737-1276-1287.html'>美发器</a></LI>
+<LI><a href='http://list.jd.com/737-1276-1291.html'>按摩椅</a></LI>
+<LI><a href='http://list.jd.com/737-1276-967.html'>按摩器</a></LI>
+<LI><a href='http://list.jd.com/737-1276-963.html'>足浴盆</a></LI>
+<LI><a href='http://list.jd.com/737-1276-966.html'>血压计</a></LI>
+<LI><a href='http://list.jd.com/737-1276-1289.html'>健康秤/厨房秤</a></LI>
+<LI><a href='http://list.jd.com/737-1276-1225.html'>血糖仪</a></LI>
+<LI><a href='http://list.jd.com/737-1276-1292.html'>体温计</a></LI>
+<LI><a href='http://list.jd.com/737-1276-968.html'>计步器/脂肪检测仪</a></LI>
+<LI><a href='http://list.jd.com/737-1276-1290.html'>其它健康电器</a></LI>
+</UL></DIV><DIV class=item><H3><B></B>五金家装</H3>
+<UL>
+<LI><a href='http://list.jd.com/737-1277-934.html'>电动工具</a></LI>
+<LI><a href='http://list.jd.com/737-1277-3979.html'>手动工具</a></LI>
+<LI><a href='http://list.jd.com/737-1277-6974.html'>仪器仪表</a></LI>
+<LI><a href='http://list.jd.com/737-1277-900.html'>浴霸/排气扇</a></LI>
+<LI><a href='http://list.jd.com/737-1277-1295.html'>灯具</a></LI>
+<LI><a href='http://list.jd.com/737-1277-6975.html'>LED灯</a></LI>
+<LI><a href='http://list.jd.com/737-1277-4934.html'>洁身器</a></LI>
+<LI><a href='http://list.jd.com/737-1277-5004.html'>水槽</a></LI>
+<LI><a href='http://list.jd.com/737-1277-5005.html'>龙头</a></LI>
+<LI><a href='http://list.jd.com/737-1277-5006.html'>淋浴花洒</a></LI>
+<LI><a href='http://list.jd.com/737-1277-1293.html'>厨卫五金</a></LI>
+<LI><a href='http://list.jd.com/737-1277-4834.html'>家具五金</a></LI>
+<LI><a href='http://list.jd.com/737-1277-1294.html'>门铃</a></LI>
+<LI><a href='http://list.jd.com/737-1277-6976.html'>电气开关</a></LI>
+<LI><a href='http://list.jd.com/737-1277-6977.html'>插座</a></LI>
+<LI><a href='http://list.jd.com/737-1277-6978.html'>电工电料</a></LI>
+<LI><a href='http://list.jd.com/737-1277-6979.html'>监控安防</a></LI>
+<LI><a href='http://list.jd.com/737-1277-1299.html'>电线/线缆</a></LI>
+</UL></DIV></DIV>
+
+        </div>
+        <!--sortlist end-->
+        <script type="text/javascript">
+            $("#sortlist h3").bind("click",function(){
+                var element=$(this).parent();
+                if (element.hasClass("current")){
+                    element.removeClass("current");
+                }else{
+                    element.addClass("current");
+                }
+            })
+        </script>
+
+        <div class="m limitbuy hide" id="limitbuy537" clstag="thirdtype|keycount|thirdtype|limitbuy536">
+<div class="mt">
+<h2>消费电子限时抢购</h2>
+</div>
+<div class="mc">
+<div class="clock" id="clock537">正在加载…</div>
+<div id="limit537"></div>
+</div>
+</div><!--limitbuy end -->
+
+        <!--<iframe id="ad" scrolling="no" frameborder="0" style="width:210px;height:240px;margin-bottom: 10px;" marginheight="0"  marginwidth="0" src=""></iframe>-->
+        <div style="margin-bottom: 10px">
+            <script type="text/javascript">
+                jd_ad_client = 60;
+                jd_ad_width =  210;
+                jd_ad_height = 240;
+                jd_ad_type = 8;
+                jd_ad_spread = 1;
+                jd_ad_num = 1;
+                jd_ad_category = 751;
+            </script>
+            <script type="application/javascript" src=" http://static.360buyimg.com/dsp/ssp.js "></script>
+        </div>
+        <div style="margin-bottom: 10px">
+            <script type="text/javascript">
+                jd_ad_client = 88;
+                jd_ad_width = 210;
+                jd_ad_height = 261;
+                jd_ad_type=8;
+                jd_ad_spread=1;
+                jd_ad_num=1;
+                jd_ad_category= 751;
+            </script>
+            <script type="application/javascript" src=" http://static.360buyimg.com/dsp/ssp.js "></script>
+        </div>
+
+        <div id="ad_left" reco_id="6" class="m m0 hide"></div><!--搜索广告推荐-->
+
+
+        <script type="text/javascript">
+
+            if("1315,11729,6144,9855,1320,1319,6233,1318,1672,5025,1316,9847,6994,1620,6728,6196,9987,670,652,737,12259,12218,9192".indexOf(psid1) != -1 && "2641,1502,1503,1505,1507,1504".indexOf(psid3) == -1) {
+                $('<iframe id="adLeftFrame" onload="showAdLeftFrame();" class="hide" scrolling="no" frameborder="0" style="width:210px;height:563px;margin-bottom: 10px;" marginheight="0" marginwidth="0" src="http://x.jd.com/ad?ad_id=72&hj_id=47&tag=' + psid3 + '&cid=' + psid1 + '-' + psid2 + '-' + psid3 + '"></iframe>')
+                        .insertAfter('#ad_left');
+            }
+
+            function showAdLeftFrame(){
+                $('#adLeftFrame').show();
+            }
+
+        </script>
+
+        <div id="finalbuy" class="hide m m0"></div><!--关注手机最终购买-->
+        <div id="weekRank" class="m rank" clstag="thirdtype|keycount|thirdtype|mrank">
+            <div class="mt">
+                <h2>一周销量排行榜</h2>
+            </div>
+            <div class="mc">
+                <ul class="tabcon">
+                    
+<li class="fore fore1"><span>1</span><div class="p-img" ><a target="_blank"  href="http://item.jd.com/595936.html"><img alt="艾美特(Airmate) FSW52R 电风扇/遥控落地扇" src="http://img11.360buyimg.com/n5/g16/M00/0B/13/rBEbRlN9ugYIAAAAAAC8By88YbsAACQvgKyORkAALwf355.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/595936.html">艾美特(Airmate) FSW52R 电风扇/遥控落地扇</a></div><div class="p-price"  sku="595936" ><strong></strong></div></li><li  class="fore2"><span>2</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/861100.html"><img alt="美的（Midea）FS40-11L1 机械电风扇/落地扇" src="http://img10.360buyimg.com/n5/g14/M0A/02/0E/rBEhVlNoWq4IAAAAAAFgjxpiHhsAANDigANe78AAWCn590.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/861100.html">美的（Midea）FS40-11L1 机械电风扇/落地扇</a></div><div class="p-price"  sku="861100" style="display:none;" ><strong></strong></div></li><li  class="fore3"><span>3</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/829765.html"><img alt="艾美特(Airmate) FSW65R-5 电风扇/遥控落地扇" src="http://img10.360buyimg.com/n5/g14/M07/02/06/rBEhV1NnPd0IAAAAAAHQmH3xibYAANAfwL8o-QAAdCw526.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/829765.html">艾美特(Airmate) FSW65R-5 电风扇/遥控落地扇</a></div><div class="p-price"  sku="829765" style="display:none;" ><strong></strong></div></li><li><span>4</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/216705.html"><img alt="艾美特(Airmate) FTW36R-A 电风扇/遥控塔扇" src="http://img10.360buyimg.com/n5/g16/M00/00/1A/rBEbRVNq5UcIAAAAAAEbxRzBZR4AAAKJwF-hF8AARvd950.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/216705.html">艾美特(Airmate) FTW36R-A 电风扇/遥控塔扇</a></div><div class="p-price"  sku="216705" style="display:none;" ><strong></strong></div></li><li><span>5</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/383871.html"><img alt="华生（Wahson）FS40-1102 电风扇/落地扇" src="http://img11.360buyimg.com/n5/g13/M03/00/10/rBEhU1Nl00kIAAAAAAH_O3jhmfMAAMzlQDmEb8AAf9T305.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/383871.html">华生（Wahson）FS40-1102 电风扇/落地扇</a></div><div class="p-price"  sku="383871" style="display:none;" ><strong></strong></div></li><li><span>6</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/602285.html"><img alt="先锋（Singfun）DD1009 机械三风叶电风扇/落地扇" src="http://img10.360buyimg.com/n5/g12/M00/0F/07/rBEQYVNnCK8IAAAAAALiT0vw_UwAAFgiAK9nN8AAuJn120.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/602285.html">先锋（Singfun）DD1009 机械三风叶电风扇/落地扇</a></div><div class="p-price"  sku="602285" style="display:none;" ><strong></strong></div></li><li><span>7</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/1077868.html"><img alt="美的（Midea）FS40-13C 5叶机械电风扇/落地扇" src="http://img13.360buyimg.com/n5/g12/M00/0F/0F/rBEQYFNolG8IAAAAAAIGFDD9b_EAAFjvAIBULMAAgYs788.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/1077868.html">美的（Midea）FS40-13C 5叶机械电风扇/落地扇</a></div><div class="p-price"  sku="1077868" style="display:none;" ><strong></strong></div></li><li><span>8</span><div class="p-img" style="display:none;"><a target="_blank"  href="http://item.jd.com/152826.html"><img alt="美的（midea）KYT25-6A 电风扇/ 台式转页扇 蓝色" src="http://img11.360buyimg.com/n5/g16/M00/00/13/rBEbRlNqFNsIAAAAAALn3CQHls8AAAHhgIMCdEAAuf0775.jpg" width="50" height="50"></a></div><div class="p-name"><a target="_blank"  href="http://item.jd.com/152826.html">美的（midea）KYT25-6A 电风扇/ 台式转页扇 蓝色</a></div><div class="p-price"  sku="152826" style="display:none;" ><strong></strong></div></li>
+
+                </ul>
+            </div>
+        </div>
+        <!--rank end-->
+        <div id="alsobuy" class="hide m m0"></div><!--浏览XXX还购买了--><div class="m" clstag="thirdtype|keycount|thirdtype|m" id="da211x261-1"></div>
+    </div>
+    <!--left end-->
+    <span class="clr"></span>
+    <div id="Collect_Tip" class="Tip360 w260"></div>
+</div>
+
+<script>
+
+
+
+    function refreshPrice(area) {
+        var skuids = [],
+                hotSalePriceQ = $("#hotsale .p-price"),
+                weekRankPriceQ = $("#weekRank .p-price"),
+                skuId;
+
+        for (var i = 0, l=hotSalePriceQ.length; i < l; i++) {
+            skuId = hotSalePriceQ.eq(i).attr('sku');
+            if ( skuId ) {
+                skuids.push( skuId );
+            }
+        }
+        for (var i = 0, l=weekRankPriceQ.length; i < l; i++) {
+            skuId = weekRankPriceQ.eq(i).attr('sku');
+            if ( skuId ) {
+                skuids.push( skuId );
+            }
+        }
+
+        function getPrice(skuids) {
+            if ( !skuids || skuids.length == 0 ) {
+                return;
+            }
+
+
+            $.ajax({
+                url: 'http://p.3.cn/prices/mgets?skuIds=J_' + skuids.join(',J_') + '&type=1&area='+area,
+                dataType: 'jsonp',
+                success: function(r) {
+                    if ( !r && !r.length ) { return false; }
+                    for ( var i = 0; i < r.length; i++ ) {
+                        var sku = r[i].id.replace('J_', '');
+                        var price = r[i].p;
+                        if ( price > 0 ) {
+                            $(".p-price[sku='"+sku+"']").children("strong").html( '\uffe5' + price);
+                        } else {
+                            $(".p-price[sku='"+sku+"']").children("strong").html( '暂无报价' );
+                        }
+                    }
+                }
+            });
+        }
+        getPrice(skuids);
+    };
+
+
+
+</script>
+
+<script type="text/javascript">
+
+
+
+    var weekRank2Effect = function (){
+        var firstNode = $("#weekRank li").eq(0);
+
+        function  bindEvent(linode,i){
+            linode.bind('mouseover',function(){
+                if( i != 0 ) {
+                    firstNode.removeClass('fore').find('.p-img').hide();
+                    firstNode.find('.p-price').hide();
+
+                    linode.addClass('fore').find('.p-img').show();
+                    linode.find('.p-price').show();
+                }
+            }).bind('mouseout',function(){
+                        if( i != 0 ) {
+                            linode.removeClass('fore').find('.p-img').hide();
+                            linode.find('.p-price').hide();
+
+                            firstNode.addClass('fore').find('.p-img').show();
+                            firstNode.find('.p-price').show();
+                        }
+                    });
+        }
+        $("#weekRank").find("li").each(function(i){
+            var linode = $(this);
+            bindEvent(linode,i);
+        });
+    }
+
+    weekRank2Effect();
+</script>
+<div class="w">
+    <div id="product-track">
+        <div class="right">
+            <div id="maybe-like" class="m m2" data-widget="tabs">
+                <div class="mt">
+                    <h2>根据浏览猜你喜欢</h2>
+                    <div class="extra">
+                    </div>
+                </div>
+                <div class="mc">
+                    <div class="iloading">正在加载中，请稍候...</div>
+                </div>
+            </div>
+            <!--maybe-like-->
+        </div><!-- right -->
+        <div class="left">
+            <div id="recent-view-track" class="m m2">
+                <div class="mt">
+                    <h2>最近浏览</h2>
+                </div>
+                <div class="mc">
+                    <div class="iloading">正在加载中，请稍候...</div>
+                </div>
+            </div>
+            <!--recent-view-track end-->
+        </div><!-- left -->
+        <span class="clr"></span>
+    </div>
+</div>
+<script type='text/javascript'>
+    if( window.screen.width < 1210 ){
+        document.write('\<script\>jd_ad_client = 89;jd_ad_width = 990;jd_ad_height = 115;jd_ad_type=8;jd_ad_spread=1;jd_ad_num=1;jd_ad_category=�;\</script\>\<script src="http://static.360buyimg.com/dsp/ssp.js" type="text/javascript"\>\</script\>')
+    } else {
+        document.write('\<script\>jd_ad_client = 94;jd_ad_width = 1210;jd_ad_height = 115;jd_ad_type=8;jd_ad_spread=1;jd_ad_num=1;jd_ad_category=751;\</script\>\<script src="http://static.360buyimg.com/dsp/ssp.js" type="text/javascript"\>\</script\>')
+    }
+</script>
+<div class="w">
+    <div id="service-2013">
+        <dl class="fore1">
+            <dt><b></b><strong>购物指南</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-56.html" target="_blank" rel="nofollow">购物流程</a></div>
+                <div><a href="http://help.jd.com/help/question-57.html" target="_blank" rel="nofollow">会员介绍</a></div>
+                <div><a href="http://help.jd.com/help/question-181.html" target="_blank" rel="nofollow">团购/机票</a></div>
+                <div><a href="http://help.jd.com/help/question-61.html" target="_blank" rel="nofollow">常见问题</a></div>
+                <div><a href="http://help.jd.com/help/question-63.html" target="_blank" rel="nofollow">大家电</a></div>
+                <div><a href="http://help.jd.com/index.html" target="_blank" rel="nofollow">联系客服</a></div>
+            </dd>
+        </dl>
+        <dl class="fore2">
+            <dt><b></b><strong>配送方式</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-64.html" target="_blank" rel="nofollow">上门自提</a></div>
+                <div><a href="http://help.jd.com/help/question-360.html" target="_blank" rel="nofollow">211限时达</a></div>
+                <div><a href="http://help.jd.com/help/distribution-768.html" target="_blank" rel="nofollow">配送服务查询</a></div>
+                <div><a href="http://help.jd.com/help/question-892.html#help2215" target="_blank" rel="nofollow">配送费收取标准</a></div>
+                <div><a href="http://market.jd.com/giftcard/index.html#one5" target="_blank" rel="nofollow">如何送礼</a></div>
+                <div><a href="http://help.en.360buy.com/help/question-2.html" target="_blank">Global Shipping</a></div>
+            </dd>
+        </dl>
+        <dl class="fore3">
+            <dt><b></b><strong>支付方式</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-67.html" target="_blank" rel="nofollow">货到付款</a></div>
+                <div><a href="http://help.jd.com/help/question-68.html" target="_blank" rel="nofollow">在线支付</a></div>
+                <div><a href="http://help.jd.com/help/question-71.html" target="_blank" rel="nofollow">分期付款</a></div>
+                <div><a href="http://help.jd.com/help/question-69.html" target="_blank" rel="nofollow">邮局汇款</a></div>
+                <div><a href="http://help.jd.com/help/question-70.html" target="_blank" rel="nofollow">公司转账</a></div>
+            </dd>
+        </dl>
+        <dl class="fore4">
+            <dt><b></b><strong>售后服务</strong></dt>
+            <dd>
+                <div><a href="http://myjd.jd.com/afs/help/afshelp.action" target="_blank" rel="nofollow">售后政策</a></div>
+                <div><a href="http://help.jd.com/help/question-99.html" target="_blank" rel="nofollow">价格保护</a></div>
+                <div><a href="http://help.jd.com/help/question-100.html" target="_blank" rel="nofollow">退款说明</a></div>
+                <div><a href="http://myjd.jd.com/repair/repairs.action" target="_blank" rel="nofollow">返修/退换货</a></div>
+                <div><a href="http://help.jd.com/help/question-881.html" target="_blank" rel="nofollow">取消订单</a></div>
+            </dd>
+        </dl>
+        <dl class="fore5">
+            <dt><b></b><strong>特色服务</strong></dt>
+            <dd>
+                <div><a href="http://help.jd.com/help/question-79.html" target="_blank">夺宝岛</a></div>
+                <div><a href="http://help.jd.com/help/question-86.html" target="_blank">DIY装机</a></div>
+                <div><a href="http://fuwu.jd.com/" target="_blank" rel="nofollow">延保服务</a></div>
+                <div><a href="http://market.jd.com/giftcard/index.html" target="_blank" rel="nofollow">京东卡</a></div>
+                <div><a href="http://help.jd.com/help/question-91.html" target="_blank" rel="nofollow">节能补贴</a></div>
+            </dd>
+        </dl>
+        <span class="clr"></span>
+    </div>
+</div><!-- service end -->
+<div class="w">
+    <div id="footer-2013">
+        <div class="links"><a href="http://www.jd.com/intro/about.aspx" target="_blank" rel="nofollow">关于我们</a>|<a href="http://www.jd.com/contact/" target="_blank" rel="nofollow">联系我们</a>|<a href="http://zhaopin.jd.com/" target="_blank" rel="nofollow">人才招聘</a>|<a href="http://www.jd.com/contact/joinin.aspx" target="_blank" rel="nofollow">商家入驻</a>|<a href="http://sale.jd.com/act/y3surX7qpM.html" target="_blank" rel="nofollow">广告服务</a>|<a href="http://app.jd.com/" target="_blank" rel="nofollow">手机京东</a>|<a href="http://club.jd.com/links.aspx" target="_blank">友情链接</a>|<a href="http://cps.jd.com/" target="_blank">销售联盟</a>|<a target="_blank" href="http://club.jd.com/">京东社区</a>|<a target="_blank" href="http://gongyi.jd.com">京东公益</a></div>
+        <div class="copyright">北京市公安局朝阳分局备案编号110105014669&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;互联网药品信息服务资格证编号(京)-非经营性-2011-0034<br><a target="_blank" href="http://misc.360buyimg.com/skin/df/i/com/f_music.jpg" rel="nofollow">音像制品经营许可证苏宿批005号</a>&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证编号新出发(苏)批字第N-012号&nbsp;&nbsp;|&nbsp;&nbsp;互联网出版许可证编号新出网证(京)字150号<br><a target="_blank" href="http://misc.360buyimg.com/wz/wlwhjyxkz.jpg">网络文化经营许可证京网文[2011]0168-061号</a>&nbsp;&nbsp;Copyright&nbsp;&copy;&nbsp;2004-2014&nbsp;&nbsp;京东JD.com&nbsp;版权所有<br />京东旗下网站：<a href="http://www.360top.com/" target="_blank">360TOP</a>&nbsp;&nbsp;<a target="_blank" href="http://en.jd.com/">English Site</a></div>
+        <div class="authentication"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026" target="_blank" rel="nofollow"><img data-lazyload="http://img10.360buyimg.com/da/20110329/108_40_zZOKnl.gif" width="108" height="40" alt="经营性网站备案中心"></a><script type="text/JavaScript">function CNNIC_change(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=CNNIC_RndNum(6); document.getElementById(eleId).href=str1;}function CNNIC_RndNum(k){var rnd=""; for (var i=0;i < k;i++) rnd+=Math.floor(Math.random()*10); return rnd;}</script><a href="https://ss.cnnic.cn/verifyseal.dll?sn=2008070300100000031&ct=df&pa=294005" tabindex="-1" id="urlknet" target="_blank" rel="nofollow"><img alt="&#x53EF;&#x4FE1;&#x7F51;&#x7AD9;" name="CNNIC_seal" border="true" data-lazyload="http://img11.360buyimg.com/da/g8/M03/0C/0E/rBEHaFCFC5QIAAAAAAASVQX9RAYAACb2wHUV1kAABJt760.gif" width="108" height="40" oncontextmenu="return false;" onclick="CNNIC_change('urlknet')" /></a><a href="http://www.bj.cyberpolice.cn/index.do" target="_blank" rel="nofollow"><img data-lazyload="http://img12.360buyimg.com/da/g5/M02/0D/17/rBEIDE_nzcIIAAAAAAB30mYXo5QAACrhACj22IAAHfq378.png" width="108" height="40" alt="朝阳网络警察"></a><a href="https://search.szfw.org/cert/l/CX20120111001803001836" target="_blank" rel="nofollow"><img data-lazyload="http://img13.360buyimg.com/da/20120221/112_40_WvArIl.png" width="112" height="40"></a></div>
+    </div>
+</div><!-- footer end -->
+
+<script type="text/javascript">(function(){var hotwords="<strong>热门搜索：</strong><a href='http://search.360buy.com/Search?keyword=%E6%B2%99%E6%BC%A0%E9%A3%8E%E6%9A%B4&enc=utf-8' target='_blank' style='color: #CC0000'>沙漠风暴</a><a href='http://search.360buy.com/Search?keyword=尼康S5100' target='_blank'>尼康S5100</a><a href='http://search.360buy.com/Search?keyword=三星I8250'target='_blank'>三星I8250</a><a href=http://search.360buy.com/Search?keyword=%E5%8F%B0%E7%94%B5%20P85&enc=utf-8&area=1' target='_blank'>台电 P85</a><a href='http://search.360buy.com/Search?keyword=诺基亚 808' target='_blank'>诺基亚 808</a><a href='http://search.360buy.com/Search?keyword=RCA播放器' target='_blank'>RCA播放器</a><a href='http://search.360buy.com/Search?keyword=中兴 U970' target='_blank'>中兴 U970</a><a href='http://search.360buy.com/Search?keyword=三星I569' target='_blank'>三星I569</a><a href='http://search.360buy.com/Search?keyword=i5508' target='_blank'>i5508</a><a href='http://search.360buy.com/Search?keyword=C6' target='_blank'>C6</a>";
+    var keywords="One xc";
+    $("#hotwords").html(hotwords);
+    $("#key").val(keywords).bind("focus",function(){
+        if (this.value==keywords){this.value="";this.style.color="#333"}
+    }).bind("blur",function(){
+                if (this.value==""){this.value=keywords;this.style.color="#999"}
+            });
+})();
+</script>
+<script type="text/javascript" src="http://misc.360buyimg.com/lib/js/2012/lib-v1.js?t=20120809"></script>
+<script type="text/javascript">$("#filter .type").hoverForIE6();</script>
+<script type="text/javascript">$.jdCalcul([537]);</script>
+<script type="text/javascript">pageConfig.FN_InitContrast();</script>
+<script type="text/javascript" src="http://misc.360buyimg.com/201007/js/p.plist20121206.js" charset="gbk" ></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/201007/js/list.recommend20140423.js" ></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/product/js/2012/footprint.js"></script>
+<script type="text/javascript">
+    (function(){
+        var ref=document.referrer;
+        if(ref && ref.indexOf("jd.com")==-1 && ref.indexOf("360buy.com")==-1 ){
+            ListRecP(751);
+        }
+    })();
+    function feed_publish_collect(type,wid){jQuery.getJSON("http://i.360buy.com/feed/send.action?type="+type+"&commodityId="+wid+"&jsoncallback=?",function(json){})}
+    if($("#hotsale").length>0){log('thirdtype', 'showhotsale_M');}
+</script>
+<script type="text/javascript">
+    var sidePanle=new pageConfig.FN_InitSidebar();
+    sidePanle.addItem("<a class='research' target='_blank' href='http://surveys.jd.com/index.php?r=survey/index/sid/73453/lang/zh-Hans'><b></b>调查问卷</a>")
+    sidePanle.setTop();
+    sidePanle.scroll();
+</script>
+<script type="text/javascript" src="http://fa.jd.com/loadFa.js?aid=2_145_765"></script>
+<script type="text/javascript" src="http://d.360buy.com/hotwords/get?position=A-electronic-011"></script>
+<script type='text/javascript'>
+    //区域销售
+    var iplocation = {"1": { name: "北京", root: 0, djd: 1,c:72 },"2": { name: "上海", root: 1, djd: 1,c:78 },"3": { name: "天津", root: 0, djd: 1,c:51035 },"4": { name: "重庆", root: 3, djd: 1,c:113 },"5": { name: "河北", root: 0, djd: 1,c:142 },
+        "6": { name: "山西", root: 0, djd: 1,c:303 },"7": { name: "河南", root: 0, djd: 1,c:412 },"8": { name: "辽宁", root: 0, djd: 1,c:560 },"9": { name: "吉林", root: 0, djd: 1,c:639 },"10": { name: "黑龙江", root: 0, djd: 1,c:698 },
+        "11": { name: "内蒙古", root: 0, djd: 0,c:799 },"12": { name: "江苏", root: 1, djd: 1,c:904 },"13": { name: "山东", root: 0, djd: 1,c:1000 },"14": { name: "安徽", root: 1, djd: 1,c:1116 },"15": { name: "浙江", root: 1, djd: 1,c:1158 },
+        "16": { name: "福建", root: 2, djd: 1,c:1303 },"17": { name: "湖北", root: 0, djd: 1,c:1381 },"18": { name: "湖南", root: 2, djd: 1,c:1482 },"19": { name: "广东", root: 2, djd: 1,c:1601 },"20": { name: "广西", root: 2, djd: 1,c:1715 },
+        "21": { name: "江西", root: 2, djd: 1,c:1827 },"22": { name: "四川", root: 3, djd: 1,c:1930 },"23": { name: "海南", root: 2, djd: 1,c:2121 },"24": { name: "贵州", root: 3, djd: 1,c:2144 },"25": { name: "云南", root: 3, djd: 1,c:2235 },
+        "26": { name: "西藏", root: 3, djd: 0,c:2951 },"27": { name: "陕西", root: 3, djd: 1,c:2376 },"28": { name: "甘肃", root: 3, djd: 1,c:2487 },"29": { name: "青海", root: 3, djd: 0,c:2580 },"30": { name: "宁夏", root: 3, djd: 1,c:2628 },
+        "31": { name: "新疆", root: 3, djd: 0,c:2652 },"32": { name: "台湾", root: 2, djd: 0,c:2768 },"42": { name: "香港", root: 2, djd: 0,c:2754 },"43": { name: "澳门", root: 2, djd: 0,c:2770 },"84": { name: "钓鱼岛", root: 2, djd: 0,c:84 }};
+    var provinceCityJson = {"1":[{"id":72,"name":"朝阳区"},{"id":2800,"name":"海淀区"},{"id":2801,"name":"西城区"},{"id":2802,"name":"东城区"},{"id":2803,"name":"崇文区"},{"id":2804,"name":"宣武区"},{"id":2805,"name":"丰台区"},{"id":2806,"name":"石景山区"},{"id":2807,"name":"门头沟"},{"id":2808,"name":"房山区"},{"id":2809,"name":"通州区"},{"id":2810,"name":"大兴区"},{"id":2812,"name":"顺义区"},{"id":2814,"name":"怀柔区"},{"id":2816,"name":"密云区"},{"id":2901,"name":"昌平区"},{"id":2953,"name":"平谷区"},{"id":3065,"name":"延庆县"}],"2":[{"id":2811,"name":"卢湾区"},{"id":2813,"name":"徐汇区"},{"id":2815,"name":"长宁区"},{"id":2817,"name":"静安区"},{"id":2820,"name":"闸北区"},{"id":2822,"name":"虹口区"},{"id":2823,"name":"杨浦区"},{"id":2824,"name":"宝山区"},{"id":2825,"name":"闵行区"},{"id":2826,"name":"嘉定区"},{"id":2830,"name":"浦东新区"},{"id":2833,"name":"青浦区"},{"id":2834,"name":"松江区"},{"id":2835,"name":"金山区"},{"id":2836,"name":"南汇区"},{"id":2837,"name":"奉贤区"},{"id":2841,"name":"普陀区"},{"id":2919,"name":"崇明县"},{"id":78,"name":"黄浦区"}],"3":[{"id":51035,"name":"东丽区"},{"id":51036,"name":"和平区"},{"id":51037,"name":"河北区"},{"id":51038,"name":"河东区"},{"id":51039,"name":"河西区"},{"id":51040,"name":"红桥区"},{"id":51041,"name":"蓟县"},{"id":51042,"name":"静海县"},{"id":51043,"name":"南开区"},{"id":51044,"name":"塘沽区"},{"id":51045,"name":"西青区"},{"id":51046,"name":"武清区"},{"id":51047,"name":"津南区"},{"id":51048,"name":"汉沽区"},{"id":51049,"name":"大港区"},{"id":51050,"name":"北辰区"},{"id":51051,"name":"宝坻区"},{"id":51052,"name":"宁河县"}],"4":[{"id":113,"name":"万州区"},{"id":114,"name":"涪陵区"},{"id":115,"name":"梁平县"},{"id":119,"name":"南川区"},{"id":123,"name":"潼南县"},{"id":126,"name":"大足区"},{"id":128,"name":"黔江区"},{"id":129,"name":"武隆县"},{"id":130,"name":"丰都县"},{"id":131,"name":"奉节县"},{"id":132,"name":"开县"},{"id":133,"name":"云阳县"},{"id":134,"name":"忠县"},{"id":135,"name":"巫溪县"},{"id":136,"name":"巫山县"},{"id":137,"name":"石柱县"},{"id":138,"name":"彭水县"},{"id":139,"name":"垫江县"},{"id":140,"name":"酉阳县"},{"id":141,"name":"秀山县"},{"id":48131,"name":"璧山县"},{"id":48132,"name":"荣昌县"},{"id":48133,"name":"铜梁县"},{"id":48201,"name":"合川区"},{"id":48202,"name":"巴南区"},{"id":48203,"name":"北碚区"},{"id":48204,"name":"江津区"},{"id":48205,"name":"渝北区"},{"id":48206,"name":"长寿区"},{"id":48207,"name":"永川区"},{"id":50950,"name":"江北区"},{"id":50951,"name":"南岸区"},{"id":50952,"name":"九龙坡区"},{"id":50953,"name":"沙坪坝区"},{"id":50954,"name":"大渡口区"},{"id":50995,"name":"綦江区"},{"id":51026,"name":"渝中区"},{"id":51027,"name":"高新区"},{"id":51028,"name":"北部新区"},{"id":4164,"name":"城口县"},{"id":3076,"name":"高新区"}],"5":[{"id":142,"name":"石家庄市"},{"id":148,"name":"邯郸市"},{"id":164,"name":"邢台市"},{"id":199,"name":"保定市"},{"id":224,"name":"张家口市"},{"id":239,"name":"承德市"},{"id":248,"name":"秦皇岛市"},{"id":258,"name":"唐山市"},{"id":264,"name":"沧州市"},{"id":274,"name":"廊坊市"},{"id":275,"name":"衡水市"}],"6":[{"id":303,"name":"太原市"},{"id":309,"name":"大同市"},{"id":318,"name":"阳泉市"},{"id":325,"name":"晋城市"},{"id":330,"name":"朔州市"},{"id":336,"name":"晋中市"},{"id":350,"name":"忻州市"},{"id":368,"name":"吕梁市"},{"id":379,"name":"临汾市"},{"id":398,"name":"运城市"},{"id":3074,"name":"长治市"}],"7":[{"id":412,"name":"郑州市"},{"id":420,"name":"开封市"},{"id":427,"name":"洛阳市"},{"id":438,"name":"平顶山市"},{"id":446,"name":"焦作市"},{"id":454,"name":"鹤壁市"},{"id":458,"name":"新乡市"},{"id":468,"name":"安阳市"},{"id":475,"name":"濮阳市"},{"id":482,"name":"许昌市"},{"id":489,"name":"漯河市"},{"id":495,"name":"三门峡市"},{"id":502,"name":"南阳市"},{"id":517,"name":"商丘市"},{"id":527,"name":"周口市"},{"id":538,"name":"驻马店市"},{"id":549,"name":"信阳市"},{"id":2780,"name":"济源市"}],"8":[{"id":560,"name":"沈阳市"},{"id":573,"name":"大连市"},{"id":579,"name":"鞍山市"},{"id":584,"name":"抚顺市"},{"id":589,"name":"本溪市"},{"id":593,"name":"丹东市"},{"id":598,"name":"锦州市"},{"id":604,"name":"葫芦岛市"},{"id":609,"name":"营口市"},{"id":613,"name":"盘锦市"},{"id":617,"name":"阜新市"},{"id":621,"name":"辽阳市"},{"id":632,"name":"朝阳市"},{"id":6858,"name":"铁岭市"}],"9":[{"id":639,"name":"长春市"},{"id":644,"name":"吉林市"},{"id":651,"name":"四平市"},{"id":2992,"name":"辽源市"},{"id":657,"name":"通化市"},{"id":664,"name":"白山市"},{"id":674,"name":"松原市"},{"id":681,"name":"白城市"},{"id":687,"name":"延边州"}],"10":[{"id":727,"name":"鹤岗市"},{"id":731,"name":"双鸭山市"},{"id":737,"name":"鸡西市"},{"id":742,"name":"大庆市"},{"id":753,"name":"伊春市"},{"id":757,"name":"牡丹江市"},{"id":765,"name":"佳木斯市"},{"id":773,"name":"七台河市"},{"id":776,"name":"黑河市"},{"id":782,"name":"绥化市"},{"id":793,"name":"大兴安岭地区"},{"id":698,"name":"哈尔滨市"},{"id":712,"name":"齐齐哈尔市"}],"11":[{"id":799,"name":"呼和浩特市"},{"id":805,"name":"包头市"},{"id":810,"name":"乌海市"},{"id":812,"name":"赤峰市"},{"id":823,"name":"乌兰察布市"},{"id":835,"name":"锡林郭勒盟"},{"id":848,"name":"呼伦贝尔市"},{"id":870,"name":"鄂尔多斯市"},{"id":880,"name":"巴彦淖尔市"},{"id":891,"name":"阿拉善盟"},{"id":895,"name":"兴安盟"},{"id":902,"name":"通辽市"}],"12":[{"id":904,"name":"南京市"},{"id":911,"name":"徐州市"},{"id":919,"name":"连云港市"},{"id":925,"name":"淮安市"},{"id":933,"name":"宿迁市"},{"id":939,"name":"盐城市"},{"id":951,"name":"扬州市"},{"id":959,"name":"泰州市"},{"id":965,"name":"南通市"},{"id":972,"name":"镇江市"},{"id":978,"name":"常州市"},{"id":984,"name":"无锡市"},{"id":988,"name":"苏州市"}],"13":[{"id":2900,"name":"济宁市"},{"id":1000,"name":"济南市"},{"id":1007,"name":"青岛市"},{"id":1016,"name":"淄博市"},{"id":1022,"name":"枣庄市"},{"id":1025,"name":"东营市"},{"id":1032,"name":"潍坊市"},{"id":1042,"name":"烟台市"},{"id":1053,"name":"威海市"},{"id":1058,"name":"莱芜市"},{"id":1060,"name":"德州市"},{"id":1072,"name":"临沂市"},{"id":1081,"name":"聊城市"},{"id":1090,"name":"滨州市"},{"id":1099,"name":"菏泽市"},{"id":1108,"name":"日照市"},{"id":1112,"name":"泰安市"}],"14":[{"id":1151,"name":"黄山市"},{"id":1159,"name":"滁州市"},{"id":1167,"name":"阜阳市"},{"id":1174,"name":"亳州市"},{"id":1180,"name":"宿州市"},{"id":1201,"name":"池州市"},{"id":1206,"name":"六安市"},{"id":2971,"name":"宣城市"},{"id":1114,"name":"铜陵市"},{"id":1116,"name":"合肥市"},{"id":1121,"name":"淮南市"},{"id":1124,"name":"淮北市"},{"id":1127,"name":"芜湖市"},{"id":1132,"name":"蚌埠市"},{"id":1137,"name":"马鞍山市"},{"id":1140,"name":"安庆市"}],"15":[{"id":1158,"name":"宁波市"},{"id":1273,"name":"衢州市"},{"id":1280,"name":"丽水市"},{"id":1290,"name":"台州市"},{"id":1298,"name":"舟山市"},{"id":1213,"name":"杭州市"},{"id":1233,"name":"温州市"},{"id":1243,"name":"嘉兴市"},{"id":1250,"name":"湖州市"},{"id":1255,"name":"绍兴市"},{"id":1262,"name":"金华市"}],"16":[{"id":1303,"name":"福州市"},{"id":1315,"name":"厦门市"},{"id":1317,"name":"三明市"},{"id":1329,"name":"莆田市"},{"id":1332,"name":"泉州市"},{"id":1341,"name":"漳州市"},{"id":1352,"name":"南平市"},{"id":1362,"name":"龙岩市"},{"id":1370,"name":"宁德市"}],"17":[{"id":1432,"name":"孝感市"},{"id":1441,"name":"黄冈市"},{"id":1458,"name":"咸宁市"},{"id":1466,"name":"恩施州"},{"id":1475,"name":"鄂州市"},{"id":1477,"name":"荆门市"},{"id":1479,"name":"随州市"},{"id":3154,"name":"神农架林区"},{"id":1381,"name":"武汉市"},{"id":1387,"name":"黄石市"},{"id":1396,"name":"襄阳市"},{"id":1405,"name":"十堰市"},{"id":1413,"name":"荆州市"},{"id":1421,"name":"宜昌市"},{"id":2922,"name":"潜江市"},{"id":2980,"name":"天门市"},{"id":2983,"name":"仙桃市"}],"18":[{"id":4250,"name":"耒阳市"},{"id":1482,"name":"长沙市"},{"id":1488,"name":"株洲市"},{"id":1495,"name":"湘潭市"},{"id":1499,"name":"韶山市"},{"id":1501,"name":"衡阳市"},{"id":1511,"name":"邵阳市"},{"id":1522,"name":"岳阳市"},{"id":1530,"name":"常德市"},{"id":1540,"name":"张家界市"},{"id":1544,"name":"郴州市"},{"id":1555,"name":"益阳市"},{"id":1560,"name":"永州市"},{"id":1574,"name":"怀化市"},{"id":1586,"name":"娄底市"},{"id":1592,"name":"湘西州"}],"19":[{"id":1601,"name":"广州市"},{"id":1607,"name":"深圳市"},{"id":1609,"name":"珠海市"},{"id":1611,"name":"汕头市"},{"id":1617,"name":"韶关市"},{"id":1627,"name":"河源市"},{"id":1634,"name":"梅州市"},{"id":1709,"name":"揭阳市"},{"id":1643,"name":"惠州市"},{"id":1650,"name":"汕尾市"},{"id":1655,"name":"东莞市"},{"id":1657,"name":"中山市"},{"id":1659,"name":"江门市"},{"id":1666,"name":"佛山市"},{"id":1672,"name":"阳江市"},{"id":1677,"name":"湛江市"},{"id":1684,"name":"茂名市"},{"id":1690,"name":"肇庆市"},{"id":1698,"name":"云浮市"},{"id":1704,"name":"清远市"},{"id":1705,"name":"潮州市"}],"20":[{"id":3168,"name":"崇左市"},{"id":1715,"name":"南宁市"},{"id":1720,"name":"柳州市"},{"id":1726,"name":"桂林市"},{"id":1740,"name":"梧州市"},{"id":1746,"name":"北海市"},{"id":1749,"name":"防城港市"},{"id":1753,"name":"钦州市"},{"id":1757,"name":"贵港市"},{"id":1761,"name":"玉林市"},{"id":1792,"name":"贺州市"},{"id":1806,"name":"百色市"},{"id":1818,"name":"河池市"},{"id":3044,"name":"来宾市"}],"21":[{"id":1827,"name":"南昌市"},{"id":1832,"name":"景德镇市"},{"id":1836,"name":"萍乡市"},{"id":1842,"name":"新余市"},{"id":1845,"name":"九江市"},{"id":1857,"name":"鹰潭市"},{"id":1861,"name":"上饶市"},{"id":1874,"name":"宜春市"},{"id":1885,"name":"抚州市"},{"id":1898,"name":"吉安市"},{"id":1911,"name":"赣州市"}],"22":[{"id":2103,"name":"凉山州"},{"id":1930,"name":"成都市"},{"id":1946,"name":"自贡市"},{"id":1950,"name":"攀枝花市"},{"id":1954,"name":"泸州市"},{"id":1960,"name":"绵阳市"},{"id":1962,"name":"德阳市"},{"id":1977,"name":"广元市"},{"id":1983,"name":"遂宁市"},{"id":1988,"name":"内江市"},{"id":1993,"name":"乐山市"},{"id":2005,"name":"宜宾市"},{"id":2016,"name":"广安市"},{"id":2022,"name":"南充市"},{"id":2033,"name":"达州市"},{"id":2042,"name":"巴中市"},{"id":2047,"name":"雅安市"},{"id":2058,"name":"眉山市"},{"id":2065,"name":"资阳市"},{"id":2070,"name":"阿坝州"},{"id":2084,"name":"甘孜州"}],"23":[{"id":3690,"name":"三亚市"},{"id":3698,"name":"文昌市"},{"id":3699,"name":"五指山市"},{"id":3701,"name":"临高县"},{"id":3702,"name":"澄迈县"},{"id":3703,"name":"定安县"},{"id":3704,"name":"屯昌县"},{"id":3705,"name":"昌江县"},{"id":3706,"name":"白沙县"},{"id":3707,"name":"琼中县"},{"id":3708,"name":"陵水县"},{"id":3709,"name":"保亭县"},{"id":3710,"name":"乐东县"},{"id":3711,"name":"三沙市"},{"id":2121,"name":"海口市"},{"id":3115,"name":"琼海市"},{"id":3137,"name":"万宁市"},{"id":3173,"name":"东方市"},{"id":3034,"name":"儋州市"}],"24":[{"id":2144,"name":"贵阳市"},{"id":2150,"name":"六盘水市"},{"id":2155,"name":"遵义市"},{"id":2169,"name":"铜仁市"},{"id":2180,"name":"毕节市"},{"id":2189,"name":"安顺市"},{"id":2196,"name":"黔西南州"},{"id":2205,"name":"黔东南州"},{"id":2222,"name":"黔南州"}],"25":[{"id":4108,"name":"迪庆州"},{"id":2235,"name":"昆明市"},{"id":2247,"name":"曲靖市"},{"id":2258,"name":"玉溪市"},{"id":2270,"name":"昭通市"},{"id":2281,"name":"普洱市"},{"id":2291,"name":"临沧市"},{"id":2298,"name":"保山市"},{"id":2304,"name":"丽江市"},{"id":2309,"name":"文山州"},{"id":2318,"name":"红河州"},{"id":2332,"name":"西双版纳州"},{"id":2336,"name":"楚雄州"},{"id":2347,"name":"大理州"},{"id":2360,"name":"德宏州"},{"id":2366,"name":"怒江州"}],"26":[{"id":3970,"name":"阿里地区"},{"id":3971,"name":"林芝地区"},{"id":2951,"name":"拉萨市"},{"id":3107,"name":"那曲地区"},{"id":3129,"name":"山南地区"},{"id":3138,"name":"昌都地区"},{"id":3144,"name":"日喀则地区"}],"27":[{"id":2428,"name":"延安市"},{"id":2442,"name":"汉中市"},{"id":2454,"name":"榆林市"},{"id":2468,"name":"商洛市"},{"id":2476,"name":"安康市"},{"id":2376,"name":"西安市"},{"id":2386,"name":"铜川市"},{"id":2390,"name":"宝鸡市"},{"id":2402,"name":"咸阳市"},{"id":2416,"name":"渭南市"}],"28":[{"id":2525,"name":"庆阳市"},{"id":2534,"name":"陇南市"},{"id":2544,"name":"武威市"},{"id":2549,"name":"张掖市"},{"id":2556,"name":"酒泉市"},{"id":2564,"name":"甘南州"},{"id":2573,"name":"临夏州"},{"id":3080,"name":"定西市"},{"id":2487,"name":"兰州市"},{"id":2492,"name":"金昌市"},{"id":2495,"name":"白银市"},{"id":2501,"name":"天水市"},{"id":2509,"name":"嘉峪关市"},{"id":2518,"name":"平凉市"}],"29":[{"id":2580,"name":"西宁市"},{"id":2585,"name":"海东地区"},{"id":2592,"name":"海北州"},{"id":2597,"name":"黄南州"},{"id":2603,"name":"海南州"},{"id":2605,"name":"果洛州"},{"id":2612,"name":"玉树州"},{"id":2620,"name":"海西州"}],"30":[{"id":2628,"name":"银川市"},{"id":2632,"name":"石嘴山市"},{"id":2637,"name":"吴忠市"},{"id":2644,"name":"固原市"},{"id":3071,"name":"中卫市"}],"31":[{"id":4110,"name":"五家渠市"},{"id":4163,"name":"博尔塔拉蒙古自治州阿拉山口口岸"},{"id":15945,"name":"阿拉尔市"},{"id":15946,"name":"图木舒克市"},{"id":2652,"name":"乌鲁木齐市"},{"id":2654,"name":"克拉玛依市"},{"id":2656,"name":"石河子市"},{"id":2658,"name":"吐鲁番地区"},{"id":2662,"name":"哈密地区"},{"id":2666,"name":"和田地区"},{"id":2675,"name":"阿克苏地区"},{"id":2686,"name":"喀什地区"},{"id":2699,"name":"克孜勒苏州"},{"id":2704,"name":"巴音郭楞州"},{"id":2714,"name":"昌吉州"},{"id":2723,"name":"博尔塔拉州"},{"id":2727,"name":"伊犁州"},{"id":2736,"name":"塔城地区"},{"id":2744,"name":"阿勒泰地区"}],"32":[{"id":2768,"name":"台湾市"}],"42":[{"id":2754,"name":"香港特别行政区"}],"43":[{"id":2770,"name":"澳门市"}],"84":[{"id":1310,"name":"钓鱼岛"}]};
+
+
+    var selectedProvinceId,selectedCityId,selectedAreaId,selectedProvinceId,selectedCityName,selectedAreaName;
+
+    function getAreaStoreUrl(areaId){
+        var urlArrCopy = new Array();
+        for( var i = 0; i < urlArr.length; i++) {
+            urlArrCopy.push(urlArr[i])
+        }
+
+        urlArrCopy[14] = selectedProvinceId;
+        urlArrCopy[15] = selectedCityId;
+        urlArrCopy[16] = areaId;
+
+        if(paras[1]==794||paras[1]==6880||paras[2]==655){
+            urlArrCopy[17] = "33";
+        }
+
+        var url = urlArrCopy.join('-');
+
+        url += ".html";
+
+        return url;
+    }
+
+    function selectStoreTab(index) {
+        if(index == 0) {
+            $('dl.store div.mt li').eq(0).find('em').text('请选择');
+            $('dl.store div.mt li').eq(1).addClass('hide').find('em').text("请选择");
+            $('dl.store div.mt li').eq(2).addClass('hide').find('em').text("请选择");;
+            $('dl.store [data-widget=tab-item]').eq(0).addClass('curr');
+            $('dl.store [data-area="0"]').removeClass('hide');
+            $('dl.store [data-area="1"]').addClass('hide');
+            $('dl.store [data-area="2"]').addClass('hide');
+
+        } else if(index == 1) {
+            $('dl.store [data-widget=tab-item]').eq(1).addClass('curr').find('em').text('请选择');
+
+            $('dl.store [data-area="1"]').removeClass('hide');
+
+            $('dl.store div.mt li').eq(2).addClass('hide').find('em').text('请选择');
+            $('dl.store [data-area="2"]').addClass('hide');
+
+        } else if(index == 2) {
+        }
+    }
+
+    function getAreaList_callback(data){
+        $('dl.store div[data-area="1"]').addClass('hide');
+        $('dl.store div[data-area="2"]').removeClass('hide');
+        $('dl.store div[data-area="2"] p.ac').addClass('hide');
+
+
+        var thirdTabPanel = $('dl.store div.mc[data-area="2"] ul').empty();
+        var areaStr="",
+            areaLongStr="",
+            areaLongerStr="";
+
+        for(var i = 0;i < data.length; i++){
+            var item = data[i];
+            var name = item['name'];
+            var url = getAreaStoreUrl(item['id']);
+            if(name.length <= 5){
+                areaStr += "<li><a data-value='" + item['id'] + "' href='" + url + "'>" + item['name'] + "</a></li>";
+            }else if(name.length <= 11){
+                areaLongStr += "<li class='long-area'><a data-value='" + item['id'] + "' href='" + url + "'>" + item['name'] + "</a></li>";
+            } else  {
+                areaLongerStr += "<li class='longer-area'><a data-value='" + item['id'] + "' href='" + url + "'>" + item['name'] + "</a></li>";
+            }
+        }
+
+        thirdTabPanel.append(areaStr + areaLongStr + areaLongerStr);
+    }
+
+
+    function selectProvince(parentId,name){
+
+        selectedProvinceId = parentId;
+        $('dl.store [data-widget=tab-item]').eq(0).removeClass('curr');
+        $('dl.store [data-widget=tab-item]').eq(0).find('em').text(name);
+        $('dl.store [data-widget=tab-item]').eq(1).removeClass('hide').addClass('curr');
+        $('dl.store [data-area="0"]').addClass('hide');
+        $('dl.store [data-area="1"]').removeClass('hide');
+        $('dl.store [data-area="1"] p.ac').addClass('hide');
+
+
+        var secondTabPanel = $('dl.store div.mc[data-area="1"] ul').empty();
+        var thirdTabPanel = $('dl.store div.mc[data-area="2"] ul').empty();
+        $('dl.store [data-area="2"] p.ac').removeClass('hide');
+
+
+        var selectCityArray = provinceCityJson[parentId];
+        var areaStr="",
+            areaLongStr="",
+            areaLongerStr="";
+        for (var i=0; i < selectCityArray.length; i++) {
+            var name = selectCityArray[i]['name'];
+            var id = selectCityArray[i]['id'];
+
+            if(name.length <= 5){
+                areaStr += "<li><a data-value='" + id + "' href='#none' onclick='selectCity(" + id + ",\"" + name + "\")'>" + name + "</a></li>";
+            } else if( name.length <= 11 ) {
+                areaLongStr += "<li class='long-area'><a data-value='" + id + "' onclick='selectCity(" + id +  ",\"" + name + "\")' href='#none'>" + name + "</a></li>";
+            }else {
+                areaLongerStr += "<li class='longer-area'><a data-value='" + id + "' onclick='selectCity(" + id +  ",\"" + name + "\")' href='#none'>" + name + "</a></li>";
+            }
+        }
+
+        secondTabPanel.append(areaStr + areaLongStr + areaLongerStr);
+    }
+
+    function selectCity(parentId,name) {
+        selectedCityId = parentId;
+
+        $('dl.store [data-widget=tab-item]').eq(1).removeClass('curr');
+        $('dl.store [data-widget=tab-item]').eq(1).find('em').text(name);
+        $('dl.store [data-widget=tab-item]').eq(2).removeClass('hide').addClass('curr');
+
+
+
+
+        $.ajax({
+            url:'http://d.360buy.com/area/get?fid=' + parentId + '&callback=getAreaList_callback',
+            dataType:'jsonp'
+        });
+    }
+
+
+    function getAreaName_callback(data){
+        for(var i = 0;i < data.length; i++){
+            var item = data[i];
+            if(item['id'] == selectedAreaId) {
+                selectedAreaName = item['name'];
+                break;
+            }
+
+        }
+
+        if(!selectedAreaName) {
+            selectedAreaId = data[0]['id'];
+            selectedAreaName = data[0]['name'];
+        }
+
+        $('dl.store [data-widget=tab-item]').eq(2).find('em').text(selectedAreaName);
+
+        if(selectedProvinceName&&selectedCityName&&selectedAreaName){
+            $('#store-selector div.text').html(selectedProvinceName + selectedCityName + selectedAreaName + "<b></b>");
+            jd.plist.cookieEditer.setCookie("ipLoc-djd", selectedProvinceId + "-" + selectedCityId + "-" + selectedAreaId,30, "/", domainName, false);
+
+            refreshPrice( selectedProvinceId + "-" + selectedCityId + "-" + selectedAreaId );
+        } else {
+
+            jd.plist.cookieEditer.setCookie("ipLoc-djd", "1-72-4137",30, "/", domainName, false);
+
+        }
+        get_stock();
+    }
+
+
+    (function(){
+
+        $('#store-selector div.text').bind('mouseover',function(){
+           $('#store-selector').addClass('hover');
+        });
+
+        $('body').click(function(g) {
+            var d = g.srcElement || g.target,
+                    connectDom = [$('#store-selector').get(0)];
+            while (d) {
+                for (var f = 0; f < connectDom.length; f++) {
+                    if (d == connectDom[f]) {
+                        return
+                    }
+                }
+                if (d === document.body) {
+                    $('#store-selector').removeClass('hover');
+                    return
+                }
+                d = d.parentNode;
+            }
+        })
+
+
+        selectedProvinceId = urlArr[14];
+        selectedCityId = urlArr[15];
+        selectedAreaId = urlArr[16];
+        selectedProvinceName = iplocation[selectedProvinceId]['name'];
+
+        if( !selectedProvinceName ){
+            selectedProvinceName = iplocation[1]['name'];
+            selectedProvinceId = 1;
+        }
+
+
+        var citysInProvince = provinceCityJson[selectedProvinceId];
+        for(var i = 0; i < citysInProvince.length; i++) {
+            if(selectedCityId == citysInProvince[i]['id']) {
+                selectedCityName =  citysInProvince[i]['name'];
+                break;
+            }
+        }
+        if( !selectedCityName ){
+            selectedCityName = citysInProvince[0]['name'];
+            selectedCityId = citysInProvince[0]['id'];
+        }
+
+
+        selectProvince(selectedProvinceId,selectedProvinceName);
+        selectCity(selectedCityId,selectedCityName);
+
+        $.getJSONP('http://d.360buy.com/area/get?fid=' + selectedCityId + '&callback=getAreaName_callback');
+
+
+
+        var firstTabPanel = $('dl.store div.mc[data-area="0"] ul');
+        for(var id in iplocation) {
+            var name = iplocation[id]['name'];
+            if(name.length <= 4){
+                firstTabPanel.append("<li><a data-value='" + id + "' href='#none' onclick='selectProvince(" + id + ",\"" + name + "\")'>" + name + "</a></li>");
+            } else {
+                firstTabPanel.append("<li class='long-area'><a data-value='" + id + "' onclick='selectProvince(" + id + ",\"" + name + "\")' href='#none'>" + name + "</a></li>");
+            }
+        }
+
+
+    })();
+
+
+    //库存信息
+
+
+
+    function get_stock_cb(json) {
+        if( !json || typeof json!='object' ) { return; }
+        var el_infos = $('div.stocklist[stock]'),stock= selectedProvinceId + '-' + selectedCityId + '-' + selectedAreaId, city= iplocation[selectedProvinceId]['name'] ||'';
+        for( var i=0,l=el_infos.length; i<l; i++ ) {
+            var el_info=el_infos.eq(i);
+            var wid =el_info.attr('stock'), info = json[wid], class_name='btn btn-nostore notice-store', el_btn = el_info.parent().find('a.btn-buy');
+
+            if( !info ) { continue; }
+
+
+            switch( info['stockvalue'] & 0xffff ) {
+                case 0  :
+                case 18 :
+                case 34 :
+
+                    el_btn.attr({'href':'javascript:;','class':class_name,'data-type':2,'data-sku':wid,'id':'store'+wid}).removeAttr('target').html('<b></b>到货通知');
+                    el_info && el_info.html('<span class="st34">'+city+'无货</span>');
+                    break;
+                case 36 :
+                    el_info && el_info.html('<span class="st36">'+city+'预定</span>');
+                    break;
+                case 40 :
+                    el_info && el_info.html('<span class="st40">'+city+'有货 <b>下单后2-6天发货</b></span>');
+                    break;
+                default : break;
+            }
+        }
+    }
+    function get_stock() {
+        var el = $('a[stock]'),stock=readCookie('ipLoc-djd');
+        if(!stock) {return;} stock = stock.split('-').slice(0,3).join('_');
+        var skuids = jdwsment.skuids;
+        $.getJSONP('http://search.jd.com/stock?skus='+encodeURIComponent(skuids)+'&district=' + urlArr[14]  + '_' + urlArr[15] + '_' + urlArr[16] +  '&callback=get_stock_cb');
+    }
+
+
+
+</script>
+<script  type="text/javascript">
+    (function(){
+        var loc = jd.plist.cookieEditer.getCookie("ipLoc-djd");
+        $.ajax({url:'http://uprofile.jd.com/u/setadds',type:'get',dataType:'jsonp',data:{adds:loc}});
+    })();
+</script>
+<script type="text/javascript" src="http://wl.jd.com/wl.js"></script>
+<script type="text/javascript">
+    var _mvq = _mvq || [];
+    _mvq.push(['$setAccount', 'm-9-1']);
+    _mvq.push(['$logConversion']);
+    (function() {
+        var mvl = document.createElement('script');
+        mvl.type = 'text/javascript'; mvl.async = true;
+        mvl.src = 'http://misc.360buyimg.com/lib/js/2012/mvl.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mvl, s);
+    })();
+
+
+
+    $(function() {
+
+
+        $('div#plist').find('li').bind('click',function(){
+
+            var skuId = $(this).attr('sku')
+            var index = $(this).attr('index');
+            JA && JA.tracker.ngloader('list.010002',{cid1:psid1,cid2:psid2,cid3:psid3,sku:skuId,index:index});
+        });
+
+        JA && JA.tracker.ngloader('list.010001',{cid1:psid1,cid2:psid2,cid3:psid3});
+
+
+    });
+
+</script>
+
+
+<script type="text/javascript">
+    var brand = null;
+    if(urlArr[3] && urlArr[3] != "0"){
+        brand = urlArr[3]
+    }
+    var google_tag_params = {
+        ecomm_prodid:null,
+        ecomm_pagetype:"category",
+        ecomm_pname:null,
+        ecomm_pcat:psid1+"|"+psid2+"|"+psid3,
+        ecomm_pvalues:null,
+        ecomm_pbrand:brand
+    };
+</script>
+<script type="text/javascript">
+    dataLayer = [{
+        'google_tag_params': window.google_tag_params
+    }];
+</script>
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-T947SH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event:'gtm.js'
+        });
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T947SH');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+</body>
+</html>
