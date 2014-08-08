@@ -64,14 +64,21 @@ def FindTagsInBrand(PageURL):
 	
 	return Tags
 
-def FindImgInBrand(PageURL,PicDir):
+def FindImgInBrand(PageURL,PicDir,mode):
 	RootURL = 'http://list.tmall.com/search_product.htm'
 	data = GetPage(PageURL)
 	soup = BeautifulSoup(data)
-	PicLinks = re.findall('<img.*?\"(.*?)_30x30.*?>',data)
+	# Find Pics
+	# PicLinks = re.findall('<img.*?\"(.*?)_30x30.*?>',data)  # For Cloths
+	PicLinks = re.findall(u'<img.*?\"(.*?)_b.*?>',data)   # For Makeup
 	for link in PicLinks:
 		try:
-			DownloadPic(link,'',PicDir)
+			
+			SKUName = re.findall(u'<img.*?\"'+link+u'_b.*?>[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)
+			Name = SKUName[0].decode('gbk').encode('utf8').replace(u'/','')
+			Name = re.sub(u'([^\w \u4e00-\u9fa5])+','',Name)
+			DownloadPic(link,Name+u'.jpg',PicDir)
+			
 		except Exception, e:
 			print 'at 1',e
 		time.sleep(0.5)
@@ -83,11 +90,15 @@ def FindImgInBrand(PageURL,PicDir):
 			NextURL = RootURL + soup.find('a','ui-page-next')['href']
 			data = GetPage(NextURL)
 			soup = BeautifulSoup(data)
-			NewLinks = re.findall('<img.*?\"(.*?)_30x30.*?>',data)
+			# NewLinks = re.findall('<img.*?\"(.*?)_30x30.*?>',data) # For Cloths
+			NewLinks = re.findall('<img.*?\"(.*?)_b.*?>',data)   # For Makeup
 			PicLinks = PicLinks + NewLinks
 			for link in NewLinks:
 				try:
-					DownloadPic(link,'',PicDir)	
+					SKUName = re.findall('<img.*?\"'+link+'_b.*?>[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)
+					Name = SKUName[0].decode('gbk').encode('utf8').replace(u'/','')
+					Name = re.sub(u'([^\w \u4e00-\u9fa5])+','',Name)
+					DownloadPic(link,Name+u'.jpg',PicDir)
 				except Exception, e:
 					print 'at 2',e 
 				time.sleep(1)
@@ -108,7 +119,9 @@ def FindStoryInBrand(PageURL):
 	Story = ''
 	data = GetPage(PageURL)
 	soup = BeautifulSoup(data)
-	Story = soup.find('a','m-story')['title']
+	StorySoup = soup.find('a','m-story')
+	if StorySoup:
+		Story = StorySoup['title']
 	return Story
 
 def OutputBrandInfo(BrandName,BrandLink,OutputDir):
@@ -132,33 +145,39 @@ def OutputBrandInfo(BrandName,BrandLink,OutputDir):
 		fp_story = open(os.path.join(BrandDir,BrandName+'_Story.txt'),'w')
 		fp_story.write(FindStoryInBrand(BrandLink))
 		fp_story.close()
-		print 'Brand story is found'
+		print 'Brand story is found.'
 
 	# Output pictures
 	PicDir = os.path.join(BrandDir,'Pictures')
 	if not os.path.isdir(PicDir):
 		os.mkdir(PicDir)
-	print 'Getting pictures'
+	print 'Getting pictures...'
 	PicLinks = FindImgInBrand(BrandLink,PicDir)
 	print len(PicLinks), 'pictures are downloaded.'
 
 def main():
 	# PageURL = 'http://list.tmall.com/search_product.htm?spm=a220m.1000858.0.0.hpOp2L&cat=50025174&sort=s&style=g&search_condition=7&from=sn_1_rightnav&active=1&industryCatId=50025174&theme=245#J_crumbs'
 	# FindBrands(PageURL)
-	lines = open(u'E:\= Workspaces\Python Space\POICrwal\TMall\\精品男装.log').readlines()
-	for line in lines:
-		# line = 'Romon/罗蒙::精品男装::http://list.tmall.com/search_product.htm?cat=50025174&brand=29515&sort=s&style=g&search_condition=23&from=sn__brand-qp&active=1&industryCatId=50025174&theme=245&spm=a220m.1000858.0.0.hpOp2L#J_crumbs'
-		BrandName = line.split('::')[0].replace(u"/",u"_")
-		BrandLink = line.split('::')[-1].strip()
-		print BrandName
-		try:
-			OutputBrandInfo(BrandName,BrandLink,'.\TMall')
-		except Exception, e:
-			print e
-	# PageURL = 'http://list.tmall.com/search_product.htm?type=pc&totalPage=95&cat=50025174&brand=29515&sort=s&style=g&theme=245&from=sn_1_brand-qp&active=1&jumpto=94#J_Filter'
-	# # FindTagsInBrand(PageURL)
+	# lines = open(u'E:\= Workspaces\Python Space\POICrwal\TMall\\精品男装.log').readlines()
+	# for line in lines:
+	# 	# line = 'Romon/罗蒙::精品男装::http://list.tmall.com/search_product.htm?cat=50025174&brand=29515&sort=s&style=g&search_condition=23&from=sn__brand-qp&active=1&industryCatId=50025174&theme=245&spm=a220m.1000858.0.0.hpOp2L#J_crumbs'
+	# 	BrandName = line.split('::')[0].replace(u"/",u"_")
+	# 	BrandLink = line.split('::')[-1].strip()
+	# 	print BrandName
+	# 	try:
+	# 		OutputBrandInfo(BrandName,BrandLink,'.\TMall')
+	# 	except Exception, e:
+	# 		print e
+	# PageURL = 'http://list.tmall.com/search_product.htm?spm=a220m.1000858.1000720.1.C7OkYT&cat=50026502&brand=3322567&q=sk+ii&sort=s&style=g&from=sn_1_brand-qp&suggest=0_2#J_crumbs'
+	
+	# FindTagsInBrand(PageURL)
 	# FindImgLinkInBrand(PageURL)
-	# # FindStoryInBrand(PageURL)
+	# FindStoryInBrand(PageURL)
+
+	BrandName = u'法国兰蔻'
+	BrandLink = 'http://list.tmall.com/search_product.htm?sort=s&style=g&from=sn_1_brand&brand=20067&search_condition=2#J_crumbs'
+	
+	OutputBrandInfo(BrandName,BrandLink,'.\TMall')
 
 
 if __name__ == "__main__":
