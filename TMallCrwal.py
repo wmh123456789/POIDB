@@ -64,18 +64,40 @@ def FindTagsInBrand(PageURL):
 	
 	return Tags
 
-def FindImgInBrand(PageURL,PicDir,mode):
+def FindPicLinksInPage(data):
+	# PicLinks = re.findall('<img.*?\"(.*?)_30x30.*?\"',data)  # For Cloths
+	# PicLinks = re.findall(u'<img.*?\"(.*?)_b.*?\"',data)   # For Makeup
+	Keywords = ['_30x30','_b']
+	PicLinks = []
+	for word in Keywords:
+		PicLinks += re.findall(u'<img.*?\"(.*?)'+word+u'.*?\"',data)
+	return PicLinks
+
+def FindSKUNameInPage(PicLink,data):
+	# SKUName = re.findall(u'<img.*?\"'+link+u'_b.*?>[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)   # For Makeup
+	# SKUName = re.findall('<img.*?\"'+link+'_30x30.*?\"[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)  # For Cloths
+	Keywords = ['_30x30','_b']
+	SKUName = ['NoName']
+	for word in Keywords:
+		SKUName += re.findall('<img.*?\"'+PicLink+word+'.*?\"[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)
+	return SKUName
+
+
+def FindImgInBrand(PageURL,PicDir):
 	RootURL = 'http://list.tmall.com/search_product.htm'
-	data = GetPage(PageURL)
+	data = GetPage(PageURL).replace('\n\r','')
 	soup = BeautifulSoup(data)
 	# Find Pics
-	# PicLinks = re.findall('<img.*?\"(.*?)_30x30.*?>',data)  # For Cloths
-	PicLinks = re.findall(u'<img.*?\"(.*?)_b.*?>',data)   # For Makeup
+	PicLinks = FindPicLinksInPage(data)
+	fp= open('pagetext.txt','w')
+	fp.write(data)
+	fp.close()
+	print len(PicLinks)
 	for link in PicLinks:
+		print link
 		try:
-			
-			SKUName = re.findall(u'<img.*?\"'+link+u'_b.*?>[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)
-			Name = SKUName[0].decode('gbk').encode('utf8').replace(u'/','')
+			SKUName = FindSKUNameInPage(link,data)
+			Name = SKUName[-1].decode('gbk').encode('utf8').replace(u'/','')
 			Name = re.sub(u'([^\w \u4e00-\u9fa5])+','',Name)
 			DownloadPic(link,Name+u'.jpg',PicDir)
 			
@@ -88,15 +110,15 @@ def FindImgInBrand(PageURL,PicDir,mode):
 		PageCount = PageCount+1 
 		try: 
 			NextURL = RootURL + soup.find('a','ui-page-next')['href']
-			data = GetPage(NextURL)
+			data = GetPage(NextURL).strip()
 			soup = BeautifulSoup(data)
-			# NewLinks = re.findall('<img.*?\"(.*?)_30x30.*?>',data) # For Cloths
-			NewLinks = re.findall('<img.*?\"(.*?)_b.*?>',data)   # For Makeup
+
+			NewLinks = FindPicLinksInPage(data)
 			PicLinks = PicLinks + NewLinks
 			for link in NewLinks:
 				try:
-					SKUName = re.findall('<img.*?\"'+link+'_b.*?>[\s\S]*?productTitle[\s\S]*?title=\"(.*?)\"',data)
-					Name = SKUName[0].decode('gbk').encode('utf8').replace(u'/','')
+					SKUName = FindSKUNameInPage(link,data)
+					Name = SKUName[-1].decode('gbk').encode('utf8').replace(u'/','')
 					Name = re.sub(u'([^\w \u4e00-\u9fa5])+','',Name)
 					DownloadPic(link,Name+u'.jpg',PicDir)
 				except Exception, e:
@@ -174,9 +196,13 @@ def main():
 	# FindImgLinkInBrand(PageURL)
 	# FindStoryInBrand(PageURL)
 
-	BrandName = u'法国兰蔻'
-	BrandLink = 'http://list.tmall.com/search_product.htm?sort=s&style=g&from=sn_1_brand&brand=20067&search_condition=2#J_crumbs'
+	# BrandName = u'法国兰蔻'
+	# BrandLink = 'http://list.tmall.com/search_product.htm?sort=s&style=g&from=sn_1_brand&brand=20067&search_condition=2#J_crumbs'
 	
+	BrandName = u'欧时力'
+	BrandLink = 'http://list.tmall.com/search_product.htm?spm=a220m.1000858.0.0.S0MmYP&s=60&q=ochirly+%C5%B7%CA%B1%C1%A6&sort=s&style=g&from=rs_1_key-top-s&type=pc#J_Filter'
+	
+
 	OutputBrandInfo(BrandName,BrandLink,'.\TMall')
 
 
