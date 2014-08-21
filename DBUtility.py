@@ -10,7 +10,6 @@ sys.setdefaultencoding('utf8')
 Read CSV file to a List
 each line(record) in CSV is a element(dict) in the List
 in each element(dict), keys are given by KeyList
-
 '''
 def ReadCSV(FilePath,KeyList):
 	fp = open(FilePath,'r')
@@ -55,12 +54,13 @@ def CNNamelistFilter(Namelist):
 			CnNameList.append('???')
 
 	return CnNameList,EnNameList
+
 '''
-Merge 2 Records(New and Old):
+Merge 2 Records(New and Old) in safe way:
 name is main key. if New name matches old cnname or enname, update. 
 if not, output Records and not merge
 for cnname,enname,type, if not conflict, update. 
-if conflict, output  output Records and not merge
+if conflict, output Records and not merge
 for  tag, merge the tag list 
 '''
 
@@ -78,21 +78,54 @@ def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
 					else:
 						fp.write(str(OldBrRecord)+' => '+str(NewBrRecord)+'\n')
 						return OldBrRecord
-			pass
-		elif: key == 'cnname':
-			if not (NewBrRecord[key] in ['','???']): 
+				else:  #OldBrRecord[key] == NewBrRecord[key]
+					Record_M[key] = OldBrRecord[key]
+			else: #NewBrRecord[key] in ['','???']
+				Record_M[key] = OldBrRecord[key]
 
 			pass
-		elif: key == 'enname':
+		elif key in ['cnname','enname','type']:
+			if not (NewBrRecord[key] in ['','???']):
+				if (OldBrRecord[key] in ['','???']):
+					Record_M[key] = NewBrRecord[key]
+				elif OldBrRecord[key] != NewBrRecord[key]:
+					fp.write(str(OldBrRecord)+' => '+str(NewBrRecord)+'\n')
+					return OldBrRecord
+				else: #OldBrRecord[key] == NewBrRecord[key]
+					Record_M[key] = OldBrRecord[key]
+			else: #NewBrRecord[key] in ['','???']
+				Record_M[key] = OldBrRecord[key]
 			pass
-		elif: key == 'type':
-			pass
-		elif: key == 'tag':
+		elif key == 'tag':
 			Record_M['tag'] = list(set(NewBrRecord['tag']+OldBrRecord['tag']))
-
+		else: 
+			print 'Key Error, cannot find the key:', key
 
 	fp.close()
 	return Record_M
+
+
+'''
+Merge 2 Records(New and Old) in unsafe way:
+Update the data with the NewBrRecord if conflict
+Append the new tags
+'''
+def UpdateBrandDBRecord(NewBrRecord,OldBrRecord):
+	Record_M = {'name':'','cnname':'','enname':'','type':'','tag':['']}
+	for key in NewBrRecord:
+		if key in ['name','cnname','enname','type']
+			if NewBrRecord[key] in ['','???']:
+				Record_M = OldBrRecord[key]
+			else:
+				Record_M = NewBrRecord[key]
+		elif key == 'tag':
+			Record_M['tag'] = list(set(NewBrRecord['tag']+OldBrRecord['tag']))
+		else:
+			print 'Key Error, cannot find the key:', key
+	return Record_M
+
+
+
 
 '''
 The format of the brandDB record:
@@ -175,7 +208,7 @@ def IndexByName(DB,NameField):
 
 def main():
 	KeyList = ['PID','name','type','tag','phone']
-	FilePath = 'E:\POIClassify\ShuangAn.csv'
+	FilePath = '.\DataInMall\ShuangAn.csv'
 	data = ReadCSV(FilePath,KeyList)
 	print data[50]['name'],data[50]['tag'],data[50]['type']
 
@@ -189,10 +222,9 @@ def main():
 	DB = {pid:{'name':name} for pid,name in zip(PIDlist,Namelist)}
 	NameDict = IndexByName(DB,'name')
 
-	fp = open('temp.txt','w')
-	for key in NameDict:
-		print key,NameDict[key]
-		fp.write(key+':'+str(NameDict[key])+'\n')
+	NewBrRecord = {'name':'2','cnname':'???','enname':'12','type':'33','tag':['ad']}
+	OldBrRecord = {'name':'111','cnname':'2','enname':'12','type':'33','tag':['as']}
+	print str(MergeBrandDBRecord(NewBrRecord,OldBrRecord))
 
 
 if __name__ == '__main__':
