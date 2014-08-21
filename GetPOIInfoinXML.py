@@ -14,15 +14,17 @@ def GetGPSParam(MallName,ParamFile):
 	AnchorXY = []
 	AnchorGPS = []
 	for line in fp.readlines():
-		if line.split('\t')[0] == MallName:
-			ParamText = line.split('\t')[1:]
+		if line.split(',')[0] == MallName:
+			ParamText = line.split(',')[1:]
+			Error = float(ParamText.pop(0))
 			# print ParamText
-			while ParamText[0][0] == '[':
-				AnchorGPS.append([float(a) for a in ParamText.pop(0).strip('[]').split(',')])
-				AnchorXY.append([float(a) for a in ParamText.pop(0).strip('[]').split(',')])
+
+			while not(ParamText[0] == '\n' or ParamText[0] == ''):
+
+				AnchorGPS.append([float(ParamText.pop(0)),float(ParamText.pop(0))])
+				AnchorXY.append([float(ParamText.pop(0)),float(ParamText.pop(0))])
 				# print '3',ParamText
-			Error = float(ParamText[0].strip())
-			
+						
 	A,X0,K = [[-1],[-1],[-1]]
 	if len(AnchorGPS) == 2:
 		A,X0,K = CalcXY2GPSParam_2p(AnchorXY[0],AnchorXY[1],AnchorGPS[0],AnchorGPS[1])
@@ -135,20 +137,24 @@ def OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile):
 						lng,lat = XY2GPS(A,X0,K,array([x,y]))
 
 						fp_name.write(str(shop['id'])+'\t'+str(shop['name'])+
-							'\tLng='+str(lng)+'\tLat='+str(lat)+'\n')
+							'\tLng='+str(lng)+'\tLat='+str(lat)+
+							'\tX='+str(x)+'\tY='+str(y)+'\n')
 			fp_name.close()
 	pass
 	pass
 
 if __name__ == '__main__':
 	RootPath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\'
-	MallNameList = ['']
+	MallNameList = ['AiQinHaiGouWuZhongXin']
 	SubPath = '\Binary\\'
 	OutputPath = 'E:\POIClassify\POIListInMall\\'
-	ParamFile = 'E:\= Workspaces\Python Space\GisLib\GPSErrorResultSets.txt'
+	ParamFile = 'E:\= Workspaces\Python Space\POIDB\AnchorPointsInBJ.csv'
 	# # OutputShopNames(RootPath,MallNameList,SubPath,OutputPath)
 	# # OutputShopXY(RootPath,MallNameList,SubPath,OutputPath)
 	OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile)
 
 
-	# GetGPSParam('AiQinHaiGouWuZhongXin',ParamFile)
+
+	# A,X,K = GetGPSParam('AiQinHaiGouWuZhongXin',ParamFile)
+	# print A,X,K
+

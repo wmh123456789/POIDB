@@ -55,16 +55,95 @@ def CNNamelistFilter(Namelist):
 			CnNameList.append('???')
 
 	return CnNameList,EnNameList
+'''
+Merge 2 Records(New and Old):
+name is main key. if New name matches old cnname or enname, update. 
+if not, output Records and not merge
+for cnname,enname,type, if not conflict, update. 
+if conflict, output  output Records and not merge
+for  tag, merge the tag list 
+'''
 
+def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
+	Record_M = {'name':'','cnname':'','enname':'','type':'','tag':['']}
+	fp = open('MergeFailedRecords.txt','a')
+	for key in NewBrRecord:
+		if key == 'name':
+			if not (NewBrRecord[key] in ['','???']): 
+				if (OldBrRecord[key] in ['','???']):
+					Record_M[key] = NewBrRecord[key]
+				elif OldBrRecord[key] != NewBrRecord[key]:
+					if NewBrRecord[key] in [OldBrRecord['enname'],OldBrRecord['cnname']]:
+						Record_M[key] = NewBrRecord[key]
+					else:
+						fp.write(str(OldBrRecord)+' => '+str(NewBrRecord)+'\n')
+						return OldBrRecord
+			pass
+		elif: key == 'cnname':
+			if not (NewBrRecord[key] in ['','???']): 
+
+			pass
+		elif: key == 'enname':
+			pass
+		elif: key == 'type':
+			pass
+		elif: key == 'tag':
+			Record_M['tag'] = list(set(NewBrRecord['tag']+OldBrRecord['tag']))
+
+
+	fp.close()
+	return Record_M
 
 '''
 The format of the brandDB record:
-{PID:[name,cnname,enname,type,[tag1,tag2,...]]}
+{PID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
 '''
 
 def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNameList=[],EnNameList=[],
 							Typelist=[],Taglist=[]):
 	# {PID:[name,cnname,enname,type,[tag1,tag2,...]]}
+	if BrandDB == {}:
+		BrandDB = {'0':{'name':'','cnname':'','enname':'','type':'','tag':['']}}
+
+	# Deal with empty list
+	EmptyList = lambda N: ['']*N
+	N = len(PIDlist)
+	if CnNameList == []:
+		CnNameList = EmptyList(N)
+	if EnNameList == []:
+		EnNameList = EmptyList(N)
+	if TypeList == []:
+		TypeList = EmptyList(N)
+	if TagList == []:
+		TagList = EmptyList(N)
+
+
+	NewItems = {pid:{'name':name,'cnname':cnname,'enname':enname,'type':typ,'tag':tag} 
+					for pid,name,cnname,enname,typ,tag in 
+					zip(PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)}
+	NameIndex = IndexByName(BrandDB,'name')
+
+	# Search By Name
+	for pid in NewItems:
+		if NewItems['pid']['name'] in  NameIndex:
+			NewBrRecord = {'name':NewItems['pid']['name'],
+			 			 'cnname':NewItems['pid']['cnname'],
+						 'enname':NewItems['pid']['enname'],	
+						 'type':NewItems['pid']['type'],
+						 'tag':NewItems['pid']['tag']}
+			BrID_cur = NameIndex[NewItems['pid']['name']]
+			Record_M = MergeBrandDBRecord(NewBrRecord,BrandDB[BrID_cur])
+			BrandDB.update({BrID_cur:Record_M})
+			pass
+		else:
+			# Insert new record
+			BrandDB.update({str(len(BrandDB)):{'name':NewItems['pid']['name'],
+								 'cnname':NewItems['pid']['cnname'],
+								 'enname':NewItems['pid']['enname'],	
+								 'type':NewItems['pid']['type'],
+								 'tag':NewItems['pid']['tag']}})
+
+
 
 	pass
 
@@ -75,36 +154,24 @@ Update dict by append the val_list
 def UpdateDictbyAppend(DB,items):
 	for key in items.keys():
 		if key in DB:
-			DB[key] = list(set(DB[key]+items[key]))
+			DB[key] = list(set(DB[key]+[items[key]]))
 		else:
-			DB.update({key:items[key]})
+			DB.update({key:[items[key]]})
+
 
 '''
-{PID:[name,....]} => {name:[PID1,PID2,....]}
+@param BrandDB :  The DB to be indexed
+@param NameField: The field to be indexed
+@usage:
+NameField = 'name':   {PID:[name,....]} => {name:[PID1,PID2,....]}
+NameField = 'cnname': {PID:[cnname,....]} => {cnname:[PID1,PID2,....]}
 '''
-def IndexByName(BrandDB):
+def IndexByName(DB,NameField):
 	NameDict = {}
-	for pid in BrandDB:
-		BrandDB['pid']
+	for key in DB:
+		UpdateDictbyAppend(NameDict,{DB[key][NameField]:key})
 	pass
-
-'''
-{PID:[...,cnname,...]} => {cnname:[PID1,PID2,....]}
-'''
-def IndexByCnName(BrandDB):
-	pass
-
-'''
-{PID:[...,enname,...]} => {enname:[PID1,PID2,....]}
-'''
-def IndexByEnName(BrandDB):
-	pass
-
-
-
-
-
-
+	return NameDict
 
 def main():
 	KeyList = ['PID','name','type','tag','phone']
@@ -118,6 +185,14 @@ def main():
 	Typelist = [record['type'] for record in data]
 	Taglist = [record['tag'] for record in data]
 	Phonelist = [record['phone'] for record in data]
+
+	DB = {pid:{'name':name} for pid,name in zip(PIDlist,Namelist)}
+	NameDict = IndexByName(DB,'name')
+
+	fp = open('temp.txt','w')
+	for key in NameDict:
+		print key,NameDict[key]
+		fp.write(key+':'+str(NameDict[key])+'\n')
 
 
 if __name__ == '__main__':

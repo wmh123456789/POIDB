@@ -11,6 +11,10 @@ def UpdateList(oldlist,newlist):
 			oldlist.append(item)
 	return oldlist
 
+'''
+Write the DB into a csv file 
+input is the txt files
+'''
 def InitDB_JD(RootPath,CVSFileName):
 	fp = open(os.path.join(RootPath,CVSFileName),'w')
 	fp_tmp = open(os.path.join(RootPath,'tmp.txt'),'w')
@@ -42,11 +46,13 @@ def InitDB_JD(RootPath,CVSFileName):
 						for tag in Tag_list:
 							fp.write(tag+',')
 						fp.write('\n')
-						
-						
+											
 	fp_tmp.close()
 	fp.close()
 
+'''
+Merge the repieted brand
+'''
 def CompactPOIDB(RootPath,CVSFileName):
 	fp = open(os.path.join(RootPath,CVSFileName),'r')
 	BrandDic = {}

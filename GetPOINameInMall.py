@@ -33,10 +33,10 @@ def OutPutShopNames(RootPath,MallNameList,SubPath,OutputPath):
 			fp_name.close()
 
 if __name__ == '__main__':
-	RootPath = 'D:\\'
-	MallNameList = ['AiQinHaiGouWuZhongXin']
+	RootPath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\'
+	MallNameList = ['KaiDeMaoTaiYangGong']
 	SubPath = '\Binary\\'
-	OutputPath = 'D:\AiQinHaiGouWuZhongXin\\'
+	OutputPath = 'E:\POIClassify\TagThePOI\\'
 	OutPutShopNames(RootPath,MallNameList,SubPath,OutputPath)
 
 
