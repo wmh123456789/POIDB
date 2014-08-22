@@ -4,7 +4,7 @@ import os
 import shutil
 
 def myArctan(x,y):
-	alpha = sp.arctan(y/x)
+	alpha = sp.arctan(y/(x+1e-16))
 	if x < 0:
 		alpha += sp.pi
 	elif y < 0:

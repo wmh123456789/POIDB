@@ -15,12 +15,13 @@ def GetGPSParam(MallName,ParamFile):
 	AnchorGPS = []
 	for line in fp.readlines():
 		if line.split(',')[0] == MallName:
-			ParamText = line.split(',')[1:]
+			print line
+			ParamText = line.strip().split(',')[1:]
 			Error = float(ParamText.pop(0))
-			# print ParamText
+			print ParamText
 
-			while not(ParamText[0] == '\n' or ParamText[0] == ''):
-
+			while not(len(ParamText)==0 or ParamText[0] == '\n' or ParamText[0] == ''):
+			# while len(ParamText) >0:
 				AnchorGPS.append([float(ParamText.pop(0)),float(ParamText.pop(0))])
 				AnchorXY.append([float(ParamText.pop(0)),float(ParamText.pop(0))])
 				# print '3',ParamText
@@ -33,7 +34,7 @@ def GetGPSParam(MallName,ParamFile):
 	elif len(AnchorGPS) == 0:
 		print 'No Anchor Point!'
 	else:
-		print 'Anchor Points Error'
+		print 'Anchor Points Error:', AnchorGPS
 		
 
 	fp.close()
@@ -136,19 +137,22 @@ def OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile):
 						y = float(shop.center['y'])
 						lng,lat = XY2GPS(A,X0,K,array([x,y]))
 
-						fp_name.write(str(shop['id'])+'\t'+str(shop['name'])+
-							'\tLng='+str(lng)+'\tLat='+str(lat)+
-							'\tX='+str(x)+'\tY='+str(y)+'\n')
+						# fp_name.write(str(shop['id'])+'\t'+str(shop['name'])+
+						# 	'\tLng='+str(lng)+'\tLat='+str(lat)+
+						# 	'\tX='+str(x)+'\tY='+str(y)+'\n')
+						fp_name.write(str(shop['id'])+'#'+str(shop['name'])+
+							'#Lng='+str(lng)+'#Lat='+str(lat)+
+							'#X='+str(x)+'#Y='+str(y)+'\n')
 			fp_name.close()
 	pass
 	pass
 
 if __name__ == '__main__':
 	RootPath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\'
-	MallNameList = ['AiQinHaiGouWuZhongXin']
+	MallNameList = ['KaiDeMaoTaiYangGong','ShuangAnShangChang']
 	SubPath = '\Binary\\'
 	OutputPath = 'E:\POIClassify\POIListInMall\\'
-	ParamFile = 'E:\= Workspaces\Python Space\POIDB\AnchorPointsInBJ.csv'
+	ParamFile = '.\GPSAnchorPointsBJ.csv'
 	# # OutputShopNames(RootPath,MallNameList,SubPath,OutputPath)
 	# # OutputShopXY(RootPath,MallNameList,SubPath,OutputPath)
 	OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile)
