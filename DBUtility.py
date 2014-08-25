@@ -11,18 +11,19 @@ Read CSV file to a List
 each line(record) in CSV is a element(dict) in the List
 in each element(dict), keys are given by KeyList
 '''
-def ReadCSV(FilePath,KeyList):
+def ReadCSV(FilePath,KeyList,SpaceMark=','):
 	fp = open(FilePath,'r')
 	AllData = []
 	KeyLen = len(KeyList)
 	Records = []
 	for line in fp.readlines():
-		words = line.split(',')[:-1]
+		words = line.split(SpaceMark)
 		if len(words) >= KeyLen:
 			record = dict(zip(KeyList,words))
 			Records.append(record)
 			pass
 		else:
+			print words
 			print 'Error, word length is not match.',len(words),KeyLen
 	return Records
 
@@ -129,7 +130,9 @@ def UpdateBrandDBRecord(NewBrRecord,OldBrRecord):
 
 
 '''
-The format of the brandDB record:
+The format of the BrandDB record:
+{BrID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
+The format of the POIDB record:
 {PID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
 '''
 
@@ -165,19 +168,19 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 						 'enname':NewItems[pid]['enname'],	
 						 'type':NewItems[pid]['type'],
 						 'tag':NewItems[pid]['tag']}
-			BrID_cur = NameIndex[NewItems[pid]['name']]
+			BrID_cur = NameIndex[NewItems[pid]['name']][0]
+			# print BrID_cur
 			Record_M = MergeBrandDBRecord(NewBrRecord,BrandDB[BrID_cur])
 			BrandDB.update({BrID_cur:Record_M})
 			pass
 		else:
 		
-			# For Debug
-			if NewItems[pid]['name'] == 'Coach' and len(BrandDB)>250:
-				print 'find coach','Coach' in NameIndex
-				print BrandDB['213']
-				NameIndex = IndexByName(BrandDB,'name')
-				print NameIndex['Coach']
-			# -- For Debug
+			# # For Debug
+			# if NewItems[pid]['name'] == 'Coach' and len(BrandDB)>250:
+			# 	print 'find coach','Coach' in NameIndex
+			# 	print BrandDB['213']				
+			# 	print NameIndex['Coach']
+			# # -- For Debug
 
 			# Insert new record
 			BrandDB.update({str(len(BrandDB)):{'name':NewItems[pid]['name'],
@@ -185,6 +188,7 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 								 'enname':NewItems[pid]['enname'],	
 								 'type':NewItems[pid]['type'],
 								 'tag':NewItems[pid]['tag']}})
+			NameIndex = IndexByName(BrandDB,'name')
 
 	return BrandDB
 
@@ -201,6 +205,16 @@ def UpdateDictbyAppend(DB,items):
 		else:
 			DB.update({key:[items[key]]})
 
+'''
+For Tag list output:
+[tag1,tag2,tag3...] => tag1 tag2 tag3 ...
+'''
+def StrTag(Taglist,SpaceMark):
+	StrTag = ''
+	for tag in Taglist:
+		StrTag += str(tag)+SpaceMark
+	return StrTag
+
 
 '''
 @param BrandDB :  The DB to be indexed
@@ -213,10 +227,62 @@ def IndexByName(DB,NameField):
 	NameDict = {}
 	for key in DB:
 		UpdateDictbyAppend(NameDict,{DB[key][NameField]:key})
+
+		# For Debug
+		# if DB[key][NameField] == 'Coach':
+		# 	print 'Got coach in index func:',key
+		# 	print DB[key]
+		# -- For Debug
+
+
 	pass
 	return NameDict
 
+'''
+Query the brand info in BrandDB by name 
+'''
+def QueryBrInfoByName(name,BrandDB,NameIndex={}):
+	if NameIndex == {}:
+		NameIndex = IndexByName(BrandDB,'name')
+	if name in NameIndex:
+		return BrandDB[NameIndex[name][0]]
+	else:
+		return {}
+
+
+'''
+Query the brand info in BrandDB by names in the Namelist
+For dupulicated name, it gives dupulicated record 
+Input NameList: [name1,name2,....]
+Output format: [{name:name1,type:XX,...},{name:name2,type:XXX...},...]
+'''
+def QueryBrInfoByNameList(Namelist,BrandDB,NameIndex={}):
+	InfoList = [] 
+	if NameIndex == {}:
+		NameIndex = IndexByName(BrandDB,'name')
+	for name in Namelist:
+		info = QueryBrInfoByName(name,BrandDB,NameIndex)
+		info = info.update({'name':name})
+		InfoList.append(info)
+	return InfoList
+
+
+'''
+Insert Infromation into POI list
+Output format: {PID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
+'''
+def InsertInfoInPOIList(PIDlist,Namelist,BrandDB):
+	InfoList = QueryBrInfoByNameList(Namelist,BrandDB)
+	POIDB = {}
+	for pid,info in zip(PIDlist,InfoList):
+		POIDB.update({pid:info})
+
+	return POIDB
+
+
 def main():
+
+	# Add Mall 1 into DB
 	KeyList = ['PID','name','type','tag','phone']
 	FilePath = '.\DataInMall\ShuangAn.csv'
 	data = ReadCSV(FilePath,KeyList)
@@ -230,11 +296,12 @@ def main():
 	Phonelist = [record['phone'] for record in data]
 	BrandDB = {}
 	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)
-	fp = open('output.txt','w')
+	fp = open('.\TXT\output.txt','w')
 	print len(BrandDB)
-	for key in BrandDB:
-		fp.write(key+':'+str(BrandDB[key]['enname']).encode('utf8')+'\n')
+	# for key in BrandDB:
+	# 	fp.write(key+'\t'+str(BrandDB[key]['name']).encode('utf8')+'\n')
 
+	# Add Mall 2 into DB
 	FilePath = '.\DataInMall\HuaRunWuCaiCheng.csv'
 	KeyList = ['PID','name','type','tag','phone']
 	data = ReadCSV(FilePath,KeyList)
@@ -249,16 +316,31 @@ def main():
 	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)
 
 	print len(BrandDB)
-	for key in BrandDB:
-		fp.write(key+':'+str(BrandDB[key]['enname']).encode('utf8')+'\n')
+	# for key in BrandDB:
+	# 	fp.write(key+'\t'+str(BrandDB[key]['name']).encode('utf8')+
+	# 		'\t'+str(BrandDB[key]['cnname']).encode('utf8')+
+	# 		'\t'+str(BrandDB[key]['enname']).encode('utf8')+
+	# 		'\t'+str(BrandDB[key]['type']).encode('utf8')+
+	# 		'\t'+StrTag(BrandDB[key]['tag'],'\t').encode('utf8')+'\n')
+
+	FilePath = '.\TXT\ShuangAnShangChang_POI.txt'
+	KeyList = ['PID','name']
+	data = ReadCSV(FilePath,KeyList,'\t')
+	print data[50]['PID'],data[50]['name']
+	PIDlist = [record['PID'] for record in data]
+	Namelist = [record['name'] for record in data]
+
+	POIDB = InsertInfoInPOIList(PIDlist,Namelist,BrandDB)
+	fp_poi = open('.\TXT\POIDB.txt','w')
+	for key in POIDB:
+		fp_poi.write(str(POIDB[key])+'\n')
+	
 
 
-	# DB = {pid:{'name':name} for pid,name in zip(PIDlist,Namelist)}
-	# NameDict = IndexByName(DB,'name')
+	fp.close()
+	fp_poi.close()
 
-	# NewBrRecord = {'name':'2','cnname':'???','enname':'12','type':'33','tag':['ad']}
-	# OldBrRecord = {'name':'111','cnname':'2','enname':'12','type':'33','tag':['as']}
-	# print str(MergeBrandDBRecord(NewBrRecord,OldBrRecord))
+
 
 
 if __name__ == '__main__':

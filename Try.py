@@ -44,28 +44,11 @@ def GetPage(PageURL):
 # fp.write(str(BrandDB)+'\n')
 # fp.close()
 
-A = ['a','a','b','c','d','d']
+A = ['a','a',u'b','c','d','d']
 B = [1,2,3,4,4,5]
 AB = zip(A,B)
 d1 = {}  #{'a':1}
 d2 = {}  #{1:'a'}
 
-for a,i in AB :
-	# For d1:
-	if a in d1:
-		d1[a] = list(set(d1[a]+[i]))
-	else:
-		d1[a] = [i]
-
-	# For d2:
-	if i in d2:
-		d2[i] = list(set(d2[i]+[a]))
-	else:
-		d2[i] = [a]
-
-
-print d1
-print d2
-
-
+print 'b' in A 
 
