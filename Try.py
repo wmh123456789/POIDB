@@ -49,6 +49,8 @@ B = [1,2,3,4,4,5]
 AB = zip(A,B)
 d1 = {}  #{'a':1}
 d2 = {}  #{1:'a'}
+C = {'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}
+C=C.update({'name':'aaa'})
 
-print 'b' in A 
+print C['name']
 

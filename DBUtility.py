@@ -17,7 +17,7 @@ def ReadCSV(FilePath,KeyList,SpaceMark=','):
 	KeyLen = len(KeyList)
 	Records = []
 	for line in fp.readlines():
-		words = line.split(SpaceMark)
+		words = [word.strip() for word in line.split(SpaceMark)]
 		if len(words) >= KeyLen:
 			record = dict(zip(KeyList,words))
 			Records.append(record)
@@ -47,7 +47,7 @@ def CNNamelistFilter(Namelist):
 	CnNameList = []
 	EnNameList = []
 	for name in Namelist:
-		name = unicode(name)
+		# name = unicode(name)
 		if re.findall(u'[\u4e00-\u9fa5]',name):
 			CnNameList.append(name)
 			EnNameList.append('???')
@@ -67,7 +67,7 @@ for  tag, merge the tag list
 '''
 
 def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
-	Record_M = {'name':'','cnname':'','enname':'','type':'','tag':['']}
+	Record_M = {'name':'','cnname':'','enname':'','type':'','tag':[''],'phone':'','story':''}
 	fp = open('MergeFailedRecords.txt','a')
 	for key in NewBrRecord:
 		if key == 'name':
@@ -78,7 +78,7 @@ def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
 					if NewBrRecord[key] in [OldBrRecord['enname'],OldBrRecord['cnname']]:
 						Record_M[key] = NewBrRecord[key]
 					else:
-						fp.write(str(OldBrRecord)+' => '+str(NewBrRecord)+'\n')
+						fp.write(StrRecord(OldBrRecord)+' => '+StrRecord(NewBrRecord)+'\n')
 						return OldBrRecord
 				else:  #OldBrRecord[key] == NewBrRecord[key]
 					Record_M[key] = OldBrRecord[key]
@@ -86,12 +86,12 @@ def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
 				Record_M[key] = OldBrRecord[key]
 
 			pass
-		elif key in ['cnname','enname','type']:
+		elif key in ['cnname','enname','type','phone','story']:
 			if not (NewBrRecord[key] in ['','???']):
 				if (OldBrRecord[key] in ['','???']):
 					Record_M[key] = NewBrRecord[key]
 				elif OldBrRecord[key] != NewBrRecord[key]:
-					fp.write(str(OldBrRecord)+' => '+str(NewBrRecord)+'\n')
+					fp.write(StrRecord(OldBrRecord)+' => '+StrRecord(NewBrRecord)+'\n')
 					return OldBrRecord
 				else: #OldBrRecord[key] == NewBrRecord[key]
 					Record_M[key] = OldBrRecord[key]
@@ -113,9 +113,9 @@ Update the data with the NewBrRecord if conflict
 Append the new tags
 '''
 def UpdateBrandDBRecord(NewBrRecord,OldBrRecord):
-	Record_M = {'name':'','cnname':'','enname':'','type':'','tag':['']}
+	Record_M = {'name':'','cnname':'','enname':'','type':'','tag':[''],'phone':'','story':''}
 	for key in NewBrRecord:
-		if key in ['name','cnname','enname','type']:
+		if key in ['name','cnname','enname','type','phone','story']:
 			if NewBrRecord[key] in ['','???']:
 				Record_M = OldBrRecord[key]
 			else:
@@ -137,10 +137,10 @@ The format of the POIDB record:
 '''
 
 def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=[],
-							Typelist=[],Taglist=[]):
+							Typelist=[],Taglist=[],Phonelist=[],Storylist=[]):
 	# {PID:{name:'',cnname:'',enname:'',type:'',tag:[tag1,tag2,...]}}
 	if BrandDB == {}:
-		BrandDB = {'-1':{'name':'','cnname':'','enname':'','type':'','tag':['']}}
+		BrandDB = {'-1':{'name':'','cnname':'','enname':'','type':'','tag':[''],'phone':'','story':''}}
 
 	# Deal with empty list
 	EmptyList = lambda N: ['']*N
@@ -153,11 +153,14 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 		Typelist = EmptyList(N)
 	if Taglist == []:
 		Taglist = EmptyList(N)
+	if Phonelist == []:
+		Phonelist = EmptyList(N)
+	if Storylist == []:
+		Storylist = EmptyList(N)	
 
-
-	NewItems = {pid:{'name':name,'cnname':cnname,'enname':enname,'type':typ,'tag':tag} 
-					for pid,name,cnname,enname,typ,tag in 
-					zip(PIDlist,Namelist,CnNamelist,EnNamelist,Typelist,Taglist)}
+	NewItems = {pid:{'name':name,'cnname':cnname,'enname':enname,'type':typ,'tag':tag,'phone':phone,'story':story} 
+					for pid,name,cnname,enname,typ,tag,phone,story in 
+					zip(PIDlist,Namelist,CnNamelist,EnNamelist,Typelist,Taglist,Phonelist,Storylist)}
 	NameIndex = IndexByName(BrandDB,'name')
 
 	# Search By Name
@@ -167,7 +170,9 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 			 			 'cnname':NewItems[pid]['cnname'],
 						 'enname':NewItems[pid]['enname'],	
 						 'type':NewItems[pid]['type'],
-						 'tag':NewItems[pid]['tag']}
+						 'tag':NewItems[pid]['tag'],
+						 'phone':NewItems[pid]['phone'],
+						 'story':NewItems[pid]['story']}
 			BrID_cur = NameIndex[NewItems[pid]['name']][0]
 			# print BrID_cur
 			Record_M = MergeBrandDBRecord(NewBrRecord,BrandDB[BrID_cur])
@@ -187,7 +192,9 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 								 'cnname':NewItems[pid]['cnname'],
 								 'enname':NewItems[pid]['enname'],	
 								 'type':NewItems[pid]['type'],
-								 'tag':NewItems[pid]['tag']}})
+								 'tag':NewItems[pid]['tag'],
+								 'phone':NewItems[pid]['phone'],
+						 		 'story':NewItems[pid]['story']}})
 			NameIndex = IndexByName(BrandDB,'name')
 
 	return BrandDB
@@ -209,12 +216,39 @@ def UpdateDictbyAppend(DB,items):
 For Tag list output:
 [tag1,tag2,tag3...] => tag1 tag2 tag3 ...
 '''
-def StrTag(Taglist,SpaceMark):
+def StrTag(Taglist,SpaceMark='\t'):
 	StrTag = ''
 	for tag in Taglist:
 		StrTag += str(tag)+SpaceMark
 	return StrTag
 
+'''
+For Record output:
+{name:XX,tag:[tag1,tag2,...]} => XX tag1 tag2 ...
+'''
+def StrRecord(Record,SpaceMark='\t',Order = []):
+	StrRecord = ''
+	if Order == []:
+		for key in Record:
+			if key == 'tag':
+				StrRecord += StrTag(Record['tag'],SpaceMark)
+			else:
+				# print Record
+				StrRecord += str(Record[key]+SpaceMark)
+		return StrRecord
+	else: # if the output order is fixed 
+		for key in Order:
+			if key in Record:
+				if key == 'tag':
+					StrRecord += StrTag(Record['tag'],SpaceMark)
+				else:
+					# print Record
+					StrRecord += str(Record[key]+SpaceMark)
+				pass
+			else:
+				StrRecord += ''+SpaceMark
+				print 'Error when output Recod, cannot find key:',key
+		return StrRecord
 
 '''
 @param BrandDB :  The DB to be indexed
@@ -261,8 +295,8 @@ def QueryBrInfoByNameList(Namelist,BrandDB,NameIndex={}):
 	if NameIndex == {}:
 		NameIndex = IndexByName(BrandDB,'name')
 	for name in Namelist:
+		# print name
 		info = QueryBrInfoByName(name,BrandDB,NameIndex)
-		info = info.update({'name':name})
 		InfoList.append(info)
 	return InfoList
 
@@ -279,43 +313,71 @@ def InsertInfoInPOIList(PIDlist,Namelist,BrandDB):
 
 	return POIDB
 
+'''
+Read a data-ready file and update the BrandDB
+'''
+def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
+	data = ReadCSV(FilePath,KeyList)
+	Namelist = [record['name'] for record in data]
+	CnNameList,EnNameList = CNNamelistFilter(Namelist)
+	PIDlist = [record['PID'] for record in data]
+	Typelist = [record['type'] for record in data]
+	Taglist = [[record['tag']] for record in data]
+	Phonelist = [record['phone'] for record in data]
+	Storylist = [record['story'] for record in data]
+	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist,Phonelist,Storylist)
+	return BrandDB
+
+'''
+write DB to csv file
+'''
+def WriteDBtoCSV(DB,OutputOrder,DBFilePath):
+	fp_db = open(DBFilePath,'w')
+	# OutputOrder = ['name','phone','type','tag','story']
+	key = OutputOrder[0]
+	fp_db.write(','.join(OutputOrder)+'\n')
+	for keyid in DB:
+		fp_db.write(keyid+','+StrRecord(DB[keyid],',',OutputOrder[1:])+'\n')
+		
+	fp_db.close()
 
 def main():
 
 	# Add Mall 1 into DB
-	KeyList = ['PID','name','type','tag','phone']
-	FilePath = '.\DataInMall\ShuangAn.csv'
-	data = ReadCSV(FilePath,KeyList)
-	print data[50]['name'],data[50]['tag'],data[50]['type']
+	KeyList = ['PID','name','type','tag','phone','story']
+	FilePath = '.\DataInMall\DangDaiShangCheng.csv'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath)
 
-	Namelist = [record['name'] for record in data]
-	CnNameList,EnNameList = CNNamelistFilter(Namelist)
-	PIDlist = [record['PID'] for record in data]
-	Typelist = [record['type'] for record in data]
-	Taglist = [[record['tag']] for record in data]
-	Phonelist = [record['phone'] for record in data]
-	BrandDB = {}
-	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)
-	fp = open('.\TXT\output.txt','w')
-	print len(BrandDB)
-	# for key in BrandDB:
-	# 	fp.write(key+'\t'+str(BrandDB[key]['name']).encode('utf8')+'\n')
+	# data = ReadCSV(FilePath,KeyList)
+	# print data[50]['name'],data[50]['tag'],data[50]['type']
+
+	# Namelist = [record['name'] for record in data]
+	# CnNameList,EnNameList = CNNamelistFilter(Namelist)
+	# PIDlist = [record['PID'] for record in data]
+	# Typelist = [record['type'] for record in data]
+	# Taglist = [[record['tag']] for record in data]
+	# Phonelist = [record['phone'] for record in data]
+	# BrandDB = {}
+	# BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)
+	# fp = open('.\TXT\output.txt','w')
+	# print len(BrandDB)
+
 
 	# Add Mall 2 into DB
-	FilePath = '.\DataInMall\HuaRunWuCaiCheng.csv'
-	KeyList = ['PID','name','type','tag','phone']
-	data = ReadCSV(FilePath,KeyList)
-	print data[50]['name'],data[50]['tag'],data[50]['type']
+	# FilePath = '.\DataInMall\HuaRunWuCaiCheng.csv'
+	# KeyList = ['PID','name','type','tag','phone']
+	# data = ReadCSV(FilePath,KeyList)
+	# print data[50]['name'],data[50]['tag'],data[50]['type']
 
-	Namelist = [record['name'] for record in data]
-	CnNameList,EnNameList = CNNamelistFilter(Namelist)
-	PIDlist = [record['PID'] for record in data]
-	Typelist = [record['type'] for record in data]
-	Taglist = [[record['tag']] for record in data]
-	Phonelist = [record['phone'] for record in data]
-	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)
+	# Namelist = [record['name'] for record in data]
+	# CnNameList,EnNameList = CNNamelistFilter(Namelist)
+	# PIDlist = [record['PID'] for record in data]
+	# Typelist = [record['type'] for record in data]
+	# Taglist = [[record['tag']] for record in data]
+	# Phonelist = [record['phone'] for record in data]
+	# BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist)
 
-	print len(BrandDB)
+	# print len(BrandDB)
 	# for key in BrandDB:
 	# 	fp.write(key+'\t'+str(BrandDB[key]['name']).encode('utf8')+
 	# 		'\t'+str(BrandDB[key]['cnname']).encode('utf8')+
@@ -323,25 +385,38 @@ def main():
 	# 		'\t'+str(BrandDB[key]['type']).encode('utf8')+
 	# 		'\t'+StrTag(BrandDB[key]['tag'],'\t').encode('utf8')+'\n')
 
-	FilePath = '.\TXT\ShuangAnShangChang_POI.txt'
-	KeyList = ['PID','name']
-	data = ReadCSV(FilePath,KeyList,'\t')
-	print data[50]['PID'],data[50]['name']
-	PIDlist = [record['PID'] for record in data]
-	Namelist = [record['name'] for record in data]
+	# # print QueryBrInfoByName('BUOUBVOV',BrandDB)
+	# print QueryBrInfoByNameList(['姑姑宴','和合谷'],BrandDB)
 
-	POIDB = InsertInfoInPOIList(PIDlist,Namelist,BrandDB)
-	fp_poi = open('.\TXT\POIDB.txt','w')
-	for key in POIDB:
-		fp_poi.write(str(POIDB[key])+'\n')
-	
+	# FilePath = '.\TXT\ShuangAnShangChang_POI.txt'
+	# KeyList = ['PID','name']
+	# data = ReadCSV(FilePath,KeyList,'\t')
+	# print data[50]['PID'],data[50]['name']
+	# PIDlist = [record['PID'] for record in data]
+	# Namelist = [record['name'] for record in data]
+
+	# POIDB = InsertInfoInPOIList(PIDlist,Namelist,BrandDB)
+	# fp_poi = open('.\TXT\POIDB.csv','w')
+	OutputOrder = ['pid','name','phone','type','tag','story']
+	# fp_poi.write(','.join(['pid']+OutputOrder)+'\n')
+	# for pid in POIDB:
+	# 	fp_poi.write(pid+','+StrRecord(POIDB[pid],',',OutputOrder)+'\n')
 
 
-	fp.close()
-	fp_poi.close()
 
+	# fp_poi.close()
+	# # fp.close()
 
-
+	DBFilePath = '.\TXT\BrandDB.csv'
+	WriteDBtoCSV(BrandDB,OutputOrder,DBFilePath)
+	data = ReadCSV(DBFilePath,OutputOrder)
+	for record in data:
+		if record['pid'] == '191':
+			print StrRecord(record)
+			print record
+			fp_tmp = open('.\TXT\\tmp.txt','w')
+			fp_tmp.write(StrRecord(record))
+			fp_tmp.close()
 
 if __name__ == '__main__':
 	main()

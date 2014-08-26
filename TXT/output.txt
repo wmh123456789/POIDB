@@ -1,0 +1,687 @@
+344	Conino Lambozghini	???	Conino Lambozghini	服装	男装	
+345	CHARRIOL	???	CHARRIOL	其他	钟表	
+346	CADENZA	???	CADENZA	其他	珠宝	
+347	爵士丹尼	爵士丹尼	???	服装	男装	
+340	BUOUBVOV	???	BUOUBVOV	服装	女装	
+341	ORIGIN	???	ORIGIN	服装	女装	
+342	AESTHEXIX	???	AESTHEXIX	其他	其他	
+343	MARCBY MAEC.JACOBS	???	MARCBY MAEC.JACOBS	服装	女装	
+348	Pierre Cardin	???	Pierre Cardin	服装	男装	
+349	蓝豹	蓝豹	???	服装	男装	
+-1						
+298	卡秀	卡秀	???	服装	女装	
+299	嘉宝	嘉宝	???	服装	鞋	
+296	PIDEBO	???	PIDEBO	服装	男装	
+297	MARK.BOSE	???	MARK.BOSE	服装	男装	
+294	discovery	???	discovery	服装	男装	
+295	卡尔蒂尼	卡尔蒂尼	???	服装	男装	
+292	伯爵博朗	伯爵博朗	???	服装	男装	
+293	TREYFUS	???	TREYFUS	服装	男装	
+290	Zippo	???	Zippo	其他	生活用品	
+291	PARKER	???	PARKER	其他	钢笔	
+591	THE NORTH FACE	???	THE NORTH FACE	体育	体育用品	
+590	哈根达斯	哈根达斯	???	餐饮	冷饮	
+593	AJIDOU	???	AJIDOU	其他	化妆品	
+592	hotwind	???	hotwind	服装	女装	
+595	珍仕菓	珍仕菓	???	餐饮	冷饮	
+594	dragon star	???	dragon star	电器	电子数码	
+597	DorDor Horse	???	DorDor Horse	服装	儿童装	
+596	丽家宝贝	丽家宝贝	???	儿童母婴	母婴用品	
+195	adidas	???	adidas	服装	运动装	
+598	rooKie	???	rooKie	服装	儿童装	
+197	贝纳通	贝纳通	???	服装	儿童装	
+196	JVC	???	JVC	电器	家用电器	
+191	chloe	???	chloe	个护化妆	化妆品	
+190	东赢日盛	东赢日盛	???	其他	珠宝	
+193	VANS	???	VANS	服装	男装	
+192	AUPRES	???	AUPRES	个护化妆	化妆品	
+270	戴梦得	戴梦得	???	其他	珠宝	
+271	周大生	周大生	???	其他	珠宝	
+272	origins	???	origins	个护化妆	化妆品	
+273	JurLique	???	JurLique	个护化妆	化妆品	
+274	LANEIGE	???	LANEIGE	个护化妆	化妆品	
+275	KOSE	???	KOSE	个护化妆	化妆品	
+276	LARWINER	???	LARWINER	其他	珠宝	
+277	BLLYN	???	BLLYN	其他	珠宝	
+278	爱慕先生	爱慕先生	???	服装	男装	
+279	雅戈尔	雅戈尔	???	服装	男装	
+524	耐尔	耐尔	???	服装	女装	
+525	ruke house	???	ruke house	服装	女装	
+526	头彩	头彩	???	其他	化妆品	
+527	swisswin	???	swisswin	服装	女装	
+520	凹凸	凹凸	???	服装	女装	
+521	沃尔玛	沃尔玛	???	超市	超市	
+522	茶马云南	茶马云南	???	其他	化妆品	
+523	韩银尚	韩银尚	???	其他	珠宝	
+599	SKINFOOD	???	SKINFOOD	其他	化妆品	
+528	POLO	???	POLO	服装	男装	
+529	巴拉巴拉	巴拉巴拉	???	服装	儿童装	
+449	SC Fashion	???	SC Fashion	服装	女装	
+448	AMASS	???	AMASS	服装	女装	
+443	曼妮芬	曼妮芬	???	服装	内衣	
+442	STACCATO	???	STACCATO	服装	鞋	
+441	Joy&Peace	???	Joy&Peace	服装	男装	
+440	Vme	???	Vme	服装	鞋	
+447	G. Vill	???	G. Vill	服装	鞋	
+446	TATUAGGI	???	TATUAGGI	服装	鞋	
+445	Tata	???	Tata	服装	鞋	
+444	Wonder	???	Wonder	服装	鞋	
+108	INSUN	???	INSUN	服装	男装	
+109	M.TSUBOMI	???	M.TSUBOMI	服装	女装	
+102	鄂尔多斯	鄂尔多斯	???	服装	综合	女装	
+103	LA FEE	???	LA FEE	服装	女装	
+100	le saunda	???	le saunda	服装	女装	
+101	JORYA	???	JORYA	服装	女装	
+106	IMM	???	IMM	服装	女装	
+107	凯瑞拉	凯瑞拉	???	服装	女装	
+104	兰丝绘	兰丝绘	???	服装	女装	
+105	EXCEPTION	???	EXCEPTION	服装	女装	
+39	ALA	???	ALA	服装	女装	
+38	FRAAS	???	FRAAS	服装	女装	
+33	MARJA KURKI	???	MARJA KURKI	服装	女装	
+32	landi	???	landi	服装	女装	
+31	应大	应大	???	服装	女装	
+30	AINTLUCK	???	AINTLUCK	服装	女装	
+37	LTAM Mark	???	LTAM Mark	服装	女装	
+36	格格	格格	???	服装	女装	
+35	粉红玛琍	粉红玛琍	???	服装	女装	
+34	Leonidas	???	Leonidas	餐饮	零食	
+641	字里行间	字里行间	???	超市	超市	
+640	必胜客	必胜客	???	餐饮	快餐	
+643	navigare	???	navigare	服装	女装	
+642	五彩凤	五彩凤	???	其他	珠宝	
+645	CLself	???	CLself	其他	奢侈品	
+644	JNBY	???	JNBY	服装	女装	
+438	哥伦比亚 Columbia	哥伦比亚 Columbia	???	体育	运动装	
+439	CHRISDIEN DENY	???	CHRISDIEN DENY	服装	鞋	
+436	ALEX BRUNI	???	ALEX BRUNI	服装	男装	
+437	Ozark Gear	???	Ozark Gear	体育	男装	
+434	米瓦法迪	米瓦法迪	???	服装	男装	
+435	Timberland	???	Timberland	体育	运动装	
+432	The North Face	???	The North Face	体育	运动装	
+433	AIGLE	???	AIGLE	体育	运动装	
+430	ANGELO NARDELLI	???	ANGELO NARDELLI	服装	男装	
+431	SUUNTO	???	SUUNTO	体育	运动装	
+339	黛玛诗	黛玛诗	???	服装	女装	
+338	ZUCZUG	???	ZUCZUG	服装	女装	
+335	LONGINES	???	LONGINES	其他	钟表	
+334	BOSS HUGO BOSS	???	BOSS HUGO BOSS	服装	男装	
+337	Pandora	???	Pandora	其他	珠宝	
+336	万宝龙	万宝龙	???	其他	珠宝	
+331	Zegna Sport	???	Zegna Sport	服装	男装	
+330	TAGHEUER	???	TAGHEUER	其他	钟表	
+333	DUNHILL	???	DUNHILL	服装	男装	
+332	ARMANI	???	ARMANI	服装	内衣	
+89	依波表	依波表	???	其他	钟表	
+6	CLARINS	???	CLARINS	个护化妆	化妆品	
+99	SCOFIELD	???	SCOFIELD	服装	男装	
+98	Bean Pole	???	Bean Pole	服装	男装	
+91	NINE WEST	???	NINE WEST	服装	女装	
+90	blackyak	???	blackyak	体育	运动装	
+93	GNC	???	GNC	其他	保健品	
+92	Aimer	???	Aimer	服装	内衣	女装	
+95	Lesportsac	???	Lesportsac	服装	箱包	
+94	BIRKENSTOCK	???	BIRKENSTOCK	服装	鞋	
+97	CALVIN KLEIN	???	CALVIN KLEIN	服装	内衣	男装	
+96	St. Dragon	???	St. Dragon	服装	箱包	
+153	SETFANEL	???	SETFANEL	服装	女装	
+559	map by BeLLE	???	map by BeLLE	服装	女装	
+558	NAUTICA	???	NAUTICA	服装	男装	
+555	CHARLES & KEITH	???	CHARLES & KEITH	服装	女装	
+554	海底捞火锅	海底捞火锅	???	餐饮	正餐	
+557	Mo & Co	???	Mo & Co	服装	女装	
+556	Dissona	???	Dissona	服装	女装	
+551	眉州小吃	眉州小吃	???	餐饮	正餐	
+550	史努比乐园	史努比乐园	???	儿童母婴	儿童用品	
+553	爱有梅有	爱有梅有	???	餐饮	零食	
+552	西提牛排	西提牛排	???	餐饮	快餐	
+238	金利来	金利来	???	服装	综合	男装	
+239	Adidas	???	Adidas	体育	运动装	
+234	canlemon	???	canlemon	服装	儿童装	
+235	惠葆	惠葆	???	服装	儿童装	
+236	兄妹猫	兄妹猫	???	服装	儿童装	
+237	MOONSTAR	???	MOONSTAR	服装	儿童装	
+230	NATURINA	???	NATURINA	个护化妆	化妆品	
+231	米皇	米皇	???	服装	综合	
+232	兔皇	兔皇	???	服装	综合	
+233	蕾沃尔	蕾沃尔	???	服装	综合	
+1	OMEGA	???	OMEGA	其他	钟表	
+155	Brooks Brothers	???	Brooks Brothers	服装	男装	
+146	瑞士维氏军刀	瑞士维氏军刀	???	其他	生活用品	
+147	DUKE	???	DUKE	其他	鞋	
+144	凯萨大帝	凯萨大帝	???	服装	男装	
+619	望湘园	望湘园	???	餐饮	正餐	
+142	虎都	虎都	???	服装	男装	
+143	HANMSON	???	HANMSON	服装	男装	
+140	KEVIN KELLY	???	KEVIN KELLY	服装	男装	
+141	九牧王	九牧王	???	服装	男装	
+612	时尚殿堂美发沙龙	时尚殿堂美发沙龙	???	其他	化妆品	
+613	进巍美甲	进巍美甲	???	其他	化妆品	
+610	Lowrys Farm	???	Lowrys Farm	服装	女装	
+611	色非	色非	???	服装	女装	
+616	D'ZZIT	???	D'ZZIT	服装	女装	
+617	欧迪芬	欧迪芬	???	服装	女装	
+148	LUCA BOSSI	???	LUCA BOSSI	服装	男装	
+149	Charriol	???	Charriol	其他	钟表	
+154	Kanojao	???	Kanojao	服装	女装	
+194	Nike	???	Nike	体育	运动装	体育用品	
+685	魔易艺术·家	魔易艺术·家	???	体育	体育用品	
+684	阿芙香薰	阿芙香薰	???	其他	化妆品	
+686	巴贝拉	巴贝拉	???	餐饮	快餐	
+681	麻辣诱惑食品	麻辣诱惑食品	???	餐饮	正餐	
+680	招财猫	招财猫	???	餐饮	零食	
+683	cosadimoda	???	cosadimoda	服装	女装	
+682	论道.竹叶青	论道.竹叶青	???	餐饮	零食	
+458	MOISSAL.PARIAS	???	MOISSAL.PARIAS	服装	女装	
+459	VOV	???	VOV	服装	女装	
+133	First Wert	???	First Wert	服装	男装	
+132	ROSSINI	???	ROSSINI	其他	钟表	
+131	飞亚达	飞亚达	???	其他	钟表	
+130	LANCOME	???	LANCOME	个护化妆	化妆品	
+137	Wolsey	???	Wolsey	服装	男装	
+136	比音勒芬	比音勒芬	???	服装	男装	
+135	诺帝卡	诺帝卡	???	服装	女装	
+134	BossSunwen	???	BossSunwen	服装	男装	
+494	骏朗眼镜	骏朗眼镜	???	其他	化妆品	
+495	汤臣倍健	汤臣倍健	???	餐饮	零食	
+496	洪晟翔	洪晟翔	???	餐饮	零食	
+497	佳之优品	佳之优品	???	儿童母婴	母婴用品	
+490	COTTON REPUBLIC	???	COTTON REPUBLIC	服装	女装	
+491	茶大爷	茶大爷	???	餐饮	咖啡厅	
+492	品尚味烟酒屋	品尚味烟酒屋	???	餐饮	零食	
+493	履行者	履行者	???	体育	体育用品	
+24	ANNA SUI	???	ANNA SUI	个护化妆	化妆品	
+25	邢氏	邢氏	???	服装	女装	
+26	LIANG NUO	???	LIANG NUO	服装	女装	
+27	Marisfrolg	???	Marisfrolg	服装	女装	
+20	HERRFURST	???	HERRFURST	服装	鞋	
+21	BOSE	???	BOSE	电器	电子数码	
+22	Feraud	???	Feraud	服装	女装	
+23	Rebecca	???	Rebecca	服装	女装	
+28	LANCY FROM25	???	LANCY FROM25	服装	女装	
+29	F.L≡dy	???	F.L≡dy	服装	女装	
+407	美优酵素	美优酵素	???	其他	保健品	
+406	晓酵素	晓酵素	???	其他	保健品	
+405	SWAROVSKI	???	SWAROVSKI	其他	工艺品	
+404	琉璃工房	琉璃工房	???	其他	工艺品	
+403	LANCEL	???	LANCEL	服装	女装	
+402	FANCL无添加	FANCL无添加	???	个护化妆	化妆品	
+401	STENDERS	???	STENDERS	个护化妆	化妆品	
+400	佰草集	佰草集	???	个护化妆	化妆品	
+452	名品眼镜	名品眼镜	???	其他	女装	
+409	旭福	旭福	???	其他	保健品	
+408	新西兰十一坊	新西兰十一坊	???	其他	保健品	
+453	ZUKKA.PRO	???	ZUKKA.PRO	服装	女装	
+379	安莉芳 Triumph	安莉芳 Triumph	???	服装	内衣	
+378	SALUTE	???	SALUTE	服装	女装	
+371	塞斯克瑞	塞斯克瑞	???	服装	女装	
+370	西贝伦	西贝伦	???	服装	女装	
+373	MORELLATO	???	MORELLATO	其他	珠宝	
+372	oxette	???	oxette	其他	珠宝	
+375	集品堂	集品堂	???	其他	保健品	
+374	Bread Talk	???	Bread Talk	餐饮	正餐	快餐	
+377	黛安芬	黛安芬	???	服装	内衣	
+376	上品堂	上品堂	???	其他	保健品	
+618	福奈特	福奈特	???	服装	女装	
+393	飞利浦	飞利浦	???	电器	家用电器	
+392	BRITA	???	BRITA	电器	家用电器	
+391	kenwood	???	kenwood	其他	厨房卫浴	
+145	ELLE HOMME	???	ELLE HOMME	服装	男装	
+397	三菱	三菱	???	服装	综合	
+396	鹿王	鹿王	???	服装	综合	
+395	新快	新快	???	餐饮	零食	
+176	KLOVA	???	KLOVA	服装	女装	
+82	KOLON SPORT	???	KOLON SPORT	体育	运动装	
+83	Jack Wolfskin	???	Jack Wolfskin	体育	运动装	
+80	精品烟酒	精品烟酒	???	其他	烟酒	
+81	DRAGON STAR	???	DRAGON STAR	电器	电子数码	
+86	POSEMER	???	POSEMER	服装	男装	
+87	森卡诺	森卡诺	???	服装	男装	
+84	FJALL RAVEN	???	FJALL RAVEN	体育	运动装	
+85	Lafuma	???	Lafuma	体育	运动装	
+7	HELENA RUBINSTEIN	???	HELENA RUBINSTEIN	个护化妆	化妆品	
+170	美术馆	美术馆	???	服装	女装	
+586	甜心甜	甜心甜	???	餐饮	零食	
+587	华润置地展台	华润置地展台	???	其他	展台	
+584	泼泼龙俱乐部	泼泼龙俱乐部	???	儿童母婴	儿童用品	
+585	本色棉	本色棉	???	服装	儿童装	
+582	BASIC HOUSE	???	BASIC HOUSE	服装	女装	
+583	selected	???	selected	服装	男装	
+580	锦瑟蓝	锦瑟蓝	???	其他	综合	
+581	好比来	好比来	???	餐饮	正餐	
+588	新宇亨得利	新宇亨得利	???	其他	钟表	
+589	mind bridge	???	mind bridge	服装	女装	
+245	美宝莲	美宝莲	???	个护化妆	化妆品	
+244	Top Gloria	???	Top Gloria	服装	女装	
+247	HR	???	HR	服装	女装	
+246	Organic touch	???	Organic touch	个护化妆	化妆品	
+241	GASTONE LUCIOLI	???	GASTONE LUCIOLI	服装	女鞋	
+614	港汇优优	港汇优优	???	其他	其他	
+243	CAMENAE	???	CAMENAE	个护化妆	化妆品	
+242	满记甜品	满记甜品	???	餐饮	冷饮	零食	
+615	avvn	???	avvn	服装	女装	
+249	米茜尔	米茜尔	???	服装	女装	
+248	comico	???	comico	服装	女装	
+519	levis	???	levis	服装	男装	
+518	汤美希菲格	汤美希菲格	???	服装	女装	
+511	九分仙芋	九分仙芋	???	餐饮	冷饮	
+510	权金城	权金城	???	餐饮	正餐	
+513	GAP	???	GAP	服装	男装	
+512	妈妈好孩子	妈妈好孩子	???	儿童母婴	母婴用品	
+515	Mademoiselle	???	Mademoiselle	服装	女装	
+514	TISSOT	???	TISSOT	其他	钟表	
+517	中国黄金	中国黄金	???	其他	珠宝	
+516	I DO	???	I DO	其他	珠宝	
+623	bovrjois	???	bovrjois	其他	化妆品	
+622	OFFSUN	???	OFFSUN	体育	体育用品	
+621	食通天美食广场	食通天美食广场	???	餐饮	快餐	
+620	小时代	小时代	???	儿童母婴	儿童用品	
+627	H&M	???	H&M	服装	女装	
+626	paul frank	???	paul frank	服装	儿童装	
+625	promod	???	promod	服装	女装	
+624	maxfactor	???	maxfactor	其他	化妆品	
+450	YINER	???	YINER	服装	女装	
+451	蒙迪爱尔	蒙迪爱尔	???	服装	女装	
+629	英卓锐	英卓锐	???	餐饮	咖啡厅	
+628	bershop	???	bershop	儿童母婴	儿童用品	
+454	ZAA DAA	???	ZAA DAA	服装	女装	
+455	Deco	???	Deco	服装	女装	
+456	Decoster	???	Decoster	服装	女装	
+457	ICICLE	???	ICICLE	服装	女装	
+179	CASIO	???	CASIO	服装	女装	
+178	ELIE SAAB	???	ELIE SAAB	服装	女装	
+177	CHLOSIO	???	CHLOSIO	服装	女装	
+199	Crocs	???	Crocs	服装	男装	
+175	JEFEN	???	JEFEN	服装	女装	
+174	ONLY	???	ONLY	服装	女装	
+173	Ochirly	???	Ochirly	服装	女装	
+172	Kipling	???	Kipling	服装	男装	
+171	米莲诺	米莲诺	???	服装	女装	
+198	Jeep	???	Jeep	体育	运动装	
+182	伊慧达	伊慧达	???	服装	女装	
+183	WEEKEND by MaxMara	???	WEEKEND by MaxMara	个护化妆	化妆品	
+180	MONET	???	MONET	服装	女装	
+253	Jiggie Studio	???	Jiggie Studio	服装	女装	
+656	指缘风情	指缘风情	???	其他	化妆品	
+657	英孚教育少儿	英孚教育少儿	???	儿童母婴	儿童用品	
+654	利郎	利郎	???	服装	男装	
+655	La Beaute美发沙龙	La Beaute美发沙龙	???	其他	化妆品	
+186	金象珠宝	金象珠宝	???	其他	珠宝	
+187	千禧之星	千禧之星	???	其他	珠宝	
+650	巴布豆	巴布豆	???	儿童母婴	儿童用品	
+651	阿香米线	阿香米线	???	餐饮	快餐	
+652	真功夫	真功夫	???	餐饮	快餐	
+188	jaff	???	jaff	其他	女装	
+189	尚氏珠宝	尚氏珠宝	???	其他	珠宝	
+658	美吉姆	美吉姆	???	儿童母婴	儿童用品	
+653	和佰佳居	和佰佳居	???	儿童母婴	母婴用品	
+184	双安黄金	双安黄金	???	其他	珠宝	
+185	BVLGARI	???	BVLGARI	个护化妆	珠宝	
+11	Van Lathem	???	Van Lathem	服装	鞋	
+10	Sisley	???	Sisley	个护化妆	化妆品	
+13	V.E.DELURE	???	V.E.DELURE	服装	鞋	
+12	GORNIA	???	GORNIA	服装	男装	
+15	s.t.dupont	???	s.t.dupont	服装	鞋	
+14	SATCHI	???	SATCHI	服装	鞋	
+17	C31 ROTC	???	C31 ROTC	服装	鞋	
+16	NEUBERLTN	???	NEUBERLTN	服装	鞋	
+19	Frienti	???	Frienti	服装	鞋	
+18	马亚诺	马亚诺	???	服装	鞋	
+659	哥弟	哥弟	???	服装	女装	
+62	TUMI	???	TUMI	服装	箱包	
+322	海辰贝贝	海辰贝贝	???	服装	儿童装	
+323	JNBY by JNBY	???	JNBY by JNBY	服装	儿童装	
+320	水孩儿	水孩儿	???	服装	儿童装	
+321	CAMKIDS	???	CAMKIDS	服装	儿童装	
+326	adidas kids	???	adidas kids	服装	儿童装	
+327	callise	???	callise	服装	儿童装	
+324	好孩子	好孩子	???	服装	儿童装	
+325	NIKE KIDS	???	NIKE KIDS	服装	儿童装	
+328	AIMER KIDS	???	AIMER KIDS	服装	儿童装	
+329	KISSCAT	???	KISSCAT	服装	鞋	
+201	Kuhn rikon	???	Kuhn rikon	其他	餐具	
+200	Lacoste	???	Lacoste	服装	男装	
+203	SK-II	???	SK-II	个护化妆	化妆品	
+202	孩之宝	孩之宝	???	服装	儿童装	
+205	RADO	???	RADO	其他	钟表	
+204	雪花秀	雪花秀	???	个护化妆	化妆品	
+207	谢瑞麟	谢瑞麟	???	其他	珠宝	
+206	周大福	周大福	???	其他	珠宝	
+209	金至尊	金至尊	???	其他	珠宝	
+208	周生生	周生生	???	其他	珠宝	
+77	New balance	???	New balance	服装	男装	
+76	儿童套房	儿童套房	???	儿童母婴	儿童用品	
+75	BABYROOM	???	BABYROOM	儿童母婴	母婴用品	
+74	姑姑宴	姑姑宴	???	餐饮	正餐	
+73	和合谷	和合谷	???	餐饮	正餐	
+72	Paw in Paw	???	Paw in Paw	服装	儿童装	
+71	ELAND KIDS	???	ELAND KIDS	服装	儿童装	
+70	KP	???	KP	服装	儿童装	
+79	同仁堂	同仁堂	???	其他	保健品	
+78	爱康	爱康	???	体育	体育用品	
+2	亨得利	亨得利	???	其他	钟表	
+669	KAMINEY	???	KAMINEY	服装	儿童装	
+668	Snoopy餐厅	Snoopy餐厅	???	餐饮	正餐	
+667	仙踪林	仙踪林	???	餐饮	正餐	
+666	小木棉	小木棉	???	儿童母婴	儿童用品	
+665	益和木	益和木	???	儿童母婴	儿童用品	
+664	J&M	???	J&M	服装	男装	
+663	娇鼎	娇鼎	???	服装	女装	
+662	玩具反斗城	玩具反斗城	???	儿童母婴	儿童用品	
+661	探奇乐园	探奇乐园	???	儿童母婴	儿童用品	
+660	佩吉	佩吉	???	服装	女装	
+542	诚和和田玉	诚和和田玉	???	其他	珠宝	
+543	oversea	???	oversea	其他	化妆品	
+540	sheepet	???	sheepet	儿童母婴	儿童用品	
+541	veromoda	???	veromoda	其他	奢侈品	
+546	云海肴	云海肴	???	餐饮	正餐	
+547	雅山布艺	雅山布艺	???	餐饮	快餐	
+544	香朝	香朝	???	其他	化妆品	
+545	i转角	i转角	???	餐饮	冷饮	
+8	植村秀	植村秀	???	个护化妆	化妆品	
+548	银然花	银然花	???	其他	珠宝	
+549	陕面居	陕面居	???	餐饮	正餐	
+120	利快	利快	???	其他	锅具	
+121	COSME DECORTE	???	COSME DECORTE	个护化妆	化妆品	
+122	Swissweda	???	Swissweda	个护化妆	化妆品	
+123	碧欧泉	碧欧泉	???	个护化妆	化妆品	
+124	GUERLAIN	???	GUERLAIN	个护化妆	化妆品	
+125	CD	???	CD	个护化妆	化妆品	
+126	CHANEL	???	CHANEL	个护化妆	化妆品	
+127	GIVENCHY	???	GIVENCHY	个护化妆	化妆品	
+128	Clinique	???	Clinique	个护化妆	化妆品	
+129	ESTEE LAUDER	???	ESTEE LAUDER	个护化妆	化妆品	
+414	SIEMENS	???	SIEMENS	电器	电子数码	
+415	方太	方太	???	电器	电子数码	
+416	SAMSUNG	???	SAMSUNG	电器	电子数码	
+417	帕罗	帕罗	???	服装	综合	
+410	位元堂	位元堂	???	其他	保健品	
+411	LOREAL	???	LOREAL	服装	女装	
+412	OLAY	???	OLAY	个护化妆	化妆品	
+413	SHARP	???	SHARP	电器	电子数码	
+498	悦瓷坊	悦瓷坊	???	其他	瓷器	
+418	三星手机	三星手机	???	电器	电子数码	
+419	雪莲	雪莲	???	服装	综合	
+499	None	???	None	其他	化妆品	
+319	小猪班纳	小猪班纳	???	服装	儿童装	
+318	CK Jeans	???	CK Jeans	服装	男装	
+313	Master Su	???	Master Su	服装	女装	
+312	JEEP	???	JEEP	体育	运动装	
+311	斯琴	斯琴	???	服装	女装	
+310	Teenie Weenie	???	Teenie Weenie	服装	女装	
+317	READ MA	???	READ MA	服装	女装	
+316	G-STAR RAW	???	G-STAR RAW	服装	男装	
+315	Armani Jeans	???	Armani Jeans	服装	男装	
+314	Weisi	???	Weisi	服装	女装	
+139	S.D.SPONTINI	???	S.D.SPONTINI	服装	男装	
+138	Tommy Hilfiger	???	Tommy Hilfiger	服装	男装	
+3	Make Up For Ever	???	Make Up For Ever	个护化妆	化妆品	
+368	LIEDOW	???	LIEDOW	服装	女装	
+369	DELUXE AND VINCI	???	DELUXE AND VINCI	服装	女装	
+366	赛吉琥珀	赛吉琥珀	???	其他	珠宝	
+367	FILON VIRO	???	FILON VIRO	服装	女装	
+364	Hape	???	Hape	服装	儿童装	
+365	SWATCH	???	SWATCH	其他	钟表	
+362	丽婴房	丽婴房	???	服装	儿童装	
+363	法纳贝儿	法纳贝儿	???	服装	儿童装	
+360	Senbodulun	???	Senbodulun	服装	儿童装	
+361	Hallmark	???	Hallmark	服装	儿童装	
+380	果园老农	果园老农	???	餐饮	零食	
+381	Kid Blue	???	Kid Blue	服装	内衣	
+382	Embry Form	???	Embry Form	服装	内衣	
+383	T.B2 LADY	???	T.B2 LADY	服装	女装	
+384	卡娜娃	卡娜娃	???	服装	女装	
+385	POWERLAND	???	POWERLAND	服装	女装	
+386	Panasonic	???	Panasonic	电器	电子数码	
+387	Dyson	???	Dyson	电器	家用电器	
+388	Luminaec	???	Luminaec	其他	餐具	
+389	康宁餐具	康宁餐具	???	其他	餐具	
+151	i Blues	???	i Blues	服装	女装	
+579	PACO PUBLIC	???	PACO PUBLIC	其他	化妆品	
+578	JACKJONES	???	JACKJONES	服装	男装	
+150	Leonardo	???	Leonardo	服装	男装	
+573	金鼎轩	金鼎轩	???	餐饮	正餐	
+572	落院	落院	???	餐饮	正餐	
+571	眉州东坡酒楼	眉州东坡酒楼	???	餐饮	正餐	
+570	胡椒厨房	胡椒厨房	???	餐饮	正餐	
+577	苗乡楼	苗乡楼	???	餐饮	正餐	
+576	三元梅园	三元梅园	???	餐饮	冷饮	
+575	兰瑜珈	兰瑜珈	???	体育	体育用品	
+574	美丽田园	美丽田园	???	其他	化妆品	
+60	Versace	???	Versace	其他	奢侈品	
+61	新秀丽	新秀丽	???	服装	箱包	
+258	COSTA COFFEE	???	COSTA COFFEE	餐饮	咖啡厅	
+259	ESTEEM	???	ESTEEM	服装	鞋	
+64	OQO	???	OQO	其他	餐具	
+65	WOLL	???	WOLL	其他	餐具	
+66	WMF	???	WMF	其他	餐具	
+67	Fissler	???	Fissler	其他	餐具	
+68	CATIMINI	???	CATIMINI	服装	儿童装	
+69	BEEN KID'S	???	BEEN KID'S	服装	儿童装	
+250	伊蒂雅	伊蒂雅	???	服装	女装	
+251	Lime Flare	???	Lime Flare	服装	女装	
+256	KORADIOR	???	KORADIOR	服装	女装	
+257	雅莹	雅莹	???	服装	女装	
+254	歌力思	歌力思	???	服装	女装	
+255	奥菲欧	奥菲欧	???	服装	女装	
+157	DKNY	???	DKNY	服装	男装	
+156	PORTS	???	PORTS	服装	女装	
+508	TECNICA	???	TECNICA	服装	男装	
+509	吞云小莳	吞云小莳	???	餐饮	正餐	
+506	尊贵视力	尊贵视力	???	其他	化妆品	
+507	三星	三星	???	电器	电子数码	
+504	HUAWEI	???	HUAWEI	电器	电子数码	
+505	肯德基	肯德基	???	餐饮	快餐	
+502	羊绒世家	羊绒世家	???	服装	男装	
+503	屈臣氏	屈臣氏	???	其他	化妆品	
+500	中旅体育旅行社	中旅体育旅行社	???	体育	体育用品	
+501	将太无二	将太无二	???	餐饮	正餐	
+630	美克美家	美克美家	???	儿童母婴	母婴用品	
+631	长天户外	长天户外	???	体育	体育用品	
+632	converse	???	converse	体育	体育用品	
+633	普安药房	普安药房	???	儿童母婴	母婴用品	
+469	呷哺呷哺	呷哺呷哺	???	餐饮	正餐	
+468	双立人	双立人	???	其他	厨房卫浴	
+636	悠游堂	悠游堂	???	儿童母婴	儿童用品	
+637	仙妮蕾德	仙妮蕾德	???	其他	化妆品	
+465	UCHINO	???	UCHINO	其他	厨房卫浴	
+464	多样屋	多样屋	???	其他	家居	
+467	T-OPPAPEORETTI	???	T-OPPAPEORETTI	其他	其他	
+466	红双喜	红双喜	???	其他	厨房卫浴	
+461	喜洋洋与灰太狼童装	喜洋洋与灰太狼童装	???	服装	童装	
+460	华歌尔	华歌尔	???	服装	内衣	
+463	味千拉面	味千拉面	???	餐饮	正餐	
+462	Disney Princess	???	Disney Princess	儿童母婴	儿童用品	
+168	Golden Point	???	Golden Point	服装	女装	
+169	生活素材	生活素材	???	服装	女装	
+164	Hogl	???	Hogl	服装	鞋	
+165	芮雅	芮雅	???	服装	女装	
+166	MARELLA	???	MARELLA	服装	女装	
+167	DILAKS	???	DILAKS	服装	女装	
+160	玫而美	玫而美	???	服装	女装	
+161	赛斯特	赛斯特	???	服装	女装	
+162	BELLE	???	BELLE	服装	鞋	
+163	ORIGINALS	???	ORIGINALS	服装	鞋	
+9	La Mer	???	La Mer	个护化妆	化妆品	
+647	曼谷银	曼谷银	???	其他	珠宝	
+646	Broadcast	???	Broadcast	服装	女装	
+649	会员中心	会员中心	???	其他	会员中心	
+648	disney baby	???	disney baby	儿童母婴	母婴用品	
+357	芭比	芭比	???	服装	儿童装	
+356	LEGO	???	LEGO	儿童母婴	儿童用品	
+355	FisherPrice	???	FisherPrice	儿童母婴	儿童用品	
+354	双安商场精品超市	双安商场精品超市	???	餐饮	超市	
+353	CAMEL ACTIVE	???	CAMEL ACTIVE	体育	运动装	
+352	JAGUAR	???	JAGUAR	服装	男装	
+351	BRAUN BUFFEL	???	BRAUN BUFFEL	服装	箱包	
+350	Menticano	???	Menticano	服装	男装	
+359	英氏	英氏	???	服装	儿童装	
+358	chicco	???	chicco	服装	儿童装	
+216	Apple专卖	Apple专卖	???	体育	运动装	
+217	NORTHLAND	???	NORTHLAND	服装	女装	
+214	观奇洋服	观奇洋服	???	服装	男装	
+215	MEYER	???	MEYER	其他	男装	
+212	Folli Follie	???	Folli Follie	其他	钟表	珠宝	
+213	VICUTU	???	VICUTU	服装	男装	
+210	六福珠宝	六福珠宝	???	其他	珠宝	
+211	Coach	???	Coach	服装	箱包	
+218	圣大保罗	圣大保罗	???	服装	男装	
+219	BOSS SUNWEN	???	BOSS SUNWEN	服装	男装	
+289	天王表	天王表	???	其他	钟表	
+288	欧洲胡同	欧洲胡同	???	其他	其他	
+4	资生堂	资生堂	???	个护化妆	化妆品	
+281	V&G	???	V&G	个护化妆	化妆品	
+280	BODY.WILD	???	BODY.WILD	服装	男装	
+283	策乐	策乐	???	服装	男装	
+282	圣伽步	圣伽步	???	服装	鞋	
+285	沙驰	沙驰	???	服装	男装	
+284	宾度	宾度	???	服装	男装	
+287	TITAN	???	TITAN	服装	箱包	
+286	巧手改衣	巧手改衣	???	其他	服装服务	
+678	小骆驼	小骆驼	???	服装	儿童装	
+679	嘟噜岛	嘟噜岛	???	儿童母婴	儿童用品	
+674	母婴室	母婴室	???	其他	母婴室	
+675	hopeshow	???	hopeshow	服装	女装	
+676	名媛印象	名媛印象	???	服装	女装	
+677	爱慕kids	爱慕kids	???	服装	儿童装	
+670	春天河谷	春天河谷	???	儿童母婴	儿童用品	
+671	黄记煌	黄记煌	???	餐饮	正餐	
+672	疯狂4D影酷	疯狂4D影酷	???	室内娱乐	电影院	
+673	孩儿帮	孩儿帮	???	儿童母婴	儿童用品	
+263	馨亭	馨亭	???	其他	家纺	
+262	MINE	???	MINE	其他	家纺	
+261	ZUCCHI	???	ZUCCHI	其他	家纺	
+260	SHERIPAN	???	SHERIPAN	服装	家纺	
+267	李宁	李宁	???	体育	运动装	
+266	NEO	???	NEO	体育	运动装	
+265	CONVERSE	???	CONVERSE	体育	运动装	
+264	ESPRIT	???	ESPRIT	服装	女装	
+269	瑞恩	瑞恩	???	其他	珠宝	
+268	H2O+	???	H2O+	个护化妆	化妆品	
+59	PRADA	???	PRADA	服装	女装	
+58	Autason	???	Autason	服装	男装	
+55	UGG	???	UGG	服装	鞋	
+54	Burberry	???	Burberry	其他	奢侈品	
+57	雅阁诗丹	雅阁诗丹	???	个护化妆	化妆品	
+56	RIMOWA	???	RIMOWA	服装	箱包	
+51	Tiger	???	Tiger	其他	餐具	
+50	棉田	棉田	???	其他	家纺	
+53	Nina Ricci	???	Nina Ricci	个护化妆	化妆品	
+52	象印	象印	???	其他	餐具	
+537	拿渡麻辣香锅	拿渡麻辣香锅	???	餐饮	正餐	
+536	陈记火锅	陈记火锅	???	餐饮	正餐	
+535	胧月轩	胧月轩	???	餐饮	正餐	
+63	三叉牌	三叉牌	???	其他	餐具	
+533	麻辣诱惑	麻辣诱惑	???	餐饮	正餐	
+532	I-Baby	???	I-Baby	儿童母婴	儿童用品	
+531	吉祥馄饨	吉祥馄饨	???	餐饮	正餐	
+530	外婆家	外婆家	???	餐饮	快餐	
+152	Juicy Couture	???	Juicy Couture	服装	女装	
+539	eve ave	???	eve ave	服装	男装	
+538	私家小厨	私家小厨	???	餐饮	正餐	
+115	Puma	???	Puma	体育	运动装	
+252	GANT	???	GANT	服装	女装	男装	
+117	罗莱家纺	罗莱家纺	???	其他	家纺	
+116	热浪	热浪	???	体育	运动装	
+111	hosa	???	hosa	体育	运动装	
+110	VESAS Collection	???	VESAS Collection	服装	女装	
+113	YONEX	???	YONEX	体育	运动装	
+112	Rapido	???	Rapido	体育	运动装	
+119	瑞而士	瑞而士	???	其他	锅具	
+118	OSIM	???	OSIM	电器	家用电器	
+429	CAROKAI	???	CAROKAI	服装	男装	
+428	Satchi	???	Satchi	服装	男装	
+534	丝域美发	丝域美发	???	其他	化妆品	
+421	ARISTON	???	ARISTON	电器	电子数码	
+420	珍贝	珍贝	???	服装	综合	
+423	见现冰激凌	见现冰激凌	???	餐饮	冷饮	
+422	权味	权味	???	餐饮	正餐	
+425	JACK&JONES	???	JACK&JONES	服装	男装	
+424	ARCTERYX	???	ARCTERYX	体育	鞋	
+427	Lee	???	Lee	服装	男装	
+426	列维士	列维士	???	服装	男装	
+308	Ara	???	Ara	服装	鞋	
+309	LACOSTE	???	LACOSTE	服装	男装	
+300	24HRS	???	24HRS	服装	箱包	
+301	achette	???	achette	服装	鞋	
+302	Patrica	???	Patrica	服装	鞋	
+303	Hush Puppies	???	Hush Puppies	服装	女装	
+304	图卡	图卡	???	服装	鞋	
+305	ECCO	???	ECCO	服装	鞋	
+306	dansko	???	dansko	服装	鞋	
+307	Clarks	???	Clarks	服装	鞋	
+181	CHARLIE's ANGELS	???	CHARLIE's ANGELS	服装	女装	
+240	Salad	???	Salad	服装	女装	
+568	五彩冰酷运动中心	五彩冰酷运动中心	???	体育	体育用品	
+569	巴厘泰	巴厘泰	???	餐饮	正餐	
+560	GUESS	???	GUESS	其他	钟表	
+561	Anne Karen	???	Anne Karen	其他	奢侈品	
+562	Spring field	???	Spring field	服装	女装	
+563	DAZZLE	???	DAZZLE	体育	体育用品	
+564	柏斯琴行	柏斯琴行	???	体育	体育用品	
+565	便宜坊	便宜坊	???	餐饮	正餐	
+566	麻里麻里香锅	麻里麻里香锅	???	餐饮	正餐	
+567	太平洋咖啡	太平洋咖啡	???	餐饮	咖啡厅	
+229	展台	展台	???	其他	展台	
+228	ATM	???	ATM	其他	设备	
+227	DIOR BEAUTY	???	DIOR BEAUTY	其他	化妆品	
+226	ENZO	???	ENZO	其他	珠宝	
+225	恒昌珠宝	恒昌珠宝	???	其他	珠宝	
+224	和玉缘	和玉缘	???	其他	珠宝	
+223	紫云珠宝	紫云珠宝	???	其他	珠宝	
+222	GARDEUR	???	GARDEUR	服装	男装	
+221	布兰施男鞋	布兰施男鞋	???	服装	鞋	
+220	GHRISDIEN DENY	???	GHRISDIEN DENY	服装	女装	
+114	Arena	???	Arena	体育	运动装	
+88	LONDON FOG	???	LONDON FOG	服装	男装	
+390	BRAUN	???	BRAUN	电器	家用电器	
+605	page one	???	page one	服装	女装	
+604	eee	???	eee	服装	女装	
+607	璟益智天地	璟益智天地	???	儿童母婴	儿童用品	
+606	carrera	???	carrera	其他	钟表	
+601	天然故事	天然故事	???	服装	女装	
+600	meejoy	???	meejoy	儿童母婴	儿童用品	
+603	honeys	???	honeys	服装	女装	
+602	La Chapelle	???	La Chapelle	服装	女装	
+159	莱姿	莱姿	???	服装	女装	
+158	奥淇唯艺	奥淇唯艺	???	服装	女装	
+394	京钟	京钟	???	电器	其他	
+609	酷玩无限	酷玩无限	???	儿童母婴	儿童用品	
+608	彩玉坊	彩玉坊	???	其他	珠宝	
+634	天才宝贝	天才宝贝	???	儿童母婴	儿童用品	
+399	极草	极草	???	其他	保健品	
+635	基本生活	基本生活	???	其他	工艺品	
+398	L'OCCITANE	???	L'OCCITANE	个护化妆	化妆品	
+48	泰普尔	泰普尔	???	其他	家纺	
+49	无印工坊	无印工坊	???	其他	家纺	
+46	陆宝	陆宝	???	其他	陶器	
+47	Yvonne	???	Yvonne	其他	家纺	
+44	CARNIER THIEBAUT	???	CARNIER THIEBAUT	其他	家纺	
+45	FRANZ	???	FRANZ	其他	瓷器	
+42	LA CLOVER	???	LA CLOVER	服装	女装	
+43	陶仨坊	陶仨坊	???	其他	陶器	
+40	Kiehl's	???	Kiehl's	个护化妆	化妆品	
+41	ATSUGI	???	ATSUGI	服装	女装	
+638	芝麻开门	芝麻开门	???	儿童母婴	儿童用品	
+5	Bobbi Brown	???	Bobbi Brown	个护化妆	化妆品	
+639	七匹狼	七匹狼	???	服装	男装	
+489	谭木匠	谭木匠	???	其他	化妆品	
+488	亿莎	亿莎	???	其他	化妆品	
+487	华润堂	华润堂	???	其他	化妆品	
+486	四号厅	四号厅	???	其他	电影院	
+485	咖啡厅	咖啡厅	???	其他	电影院	
+484	六号厅	六号厅	???	其他	电影院	
+483	五号厅	五号厅	???	其他	电影院	
+482	售票厅	售票厅	???	其他	电影院	
+481	一号厅	一号厅	???	其他	电影院	
+480	二号厅	二号厅	???	其他	电影院	
+472	J.LINDEBERG	???	J.LINDEBERG	服装	男装	
+473	PAPA JOHNS	???	PAPA JOHNS	餐饮	快餐	
+470	SONY	???	SONY	电器	电子数码	
+471	亮视点	亮视点	???	其他	化妆品	
+476	NIKE 360°	???	NIKE 360°	体育	体育用品	
+477	Starbucks	???	Starbucks	餐饮	咖啡厅	
+474	SASA	???	SASA	其他	化妆品	
+475	探路者	探路者	???	体育	体育用品	
+478	七号厅	七号厅	???	其他	电影院	
+479	三号厅	三号厅	???	其他	电影院	
