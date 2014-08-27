@@ -50,7 +50,8 @@ AB = zip(A,B)
 d1 = {}  #{'a':1}
 d2 = {}  #{1:'a'}
 C = {'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}
-C=C.update({'name':'aaa'})
+D = C.pop('type')
 
-print C['name']
+print D
+print C
 

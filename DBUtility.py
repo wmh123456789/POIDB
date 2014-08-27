@@ -3,8 +3,34 @@ import os
 import shutil
 import re
 import sys
+from bs4 import BeautifulSoup
+
 reload(sys)
 sys.setdefaultencoding('utf8')
+
+'''
+Read XML file to a List
+XML will code by UTF8, by WPS office/MS office
+'''
+def ReadXML(FilePath,KeyList):
+	KeyLen = len(KeyList)
+	Records = []
+	FileLines = open(FilePath,'r').readlines()
+	FileText = ' '.join(FileLines)
+	soup = BeautifulSoup(FileText)
+	soup.prettify()
+	for row in soup.findAll('row'):
+		AllData = row.findAll('cell')
+		words = [data.text.strip() for data in AllData]
+		if len(words) >= KeyLen:
+			record = dict(zip(KeyList,words))
+			Records.append(record)
+			pass
+		else:
+			print len(AllData)
+			print 'Error, word length is not match.',len(words),KeyLen
+	return Records
+
 
 '''
 Read CSV file to a List
@@ -12,12 +38,13 @@ each line(record) in CSV is a element(dict) in the List
 in each element(dict), keys are given by KeyList
 '''
 def ReadCSV(FilePath,KeyList,SpaceMark=','):
-	fp = open(FilePath,'r')
+	fp = open(FilePath,'rU')
 	AllData = []
 	KeyLen = len(KeyList)
 	Records = []
 	for line in fp.readlines():
 		words = [word.strip() for word in line.split(SpaceMark)]
+		# print words[0]
 		if len(words) >= KeyLen:
 			record = dict(zip(KeyList,words))
 			Records.append(record)
@@ -25,7 +52,42 @@ def ReadCSV(FilePath,KeyList,SpaceMark=','):
 		else:
 			print words
 			print 'Error, word length is not match.',len(words),KeyLen
+	print len(Records)
 	return Records
+
+
+'''
+Read data file: read data file to a list
+Function is same with ReadCSV, default SpaceMark is tab
+'''
+def ReadDAT(FilePath,KeyList,SpaceMark='\t'):
+	fp = open(FilePath,'r')
+	AllData = []
+	KeyLen = len(KeyList)
+	Records = []
+	for line in fp.readlines():
+		words = [word.strip() for word in line.split(SpaceMark)]
+		
+		if len(words) >= KeyLen:
+			record = dict(zip(KeyList,words))
+			Records.append(record)
+			pass
+		else:
+			print words
+			print 'Error, word length is not match.',len(words),KeyLen
+	print len(Records)
+	return Records
+
+'''
+Convert Raw record list to DB format
+[{kk:KK,xxx:XXX,vv:VV..},{}] => {KK:{xxx:XXX,vv:VV,...},{...},...} 
+'''
+def Recodelist2DB(recordlist,keyfield):
+	DB = {}
+	for record in recordlist:
+		key = record.pop(keyfield)
+		DB.update({key:record})
+	return DB
 
 
 '''
@@ -317,10 +379,10 @@ def InsertInfoInPOIList(PIDlist,Namelist,BrandDB):
 Read a data-ready file and update the BrandDB
 '''
 def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
-	data = ReadCSV(FilePath,KeyList)
+	data = ReadDAT(FilePath,KeyList)
 	Namelist = [record['name'] for record in data]
 	CnNameList,EnNameList = CNNamelistFilter(Namelist)
-	PIDlist = [record['PID'] for record in data]
+	PIDlist = [record['pid'] for record in data]
 	Typelist = [record['type'] for record in data]
 	Taglist = [[record['tag']] for record in data]
 	Phonelist = [record['phone'] for record in data]
@@ -329,31 +391,35 @@ def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
 	return BrandDB
 
 '''
-write DB to csv file
+write DB to data file
 '''
-def WriteDBtoCSV(DB,OutputOrder,DBFilePath):
+def WriteDBtoDAT(DB,OutputOrder,DBFilePath):
 	fp_db = open(DBFilePath,'w')
 	# OutputOrder = ['name','phone','type','tag','story']
 	key = OutputOrder[0]
-	fp_db.write(','.join(OutputOrder)+'\n')
+	fp_db.write('\t'.join(OutputOrder)+'\n')
 	for keyid in DB:
-		fp_db.write(keyid+','+StrRecord(DB[keyid],',',OutputOrder[1:])+'\n')
+		fp_db.write(keyid+'\t'+StrRecord(DB[keyid],'\t',OutputOrder[1:])+'\n')
 		
 	fp_db.close()
 
 def main():
-
 	# Add Mall 1 into DB
-	KeyList = ['PID','name','type','tag','phone','story']
-	FilePath = '.\DataInMall\DangDaiShangCheng.csv'
+	KeyList = ['pid','name','type','tag','phone','story']
+	FilePath = '.\DataInMall\DangDaiShangCheng.txt'
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath)
+	FilePath = '.\DataInMall\HuaRunWuCaiCheng.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	FilePath = '.\DataInMall\KaiDeMaoTaiYangGong.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	
 
 	# data = ReadCSV(FilePath,KeyList)
 	# print data[50]['name'],data[50]['tag'],data[50]['type']
 
 	# Namelist = [record['name'] for record in data]
 	# CnNameList,EnNameList = CNNamelistFilter(Namelist)
-	# PIDlist = [record['PID'] for record in data]
+	# PIDlist = [record['pid'] for record in data]
 	# Typelist = [record['type'] for record in data]
 	# Taglist = [[record['tag']] for record in data]
 	# Phonelist = [record['phone'] for record in data]
@@ -365,13 +431,13 @@ def main():
 
 	# Add Mall 2 into DB
 	# FilePath = '.\DataInMall\HuaRunWuCaiCheng.csv'
-	# KeyList = ['PID','name','type','tag','phone']
+	# KeyList = ['pid','name','type','tag','phone']
 	# data = ReadCSV(FilePath,KeyList)
 	# print data[50]['name'],data[50]['tag'],data[50]['type']
 
 	# Namelist = [record['name'] for record in data]
 	# CnNameList,EnNameList = CNNamelistFilter(Namelist)
-	# PIDlist = [record['PID'] for record in data]
+	# PIDlist = [record['pid'] for record in data]
 	# Typelist = [record['type'] for record in data]
 	# Taglist = [[record['tag']] for record in data]
 	# Phonelist = [record['phone'] for record in data]
@@ -389,10 +455,10 @@ def main():
 	# print QueryBrInfoByNameList(['姑姑宴','和合谷'],BrandDB)
 
 	# FilePath = '.\TXT\ShuangAnShangChang_POI.txt'
-	# KeyList = ['PID','name']
+	# KeyList = ['pid','name']
 	# data = ReadCSV(FilePath,KeyList,'\t')
-	# print data[50]['PID'],data[50]['name']
-	# PIDlist = [record['PID'] for record in data]
+	# print data[50]['pid'],data[50]['name']
+	# PIDlist = [record['pid'] for record in data]
 	# Namelist = [record['name'] for record in data]
 
 	# POIDB = InsertInfoInPOIList(PIDlist,Namelist,BrandDB)
@@ -401,22 +467,32 @@ def main():
 	# fp_poi.write(','.join(['pid']+OutputOrder)+'\n')
 	# for pid in POIDB:
 	# 	fp_poi.write(pid+','+StrRecord(POIDB[pid],',',OutputOrder)+'\n')
-
-
-
 	# fp_poi.close()
 	# # fp.close()
 
-	DBFilePath = '.\TXT\BrandDB.csv'
-	WriteDBtoCSV(BrandDB,OutputOrder,DBFilePath)
-	data = ReadCSV(DBFilePath,OutputOrder)
-	for record in data:
-		if record['pid'] == '191':
-			print StrRecord(record)
-			print record
-			fp_tmp = open('.\TXT\\tmp.txt','w')
-			fp_tmp.write(StrRecord(record))
-			fp_tmp.close()
+	DBFilePath = '.\TXT\BrandDB.txt'
+	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
+	data = ReadDAT(DBFilePath,OutputOrder,'\t')
+	# for record in data:
+	# 	if record['pid'] == '191':
+	# 		print StrRecord(record)
+	# 		print record
+	# 		fp_tmp = open('.\TXT\\tmp.txt','w')
+	# 		fp_tmp.write(StrRecord(record))
+	# 		fp_tmp.close()
+
+	NewMallPath = '.\DataInMall\ShuangAn.txt'
+	NewMallPath2 = '.\DataInMall\ShuangAn2.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,NewMallPath,BrandDB)
+	NewMallData = ReadDAT(NewMallPath,KeyList)
+	NewMallDB = Recodelist2DB(NewMallData,'pid')
+	Namelist = IndexByName(BrandDB,'name')
+	for pid in NewMallDB:
+		info = QueryBrInfoByName(NewMallDB[pid]['name'],BrandDB,Namelist)
+		NewMallDB.update({pid:info})
+	WriteDBtoDAT(NewMallDB,OutputOrder,NewMallPath2)
+
+
 
 if __name__ == '__main__':
 	main()
