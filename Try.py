@@ -10,6 +10,16 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+import numpy as np
+import matplotlib.pyplot as plt
+import theano
+# By convention, the tensor submodule is loaded as T
+import theano.tensor as T
+
+theano.test()
+
+
+
 def GetPage(PageURL):
 	headers = {
 		'Referer':'http://www.tmall.com',
@@ -52,6 +62,8 @@ d2 = {}  #{1:'a'}
 C = {'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}
 D = C.pop('type')
 
-print D
-print C
+CN = ['我','爱','你',u'猪头']
+
+print '猪头' in CN
+
 

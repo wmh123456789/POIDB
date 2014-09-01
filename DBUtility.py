@@ -136,13 +136,15 @@ def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
 			if not (NewBrRecord[key] in ['','???']): 
 				if (OldBrRecord[key] in ['','???']):
 					Record_M[key] = NewBrRecord[key]
-				elif OldBrRecord[key] != NewBrRecord[key]:
-					if NewBrRecord[key] in [OldBrRecord['enname'],OldBrRecord['cnname']]:
+				elif OldBrRecord[key].lower() != NewBrRecord[key].lower():
+					if NewBrRecord[key].lower() in [OldBrRecord['enname'].lower(),OldBrRecord['cnname']]:
 						Record_M[key] = NewBrRecord[key]
 					else:
-						fp.write(StrRecord(OldBrRecord)+' => '+StrRecord(NewBrRecord)+'\n')
+						NameConflicMsg = StrRecord(OldBrRecord)+' => '+StrRecord(NewBrRecord)
+						fp.write(NameConflicMsg+'\n')
+						print 'Find Name conflict:', NameConflicMsg
 						return OldBrRecord
-				else:  #OldBrRecord[key] == NewBrRecord[key]
+				else:  #OldBrRecord[key].lower() == NewBrRecord[key].lower()
 					Record_M[key] = OldBrRecord[key]
 			else: #NewBrRecord[key] in ['','???']
 				Record_M[key] = OldBrRecord[key]
@@ -152,10 +154,12 @@ def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
 			if not (NewBrRecord[key] in ['','???']):
 				if (OldBrRecord[key] in ['','???']):
 					Record_M[key] = NewBrRecord[key]
-				elif OldBrRecord[key] != NewBrRecord[key]:
-					fp.write(StrRecord(OldBrRecord)+' => '+StrRecord(NewBrRecord)+'\n')
+				elif OldBrRecord[key].lower() != NewBrRecord[key].lower():
+					NameConflicMsg = StrRecord(OldBrRecord)+' => '+StrRecord(NewBrRecord)
+					fp.write(NameConflicMsg+'\n')
+					# print 'Find Record conflict:', NameConflicMsg
 					return OldBrRecord
-				else: #OldBrRecord[key] == NewBrRecord[key]
+				else: #OldBrRecord[key].lower() == NewBrRecord[key].lower()
 					Record_M[key] = OldBrRecord[key]
 			else: #NewBrRecord[key] in ['','???']
 				Record_M[key] = OldBrRecord[key]
@@ -166,6 +170,10 @@ def MergeBrandDBRecord(NewBrRecord,OldBrRecord):
 			print 'Key Error, cannot find the key:', key
 
 	fp.close()
+	# # for Debug
+	# if len(Record_M['tag'])>2:
+	# 	print 'find long tag list:',len(Record_M['tag'])
+	# #- for Debug
 	return Record_M
 
 
@@ -277,11 +285,21 @@ def UpdateDictbyAppend(DB,items):
 '''
 For Tag list output:
 [tag1,tag2,tag3...] => tag1 tag2 tag3 ...
+TagNum is the tag number to output, if tags not enough, gives ''
 '''
-def StrTag(Taglist,SpaceMark='\t'):
+def StrTag(Taglist,SpaceMark='\t',TagNum = 2):
 	StrTag = ''
-	for tag in Taglist:
-		StrTag += str(tag)+SpaceMark
+	# for tag in Taglist:
+	# 	StrTag += str(tag)+SpaceMark
+	if len(Taglist)>2:
+		print 'find long tag list:',len(Taglist)
+
+	for i in xrange(TagNum):
+		if len(Taglist)>0:
+			StrTag += str(Taglist.pop(0))+SpaceMark
+		else:
+			StrTag += 'null'+SpaceMark
+
 	return StrTag
 
 '''
@@ -492,7 +510,25 @@ def main():
 		NewMallDB.update({pid:info})
 	WriteDBtoDAT(NewMallDB,OutputOrder,NewMallPath2)
 
+	FilePath = '.\BrandE-CDict.csv'
+	KeyList = ['enname','cnname']
+	data = ReadCSV(FilePath,KeyList)
+	EnNamelist = [record['enname'] for record in data]
+	CnNamelist = [record['cnname'] for record in data]
+	MatchN = 0
+	for key in BrandDB:
+		if BrandDB[key]['name'] in (EnNamelist + CnNamelist):
+			MatchN += 1
+	print MatchN, 'names are found.'
+
+
+def main2():
+	FilePath = '.\BrandE-CDict.csv'
+	KeyList = ['enname','cnname']
+	data = ReadCSV(FilePath,KeyList)
+	print data[26725]
 
 
 if __name__ == '__main__':
 	main()
+	# main2()
