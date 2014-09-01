@@ -1,5 +1,7 @@
 # Get POI Info in XML
+# -*- coding: utf-8 -*-
 from XY2GPS import *
+from DBUtility import *
 import scipy as sp
 from scipy import array, dot, insert, linalg
 import os
@@ -147,7 +149,35 @@ def OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile):
 	pass
 	pass
 
-if __name__ == '__main__':
+
+def ModifyTypeCode(POIDBFile,POIDBKeyList,TypeCodeDict,XMLInput,XMLOutput):
+	soup = SoupFile(XMLInput)
+	data = ReadDAT(POIDBFile,POIDBKeyList)
+	POIDB = Recodelist2DB(data,'pid')
+	soup.prettify()
+	for i in xrange(len(soup.floor.contents)):
+ 		if not soup.floor.contents[i] in ['\n']:
+ 			PID = soup.floor.contents[i]['id']
+ 			if PID in POIDB: 				
+ 				if PID == '':
+ 					POIType = '0'
+ 				elif not POIDB[PID]['type'].encode('utf8') in TypeCodeDict:
+ 					POIType = str(TypeCodeDict['其他'])
+ 				else:
+ 					POIType = str(TypeCodeDict[POIDB[PID]['type']])
+ 				pass
+ 			else: # PID is not in DB
+ 				POIType = '0'
+ 				pass
+ 			pass
+ 			# print POIType
+ 			soup.floor.contents[i]['type'] = POIType
+
+	fp = open(XMLOutput,'w')
+	fp.write(str(soup))
+	fp.close()
+
+def main():
 	RootPath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\'
 	MallNameList = ['KaiDeMaoTaiYangGong','ShuangAnShangChang']
 	SubPath = '\Binary\\'
@@ -160,5 +190,53 @@ if __name__ == '__main__':
 
 
 	# A,X,K = GetGPSParam('AiQinHaiGouWuZhongXin',ParamFile)
-	# print A,X,K
+	# print A,X,K	
+
+def test():
+	DBFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn\ShuangAn.txt'
+	KeyList = ['pid','name','type','tag','phone','story']
+	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
+				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9}
+	# XMLFilePath = '.\XML\ShuangAnShangChang.FloorB1.xml'
+	# OutFilePath = '.\XML\Result.xml'
+
+	XMLFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn'
+	for FileName in os.listdir(XMLFilePath):
+		extName = os.path.splitext(FileName)[1]
+		bodyName = os.path.splitext(FileName)[0]
+		if extName=='.xml' and not('NewTypeCode' in bodyName):
+			InFilePath = os.path.join(XMLFilePath,FileName)
+			if not os.path.isdir(os.path.join(XMLFilePath,'NewTypeCode')):
+				os.mkdir(os.path.join(XMLFilePath,'NewTypeCode'))
+			OutFilePath = os.path.join(XMLFilePath,'NewTypeCode',FileName)
+			print FileName
+			ModifyTypeCode(DBFilePath,KeyList,TypeCode,InFilePath,OutFilePath)
+
+	# soup = SoupFile(XMLFilePath)
+	# data = ReadDAT(InFilePath,KeyList)
+	# POIDB = Recodelist2DB(data,'pid')
+	# soup.prettify()
+	# for i in xrange(len(soup.floor.contents)):
+ # 		if not soup.floor.contents[i] in ['\n']:
+ # 			PID = soup.floor.contents[i]['id']
+ # 			if PID in POIDB:
+ # 				POIType = str(TypeCode[POIDB[PID]['type'].encode('utf8')])
+ # 				pass
+ # 			else:
+ # 				POIType = '0'
+ # 				pass
+ # 			pass
+ # 			print POIType
+ # 			soup.floor.contents[i]['type'] = POIType
+
+
+
+
+	# fp = open(OutFilePath,'w')
+	# fp.write(str(soup))
+	# fp.close()
+
+if __name__ == '__main__':
+	# main()
+	test()
 
