@@ -331,11 +331,11 @@ def StrRecord(Record,SpaceMark='\t',Order = []):
 		return StrRecord
 
 '''
-@param BrandDB :  The DB to be indexed
+@param DB :  The DB to be indexed
 @param NameField: The field to be indexed
 @usage:
-NameField = 'name':   {PID:[name,....]} => {name:[PID1,PID2,....]}
-NameField = 'cnname': {PID:[cnname,....]} => {cnname:[PID1,PID2,....]}
+NameField = 'name':   {ID:[name,....]} => {name:[ID1,ID2,....]}
+NameField = 'cnname': {ID:[cnname,....]} => {cnname:[ID1,ID2,....]}
 '''
 def IndexByName(DB,NameField):
 	NameDict = {}

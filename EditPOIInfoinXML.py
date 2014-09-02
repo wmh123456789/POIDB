@@ -149,6 +149,37 @@ def OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile):
 	pass
 	pass
 
+def ModifyTypeCodebyBrDB(BrandDB,TypeCodeDict,XMLInput,XMLOutput):
+	soup = SoupFile(XMLInput)
+	soup.prettify()
+	Namelist = IndexByName(BrandDB,'name')
+	CnNamelist = IndexByName(BrandDB,'cnname')
+	EnNamelist = IndexByName(BrandDB,'enname')
+
+	for i in xrange(len(soup.floor.contents)):
+		for i in xrange(len(soup.floor.contents)):
+ 			if not soup.floor.contents[i] in ['\n']:
+ 				Name = soup.floor.contents[i]['name']
+ 				Type = 'null'
+ 				if Name in Namelist:
+ 					Type = QueryBrInfoByName(Name,BrandDB,Namelist)['type']
+ 				elif Name in CnNamelist:
+ 					Type = QueryBrInfoByName(Name,BrandDB,CnNamelist)['type']
+ 				elif Name in EnNamelist:
+ 					Type = QueryBrInfoByName(Name,BrandDB,EnNamelist)['type']
+ 				else:
+ 					print 'Cannot find the name:', Name
+ 				if Type == '':
+ 					TypeCode = '0'
+ 				else:
+ 					TypeCode = str(TypeCodeDict[Type])
+ 				soup.floor.contents[i]['type'] = TypeCode
+ 				pass
+
+ 	fp = open(XMLOutput,'w')
+	fp.write(str(soup))
+	fp.close()
+
 
 def ModifyTypeCode(POIDBFile,POIDBKeyList,TypeCodeDict,XMLInput,XMLOutput):
 	soup = SoupFile(XMLInput)
@@ -191,12 +222,37 @@ def main():
 
 	# A,X,K = GetGPSParam('AiQinHaiGouWuZhongXin',ParamFile)
 	# print A,X,K	
+def test2():
+	# Add Mall 1 into DB
+	KeyList = ['pid','name','type','tag','phone','story']
+	FilePath = '.\DataInMall\DangDaiShangCheng.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath)
+	FilePath = '.\DataInMall\HuaRunWuCaiCheng.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	FilePath = '.\DataInMall\KaiDeMaoTaiYangGong.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	FilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn\ShuangAn.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
+				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}
+	XMLFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn'
+	for FileName in os.listdir(XMLFilePath):
+		extName = os.path.splitext(FileName)[1]
+		bodyName = os.path.splitext(FileName)[0]
+		if extName=='.xml' and not('NewTypeCode' in bodyName):
+			InFilePath = os.path.join(XMLFilePath,FileName)
+			if not os.path.isdir(os.path.join(XMLFilePath,'NewTypeCode')):
+				os.mkdir(os.path.join(XMLFilePath,'NewTypeCode'))
+			OutFilePath = os.path.join(XMLFilePath,'NewTypeCode',FileName)
+			print FileName
+			ModifyTypeCodebyBrDB(BrandDB,TypeCode,InFilePath,OutFilePath)
+
 
 def test():
 	DBFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn\ShuangAn.txt'
 	KeyList = ['pid','name','type','tag','phone','story']
 	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
-				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9}
+				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}
 	# XMLFilePath = '.\XML\ShuangAnShangChang.FloorB1.xml'
 	# OutFilePath = '.\XML\Result.xml'
 
@@ -238,5 +294,5 @@ def test():
 
 if __name__ == '__main__':
 	# main()
-	test()
+	test2()
 
