@@ -64,7 +64,7 @@
 <nd x="78.943481" y="29.583130"></nd>
 <center x="85.0125732422" y="37.9840087891"></center>
 </feature>
-<feature id="1010013100010008" name="Leonidas" shape="0" type="2" url="">
+<feature id="1010013100010008" name="Leonidas" shape="0" type="0" url="">
 <nd x="66.188110" y="46.384888"></nd>
 <nd x="74.486084" y="46.384888"></nd>
 <nd x="74.486084" y="42.064514"></nd>
@@ -99,7 +99,7 @@
 <nd x="69.290894" y="52.710510"></nd>
 <center x="71.8884887695" y="56.7481079102"></center>
 </feature>
-<feature id="1010013100010013" name="Bread Talk" shape="0" type="2" url="">
+<feature id="1010013100010013" name="Bread Talk" shape="0" type="0" url="">
 <nd x="60.128479" y="34.299072"></nd>
 <nd x="73.432678" y="34.299072"></nd>
 <nd x="73.432678" y="22.092102"></nd>

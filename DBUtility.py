@@ -110,7 +110,7 @@ def CNNamelistFilter(Namelist):
 	EnNameList = []
 	for name in Namelist:
 		# name = unicode(name)
-		if re.findall(u'[\u4e00-\u9fa5]',name):
+		if re.findall(u'[\u4e00-\u9fa5]',unicode(name)):
 			CnNameList.append(name)
 			EnNameList.append('???')
 		else:
@@ -118,6 +118,15 @@ def CNNamelistFilter(Namelist):
 			CnNameList.append('???')
 
 	return CnNameList,EnNameList
+
+'''
+Match the Name by lower case
+'''
+def MatchNameByLowerCase(Name,NameList):
+	NameLow = Name.lower()
+	NameLowList = [n.lower() for n in NameList]
+	return NameLow in NameLowList
+
 
 '''
 Merge 2 Records(New and Old) in safe way:
@@ -277,7 +286,7 @@ Update dict by append the val_list
 def UpdateDictbyAppend(DB,items):
 	for key in items.keys():
 		if key in DB:
-			print DB[key],items[key]
+			# print DB[key],items[key]
 			DB[key] = list(set(DB[key]+[items[key]]))
 		else:
 			DB.update({key:[items[key]]})
@@ -353,6 +362,25 @@ def IndexByName(DB,NameField):
 	return NameDict
 
 '''
+Function is same with IndexByName
+All names in output-dict are in lower case
+'''
+def IndexByLowerName(DB,NameField):
+	NameDict = {}
+	for key in DB:
+		UpdateDictbyAppend(NameDict,{DB[key][NameField].lower():key})
+
+		# For Debug
+		# if DB[key][NameField] == 'Coach':
+		# 	print 'Got coach in index func:',key
+		# 	print DB[key]
+		# -- For Debug
+
+
+	pass
+	return NameDict
+
+'''
 Query the brand info in BrandDB by name 
 '''
 def QueryBrInfoByName(name,BrandDB,NameIndex={}):
@@ -400,6 +428,7 @@ def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
 	data = ReadDAT(FilePath,KeyList)
 	Namelist = [record['name'] for record in data]
 	CnNameList,EnNameList = CNNamelistFilter(Namelist)
+
 	PIDlist = [record['pid'] for record in data]
 	Typelist = [record['type'] for record in data]
 	Taglist = [[record['tag']] for record in data]

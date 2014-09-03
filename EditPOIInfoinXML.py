@@ -152,29 +152,50 @@ def OutputShopGPS(RootPath,MallNameList,SubPath,OutputPath,ParamFile):
 def ModifyTypeCodebyBrDB(BrandDB,TypeCodeDict,XMLInput,XMLOutput):
 	soup = SoupFile(XMLInput)
 	soup.prettify()
-	Namelist = IndexByName(BrandDB,'name')
-	CnNamelist = IndexByName(BrandDB,'cnname')
-	EnNamelist = IndexByName(BrandDB,'enname')
+	print len(BrandDB)
+	Namelist = IndexByLowerName(BrandDB,'name')
+	CnNamelist = IndexByLowerName(BrandDB,'cnname')
+	EnNamelist = IndexByLowerName(BrandDB,'enname')
+
+	# print 'Namelist:',len(Namelist)
+	# print  [CnNamelist[key] for key in CnNamelist]
+	# print 'EnNamelist:',len(EnNamelist)
 
 	for i in xrange(len(soup.floor.contents)):
 		for i in xrange(len(soup.floor.contents)):
  			if not soup.floor.contents[i] in ['\n']:
- 				Name = soup.floor.contents[i]['name']
+ 				NameOrg = str(soup.floor.contents[i]['name'])
+ 				Name = NameOrg.lower()
+ 				# Name = unicode(Name)
+ 				# Lookup type
  				Type = 'null'
- 				if Name in Namelist:
+ 				if MatchNameByLowerCase(Name,['','Door','Elevator','Escalator','Stairs','Toilet']):
+ 					Type = ''
+ 				elif Name in Namelist: 					
  					Type = QueryBrInfoByName(Name,BrandDB,Namelist)['type']
- 				elif Name in CnNamelist:
+ 				elif Name in CnNamelist: 					
  					Type = QueryBrInfoByName(Name,BrandDB,CnNamelist)['type']
- 				elif Name in EnNamelist:
+ 				elif Name in EnNamelist: 					
  					Type = QueryBrInfoByName(Name,BrandDB,EnNamelist)['type']
  				else:
- 					print 'Cannot find the name:', Name
- 				if Type == '':
- 					TypeCode = '0'
- 				else:
- 					TypeCode = str(TypeCodeDict[Type])
+ 					print 'Cannot find the name:', NameOrg
+ 					pass
+
+ 				# Lookup type code
+ 				TypeCode = '0'
+ 				# if Type == '':
+ 				# 	TypeCode = '0'
+ 				# else:
+ 				# 	TypeCode = str(TypeCodeDict[Type])
+
  				soup.floor.contents[i]['type'] = TypeCode
  				pass
+
+ 	print '玫而美' in CnNamelist
+ 	fp_tmp = open('temp.txt','w')
+ 	for key in CnNamelist:
+ 		fp_tmp.write(key+'\n')
+	fp_tmp.close()
 
  	fp = open(XMLOutput,'w')
 	fp.write(str(soup))
@@ -222,6 +243,8 @@ def main():
 
 	# A,X,K = GetGPSParam('AiQinHaiGouWuZhongXin',ParamFile)
 	# print A,X,K	
+
+# test：Update the type info from BrandDB
 def test2():
 	# Add Mall 1 into DB
 	KeyList = ['pid','name','type','tag','phone','story']
@@ -231,11 +254,12 @@ def test2():
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
 	FilePath = '.\DataInMall\KaiDeMaoTaiYangGong.txt'
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
-	FilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn\ShuangAn.txt'
+	FilePath = '.\XML\ShuangAn\ShuangAn.txt'
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+
 	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
 				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}
-	XMLFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn'
+	XMLFilePath = '.\XML\ShuangAn'
 	for FileName in os.listdir(XMLFilePath):
 		extName = os.path.splitext(FileName)[1]
 		bodyName = os.path.splitext(FileName)[0]
@@ -247,7 +271,7 @@ def test2():
 			print FileName
 			ModifyTypeCodebyBrDB(BrandDB,TypeCode,InFilePath,OutFilePath)
 
-
+# test: update the type info from POIDB
 def test():
 	DBFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn\ShuangAn.txt'
 	KeyList = ['pid','name','type','tag','phone','story']
