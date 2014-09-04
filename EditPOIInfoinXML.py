@@ -162,34 +162,36 @@ def ModifyTypeCodebyBrDB(BrandDB,TypeCodeDict,XMLInput,XMLOutput):
 	# print 'EnNamelist:',len(EnNamelist)
 
 	for i in xrange(len(soup.floor.contents)):
-		for i in xrange(len(soup.floor.contents)):
- 			if not soup.floor.contents[i] in ['\n']:
- 				NameOrg = str(soup.floor.contents[i]['name'])
- 				Name = NameOrg.lower()
- 				# Name = unicode(Name)
- 				# Lookup type
- 				Type = 'null'
- 				if MatchNameByLowerCase(Name,['','Door','Elevator','Escalator','Stairs','Toilet']):
- 					Type = ''
- 				elif Name in Namelist: 					
- 					Type = QueryBrInfoByName(Name,BrandDB,Namelist)['type']
- 				elif Name in CnNamelist: 					
- 					Type = QueryBrInfoByName(Name,BrandDB,CnNamelist)['type']
- 				elif Name in EnNamelist: 					
- 					Type = QueryBrInfoByName(Name,BrandDB,EnNamelist)['type']
- 				else:
- 					print 'Cannot find the name:', NameOrg
- 					pass
+		if not soup.floor.contents[i] in ['\n']:
+			NameOrg = str(soup.floor.contents[i]['name'])
+			Name = NameOrg.lower()
+			# Name = unicode(Name)
+			# Lookup type
+			Type = 'null'
+			if MatchNameByLowerCase(Name,['','Ask','Door','Elevator','Escalator','Stairs','Toilet']):
+				Type = ''
+			elif Name in Namelist: 					
+				Type = QueryBrInfoByName(Name,BrandDB,Namelist)['type']
+			elif Name in CnNamelist: 					
+				Type = QueryBrInfoByName(Name,BrandDB,CnNamelist)['type']
+			elif Name in EnNamelist: 					
+				Type = QueryBrInfoByName(Name,BrandDB,EnNamelist)['type']
+			else:
+				print 'Cannot find the name:', NameOrg
+				pass
 
- 				# Lookup type code
- 				TypeCode = '0'
- 				# if Type == '':
- 				# 	TypeCode = '0'
- 				# else:
- 				# 	TypeCode = str(TypeCodeDict[Type])
+			# Lookup type code
+			# TypeCode = '0'
+			if Type == '':
+				TypeCode = '0'
+			elif Type in TypeCodeDict:
+				TypeCode = str(TypeCodeDict[Type])
+			else:
+				print 'Error Type:', Type
+				TypeCode = '0'
 
- 				soup.floor.contents[i]['type'] = TypeCode
- 				pass
+			soup.floor.contents[i]['type'] = TypeCode
+			pass
 
  	print '玫而美' in CnNamelist
  	fp_tmp = open('temp.txt','w')
@@ -254,8 +256,12 @@ def test2():
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
 	FilePath = '.\DataInMall\KaiDeMaoTaiYangGong.txt'
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
-	FilePath = '.\XML\ShuangAn\ShuangAn.txt'
+	FilePath = '.\XML\ShuangAn\ShuangAn2.txt'
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+
+	DBFilePath = '.\TXT\BrandDB.txt'
+	OutputOrder = ['pid','name','cnname','enname','type']
+	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
 	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
 				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}

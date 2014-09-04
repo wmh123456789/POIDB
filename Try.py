@@ -3,6 +3,8 @@
 import time
 import os
 import urllib2
+import chardet
+import codecs
 import time 
 from bs4 import BeautifulSoup 
 import re
@@ -62,8 +64,32 @@ d2 = {}  #{1:'a'}
 C = {'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}
 D = C.pop('type')
 
-CN = ['我','爱','你','猪头']
+filepath = '.\TXT\ANSI.txt'
+filenew = '.\TXT\utf8.txt'
+fp = open(filepath)
 
-print '猪头'.encode('utf8') in CN
+data = fp.read()
+# print data[0].decode('utf-16').encode('utf-8')
+# print len(data[0]),len(data[1]),len(data[2]),len(data[3])
+newdata = data.decode('gb18030').encode('utf-8')#.decode('utf-16').encode('utf8')
+# print u"ascii多ascii".decode('utf-8').encode('utf-16').decode('utf-16').encode('utf-8')#, u'尚'
+print newdata
+# print len(newdata)
+# open(filenew,'w').write(newdata)
 
 
+
+# if data[:2] == codecs.BOM_UTF16_LE:
+# 	data = data[2:]
+# 	newdata = data.decode('UTF-16LE').encode('utf-8')
+# print newdata[:8]
+# # fn.close()
+# fp.close()
+
+
+
+
+# data = open("Test.txt").read()
+# if data[:3] == codecs.BOM_UTF8:
+#  data = data[3:]
+# print data.decode("utf-8")
