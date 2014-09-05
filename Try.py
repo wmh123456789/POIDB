@@ -6,6 +6,7 @@ import urllib2
 import chardet
 import codecs
 import time 
+import DBUtility as DB
 from bs4 import BeautifulSoup 
 import re
 import sys
@@ -55,41 +56,26 @@ def GetPage(PageURL):
 # fp = open('test.txt','a')
 # fp.write(str(BrandDB)+'\n')
 # fp.close()
+def modifydict(db):
+	db['123'].update({'aaa':'AAA'})
 
 A = ['a','a',u'b','c','d','d']
 B = [1,2,3,4,4,5]
 AB = zip(A,B)
 d1 = {}  #{'a':1}
 d2 = {}  #{1:'a'}
-C = {'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}
-D = C.pop('type')
+C = {'123':{'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}}
+# D = C.pop('type')
 
-filepath = '.\TXT\ANSI.txt'
-filenew = '.\TXT\utf8.txt'
-fp = open(filepath)
+# filepath = '.\TXT\ANSI.txt'
+# filenew = '.\TXT\utf8.txt'
+# fileXML = '.\XML\SA.xml'
+# KeyList = ['pid','name','type','tag','phone','story']
+# Records = DB.ReadXML(fileXML,KeyList)
+# i = 1
+# print len(Records)
+# print Records[488+i]['name'],Records[487+i]['name'],Records[486+i]['name']
 
-data = fp.read()
-# print data[0].decode('utf-16').encode('utf-8')
-# print len(data[0]),len(data[1]),len(data[2]),len(data[3])
-newdata = data.decode('gb18030').encode('utf-8')#.decode('utf-16').encode('utf8')
-# print u"ascii多ascii".decode('utf-8').encode('utf-16').decode('utf-16').encode('utf-8')#, u'尚'
-print newdata
-# print len(newdata)
-# open(filenew,'w').write(newdata)
+modifydict(C)
+print C.copy()
 
-
-
-# if data[:2] == codecs.BOM_UTF16_LE:
-# 	data = data[2:]
-# 	newdata = data.decode('UTF-16LE').encode('utf-8')
-# print newdata[:8]
-# # fn.close()
-# fp.close()
-
-
-
-
-# data = open("Test.txt").read()
-# if data[:3] == codecs.BOM_UTF8:
-#  data = data[3:]
-# print data.decode("utf-8")

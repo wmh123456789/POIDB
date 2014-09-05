@@ -11,6 +11,8 @@ sys.setdefaultencoding('utf8')
 '''
 Read XML file to a List
 XML will code by UTF8, by WPS office/MS office
+keylist likes: ['kk','xxx','vv']
+records likes: [{kk:KK,xxx:XXX,vv:VV..},{}] 
 '''
 def ReadXML(FilePath,KeyList):
 	KeyLen = len(KeyList)
@@ -36,6 +38,8 @@ def ReadXML(FilePath,KeyList):
 Read CSV file to a List
 each line(record) in CSV is a element(dict) in the List
 in each element(dict), keys are given by KeyList
+keylist likes: ['kk','xxx','vv']
+records likes: [{kk:KK,xxx:XXX,vv:VV..},{}] 
 '''
 def ReadCSV(FilePath,KeyList,SpaceMark=','):
 	fp = open(FilePath,'rU')
@@ -52,13 +56,15 @@ def ReadCSV(FilePath,KeyList,SpaceMark=','):
 		else:
 			print words
 			print 'Error, word length is not match.',len(words),KeyLen
-	print len(Records)
+	# print len(Records)
 	return Records
 
 
 '''
 Read data file: read data file to a list
 Function is same with ReadCSV, default SpaceMark is tab
+keylist likes: ['kk','xxx','vv']
+records likes: [{kk:KK,xxx:XXX,vv:VV..},{}] 
 '''
 def ReadDAT(FilePath,KeyList,SpaceMark='\t'):
 	fp = open(FilePath,'r')
@@ -75,7 +81,7 @@ def ReadDAT(FilePath,KeyList,SpaceMark='\t'):
 		else:
 			print words
 			print 'Error, word length is not match.',len(words),KeyLen
-	print len(Records)
+	# print len(Records)
 	return Records
 
 '''
@@ -83,11 +89,12 @@ Convert Raw record list to DB format
 [{kk:KK,xxx:XXX,vv:VV..},{}] => {KK:{xxx:XXX,vv:VV,...},{...},...} 
 '''
 def Recodelist2DB(recordlist,keyfield):
-	DB = {}
+	NewDB = {}
 	for record in recordlist:
-		key = record.pop(keyfield)
-		DB.update({key:record})
-	return DB
+		rec = record.copy()
+		key = rec.pop(keyfield)
+		NewDB.update({key:rec})
+	return NewDB
 
 
 '''
@@ -126,6 +133,60 @@ def MatchNameByLowerCase(Name,NameList):
 	NameLow = Name.lower()
 	NameLowList = [n.lower() for n in NameList]
 	return NameLow in NameLowList
+
+'''
+Updata Names By E-C Name dict
+@param: DB : {KK:{'cnname':XXX,'enname':VV,...},{...},...}
+@param: ECDict [{'cnname':'中','enname':'EN'},{,},...]
+'''
+def UpdateNameByECDict(DB,ECDict):
+	print 'Start updating...'
+	CnIndex = Recodelist2DB(ECDict,'cnname')
+	EnIndex = Recodelist2DB(ECDict,'enname')
+	EnIndexLow = {key.lower():EnIndex[key] for key in EnIndex} 
+	N = 0
+	print "Keys in DB:",len(DB.keys())
+
+	for key in DB:
+		# print CnIndex['英纳格']
+		EnName = DB[key]['enname']
+		CnName = DB[key]['cnname']
+		# Add New Name, if not yet
+		if  CnName in ['','null','???']:
+			if MatchNameByLowerCase(EnName,EnIndex.keys()):
+				name = EnIndexLow[EnName.lower()]['cnname'] 
+				DB[key].update({'cnname':name})
+				print 'New Name Added:',name 
+				N += 1
+			else:
+				print 'Cannot find:',EnName 
+			pass
+		elif EnName in ['','null','???']:
+			if CnName in CnIndex:
+				name = CnIndex[CnName]['enname'] 
+				DB[key].update({'enname':name})
+				print 'New Name Added:',name 
+				N += 1
+			else:
+				print 'Cannot find:',CnName 
+			pass
+		elif not EnName in EnIndex :
+			print 'Cannot find:',EnName 
+			pass
+		elif not CnName in CnIndex:
+			print 'Cannot find:',CnName
+			pass
+		elif EnName != CnIndex[CnName]['enname']:
+			print 'Name conflict:',EnName,CnName,CnIndex[CnName]['enname']
+		elif CnName != EnIndex[EnName]['cnname']:
+			print 'Name conflict:',CnName,EnName,EnIndex[EnName]['cnname']
+		else: # Name matches
+			pass
+			
+	print 'Find name pairs:', N
+
+
+	pass
 
 
 '''
@@ -278,6 +339,32 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 
 	return BrandDB
 
+'''
+Read a data-ready file and update the BrandDB
+Support file format: txt,csv,xml(recommended)
+
+'''
+def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
+	ExtName = os.path.splitext(FilePath)[1]
+	if ExtName == '.xml':
+		data = ReadXML(FilePath,KeyList)
+	elif ExtName == '.csv':
+		data = ReadCSV(FilePath,KeyList)
+	else: # .txt or other self-defined formats 
+		data = ReadDAT(FilePath,KeyList)
+
+	Namelist = [record['name'] for record in data]
+	CnNameList,EnNameList = CNNamelistFilter(Namelist)
+
+	PIDlist = [record['pid'] for record in data]
+	Typelist = [record['type'] for record in data]
+	Taglist = [[record['tag']] for record in data]
+	Phonelist = [record['phone'] for record in data]
+	Storylist = [record['story'] for record in data]
+	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist,Phonelist,Storylist)
+	return BrandDB
+
+
 
 '''
 Update dict by append the val_list
@@ -343,8 +430,8 @@ def StrRecord(Record,SpaceMark='\t',Order = []):
 @param DB :  The DB to be indexed
 @param NameField: The field to be indexed
 @usage:
-NameField = 'name':   {ID:[name,....]} => {name:[ID1,ID2,....]}
-NameField = 'cnname': {ID:[cnname,....]} => {cnname:[ID1,ID2,....]}
+NameField = 'name':   {ID:{'name':,....}} => {name:[ID1,ID2,....]}
+NameField = 'cnname': {ID:{'cnname':,....}} => {cnname:[ID1,ID2,....]}
 '''
 def IndexByName(DB,NameField):
 	NameDict = {}
@@ -421,21 +508,7 @@ def InsertInfoInPOIList(PIDlist,Namelist,BrandDB):
 
 	return POIDB
 
-'''
-Read a data-ready file and update the BrandDB
-'''
-def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
-	data = ReadDAT(FilePath,KeyList)
-	Namelist = [record['name'] for record in data]
-	CnNameList,EnNameList = CNNamelistFilter(Namelist)
 
-	PIDlist = [record['pid'] for record in data]
-	Typelist = [record['type'] for record in data]
-	Taglist = [[record['tag']] for record in data]
-	Phonelist = [record['phone'] for record in data]
-	Storylist = [record['story'] for record in data]
-	BrandDB = UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist,CnNameList,EnNameList,Typelist,Taglist,Phonelist,Storylist)
-	return BrandDB
 
 '''
 write DB to data file
@@ -554,10 +627,24 @@ def main():
 def main2():
 	FilePath = '.\BrandE-CDict.csv'
 	KeyList = ['enname','cnname']
-	data = ReadCSV(FilePath,KeyList)
-	print data[26725]
+	ECdata = ReadCSV(FilePath,KeyList)
+	print ECdata[2]
+
+		# Add Mall 1 into DB
+	KeyList = ['pid','name','type','tag','phone','story']
+	FilePath = '.\DataInMall\DangDaiShangCheng.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath)
+	FilePath = '.\DataInMall\HuaRunWuCaiCheng.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	FilePath = '.\DataInMall\KaiDeMaoTaiYangGong.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+	FilePath = '.\XML\ShuangAn\ShuangAn2.txt'
+	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
+
+	DBFilePath = '.\TXT\BrandDB.txt'
+	OutputOrder = ['pid','name','cnname','enname','type']
+	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
 
 if __name__ == '__main__':
-	main()
-	# main2()
+	main2()

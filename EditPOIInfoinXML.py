@@ -193,7 +193,7 @@ def ModifyTypeCodebyBrDB(BrandDB,TypeCodeDict,XMLInput,XMLOutput):
 			soup.floor.contents[i]['type'] = TypeCode
 			pass
 
- 	print '玫而美' in CnNamelist
+ 	# print '玫而美' in CnNamelist
  	fp_tmp = open('temp.txt','w')
  	for key in CnNamelist:
  		fp_tmp.write(key+'\n')
@@ -211,17 +211,27 @@ def ModifyTypeCode(POIDBFile,POIDBKeyList,TypeCodeDict,XMLInput,XMLOutput):
 	soup.prettify()
 	for i in xrange(len(soup.floor.contents)):
  		if not soup.floor.contents[i] in ['\n']:
+ 			Name = soup.floor.contents[i]['name']
  			PID = soup.floor.contents[i]['id']
+
  			if PID in POIDB: 				
  				if PID == '':
  					POIType = '0'
+ 					print 'Error! PID is NULL:', soup.floor.contents[i]
  				elif not POIDB[PID]['type'].encode('utf8') in TypeCodeDict:
  					POIType = str(TypeCodeDict['其他'])
+ 					print 'Error! Type is not in TypeCodeDict:', POIDB[PID]['type']
  				else:
  					POIType = str(TypeCodeDict[POIDB[PID]['type']])
+ 					if not POIDB[PID]['name'] == Name:
+ 						print 'Error! Name conflict(DB,XML):',PID,POIDB[PID]['name'],Name
  				pass
  			else: # PID is not in DB
- 				POIType = '0'
+ 				if MatchNameByLowerCase(Name,['','Ask','Door','Elevator','Escalator','Stairs','Toilet']):
+ 					POIType = '0'
+ 				else:
+ 					POIType = '0'
+ 					# print 'Error! PID is not found:', PID, Name 
  				pass
  			pass
  			# print POIType
@@ -260,33 +270,42 @@ def test2():
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
 
 	DBFilePath = '.\TXT\BrandDB.txt'
-	OutputOrder = ['pid','name','cnname','enname','type']
+	OutputOrder = ['pid','cnname','enname']
 	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
-	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
-				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}
-	XMLFilePath = '.\XML\ShuangAn'
-	for FileName in os.listdir(XMLFilePath):
-		extName = os.path.splitext(FileName)[1]
-		bodyName = os.path.splitext(FileName)[0]
-		if extName=='.xml' and not('NewTypeCode' in bodyName):
-			InFilePath = os.path.join(XMLFilePath,FileName)
-			if not os.path.isdir(os.path.join(XMLFilePath,'NewTypeCode')):
-				os.mkdir(os.path.join(XMLFilePath,'NewTypeCode'))
-			OutFilePath = os.path.join(XMLFilePath,'NewTypeCode',FileName)
-			print FileName
-			ModifyTypeCodebyBrDB(BrandDB,TypeCode,InFilePath,OutFilePath)
+	FilePath = '.\BrandE-CDict.csv'
+	KeyList = ['enname','cnname']
+	ECDict = ReadCSV(FilePath,KeyList)
+	UpdateNameByECDict(BrandDB,ECDict)
+
+	DBFilePath = '.\TXT\BrandDB2.txt'
+	OutputOrder = ['pid','cnname','enname']
+	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
+
+	# TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
+	# 			'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}
+	# XMLFilePath = '.\XML\ShuangAn'
+	# for FileName in os.listdir(XMLFilePath):
+	# 	extName = os.path.splitext(FileName)[1]
+	# 	bodyName = os.path.splitext(FileName)[0]
+	# 	if extName=='.xml' and not('NewTypeCode' in bodyName):
+	# 		InFilePath = os.path.join(XMLFilePath,FileName)
+	# 		if not os.path.isdir(os.path.join(XMLFilePath,'NewTypeCode')):
+	# 			os.mkdir(os.path.join(XMLFilePath,'NewTypeCode'))
+	# 		OutFilePath = os.path.join(XMLFilePath,'NewTypeCode',FileName)
+	# 		print FileName
+	# 		ModifyTypeCodebyBrDB(BrandDB,TypeCode,InFilePath,OutFilePath)
 
 # test: update the type info from POIDB
 def test():
-	DBFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn\ShuangAn.txt'
+	DBFilePath = '.\XML\ShuangAn\ShuangAn2.txt'
 	KeyList = ['pid','name','type','tag','phone','story']
 	TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
 				'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}
 	# XMLFilePath = '.\XML\ShuangAnShangChang.FloorB1.xml'
 	# OutFilePath = '.\XML\Result.xml'
 
-	XMLFilePath = 'E:\= Workspaces\Git\POIDB\XML\ShuangAn'
+	XMLFilePath = '.\XML\ShuangAn'
 	for FileName in os.listdir(XMLFilePath):
 		extName = os.path.splitext(FileName)[1]
 		bodyName = os.path.splitext(FileName)[0]

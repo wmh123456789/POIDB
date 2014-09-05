@@ -38,7 +38,7 @@
 <nd x="60.302490" y="84.312073"></nd>
 <center x="64.2955932617" y="89.6911010742"></center>
 </feature>
-<feature id="1010013100020005" name="ca brida" shape="0" type="0" url="">
+<feature id="1010013100020005" name="ca brida" shape="0" type="9" url="">
 <nd x="68.288696" y="95.070129"></nd>
 <nd x="75.614685" y="95.070129"></nd>
 <nd x="75.614685" y="84.312073"></nd>
@@ -153,7 +153,7 @@
 <nd x="28.737305" y="76.540710"></nd>
 <center x="31.0142822266" y="79.4364013672"></center>
 </feature>
-<feature id="1010013100020020" name="la prairie" shape="0" type="0" url="">
+<feature id="1010013100020020" name="la prairie" shape="0" type="8" url="">
 <nd x="23.094116" y="73.883911"></nd>
 <nd x="28.737305" y="73.883911"></nd>
 <nd x="28.737305" y="68.075928"></nd>
@@ -195,14 +195,14 @@
 <nd x="56.062073" y="61.129089"></nd>
 <center x="58.2647705078" y="65.8477783203"></center>
 </feature>
-<feature id="1010013100020026" name="GIVENCHY" shape="0" type="1" url="">
+<feature id="1010013100020026" name="GIVENCHY" shape="0" type="8" url="">
 <nd x="61.804077" y="70.566528"></nd>
 <nd x="66.209473" y="70.566528"></nd>
 <nd x="66.209473" y="61.129089"></nd>
 <nd x="61.804077" y="61.129089"></nd>
 <center x="64.0067749023" y="65.8477783203"></center>
 </feature>
-<feature id="1010013100020027" name="LANCOME" shape="0" type="8" url="">
+<feature id="1010013100020027" name="LANCOME" shape="0" type="1" url="">
 <nd x="41.953918" y="82.332092"></nd>
 <nd x="46.359497" y="82.332092"></nd>
 <nd x="46.359497" y="72.481506"></nd>
@@ -237,7 +237,7 @@
 <nd x="35.617920" y="51.912903"></nd>
 <center x="37.8206176758" y="55.4337768555"></center>
 </feature>
-<feature id="1010013100020032" name="shu uemura" shape="0" type="0" url="">
+<feature id="1010013100020032" name="shu uemura" shape="0" type="8" url="">
 <nd x="42.089111" y="58.954712"></nd>
 <nd x="46.494690" y="58.954712"></nd>
 <nd x="46.494690" y="51.912903"></nd>
@@ -272,7 +272,7 @@
 <nd x="68.288696" y="76.342529"></nd>
 <center x="72.4962158203" y="79.3372802734"></center>
 </feature>
-<feature id="1010013100020037" name="OMEGA" shape="0" type="9" url="">
+<feature id="1010013100020037" name="OMEGA" shape="0" type="8" url="">
 <nd x="68.288696" y="72.894104"></nd>
 <nd x="77.000671" y="72.894104"></nd>
 <nd x="77.000671" y="63.422913"></nd>
@@ -311,7 +311,7 @@
 <nd x="26.443481" y="51.938477"></nd>
 <center x="29.4465942383" y="58.4891967773"></center>
 </feature>
-<feature id="1010013100020042" name="FANCL无添加" shape="0" type="8" url="">
+<feature id="1010013100020042" name="FANCL无添加" shape="0" type="9" url="">
 <nd x="35.617920" y="49.299927"></nd>
 <nd x="40.023315" y="49.299927"></nd>
 <nd x="40.023315" y="41.544922"></nd>
@@ -381,21 +381,21 @@
 <nd x="62.206726" y="32.421082"></nd>
 <center x="63.9392089844" y="34.708190918"></center>
 </feature>
-<feature id="1010013100020052" name="瑞恩" shape="0" type="9" url="">
+<feature id="1010013100020052" name="瑞恩" shape="0" type="8" url="">
 <nd x="67.843079" y="42.287476"></nd>
 <nd x="72.149719" y="42.287476"></nd>
 <nd x="72.149719" y="37.931519"></nd>
 <nd x="67.843079" y="37.931519"></nd>
 <center x="69.9963989258" y="40.1094970703"></center>
 </feature>
-<feature id="1010013100020053" name="戴梦得" shape="0" type="9" url="">
+<feature id="1010013100020053" name="戴梦得" shape="0" type="8" url="">
 <nd x="73.700684" y="42.485474"></nd>
 <nd x="78.683899" y="42.485474"></nd>
 <nd x="78.683899" y="37.931519"></nd>
 <nd x="73.700684" y="37.931519"></nd>
 <center x="76.1923217773" y="40.2084960938"></center>
 </feature>
-<feature id="1010013100020054" name="周大生" shape="0" type="9" url="">
+<feature id="1010013100020054" name="周大生" shape="0" type="8" url="">
 <nd x="80.218323" y="42.485474"></nd>
 <nd x="86.207886" y="42.485474"></nd>
 <nd x="86.207886" y="37.931519"></nd>
@@ -409,7 +409,7 @@
 <nd x="68.041077" y="31.446899"></nd>
 <center x="70.2191162109" y="33.7404174805"></center>
 </feature>
-<feature id="1010013100020056" name="BLLYN" shape="0" type="1" url="">
+<feature id="1010013100020056" name="BLLYN" shape="0" type="9" url="">
 <nd x="74.030701" y="36.033875"></nd>
 <nd x="78.683899" y="36.033875"></nd>
 <nd x="78.683899" y="31.446899"></nd>
@@ -430,14 +430,14 @@
 <nd x="83.534729" y="31.446899"></nd>
 <center x="84.8712768555" y="33.7404174805"></center>
 </feature>
-<feature id="1010013100020059" name="AUPRES" shape="0" type="8" url="">
+<feature id="1010013100020059" name="AUPRES" shape="0" type="1" url="">
 <nd x="55.368896" y="31.100281"></nd>
 <nd x="59.784485" y="31.100281"></nd>
 <nd x="59.784485" y="25.110474"></nd>
 <nd x="55.368896" y="25.110474"></nd>
 <center x="57.5767211914" y="28.1054077148"></center>
 </feature>
-<feature id="1010013100020060" name="chloe" shape="0" type="8" url="">
+<feature id="1010013100020060" name="chloe" shape="0" type="9" url="">
 <nd x="64.063110" y="27.836914"></nd>
 <nd x="64.048523" y="30.902893"></nd>
 <nd x="65.968872" y="30.902893"></nd>
@@ -465,7 +465,7 @@
 <nd x="43.699280" y="32.663879"></nd>
 <center x="46.4666748047" y="33.4935302734"></center>
 </feature>
-<feature id="1010013100020064" name="CD" shape="0" type="8" url="">
+<feature id="1010013100020064" name="CD" shape="0" type="9" url="">
 <nd x="54.478271" y="66.817688"></nd>
 <nd x="50.072510" y="66.817688"></nd>
 <nd x="50.072510" y="70.566895"></nd>
@@ -611,14 +611,14 @@
 <nd x="81.752930" y="5.508484"></nd>
 <center x="83.2874145508" y="9.53448486328"></center>
 </feature>
-<feature id="1010013100020084" name="展台" shape="0" type="0" url="">
+<feature id="1010013100020084" name="展台" shape="0" type="9" url="">
 <nd x="47.080505" y="89.389099"></nd>
 <nd x="49.800903" y="89.389099"></nd>
 <nd x="49.800903" y="85.952698"></nd>
 <nd x="47.080505" y="85.952698"></nd>
 <center x="48.4406738281" y="87.6708984375"></center>
 </feature>
-<feature id="1010013100020085" name="ATM" shape="0" type="0" url="">
+<feature id="1010013100020085" name="ATM" shape="0" type="9" url="">
 <nd x="85.581116" y="80.616089"></nd>
 <nd x="94.491089" y="80.616089"></nd>
 <nd x="94.491089" y="78.220703"></nd>
@@ -632,7 +632,7 @@
 <nd x="50.072510" y="61.129089"></nd>
 <center x="52.275390625" y="63.9733886719"></center>
 </feature>
-<feature id="1010013100020087" name="Giorgio Armani" shape="0" type="8" url="">
+<feature id="1010013100020087" name="Giorgio Armani" shape="0" type="0" url="">
 <nd x="64.063110" y="27.836914"></nd>
 <nd x="62.207092" y="27.843079"></nd>
 <nd x="62.207092" y="30.902893"></nd>
