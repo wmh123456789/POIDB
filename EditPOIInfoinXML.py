@@ -276,11 +276,18 @@ def test2():
 	FilePath = '.\BrandE-CDict.csv'
 	KeyList = ['enname','cnname']
 	ECDict = ReadCSV(FilePath,KeyList)
-	UpdateNameByECDict(BrandDB,ECDict)
+	NewCnList,NewEnList = UpdateNameByECDict(BrandDB,ECDict)
 
 	DBFilePath = '.\TXT\BrandDB2.txt'
 	OutputOrder = ['pid','cnname','enname']
 	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
+
+	NewNameFilePath = '.\TXT\NewNamesToAdd.txt'
+	fp_name = open(NewNameFilePath,'w')
+	for cnname,enname in zip(NewCnList,NewEnList):
+		fp_name.write(cnname+'\t'+enname+'\n')
+	fp_name.close()
+
 
 	# TypeCode = {'服装':1,'餐饮':2,'电器':3,'体育':4,'儿童母婴':5,
 	# 			'店内娱乐':6,'超市':7,'个护化妆':8,'其他':9,'null':0}

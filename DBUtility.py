@@ -138,6 +138,7 @@ def MatchNameByLowerCase(Name,NameList):
 Updata Names By E-C Name dict
 @param: DB : {KK:{'cnname':XXX,'enname':VV,...},{...},...}
 @param: ECDict [{'cnname':'中','enname':'EN'},{,},...]
+output: NewCnNameList, NewEnNameList
 '''
 def UpdateNameByECDict(DB,ECDict):
 	print 'Start updating...'
@@ -147,6 +148,7 @@ def UpdateNameByECDict(DB,ECDict):
 	N = 0
 	print "Keys in DB:",len(DB.keys())
 
+	NewNames = []   # Record the new names 
 	for key in DB:
 		# print CnIndex['英纳格']
 		EnName = DB[key]['enname']
@@ -159,6 +161,7 @@ def UpdateNameByECDict(DB,ECDict):
 				print 'New Name Added:',name 
 				N += 1
 			else:
+				NewNames.append(EnName)
 				print 'Cannot find:',EnName 
 			pass
 		elif EnName in ['','null','???']:
@@ -168,12 +171,15 @@ def UpdateNameByECDict(DB,ECDict):
 				print 'New Name Added:',name 
 				N += 1
 			else:
+				NewNames.append(CnName)
 				print 'Cannot find:',CnName 
 			pass
 		elif not EnName in EnIndex :
+			NewNames.append(EnName)
 			print 'Cannot find:',EnName 
 			pass
 		elif not CnName in CnIndex:
+			NewNames.append(CnName)
 			print 'Cannot find:',CnName
 			pass
 		elif EnName != CnIndex[CnName]['enname']:
@@ -182,8 +188,9 @@ def UpdateNameByECDict(DB,ECDict):
 			print 'Name conflict:',CnName,EnName,EnIndex[EnName]['cnname']
 		else: # Name matches
 			pass
-			
 	print 'Find name pairs:', N
+
+	return CNNamelistFilter(NewNames)
 
 
 	pass
