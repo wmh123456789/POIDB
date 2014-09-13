@@ -3,12 +3,25 @@
 import time
 import os
 import urllib2
+import chardet
+import codecs
 import time 
+import DBUtility as DB
 from bs4 import BeautifulSoup 
 import re
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import theano
+# By convention, the tensor submodule is loaded as T
+# import theano.tensor as T
+
+# theano.test()
+
+
 
 def GetPage(PageURL):
 	headers = {
@@ -43,14 +56,26 @@ def GetPage(PageURL):
 # fp = open('test.txt','a')
 # fp.write(str(BrandDB)+'\n')
 # fp.close()
+def modifydict(db):
+	db['123'].update({'aaa':'AAA'})
 
 A = ['a','a',u'b','c','d','d']
 B = [1,2,3,4,4,5]
 AB = zip(A,B)
 d1 = {}  #{'a':1}
 d2 = {}  #{1:'a'}
-C = {'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}
-C=C.update({'name':'aaa'})
+C = {'123':{'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x85'], 'cnname': '???', 'name': 'BUOUBVOV', 'enname': u'BUOUBVOV'}}
+# D = C.pop('type')
 
-print C['name']
+# filepath = '.\TXT\ANSI.txt'
+# filenew = '.\TXT\utf8.txt'
+# fileXML = '.\XML\SA.xml'
+# KeyList = ['pid','name','type','tag','phone','story']
+# Records = DB.ReadXML(fileXML,KeyList)
+# i = 1
+# print len(Records)
+# print Records[488+i]['name'],Records[487+i]['name'],Records[486+i]['name']
+
+modifydict(C)
+print C.copy()
 

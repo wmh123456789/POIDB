@@ -1,0 +1,1099 @@
+pid	cnname	enname
+344	???	SULTANA	
+345	英纳格	Enicar	
+346	汉米尔顿	Hamilton	
+347	西铁城	Citizen	
+340	施华洛世奇	SWAROVSKI	
+341	欧米茄	OMEGA	
+342	美度	MIDO	
+343	梅花	TITONI	
+810	陆宝	LUPAO	
+811	???	Yvonne	
+812	泰普尔	Tempur	
+813	无印工坊	???	
+348	爱骏达	???	
+349	依波路	ERNEST BOREL	
+816	巴宝莉	Burberry	
+817		UGG	
+719	湘怡人	???	
+718	乐食派麻辣香锅	???	
+717	渝乡人家	???	
+716	汤城小厨	???	
+715	乾杯	???	
+714	汉拿山		
+713	鱼匠	???	
+712	民族印象	???	
+711	???	37°Love	
+710		AIBI	
+915	捷夫	jaff	
+914	双安黄金	???	
+917	东赢日盛	???	
+1069	???	ANGELO NARDELLI	
+736	院落	???	
+916	尚氏珠宝	???	
+1061	三星手机	???	
+911	芮雅	???	
+1063	阿里斯顿	ARISTON	
+1062	雪莲		
+1065	见现冰激凌	???	
+1064	权味	???	
+1067	沙驰	Satchi	
+910	莫奈	MONET	
+-1	龟龟侠		
+913	???	WEEKEND by MaxMara	
+298	玛丝菲尔	Marisfrolg	
+299	???	MICHELLE MOISSAC	
+296	伟士	WISH	
+297	菲妮迪	Finity	
+294	沐兰	Moreline	
+295	???	menglong	
+292	依瑶	ELINACREATEUR	
+293	声雨竹	???	
+290	莱姿	LAICHY	
+291	诗影	???	
+591	华润置地展台	???	
+590	甜心甜	???	
+593		mind bridge	
+592	新宇亨得利	???	
+595	北面	THE NORTH FACE	
+594	哈根达斯	Haagen-Dazs	
+597	???	AJIDOU	
+596	热风	hotwind	
+195	罗马世家		
+598	???	dragon star	
+197	报喜鸟	Saint Angelo	
+196	皮尔卡丹	pierre cardin	
+191	提籁雅	ARTILIVI	
+190	依娜	???	
+193	???	Villeroy&Boch	
+192	罗卡芙		
+270	???	treksta	
+271	家庭日常用品	???	
+272	宝明堂	???	
+273	优之良品		
+274	生命阳光	sunlife	
+275	启泰药业	???	
+276	集品堂		
+277	食尚森活	Delicious life	
+278	上品堂		
+279	玛丽亚.古琦	MARJA KURKI	
+738	???	CK Acc.	
+524	沃尔玛	???	
+525	茶马云南	chama.yn	
+526	韩银尚	???	
+527	耐尔		
+520	中国黄金	ChinaGold	
+521	汤美希菲格	???	
+522	李维斯童装	levis	
+523	凹凸		
+1014	???	Conino Lambozghini	
+1015	夏利豪箱包	CHARRIOL	
+599	珍仕菓	???	
+1017	爵士丹尼	a.Jesdani	
+528	???	ruke house	
+529	头彩	???	
+994	吉普卡丁车	JEEP	
+1013	???	ICICLE	
+1025	赛吉琥珀	???	
+449	博朗	BRAUN	
+448	靓美婷	???	
+443	???	ZADA NINE	
+442	拉维妮娅	LAVINIA CLUB	
+441	???	silhouette labelle	
+440	茜子	She's	
+447	圣大保罗	santa barbara polo	
+446	???	LANYOUTY	
+445	???	Lavinia	
+444	雾道	CANTOMOTTO	
+108	爱步	ECCO	
+109	诺诗兰	NORTHLAND	
+102	李宁	li-ning	
+103	热浪	HEATWAVE	
+100	恒源祥	hengyuanxiang	
+101	速比涛	Speedo	
+106	奥索卡	Ozark	
+107	探路者	Toread	
+104	浩沙	hosa	
+105	颂拓	SUUNTO	
+902	橘滋	Juicy Couture	
+903	生活素材	???	
+39	???	Season Lano	
+38	虎都	FORDOO	
+906		Kipling	
+907	???	KLOVA	
+904	美术馆	???	
+905	米莲诺	mileno	
+33	吉普卡丁车	Jeep	
+32	庄子	ZORANZI	
+31	靓诺	???	
+30	哥弟	GIRDEAR	
+37	暇步士	Hush Puppies	
+36	博斯绅威箱包	BOSSsunwen	
+35	林宝坚尼	LoninoLamborghini	
+34	沙驰	SATCHI	
+641	七匹狼	SEPTWOLVES	
+640	芝麻开门		
+643	字里行间	???	
+642	必胜客	???	
+645	纳维凯尔	navigare	
+644	五彩凤	???	
+438	厚木	ATSUGI	
+439	???	DELUXE AND VINCI	
+436	嘉宝	garbath	
+437	???	mara sakura	
+434	???	Gabor	
+435	拿拉贝路丝	???	
+432	泰丝兰	trasparenze	
+433	玫尔美	???	
+430	鹦鹉	Ara	
+431	思加图	STACCATO	
+1002	???	JNBY by JNBY	
+339	贝印	KAI	
+338	稻香村	daoxiangcun	
+335	极草	???	
+334	康维他	Comvita	
+337	???	Leonidas Kestekides	
+336	林银杏	???	
+331	私房小厨	???	
+330	脉葆野山菌	???	
+333	依诗家		
+332	???	DIAN	
+89	面爱面	???	
+744	???	7-ELEVEN	
+1000		CK Jeans	
+745	GOMAX果吧	???	
+854	尹默	IMM	
+818	日默瓦	RIMOWA	
+856	???	VESAS Collection	
+857	浩沙	hosa	
+850	卓雅	JORYA	
+851	???	LA FEE	
+852	兰丝绘	???	
+819	???	Autason	
+858	雳霹道	Rapido	
+859	阿瑞娜	Arena	
+1081	???	SC Fashion	
+748	弹丸滋地	???	
+6	途明	TUMI	
+900	伊慧达	???	
+848	???	SCOFIELD	
+99	百富	Byford	
+98	???	La Pagayo	
+844		BIRKENSTOCK	
+1085	???	BUOUBVOV	
+91	???	Diss ona	
+90	荣寿司	???	
+93	爱思	isis	
+92	???	BRAUN BUFFEL	
+95	赫莲娜	HR	
+94	姬龙雪	Guy Laroche	
+97	珍贝	???	
+96	诺贝达	roberta di camerino	
+814	棉田	cottonfield	
+1030	???	oxette	
+815	???	Nina Ricci	
+1066	???	ARCTERYX	
+153	海盗船	pirateship	
+740	鸥美药妆	???	
+741	???	Bread n Butter	
+742	???	LESS IS MORE	
+743	???	iSpace	
+559	迪桑娜	Dissona	
+558	???	CHARLES & KEITH	
+746	???	Mr.Bean	
+747	正负二度C环保生活馆	???	
+555	西提牛排	???	
+554	眉州小吃	???	
+557	海底捞火锅	???	
+556	爱有梅有	???	
+551	银然花	???	
+550	雅山布艺	???	
+553	史努比乐园	???	
+552	陕面居	???	
+238	???	None	
+239	圣歌鸟	???	
+234	米皇	???	
+235	兆君		
+236	日神		
+237	帕罗	paluopo	
+230	金至尊	3D-GOLD	
+231	周大福	ChowTaiFook	
+232	千禧之星	MillenniumStar	
+233	捷夫	JAFF	
+1050	琉璃工房	???	
+1051	双安商场精品超市	???	
+1052	晓酵素	???	
+1053	美优酵素	???	
+1054	新西兰十一坊	???	
+1055	旭福	???	
+1056	位元堂	???	
+1057	玉兰油	OLAY	
+1058	夏普	SHARP	
+1059	西门子	SIEMENS	
+992	鳄鱼	LACOSTE	
+1	???	Pana Pana	
+155		Five Plus	
+146	海威迩	WHALE'C	
+147	翠贝卡	TRIBECA	
+144	变形金刚	The Transformers	
+619	福奈特	???	
+142	佳能	Canon	
+143	???	Naturino	
+140	多多马	DorDor Horse	
+141	联想	thinkvision	
+612	???	Lowrys Farm	
+613	色非	Faiccia	
+610	彩玉坊	???	
+611	酷玩无限	???	
+616	港汇优优	???	
+617	飞鸟和新酒/	avvn	
+148	???	Marie n' Mary	
+149	伊丝艾拉	YISELLE	
+1007	???	Pandora	
+912	???	MARELLA	
+1006	登喜路	DUNHILL	
+154	???	imi’s	
+951	???	GASTONE LUCIOLI	
+1005	阿玛尼	ARMANI	
+194	???	FRANZ	
+1004	???	Zegna Sport	
+948	金利来	goldlion	
+949	阿迪达斯洗护	Adidas	
+946	兄妹猫		
+947	月星	MOONSTAR	
+944	???	canlemon	
+945	惠葆		
+942	兔皇		
+943	蕾沃尔	???	
+940	展台	???	
+941	???	NATURINA	
+768	迷你唐卡	Minnetonka	
+689	巴黎春天家具	???	
+688	纽约国际儿童俱乐部	???	
+685	魔易艺术·家	???	
+684	???	cosadimoda	
+687	丽时美发	???	
+686	巴贝拉	???	
+681	招财猫	???	
+680	嘟噜岛	???	
+683	论道.竹叶青	???	
+682	麻辣诱惑食品	???	
+458	菲仕乐	Fissler	
+459	威可多	VICUTU	
+133	丹尼爱特	DANIEL HECHTER	
+132	???	MELCHNER	
+131	???	mister	
+130	都彭	s.t.dupont	
+137	???	Gormiti	
+136	???	FENGFEI-Z	
+135	伦敦雾	LONDON FOG	
+134	艾蔻	AEEIKO	
+494	谭木匠		
+495	茶大爷	???	
+496	品尚味烟酒屋	???	
+497	履行者	???	
+490	四号厅	???	
+491	食通天美食广场	???	
+492	华润堂	???	
+493	亿莎		
+24	白领	WHITE COLLAR	
+25	???	OLIVER GRANT	
+26	???	SONG OF SONG	
+27	卡拉		
+20	珂莱蒂尔	KORADIOR	
+21	雅莹	elegant prosper	
+22	阁兰秀	???	
+23	宝姿	PORTS	
+927	蔻驰	Coach	
+28	???	Mozen	
+29	音儿	YINER	
+407	香奈儿	CHANEL	
+406	卓诺迪	CERRUTI 1881	
+405	英吉利那	Inglesina	
+404		I-Baby	
+403	中国联通	ChinaUnicom	
+402	芙儿优	fueryou	
+401	三星	SAMSUNG	
+400	手机	???	
+933	布兰施男鞋	???	
+932		L'OCCITANE	
+931	???	GHRISDIEN DENY	
+930	???	BOSS SUNWEN	
+937	???	ENZO	
+452	利仁	liven	
+409	欧泊莱	AUPRES	
+408	茱莉蔻	JurLique	
+453		BOSE	
+1028	西贝伦	???	
+758	???	mjuka	
+1018	蓝豹	???	
+379		SOSSE	
+378	???	Massalati	
+829	姑姑宴	???	
+828	???	Paw in Paw	
+1060	方太	Fotile	
+371	???	KISSCAT	
+370	蹀愫	???	
+373	红香枫	???	
+372	敦奴	Dunnu	
+375	安·姬奥	AHNSIL	
+374	???	mihana	
+377	???	GAOPIN Golf	
+376	???	LANCY	
+708	???	NAIL STATION	
+709	寿师傅餐厅	???	
+704	海辰贝贝	???	
+705	东方爱婴早教中心	???	
+706	亚惠美食广场	???	
+707	西树工房	???	
+700	太平鸟	Peacebird	
+618		D'ZZIT	
+702	快乐琴弦	???	
+703	小猪班纳	PEPCO	
+393	常春藤	ivy house	
+392	???	NIKE KIDS	
+391	???	BOSS HUGO BOSS	
+145	月星	MoonStar	
+397	多样屋	TAYOHYA	
+396	苹果	Apple	
+395	???	Levi's Kids	
+176	???	LA CLOVER	
+82	当代商城会员俱乐部	???	
+83	凤祥甜品	???	
+80	拉比	labi baby	
+81	鼎泰丰	???	
+86	吉野家	???	
+87	听雪轩茶坊	???	
+84	怡优美	???	
+85	坛子村韩国料理	???	
+797	???	F.L≡dy	
+796	朗姿	LANCY FROM25	
+795	???	LIANG NUO	
+794	安娜苏	ANNA SUI	
+793	???	Rebecca	
+792	???	Feraud	
+791	???	HERRFURST	
+790	???	Frienti	
+799	应大	???	
+798	???	AINTLUCK	
+7	???	SAMSON	
+170	赛斯特		
+586	百家好	BASIC HOUSE	
+587	思莱德	selected	
+584	好比来	???	
+585	满记甜品	???	
+582	???	PACO PUBLIC	
+583	锦瑟蓝	???	
+580	苗乡楼	???	
+581	???	JACKJONES	
+588	泼泼龙俱乐部	???	
+589	本色棉	Naturecolored	
+245	利快		
+244	利奥纳多	leonardo di gasun	
+247	芭比	Barbie	
+246	弗欧	WOLL	
+241	左天奴	ZOTENO	
+614	时尚殿堂美发沙龙	???	
+243	???	CHRISDIEN DENY	
+242	皇冠	Crown	
+615	进巍美甲	???	
+249	文具	???	
+248	???	FisherPrice	
+924	雪花秀	SULWHASOO	
+970	悦木之源	origins	
+925	周生生	ChowSangSang	
+519	???	I DO	
+518	???	Mademoiselle	
+926	六福珠宝	Lukfood Jewellery	
+1009	???	ZUKKA.PRO	
+1008	名品眼镜	???	
+511	泰克尼卡	TECNICA	
+510	三星	SAMSUNG	
+513	权金城	???	
+512	吞云小莳	???	
+515	妈妈好孩子	???	
+514	九分仙芋	???	
+517	天梭	TISSOT	
+516	???	GAP	
+623	???	bovrjois	
+622	???	OFFSUN	
+621	小时代	???	
+620	望湘园	???	
+627	???	H&M	
+626	大嘴猴	paul frank	
+625	???	promod	
+624	蜜丝佛陀	maxfactor	
+450	大型家电	???	
+451	维斯德尔	Vidsel	
+629	???	bershop	
+628	悦瓷坊	???	
+454	钟表	???	
+455	双立人	zwilling	
+456	拉歌蒂尼	Lagostina	
+457	欧克欧	OQO	
+1084	黛玛诗	???	
+979	欧洲胡同	???	
+179	???	modelab	
+178	安莉芳	embryform	
+177	???	Masfer.Su	
+199	卡奴迪路	Canudilo	
+175	卡迪娜	Kadina	
+174	玛丽莎	Melissa	
+173	萨瑞儿	???	
+172	???	amanda	
+171	???	EdenRose	
+198	???	CAPEL	
+977	巧手改衣	???	
+182	欣姿芳		
+975	宾度	???	
+974	???	V&G	
+973	???	BODY.WILD	
+972	爱慕先生	AIMER MEN	
+971	兰芝	LANEIGE	
+183	恩裳	INSUN	
+1080	???	G. Vill	
+180	舒雅	Schiesser	
+253	凯利特	kellet	
+978	钛德	TITAN	
+656	利郎	Lilanz	
+657	La Beaute美发沙龙	???	
+654	真功夫	???	
+655	和佰佳居	???	
+186	逸品嘉诗	???	
+187	???	FRETTE	
+650	迪士尼宝宝	disney baby	
+651	会员中心	???	
+886	夏利豪箱包	Charriol	
+652	巴布豆	Bobdog	
+188	???	LEXINGTON	
+189	馨亭	LaMaisondeDomitille	
+658	指缘风情	???	
+653	阿香米线	???	
+184		MAXSTUDIO	
+185	琉园	???	
+1089	???	CADENZA	
+764	热风	Hotwind	
+1088	???	MARCBY MAEC.JACOBS	
+11	季诺意式休闲餐厅	???	
+10		VERO MODA	
+13	欧迪芬	Ordifen	
+12	烟酒茶叶	???	
+15	爱慕	Aimer	
+14	黛安芬	Triumph	
+17	???	SALUTE	
+16	华歌尔		
+19	基格	???	
+18	???	AMASS	
+863	瑞而士	???	
+862	罗莱家纺	???	
+865	???	Swissweda	
+864	???	COSME DECORTE	
+867	???	CD	
+866	碧欧泉	Biotherm	
+884	公爵	DUKE	
+938	???	DIOR BEAUTY	
+659	英孚教育少儿	???	
+883	瑞士维氏军刀	???	
+753	十指秀	???	
+881	凯萨大帝	???	
+880	???	HANMSON	
+887	???	Leonardo	
+831	儿童套房	???	
+885	???	LUCA BOSSI	
+752	娘惹厨房	???	
+928	美亚	MEYER	
+62	娇兰	GUERLAIN	
+888	迪莱克丝	DILAKS	
+1012	德诗	Decoster	
+1032	安莉芳 Triumph	???	
+950		Salad	
+756	唯尔亿	WE	
+929	诺诗兰	NORTHLAND	
+809	???	CARNIER THIEBAUT	
+322	???	Lozio	
+323	???	Luka DILONG	
+320	乐美雅	Luminarc	
+321		BOHEMIA	
+326	???	Frognie Zila	
+327	凯撒大帝	CAESAR	
+324	路卡迪龙	LUKADILONG	
+325	???	NOTTING HILL	
+328	九牧王	Joeone	
+329	依文	???	
+759	八马茶业	???	
+201	芝宝	ZIPPO	
+200	???	Hash Puppies	
+203	利马仕	Liemoch	
+202	???	NINO FERLETTI	
+205	哥伦比亚	Columbia	
+204	北面	The North Face	
+207	阿迪达斯洗护	adidas	
+206	斐乐	Fila	
+209	乔山按摩椅\跑步机	???	
+208	尤尼克斯	YONEX	
+779	3时	???	
+778	九月	???	
+889	???	Golden Point	
+77	圣宝度伦	Senbodulun	
+76	童装	???	
+75	???	adidas kids	
+74	水孩儿	souhait	
+73	安奈儿	Annil	
+72	安踏儿童	???	
+71	派克兰帝	PacLantic	
+70	???	Displayname	
+79		NUK	
+78	美斯特伦	mastela	
+2	???	COSTA COFFEE	
+1042	碧然德	BRITA	
+1041	凯伍德	kenwood	
+1040	康宁餐具	CORELLE	
+1047	利奥尼达斯	Leonidas	
+1043	飞利浦	Philips	
+1045	三叉牌	???	
+1044	京钟	???	
+1049	施丹兰	STENDERS	
+1048	???	Kiehl's	
+805	???	FRAAS	
+804	???	LTAM Mark	
+669	Snoopy餐厅	???	
+668	仙踪林	???	
+667	小木棉	???	
+666	益和木	???	
+665	快乐玛丽	J&M	
+664	娇鼎	JDING	
+663	玩具反斗城	???	
+662	探奇乐园	???	
+661	佩吉	PageOne	
+660	美吉姆	???	
+769	???	Catalog	
+692	马博士婴儿游泳馆	???	
+693	小鬼当佳	???	
+690	疯狂钢琴	???	
+691	迪士尼英语	???	
+696	CK内衣	???	
+697	西遇	WESTLINK	
+694	???	little GYM	
+695	???	Naivee	
+698	太平鸟男装	???	
+699	贝拉维拉	???	
+542	???	eve ave	
+543	舒宠	sheepet	
+540	拿渡麻辣香锅	???	
+541	私家小厨	???	
+546	???	oversea	
+547	香朝	???	
+544	???	veromoda	
+545	诚和和田玉	???	
+8		FESTINA	
+548	i转角	???	
+549	云海肴	???	
+1019	???	Menticano	
+995	???	Master Su	
+869	雅诗兰黛	ESTEE LAUDER	
+997		Armani Jeans	
+996	???	Weisi	
+991		dansko	
+990	图卡	???	
+993	???	Teenie Weenie	
+868	倩碧	Clinique	
+999	???	READ MA	
+998	???	G-STAR RAW	
+120	???	LOREAL	
+121	鑫豪福	???	
+122	所神根	???	
+123	福人德	???	
+124	和田玉	???	
+125	???	L'appat	
+126	豪雅珠宝	???	
+127	百利金	pelikan	
+128	皮尔卡丹	Pierre Cardin	
+129	观奇洋服	???	
+765	???	midii	
+1016	???	MOISSAL.PARIAS	
+1010	???	ZAA DAA	
+1022	法纳贝儿	Fanapal	
+1011	???	Deco	
+414	Apple专卖	???	
+415	列维士	???	
+416	???	Phiten	
+417	卡骆驰	Crocs	
+410	卡莎灡	Kasanrin	
+411	派克	Parker	
+412	???	JACK&JONES	
+413	南益	Lee	
+920	杰伟世	JVC	
+498	骏朗眼镜	???	
+922	???	Kuhn rikon	
+923	孩之宝	Hasbro	
+418	凯乐石	KAILAS	
+419	???	blackyak	
+776	思莱德	Selected	
+499	汤臣倍健	by-health	
+319	虎牌	Tiger	
+318	象印	zo jirushi	
+313	米技	MIJI	
+312	???	KANOJAO	
+311	???	SCFASHION	
+310		Sinequanone	
+317	米兰菲丽	???	
+316	宜龙艺术陶瓷	???	
+315	内野	Uchino	
+314	喜力特	???	
+861	热浪	Heatwave	
+921	贝纳通	Benetton	
+139	???	peek.a.boo	
+832	新百伦	New balance	
+833	爱康	icon	
+830	???	BABYROOM	
+138	乐高	LEGO	
+836	???	DRAGON STAR	
+837	???	KOLON SPORT	
+834	精品烟酒	???	
+835	奥菲欧	???	
+838	???	FJALL RAVEN	
+839	乐飞叶	Lafuma	
+808	陶仨坊	???	
+1082	蒙迪爱尔	MONDIAL ATELIER	
+3	万宝龙	Montblanc	
+725	和合谷	???	
+368		STELLA LUNA	
+369	真美诗	Joy&Peace	
+366	斯琴	???	
+367	维格娜丝	V.grass	
+364	???	LARWINER	
+365	闲云	???	
+362	诗篇	PSALTER	
+363	佩蒂帕恩	???	
+360	???	Fidelite	
+361	???	BLLYN	
+959	???	Jiggie Studio	
+952	???	Top Gloria	
+882		ELLE HOMME	
+380	???	SANTA BARBARA	
+381	天伯伦	Timberland	
+382	鳄鱼	Lacoste	
+383	诺帝卡童装	NAUTICA	
+384	骆驼动感	CAMEL ACTIVE	
+385	普顿	???	
+386	洪恩	hongen	
+387	贝登堡首创馆	???	
+388	???	KENZO KIDS	
+389	???	ELAND KIDS	
+784	植村秀	Shu-uemura	
+785	海蓝之谜	La Mer	
+786	???	Van Lathem	
+787	???	V.E.DELURE	
+780	亨得利	handry	
+781	玫珂菲	Make Up For Ever	
+782	娇韵诗	CLARINS	
+783	???	HELENA RUBINSTEIN	
+788	???	C31 ROTC	
+789	马亚诺	???	
+860	彪马	Puma	
+151	芬狄诗		
+579	三元梅园	???	
+578	兰瑜珈	???	
+150	欧时力	OCHIRLY	
+573	胡椒厨房	???	
+572	巴厘泰	???	
+571	五彩冰酷运动中心	???	
+570	太平洋咖啡	???	
+577	美丽田园	???	
+576	金鼎轩	???	
+575	落院	???	
+574	眉州东坡酒楼	???	
+60	FANCL无添加	???	
+61	娇韵诗	CLARINS	
+258	伊丽莎白雅顿	Elizabeth Arden	
+259	天梭	Tissot	
+64	???	Dior	
+65		SK-II	
+66	宝格丽	BVLGARI	
+67	资生堂	Shiseido	
+68	阿玛尼	Giorgio Armani	
+69	莫施	Moschner	
+250	银辉		
+251	???	TOMICA	
+256	范思哲	Versace	
+257	???	DV Sebagh	
+254	森贝儿家族		
+255	???	TOMBOLINI	
+157	茶叶	???	
+156		ONLY	
+939		ATM	
+731	鲜果时间	???	
+730	宝岛眼镜	???	
+733	水色盛开美容美发	???	
+732	老车记	???	
+735	安伟明苑造型	???	
+734	鼎级摄影	???	
+508	尊贵视力	???	
+509	???	Bread Talk	
+506	华为	HUAWEI	
+507	肯德基	???	
+504	羊绒世家	???	
+505	屈臣氏	Watsons	
+502	中旅体育旅行社	???	
+503	将太无二	???	
+500	洪晟翔	???	
+501	佳之优品	???	
+630	英卓锐	???	
+631	店名	???	
+632	美克美家	???	
+633	长天户外	???	
+469	松下	Panasonic	
+468	电视	???	
+636	天才宝贝	Giftedbaby	
+637	基本生活	emoi	
+465	思琳	CELINE	
+464	嘎帝尔	???	
+467	???	WOLSEY	
+466	卡尔丹顿	KALTENDIN	
+461	???	E.ORILKS	
+460	???	NEUBERLTN	
+463	瓦尔德龙	???	
+462	尼诺里拉	NINORIVA	
+901	???	i Blues	
+168	???	Mihana	
+169	???	Latin Mark	
+164	优色林	eucerin	
+165	雅漾	avène	
+166	郦妮	???	
+167	舒朗	SHOW LONG	
+160	同仁堂		
+161	薇姿	VICHY	
+162	特百惠	Tupperware	
+163	当代药房	???	
+964		ZUCCHI	
+965	???	MINE	
+966		NEO	
+967	???	H2O+	
+960	歌力思	ELLASSAY	
+961	???	name	
+962	???	ESTEEM	
+963	???	SHERIPAN	
+968	戴梦得	???	
+969	周大生	ChowTaiSeng	
+936	和玉缘		
+935	紫云珠宝	???	
+934	???	GARDEUR	
+908	???	CHLOSIO	
+909	???	ELIE SAAB	
+1096	???	T-OPPAPEORETTI	
+1090	薇欧薇	VOV	
+1091	喜洋洋与灰太狼童装	???	
+878	???	S.D.SPONTINI	
+879	???	KEVIN KELLY	
+876	???	Wolsey	
+877	汤米·希尔费格	Tommy Hilfiger	
+874	诺帝卡	NAUTICA	
+875	比音勒芬	Biem.lfdlkk	
+872	???	First Wert	
+873	博斯绅威箱包	BossSunwen	
+870	飞亚达	FIYTA	
+871	罗西尼	ROSSINI	
+9	卡西欧	CASIO	
+890	???	SETFANEL	
+891	???	Kanojao	
+892		Brooks Brothers	
+893	唐纳.卡兰	DKNY	
+894	奥淇唯艺	???	
+647	习朗	CLself	
+896	百丽	BELLE	
+897	???	ORIGINALS	
+898	???	Hogl	
+899	???	CHARLIE's ANGELS	
+1087	???	AESTHEXIX	
+646	江南布衣	JNBY	
+649	曼谷银	???	
+648	播	Broadcast	
+1086	安瑞井	ORIGIN	
+357	???	POWER LAND	
+356	邓禄普皮具箱包	DUNLOP	
+355	圣伽步	Skap	
+354	策乐	Cele	
+353	嘉里奥	Gillivo	
+352		eee	
+351	健安喜	GNC	
+350	迪莱克丝	Dilaks	
+803	格格		
+802	粉红玛琍	???	
+801	卡秀	cushow	
+800		landi	
+807	厚木	ATSUGI	
+806	???	ALA	
+359	天意	???	
+358	凯撒	kaiser	
+216	名士	???	
+217	浪琴	LONGINES	
+214	伊丽莎白雅顿	ELIZABETH ARDEN	
+215	纪梵希	GIVENCHY	
+212	耐克童装	Nike	
+213	匡威	CONVERSE	
+210		LOWA	
+211	美津浓	Mizuno	
+762	益乐康养生会馆	???	
+763	新源茗茶	???	
+760	阿米雪	???	
+761	???	salon Rex	
+766	麦当劳	???	
+767	???	CPU	
+218	???	TAGHEUER	
+219	雷达	RADO	
+957	???	Lime Flare	
+956	伊蒂雅	???	
+1033	???	Kid Blue	
+1078	他她	Tata	
+1079	???	TATUAGGI	
+1076	曼妮芬	maniform	
+1077	???	Wonder	
+1074	哥伦比亚 Columbia	???	
+1075	舞魅	Vme	
+1072	???	ALEX BRUNI	
+1073	???	Ozark Gear	
+1070	颂拓	SUUNTO	
+1071	米瓦法迪	???	
+289	木真了		
+288	邢氏		
+1003	???	callise	
+4	兰姿	LANCEL	
+281	???	24HRS	
+280	鄂尔多斯	ERDOS	
+283	???	HISPANITAS	
+282	百丽	Belle	
+285	???	PATRICIA	
+284	雅氏	achette	
+287	其乐	Clarks	
+286	???	MEPHISTO	
+1094	内野	UCHINO	
+1095	红双喜	DHS	
+1083	???	ZUCZUG	
+1097	双立人	ZWILLING	
+678	爱慕kids	???	
+679	小骆驼	???	
+1092	???	Disney Princess	
+1093	味千拉面		
+674	孩儿帮	???	
+675	母婴室	???	
+676	红袖	hopeshow	
+677	名媛印象	???	
+670	???	KAMINEY	
+671	春天河谷	???	
+672	黄记煌	???	
+673	疯狂4D影酷	???	
+263	科诺修思	KROCEUS	
+262		NICI	
+261	威途	VERTU	
+260	豪度	???	
+267	渔	FISHING	
+266	埃斯普利特	ESPRIT	
+265	欧时力	Ochirly	
+264	快乐狐狸	Actionfox	
+1031	莫瑞拉托	MORELLATO	
+269	狼爪	Jack Wolfskin	
+268		AIGLE	
+701	莫莉幻想	???	
+59	???	SAINTPAULON	
+58	???	PERSEPHONE	
+55	???	JONIKAS	
+54	芭比波朗	Bobbi Brown	
+57	卡尔蒂尼		
+56	仕东利	???	
+51	???	GORNIA	
+50		ESPRIT HOME	
+53	雅戈尔	Youngor	
+52	恺王		
+537	丝域美发	???	
+536	麻辣诱惑		
+535	吉祥馄饨	???	
+63	兰蔻	LANCOME	
+533	巴拉巴拉	Balabala	
+532	???	POLO	
+531	呷哺呷哺	???	
+530	瑞士十字	swisswin	
+152	棉花共和国	COTTON REPUBLIC	
+539	陈记火锅	???	
+538	胧月轩	???	
+987	???	MARK.BOSE	
+775	钱库	???	
+988	果园老农	Orchardpeasant	
+989	???	Patrica	
+774	潮汕渔家大排档	???	
+982	派克	PARKER	
+983	伯爵博朗	???	
+980	天王表	TIAN WANG	
+981	芝宝	Zippo	
+986	???	PIDEBO	
+777	阿吉豆	???	
+984	特雷菲斯	TREYFUS	
+985	???	discovery	
+115	嘉媚乐	CAMENAE	
+252	迪士尼	Disney	
+117	希思黎	Sisley	
+116	???	THETSAIO	
+111	阿芙香薰	???	
+110	悍威	Hanwag	
+113	???	PRCX	
+112	???	C.B	
+771	食其家	???	
+119	佰草集	HERBORIST	
+118	高丝	KOSE	
+770	BHG精品超市	???	
+773	哈姆天空	???	
+772	陕味食族	???	
+953	美宝莲	Maybelline	
+429	办公区	???	
+428	???	Calisse	
+534	外婆家	GRANNIES	
+919	万斯	VANS	
+918	克洛伊	chloe	
+421	???	Gennie’s	
+420	丽婴房	Les enphants	
+423	???	Hallmark Babies	
+422	???	O.C.T.mami	
+425	智高	chicco	
+424	英氏	yeehoo	
+427	婴方喜	Infancee	
+426	好孩子	goodbaby	
+308	恒昌珠宝	???	
+309	???	LIME FLARE	
+855	凯瑞拉	Crcara	
+300	???	MOJO.S PHINE	
+301	???	IMMOBILE	
+302	???	CAGLIARI EXCHANGE	
+303	???	M.TSUBOMI	
+304	吉芬	JEFEN	
+305	???	KOREANO	
+306	米茜尔	???	
+307	例外	???	
+895	玫而美	???	
+825	???	CATIMINI	
+181	艾瑞美	???	
+824	福腾宝	WMF	
+827	???	KP	
+847	???	Bean Pole	
+846	???	St. Dragon	
+845	乐播诗	Lesportsac	
+826	???	BEEN KID'S	
+843	玖熙	NINE WEST	
+842	依波表	???	
+841	森卡诺	???	
+840	???	POSEMER	
+821	新秀丽	Samsonite	
+853	???	EXCEPTION	
+849	莱尔斯丹	le saunda	
+820	普拉达	PRADA	
+823	鹿王	KINGDEER	
+822	新快	???	
+954	???	Organic touch	
+1034	???	Embry Form	
+240	捷尼凯诗	???	
+1068	???	CAROKAI	
+1038	戴森	Dyson	
+1039	???	Luminaec	
+1046	三菱	mitsubishielectric	
+568	便宜坊		
+569	麻里麻里香锅	???	
+751	悦指间	???	
+750	抓宝格子店	???	
+757	许留山	???	
+737	九月天	???	
+755	???	Feretti	
+754	娜韵SPA	???	
+560	???	Mo & Co	
+561	???	map by BeLLE	
+562	???	Folli Follie	
+563	盖尔斯	GUESS	
+564	???	Anne Karen	
+565	???	Spring field	
+566	黛若	DAZZLE	
+567	柏斯琴行	???	
+739		CheviGnon	
+229	梦妮尔丹	???	
+228	谢瑞麟	TSL	
+227	瑞恩		
+226	卓雅	Jorya	
+225	金象珠宝		
+224	???	Foeei Foeele	
+223	???	Jean-Louis Scherrer	
+222	???	Gieves & Hawkes	
+221	雅阁诗丹	???	
+220	巴达萨里	???	
+1001	骆驼儿童	CAMKIDS	
+1024	斯沃琪	SWATCH	
+1027	蕾朵	LIEDOW	
+1026	???	FILON VIRO	
+1021	贺曼	Hallmark	
+1020	芭比	baviphat	
+1023	???	Hape	
+114	秀雅韩	Sooryehan	
+1036	卡娜娃	???	
+1029	塞斯克瑞	???	
+88	祺海轩涮功坊	???	
+1037	???	POWERLAND	
+726	正一味	???	
+727	川江一号香锅	???	
+724	卡萨纯银	???	
+390	爱慕儿童	AIMER KIDS	
+722	???	YIGUE	
+723	阿拉浓	???	
+720	辣味道	???	
+721	川百汇	???	
+1035	???	T.B2 LADY	
+728	海洋兄弟	???	
+729	温莎	VINSOR	
+605	拉夏贝尔	La Chapelle	
+604	天然故事	???	
+607	???	page one	
+606		honeys	
+601	???	rooKie	
+600	丽家宝贝	???	
+603	???	meejoy	
+602	???	SKINFOOD	
+159	食品	???	
+158	???	MILAN GOLD	
+394	???	ELLE Kids	
+609	璟益智天地	???	
+608	卡雷拉	carrera	
+976	沙驰	Satchi	
+634	匡威	converse	
+399	爱国者	aigo	
+635	普安药房	???	
+749	恒永奢饰品护理中心	???	
+958	甘特	GANT	
+398	索尼	SONY	
+48	???	WENTEX	
+49	喜来登		
+46	梦洁	MENDALE	
+47	卡文克莱	CALVIN KLEIN	
+44	恐龙纺织	???	
+45	以旺	???	
+42	佳丽斯	jalice	
+43	???	Casablanca	
+40	???	JAGUAR	
+41	???	Desfone	
+638	悠游堂	???	
+5	卡地亞	Cartier	
+639	仙妮蕾德	???	
+489	咖啡厅	???	
+488	六号厅	???	
+487	五号厅	???	
+486	售票厅	???	
+485	一号厅	???	
+484	二号厅	???	
+483	三号厅	???	
+482	七号厅	???	
+481	星巴克	Starbucks	
+480	???	NIKE 360°	
+955	高美高	comico	
+472	傲胜	OSIM	
+473	欧姆龙	OMRON	
+470	亚都	YADU	
+471	瑞而士健康屋	???	
+476	亮视点	???	
+477	???	J.LINDEBERG	
+474	三和松石	SHSS	
+475	便利电	???	
+478	???	PAPA JOHNS	
+479	萨萨	SASA	
