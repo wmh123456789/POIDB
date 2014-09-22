@@ -21,6 +21,7 @@ sys.setdefaultencoding('utf8')
 
 # theano.test()
 
+from xpingyin import Pinyin
 
 
 def GetPage(PageURL):
@@ -56,8 +57,7 @@ def GetPage(PageURL):
 # fp = open('test.txt','a')
 # fp.write(str(BrandDB)+'\n')
 # fp.close()
-def modifydict(db):
-	db['123'].update({'aaa':'AAA'})
+
 
 A = ['a','a',u'b','c','d','d']
 B = [1,2,3,4,4,5]
@@ -76,6 +76,4 @@ C = {'123':{'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x8
 # print len(Records)
 # print Records[488+i]['name'],Records[487+i]['name'],Records[486+i]['name']
 
-modifydict(C)
-print C.copy()
 
