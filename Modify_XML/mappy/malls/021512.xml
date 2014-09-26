@@ -1,0 +1,4 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3632" lat="31.152614" lng="121.428999" logo="3632.jpg" type="512" nm="上海南站" sinatopic="1号线上海南站区域" py="ShangHaiNanZhan" aleph="SHNZ"/>
+<mall id="3633" lat="31.193976" lng="121.320778" logo="3633.jpg" type="512" nm="上海虹桥站" sinatopic="铁路上海站" py="ShangHaiHongQiaoZhan" aleph="SHHQZ"/>
+</malls>

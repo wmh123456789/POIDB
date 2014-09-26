@@ -1,0 +1,8 @@
+<space w="640" h="400">
+<floor id="-1" nar="0" nm="B1" brief="休闲生活" cx="640" cy="400"/>
+<floor id="1" nar="0" nm="1F" brief="姿彩时尚" cx="640" cy="400"/>
+<floor id="2" nar="0" nm="2F" brief="魅力品位" cx="640" cy="400"/>
+<floor id="3" nar="0" nm="3F" brief="动感青春" cx="640" cy="360"/>
+<floor id="4" nar="0" nm="4F" brief="至娱稚乐" cx="640" cy="400"/>
+<floor id="5" nar="0" nm="5F" brief="美食影像" cx="640" cy="400"/>
+</space>

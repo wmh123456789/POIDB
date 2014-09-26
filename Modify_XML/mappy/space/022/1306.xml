@@ -1,0 +1,10 @@
+<space w="640" h="1040">
+<floor id="1" nar="-0.6093" nm="1F" brief="1F" cx="640" cy="510"/>
+<floor id="20" nar="-0.6093" nm="2F" brief="2F" cx="640" cy="496"/>
+<floor id="25" nar="-0.5935" nm="2FM" brief="2FM" cx="640" cy="1040"/>
+<floor id="30" nar="-0.6093" nm="3F" brief="3F" cx="640" cy="496"/>
+<floor id="40" nar="-0.6093" nm="4F" brief="4F" cx="640" cy="496"/>
+<floor id="50" nar="-0.6093" nm="5F" brief="5F" cx="640" cy="470"/>
+<floor id="60" nar="-0.6093" nm="6F" brief="6F" cx="640" cy="420"/>
+<floor id="70" nar="-0.6123" nm="7F" brief="7F" cx="640" cy="360"/>
+</space>

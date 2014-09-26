@@ -1,0 +1,4 @@
+<space w="640" h="496">
+<floor id="-1" nar="-0" nm="B1" brief="到达层(换乘大厅)" cx="640" cy="430"/>
+<floor id="1" nar="-0" nm="F1" brief="出发层(候车大厅)" cx="640" cy="496"/>
+</space>

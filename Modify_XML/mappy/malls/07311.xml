@@ -1,0 +1,7 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2554" lat="28.191981" lng="113.010591" logo="2554.jpg" type="1" nm="国储电脑城" sinatopic="湖南国储电脑城" py="GuoChuDianNaoCheng" aleph="GCDNC"/>
+<mall id="2562" lat="28.19883" lng="112.976706" logo="2562.jpg" type="1" nm="乐和城" sinatopic="LaNova乐和城" py="LeHeCheng" aleph="LHC"/>
+<mall id="2551" lat="28.194024" lng="112.976771" logo="2551.jpg" type="1" nm="平和堂(五一广场店)" sinatopic="平和堂百货" py="PingHeTang (WuYiGuangChangDian )" aleph="PHTWYGCD"/>
+<mall id="2552" lat="28.130961" lng="113.037729" logo="2552.jpg" type="1" nm="喜乐地购物中心" sinatopic="雨花区喜乐地购物中心" py="XiLeDiGouWuZhongXin" aleph="XLDGWZX"/>
+<mall id="2560" lat="28.200065" lng="112.97657" logo="2560.jpg" type="1" nm="长沙百联东方商厦" sinatopic="百联东方商厦" py="ZhangShaBaiLianDongFangShangSha" aleph="ZSBLDFSS"/>
+</malls>

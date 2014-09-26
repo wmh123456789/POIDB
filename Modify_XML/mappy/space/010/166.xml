@@ -1,0 +1,8 @@
+<space w="640" h="320">
+<floor id="-1" nar="0.0124" nm="B1" brief="超市" cx="640" cy="320"/>
+<floor id="1" nar="0.0124" nm="F1" brief="名品汇" cx="640" cy="320"/>
+<floor id="2" nar="0.0124" nm="F2" brief="潮流界" cx="640" cy="320"/>
+<floor id="3" nar="0.0124" nm="F3" brief="百味坊" cx="640" cy="320"/>
+<floor id="4" nar="0.0124" nm="F4" brief="百味坊" cx="640" cy="320"/>
+<floor id="5" nar="0.0124" nm="F5" brief="商场" cx="640" cy="320"/>
+</space>

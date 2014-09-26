@@ -1,0 +1,5 @@
+<space w="640" h="330">
+<floor id="1" nar="-1.8803" nm="AF1" brief="A楼到达" zoom="0.5,8" zoom-org="0.5" cx="640" cy="330"/>
+<floor id="2" nar="-1.8869" nm="BF1" brief="B楼到达" zoom="0.5,8" zoom-org="0.5" cx="640" cy="315"/>
+<floor id="3" nar="-1.8812" nm="F3" brief="出发层" zoom="0.75,16" zoom-org="3.5" cx="640" cy="270"/>
+</space>

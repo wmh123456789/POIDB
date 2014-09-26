@@ -1,0 +1,8 @@
+<space w="640" h="770">
+<floor id="-1" nar="0.3009" nm="B1F" brief="B1F梦幻欢乐馆" cx="640" cy="770"/>
+<floor id="1" nar="0.2708" nm="1F" brief="1F奢华精品馆" cx="640" cy="760"/>
+<floor id="2" nar="0.2902" nm="2F" brief="2F流行风尚馆" cx="640" cy="700"/>
+<floor id="3" nar="0.3009" nm="3F" brief="3F名媛雅致馆" cx="640" cy="650"/>
+<floor id="4" nar="0.3008" nm="4F" brief="4F绅士风度馆" cx="640" cy="650"/>
+<floor id="5" nar="0.3021" nm="5F" brief="5F典雅家居馆" cx="640" cy="630"/>
+</space>

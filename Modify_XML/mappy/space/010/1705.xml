@@ -1,0 +1,11 @@
+<space w="640" h="350">
+<floor id="-3" nar="0.0016" nm="B3" brief="停车场" cx="640" cy="345"/>
+<floor id="-2" nar="0.0016" nm="B2" brief="停车场" cx="640" cy="350"/>
+<floor id="-1" nar="-0.0017" nm="B1" brief="晶莹小憩" cx="640" cy="300"/>
+<floor id="0" nar="0" nm="LG" brief="缤纷生活" cx="640" cy="350"/>
+<floor id="1" nar="0" nm="L1" brief="璀璨都会" cx="640" cy="350"/>
+<floor id="2" nar="0" nm="L2" brief="闪耀自我" cx="640" cy="350"/>
+<floor id="3" nar="0" nm="L3" brief="亮酷潮流" cx="640" cy="350"/>
+<floor id="4" nar="0" nm="L4" brief="星聚创享" cx="640" cy="350"/>
+<floor id="5" nar="0" nm="L5" brief="宴荟有约" cx="640" cy="350"/>
+</space>

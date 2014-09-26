@@ -1,0 +1,8 @@
+<space w="640" h="420">
+<floor id="-1" nar="-1.5406" nm="B1" brief="精品超市&amp;美食天地" cx="640" cy="400"/>
+<floor id="1" nar="-1.5406" nm="1F" brief="国际精品馆" cx="640" cy="420"/>
+<floor id="2" nar="-1.5297" nm="2F" brief="时尚名媛馆" cx="640" cy="420"/>
+<floor id="3" nar="-1.5297" nm="3F" brief="浪漫淑女馆" cx="640" cy="420"/>
+<floor id="4" nar="-1.5297" nm="4F" brief="名流绅士馆" cx="640" cy="420"/>
+<floor id="5" nar="-1.5297" nm="5F" brief="亲子童乐馆" cx="640" cy="420"/>
+</space>

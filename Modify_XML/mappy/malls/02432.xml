@@ -1,0 +1,11 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3403" lat="41.80637" lng="123.48902" logo="3403.jpg" type="32" nm="红星美凯龙龙之梦商场" sinatopic="龙之梦家居官方微博" py="HongXingMeiKaiLongLongZhiMengShangChang" aleph="HXMKLLZMSC"/>
+<mall id="3404" lat="41.80437" lng="123.38065" logo="3404.jpg" type="32" nm="红星美凯龙铁西商场" sinatopic="红星美凯龙铁西商场" py="HongXingMeiKaiLongTieXiShangChang" aleph="HXMKLTXSC"/>
+<mall id="3408" lat="41.804844" lng="123.3811" logo="3408.jpg" type="32" nm="红星美凯龙世博家居广场" sinatopic="红星美凯龙" py="HongXingMeiKaiLongShiBoJiaJuGuangChang" aleph="HXMKLSBJJGC"/>
+<mall id="3401" lat="41.827" lng="123.4211" logo="3401.jpg" type="32" nm="居然之家皇姑店" py="JuRanZhiJiaHuangGuDian" aleph="JRZJHGD"/>
+<mall id="3402" lat="41.737882" lng="123.462537" logo="3402.jpg" type="32" nm="居然之家浑南店" py="JuRanZhiJiaHunNanDian" aleph="JRZJHND"/>
+<mall id="3411" lat="41.793328" lng="123.356209" logo="3411.jpg" type="32" nm="领秀家居" sinatopic="领秀家居" py="LingXiuJiaJu" aleph="LXJJ"/>
+<mall id="3412" lat="41.770816" lng="123.437327" logo="3412.jpg" type="32" nm="欧亚达·百利家居（文化店）" sinatopic="http://e.weibo.com/aydreams" py="OuYaDaBaiLiJiaJuWenHuaDian" aleph="OYDBLJJWHD"/>
+<mall id="3406" lat="41.799951" lng="123.355587" logo="3406.jpg" type="32" nm="沈阳-香江家居" sinatopic="沈阳香江家居" py="ShenYang -XiangJiangJiaJu" aleph="SYXJJJ"/>
+<mall id="3413" lat="41.800931" lng="123.365063" logo="3413.jpg" type="32" nm="陶林居(沈阳店)" sinatopic="陶林居(沈阳店)" py="TaoLinJu (ShenYangDian )" aleph="TLJSYD"/>
+</malls>

@@ -1,0 +1,5 @@
+<space w="640" h="900">
+<floor id="-1" nar="0.7381" nm="B1" brief="B1到达区" cx="640" cy="900"/>
+<floor id="1" nar="3.0725" nm="F1" brief="一层乘降区" cx="640" cy="570"/>
+<floor id="2" nar="-0.8798" nm="F2" brief="二层出发区" cx="640" cy="660"/>
+</space>

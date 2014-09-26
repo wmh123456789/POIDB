@@ -1,0 +1,5 @@
+<space w="640" h="780">
+<floor id="-1" nar="0.8309" nm="B1" brief="美食 家居" cx="640" cy="780"/>
+<floor id="1" nar="0.8448" nm="F1" brief="精品 商务" cx="640" cy="600"/>
+<floor id="2" nar="0.8496" nm="F2" brief="休闲 生活" cx="640" cy="600"/>
+</space>

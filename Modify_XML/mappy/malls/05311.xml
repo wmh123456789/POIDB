@@ -1,0 +1,5 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2403" lat="36.665441" lng="117.025981" logo="2403.jpg" type="1" nm="恒隆广场" sinatopic="济南恒隆广场" py="HengLongGuangChang" aleph="HLGC"/>
+<mall id="2401" lat="36.662137" lng="117.001696" logo="2401.jpg" type="1" nm="万达广场(魏家庄店)" sinatopic="济南魏家庄万达广场" py="WanDaGuangChang (WeiJiaZhuangDian )" aleph="WDGCWJZD"/>
+<mall id="2404" lat="36.65778" lng="117.03901" logo="2404.jpg" type="1" nm="优品汇奥特莱斯" sinatopic="优品汇奥特莱斯购物广场" py="YouPinHuiAoTeLaiSi" aleph="YPHATLS"/>
+</malls>

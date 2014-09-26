@@ -1,0 +1,10 @@
+<space w="640" h="501">
+<floor id="-1" nar="-1.1306" nm="B1" brief="特色集市" cx="640" cy="501"/>
+<floor id="1" nar="-1.1306" nm="1F" brief="摩登精品" cx="640" cy="501"/>
+<floor id="2" nar="-1.1306" nm="2F" brief="流行服饰" cx="640" cy="501"/>
+<floor id="3" nar="-1.1306" nm="3F" brief="休闲服饰" cx="640" cy="501"/>
+<floor id="4" nar="-1.1306" nm="4F" brief="男性世界与运动" cx="640" cy="501"/>
+<floor id="5" nar="-1.1306" nm="5F" brief="运动生活天地" cx="640" cy="501"/>
+<floor id="6" nar="-1.1306" nm="6F" brief="美食广场天地" cx="640" cy="501"/>
+<floor id="7" nar="-1.1306" nm="7F" brief="健身与美容" cx="640" cy="501"/>
+</space>

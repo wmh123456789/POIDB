@@ -1,0 +1,12 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="508" lat="30.6037" lng="104.0628" logo="508.jpg" type="1" nm="凯丹广场" sinatopic="凯丹广场" py="KaiDanGuangChang" aleph="KDGC"/>
+<mall id="525" lat="30.631591" lng="104.067336" logo="525.jpg" type="1" nm="来福士广场" sinatopic="凯德成都来福士" py="LaiFuShiGuangChang" aleph="LFSGC"/>
+<mall id="521" lat="30.654" lng="104.0658" logo="521.jpg" type="1" nm="美美力诚百货(川信店)" sinatopic="美美力诚" py="MeiMeiLiChengBaiHuo (ChuanXinDian )" aleph="MMLCBHCXD"/>
+<mall id="504" lat="30.6566" lng="104.0789" logo="504.jpg" type="1" nm="NOVO" sinatopic="NOVO成都" py="NOVO"/>
+<mall id="522" lat="30.669934" lng="104.111952" logo="522.jpg" type="1" nm="SM成都成华" sinatopic="成都成华SM购物广场" py="SMChengDouChengHua" aleph="CDCH"/>
+<mall id="524" lat="30.602656" lng="103.944151" logo="524.jpg" type="1" nm="时代奥特莱斯" sinatopic="时代奥特莱斯" py="ShiDaiAoTeLaiSi" aleph="SDATLS"/>
+<mall id="512" lat="30.621265" lng="104.096535" logo="512.jpg" type="1" nm="万达广场" sinatopic="成都万达广场官方微博" py="WanDaGuangChang" aleph="WDGC"/>
+<mall id="520" lat="30.62035" lng="104.094759" logo="520.jpg" type="1" nm="万达百货(万达广场)" sinatopic="成都锦华万达百货" py="WanDaBaiHuo (WanDaGuangChang )" aleph="WDBHWDGC"/>
+<mall id="526" lat="30.619173" lng="104.075971" logo="526.jpg" type="1" nm="王府井购物中心" sinatopic="成都王府井购物中心" py="WangFuJingGouWuZhongXin" aleph="WFJGWZX"/>
+<mall id="523" lat="30.664725" lng="104.00726" logo="523.jpg" type="1" nm="优品道(光华店)" py="YouPinDao (GuangHuaDian )" aleph="YPDGHD"/>
+</malls>

@@ -1,0 +1,4 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3736" lat="34.746541" lng="113.659959" logo="3736.jpg" type="512" nm="郑州站" sinatopic="郑州火车站宣" py="ZhengZhouZhan" aleph="ZZZ"/>
+<mall id="3737" lat="34.758566" lng="113.778556" logo="3737.jpg" type="512" nm="郑州东站" sinatopic="郑州东站" py="ZhengZhouDongZhan" aleph="ZZDZ"/>
+</malls>

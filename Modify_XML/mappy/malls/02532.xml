@@ -1,0 +1,8 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3201" lat="32.136805" lng="118.737858" logo="3201.jpg" type="32" nm="红太阳装饰城" sinatopic="红太阳装饰城官方微博" py="HongTaiYangZhuangShiCheng" aleph="HTYZSC"/>
+<mall id="3202" lat="32.001878" lng="118.727523" logo="3202.jpg" type="32" nm="红星国际家居(奥体店)" sinatopic="红星国际家居(奥体店)" py="HongXingGuoJiJiaJu (AoTiDian )" aleph="HXGJJJATD"/>
+<mall id="3203" lat="31.988707" lng="118.798717" logo="3203.jpg" type="32" nm="红星美凯龙全球家居生活广场(南京卡子门店)" sinatopic="红星·美凯龙全球家居生活广场——南京卡子门店" py="HongXingMeiKaiLongQuanQiuJiaJuShengHuoGuangChang (NanJingKaZiMenDian )" aleph="HXMKLQQJJSHGCNJKZMD"/>
+<mall id="3204" lat="32.073209" lng="118.784526" logo="3204.jpg" type="32" nm="红星美凯龙(中央路店)" sinatopic="全国红星美凯龙中央路旗舰店" py="HongXingMeiKaiLong (ZhongYangLuDian )" aleph="HXMKLZYLD"/>
+<mall id="3207" lat="32.035422" lng="118.737954" logo="3207.jpg" type="32" nm="金盛国际家居(江东门店)" sinatopic="金盛国际家居(江东门店)" py="JinShengGuoJiJiaJu (JiangDongMenDian )" aleph="JSGJJJJDMD"/>
+<mall id="3206" lat="31.981457" lng="118.801609" logo="3206.jpg" type="32" nm="石林家居家乐家" sinatopic="石林家居家乐家" py="ShiLinJiaJuJiaLeJia" aleph="SLJJJLJ"/>
+</malls>

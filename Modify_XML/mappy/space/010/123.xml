@@ -1,0 +1,8 @@
+<space w="640" h="520">
+<floor id="-1" nar="0.0096" nm="B1" brief="YA 米" cx="640" cy="390"/>
+<floor id="1" nar="0.0096" nm="L1" brief="HI 品" cx="640" cy="390"/>
+<floor id="2" nar="0.0096" nm="L2" brief="IN像" cx="640" cy="400"/>
+<floor id="3" nar="0.0096" nm="L3" brief="SO 酷" cx="640" cy="390"/>
+<floor id="4" nar="0.0096" nm="L4" brief="FUN 潮" cx="640" cy="405"/>
+<floor id="5" nar="0.0084" nm="L5" brief="GO 味" cx="640" cy="520"/>
+</space>

@@ -1,0 +1,8 @@
+<space w="640" h="496">
+<floor id="-1" nar="-1.4381" nm="B1" brief="生活驿站 名车展厅" cx="640" cy="496"/>
+<floor id="1" nar="-1.437" nm="1F" brief="名品街区 珠光异彩" cx="640" cy="496"/>
+<floor id="2" nar="-1.4335" nm="2F" brief="名媛风尚 时尚前沿" cx="640" cy="496"/>
+<floor id="3" nar="-1.4335" nm="3F" brief="绅士风度 金色童年" cx="640" cy="496"/>
+<floor id="4" nar="-1.4335" nm="4F" brief="数码广场 游乐天地" cx="640" cy="496"/>
+<floor id="5" nar="-1.4335" nm="5F" brief="食肆" cx="640" cy="496"/>
+</space>

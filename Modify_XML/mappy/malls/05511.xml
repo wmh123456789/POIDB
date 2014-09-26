@@ -1,0 +1,8 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3974" lat="31.8605" lng="117.27216" logo="3974.jpg" type="1" nm="百大CBD" sinatopic="百大CBD购物中心" py="BaiDa CBD" aleph="BD"/>
+<mall id="3972" lat="31.869131" lng="117.283331" logo="3972.jpg" type="1" nm="金鹰国际购物中心(百花井店)" sinatopic="合肥金鹰百花井店" py="JinYingGuoJiGouWuZhongXin (BaiHuaJingDian )" aleph="JYGJGWZXBHJD"/>
+<mall id="3973" lat="31.86434" lng="117.30235" logo="3973.jpg" type="1" nm="金鹰国际购物中心(大东门店)" sinatopic="合肥金鹰大东门店" py="JinYingGuoJiGouWuZhongXin (DaDongMenDian )" aleph="JYGJGWZXDDMD"/>
+<mall id="3979" lat="31.863918" lng="117.302796" logo="3979.jpg" type="1" nm="商之都(东城商厦)" py="ShangZhiDou (DongChengShangSha )" aleph="SZDDCSS"/>
+<mall id="3982" lat="31.886042" lng="117.251836" logo="3982.jpg" type="1" nm="商之都(旗舰店)" py="ShangZhiDou (QiJianDian )" aleph="SZDQJD"/>
+<mall id="3980" lat="31.8591" lng="117.3008" logo="3980.jpg" type="1" nm="万达广场" sinatopic="合肥万达广场" py="WanDaGuangChang" aleph="WDGC"/>
+</malls>

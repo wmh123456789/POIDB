@@ -1,0 +1,27 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="445" lat="22.501704" lng="113.940006" logo="445.jpg" type="1" nm="宝能·all city" sinatopic="宝能allcity官方微博" py="BaoNeng all city" aleph="BN"/>
+<mall id="442" lat="22.691168" lng="114.228295" logo="442.jpg" type="1" nm="COCO PARK(龙岗店)" sinatopic="深圳龙岗COCOPark" py="COCO PARK(LongGangDian )" aleph="LGD"/>
+<mall id="422" lat="22.534201" lng="114.054136" logo="422.jpg" type="1" nm="COCOpark" sinatopic="深圳福田COCOPark" py="COCOpark"/>
+<mall id="443" lat="22.517064" lng="113.924164" logo="443.jpg" type="1" nm="崇尚百货(创业路店)" sinatopic="崇尚百货创业店" py="ChongShangBaiHuo (ChuangYeLuDian )" aleph="CSBHCYLD"/>
+<mall id="438" lat="22.5817" lng="113.88061" logo="438.jpg" type="1" nm="港隆城购物中心" sinatopic="港隆城购物中心" py="GangLongChengGouWuZhongXin" aleph="GLCGWZX"/>
+<mall id="423" lat="22.517023" lng="113.934721" logo="423.jpg" type="1" nm="海岸城" sinatopic="深圳海岸城" py="HaiAnCheng" aleph="HAC"/>
+<mall id="440" lat="22.518798" lng="113.928848" logo="440.jpg" type="1" nm="海雅南山店" sinatopic="海雅百货" py="HaiYaNanShanDian" aleph="HYNSD"/>
+<mall id="441" lat="22.570157" lng="113.902784" logo="441.jpg" type="1" nm="海雅宝安店" sinatopic="海雅百货" py="HaiYaBaoAnDian" aleph="HYBAD"/>
+<mall id="401" lat="22.539778" lng="114.111479" logo="401.jpg" type="1" nm="华润万象城" py="HuaRunWanXiangCheng" aleph="HRWXC"/>
+<mall id="435" lat="22.537271" lng="113.919897" logo="435.jpg" type="1" nm="欢乐颂" sinatopic="欢乐颂购物中心" py="HuanLeSong" aleph="HLS"/>
+<mall id="410" lat="22.539545" lng="114.119848" logo="410.jpg" type="1" nm="金光华广场" sinatopic="深圳金光华广场" py="JinGuangHuaGuangChang" aleph="JGHGC"/>
+<mall id="436" lat="22.530535" lng="113.96915" logo="436.jpg" type="1" nm="京基百纳广场" sinatopic="京基百纳广场" py="JingJiBaiNaGuangChang" aleph="JJBNGC"/>
+<mall id="420" lat="22.531159" lng="114.053366" logo="420.jpg" type="1" nm="君尚百货" sinatopic="君尚百货" py="JunShangBaiHuo" aleph="JSBH"/>
+<mall id="419" lat="22.542595" lng="114.110302" logo="419.jpg" type="1" nm="KKmall(深南东路店)" sinatopic="京基KKMALL" py="KKmall(ShenNanDongLuDian )" aleph="SNDLD"/>
+<mall id="407" lat="22.540816" lng="114.092406" logo="407.jpg" type="1" nm="茂业百货(深南店)" sinatopic="茂业百货(深南店)" py="MaoYeBaiHuo (ShenNanDian )" aleph="MYBHSND"/>
+<mall id="433" lat="22.53898" lng="114.11096" logo="433.jpg" type="1" nm="NOVO(万象城店)" sinatopic="NOVO深圳万象城店" py="NOVO(WanXiangChengDian )" aleph="WXCD"/>
+<mall id="439" lat="22.5489" lng="114.0856" logo="439.jpg" type="1" nm="女人世界" sinatopic="女人世界" py="Nu:RenShiJie" aleph="NRSJ"/>
+<mall id="432" lat="22.539766" lng="114.111474" logo="432.jpg" type="1" nm="芮欧时尚生活百货" sinatopic="芮欧时尚生活百货" py="RuiOuShiShangShengHuoBaiHuo" aleph="ROSSSHBH"/>
+<mall id="424" lat="22.518523" lng="113.935368" logo="424.jpg" type="1" nm="天利名城购物中心" sinatopic="天利名城购物中心" py="TianLiMingChengGouWuZhongXin" aleph="TLMCGWZX"/>
+<mall id="431" lat="22.540759" lng="114.083925" logo="431.jpg" type="1" nm="天虹商场(深南店)" py="TianHongShangChang (ShenNanDian )" aleph="THSCSND"/>
+<mall id="405" lat="22.567405" lng="114.141485" logo="405.jpg" type="1" nm="喜荟城" sinatopic="喜荟城购物中心" py="XiHuiCheng" aleph="XHC"/>
+<mall id="434" lat="22.5399" lng="114.0983" logo="434.jpg" type="1" nm="西武百货" sinatopic="西武百货" py="XiWuBaiHuo" aleph="XWBH"/>
+<mall id="403" lat="22.540083" lng="114.098462" logo="403.jpg" type="1" nm="新城市广场" sinatopic="新城市广场微博" py="XinChengShiGuangChang" aleph="XCSGC"/>
+<mall id="437" lat="22.5068" lng="113.9247" logo="437.jpg" type="1" nm="信和购物广场" sinatopic="信和购物广场" py="XinHeGouWuGuangChang" aleph="XHGWGC"/>
+<mall id="418" lat="22.537591" lng="113.975067" logo="418.jpg" type="1" nm="益田假日广场" sinatopic="益田假日广场" py="YiTianJiaRiGuangChang" aleph="YTJRGC"/>
+</malls>

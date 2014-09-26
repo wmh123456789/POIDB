@@ -1,0 +1,5 @@
+<space w="640" h="560">
+<floor id="-1" nar="-0.2418" nm="B1" brief="交通枢纽" cx="640" cy="360"/>
+<floor id="1" nar="-0.2418" nm="1F" brief="到达" zoom="0.75,16" zoom-org="3.5" cx="640" cy="560"/>
+<floor id="3" nar="-0.2418" nm="3F" brief="出发" zoom="0.75,16" zoom-org="3.5" cx="640" cy="560"/>
+</space>

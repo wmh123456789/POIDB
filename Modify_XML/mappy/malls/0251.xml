@@ -1,0 +1,17 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="1102" lat="32.0442" lng="118.7844" logo="1102.jpg" type="1" nm="德基广场" sinatopic="德基广场DEJIPLAZA" py="DeJiGuangChang" aleph="DJGC"/>
+<mall id="1127" lat="32.040265" lng="118.783742" logo="1127.jpg" type="1" nm="东方商城" sinatopic="东方商城微博" py="DongFangShangCheng" aleph="DFSC"/>
+<mall id="1138" lat="32.068358" lng="118.783219" logo="1138.jpg" type="1" nm="凤凰国际书城" sinatopic="南京凤凰国际书城" py="FengHuangGuoJiShuCheng" aleph="FHGJSC"/>
+<mall id="1112" lat="31.943831" lng="118.821698" logo="1112.jpg" type="1" nm="假日百货" sinatopic="南京同曦假日百货" py="JiaRiBaiHuo" aleph="JRBH"/>
+<mall id="1103" lat="32.0507" lng="118.7847" logo="1103.jpg" type="1" nm="金鹰购物中心(天地店)" sinatopic="金鹰天地购物中心" py="JinYingGouWuZhongXin (TianDiDian )" aleph="JYGWZXTDD"/>
+<mall id="1121" lat="32.043323" lng="118.779918" logo="1121.jpg" type="1" nm="金轮新天地" sinatopic="金轮新天地" py="JinLunXinTianDi" aleph="JLXTD"/>
+<mall id="1126" lat="32.04187" lng="118.780618" logo="1126.jpg" type="1" nm="金鹰购物中心(新街口店)" sinatopic="金鹰国际南京购物中心" py="JinYingGouWuZhongXin (XinJieKouDian )" aleph="JYGWZXXJKD"/>
+<mall id="1128" lat="32.040863" lng="118.763663" logo="1128.jpg" type="1" nm="金鹰特惠中心" sinatopic="南京汉中金鹰特惠中心" py="JinYingTeHuiZhongXin" aleph="JYTHZX"/>
+<mall id="1137" lat="31.942494" lng="118.822356" logo="1137.jpg" type="1" nm="南京万尚城" sinatopic="南京同曦万尚城" py="NanJingWanShangCheng" aleph="NJWSC"/>
+<mall id="1129" lat="32.023425" lng="118.785416" logo="1129.jpg" type="1" nm="水游城" sinatopic="南京水游城" py="ShuiYouCheng" aleph="SYC"/>
+<mall id="1104" lat="32.067354" lng="118.772464" logo="1104.jpg" type="1" nm="苏宁银河" sinatopic="苏宁银河百货" py="SuNingYinHe" aleph="SNYH"/>
+<mall id="1110" lat="32.0442" lng="118.7844" logo="1110.jpg" type="1" nm="苏宁环球购物中心" sinatopic="南京苏宁环球购物中心" py="SuNingHuanQiuGouWuZhongXin" aleph="SNHQGWZX"/>
+<mall id="1115" lat="32.032637" lng="118.736882" logo="1115.jpg" type="1" nm="万达百货" sinatopic="南京万达百货有限公司" py="WanDaBaiHuo" aleph="WDBH"/>
+<mall id="1119" lat="32.032127" lng="118.735052" logo="1119.jpg" type="1" nm="万达广场(河西店)" sinatopic="南京万达广场" py="WanDaGuangChang (HeXiDian )" aleph="WDGCHXD"/>
+<mall id="1108" lat="32.038567" lng="118.785255" logo="1108.jpg" type="1" nm="中央商场" sinatopic="南京中央商场微博" py="ZhongYangShangChang" aleph="ZYSC"/>
+</malls>

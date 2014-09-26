@@ -1,0 +1,8 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2608" lat="31.313853" lng="120.670094" logo="2608.jpg" type="1" nm="环球188购物中心" sinatopic="环球188购物中心" py="HuanQiu 188GouWuZhongXin" aleph="HQGWZX"/>
+<mall id="2609" lat="31.301623" lng="120.549419" logo="2609.jpg" type="1" nm="绿宝广场" sinatopic="苏州绿宝广场" py="Lu:BaoGuangChang" aleph="LBGC"/>
+<mall id="2601" lat="31.310636" lng="120.621992" logo="2601.jpg" type="1" nm="美罗百货观前店" sinatopic="苏州美罗商城" py="MeiLuoBaiHuoGuanQianDian" aleph="MLBHGQD"/>
+<mall id="2602" lat="31.283701" lng="120.550811" logo="2602.jpg" type="1" nm="泉屋百货" sinatopic="苏州泉屋百货有限公司" py="QuanWuBaiHuo" aleph="QWBH"/>
+<mall id="2606" lat="31.269778" lng="120.628872" logo="2606.jpg" type="1" nm="新苏购物中心" sinatopic="石路新苏天地购物广场" py="XinSuGouWuZhongXin" aleph="XSGWZX"/>
+<mall id="2611" lat="31.317348" lng="120.657271" logo="2611.jpg" type="1" nm="印象城" sinatopic="苏州印象城" py="YinXiangCheng" aleph="YXC"/>
+</malls>

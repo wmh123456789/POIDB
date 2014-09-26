@@ -1,0 +1,41 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="1807" lat="39.942299" lng="116.272522" logo="1807.jpg" type="32" nm="爱家家居(西四环店)" sinatopic="爱家家居(西四环店)" py="AiJiaJiaJu (XiSiHuanDian )" aleph="AJJJXSHD"/>
+<mall id="1808" lat="40.016291" lng="116.466405" logo="1808.jpg" type="32" nm="爱家家居(来广营店)" sinatopic="爱家家居(来广营店)" py="AiJiaJiaJu (LaiGuangYingDian )" aleph="AJJJLGYD"/>
+<mall id="1830" lat="39.873842" lng="116.277889" logo="1830.jpg" type="32" nm="八方龙灯具市场" sinatopic="北京八方龙灯具市场" py="BaFangLongDengJuShiChang" aleph="BFLDJSC"/>
+<mall id="1815" lat="39.943636" lng="116.271046" logo="1815.jpg" type="32" nm="百安居(金四季店)" sinatopic="百安居北京金四季店" py="BaiAnJu (JinSiJiDian )" aleph="BAJJSJD"/>
+<mall id="1817" lat="39.963235" lng="116.384418" logo="1817.jpg" type="32" nm="北京福丽特家居" sinatopic="福丽特家居" py="BeiJingFuLiTeJiaJu" aleph="BJFLTJJ"/>
+<mall id="1831" lat="39.98816" lng="116.44777" logo="1831.jpg" type="32" nm="北四环灯具市场" sinatopic="北四环灯具市场" py="BeiSiHuanDengJuShiChang" aleph="BSHDJSC"/>
+<mall id="1828" lat="39.8369" lng="116.4483" logo="1828.jpg" type="32" nm="城外诚家居广场" sinatopic="北京城外诚家居广场" py="ChengWaiChengJiaJuGuangChang" aleph="CWCJJGC"/>
+<mall id="1816" lat="39.844875" lng="116.343313" logo="1816.jpg" type="32" nm="东方家园家居广场(玉泉营中心店)" sinatopic="东方家园家居广场(玉泉营中心店)" py="DongFangJiaYuanJiaJuGuangChang (YuQuanYingZhongXinDian )" aleph="DFJYJJGCYQYZXD"/>
+<mall id="1820" lat="39.865127" lng="116.459619" logo="1820.jpg" type="32" nm="东方汇美家居广场" sinatopic="东方汇美家居广场" py="DongFangHuiMeiJiaJuGuangChang" aleph="DFHMJJGC"/>
+<mall id="1818" lat="39.965282" lng="116.38577" logo="1818.jpg" type="32" nm="福丽特建材馆" sinatopic="福丽特建材馆" py="FuLiTeJianCaiGuan" aleph="FLTJCG"/>
+<mall id="1829" lat="39.861652" lng="116.465826" logo="1829.jpg" type="32" nm="高力国际灯具港" sinatopic="高力国际灯具港" py="GaoLiGuoJiDengJuGang" aleph="GLGJDJG"/>
+<mall id="1814" lat="40.002633" lng="116.369905" logo="1814.jpg" type="32" nm="红星美凯龙（北四环店）" sinatopic="红星美凯龙北京站" py="HongXingMeiKaiLongBeiSiHuanDian" aleph="HXMKLBSHD"/>
+<mall id="1837" lat="39.892388" lng="116.276792" logo="1837.jpg" type="32" nm="红星美凯龙（西四环店）" py="HongXingMeiKaiLongXiSiHuanDian" aleph="HXMKLXSHD"/>
+<mall id="1838" lat="39.914435" lng="116.539541" logo="1838.jpg" type="32" nm="红星美凯龙(朝阳店)" sinatopic="红星美凯龙北京站" py="HongXingMeiKaiLong (ChaoYangDian )" aleph="HXMKLCYD"/>
+<mall id="1839" lat="39.887622" lng="116.488305" logo="1839.jpg" type="32" nm="红星美凯龙(东四环家具馆)" sinatopic="红星美凯龙" py="HongXingMeiKaiLong (DongSiHuanJiaJuGuan )" aleph="HXMKLDSHJJG"/>
+<mall id="1840" lat="39.88755" lng="116.488177" logo="1840.jpg" type="32" nm="红星美凯龙(东四环建材馆)" sinatopic="红星美凯龙" py="HongXingMeiKaiLong (DongSiHuanJianCaiGuan )" aleph="HXMKLDSHJCG"/>
+<mall id="1841" lat="40.023868" lng="116.438086" logo="1841.jpg" type="32" nm="红星美凯龙(北五环家居馆)" sinatopic="红星美凯龙北京站" py="HongXingMeiKaiLong (BeiWuHuanJiaJuGuan )" aleph="HXMKLBWHJJG"/>
+<mall id="1842" lat="40.023753" lng="116.438285" logo="1842.jpg" type="32" nm="红星美凯龙(北五环建材馆)" sinatopic="红星美凯龙北京站" py="HongXingMeiKaiLong (BeiWuHuanJianCaiGuan )" aleph="HXMKLBWHJCG"/>
+<mall id="1819" lat="39.853645" lng="116.342897" logo="1819.jpg" type="32" nm="环三环家居" sinatopic="环三环家居" py="HuanSanHuanJiaJu" aleph="HSHJJ"/>
+<mall id="1809" lat="40.03298" lng="116.42158" logo="1809.jpg" type="32" nm="集美家居(北苑店)" sinatopic="集美家居(北苑店)" py="JiMeiJiaJu (BeiYuanDian )" aleph="JMJJBYD"/>
+<mall id="1810" lat="40.258" lng="116.185" logo="1810.jpg" type="32" nm="集美家居万象城(回龙观店)" sinatopic="集美家居万象城(回龙观店)" py="JiMeiJiaJuWanXiangCheng (HuiLongGuanDian )" aleph="JMJJWXCHLGD"/>
+<mall id="1811" lat="39.83737" lng="116.38319" logo="1811.jpg" type="32" nm="集美家居（大红门店）" sinatopic="集美家居企业集团" py="JiMeiJiaJuDaHongMenDian" aleph="JMJJDHMD"/>
+<mall id="1812" lat="40.1991" lng="116.2274" logo="1812.jpg" type="32" nm="集美家居（水屯店）" sinatopic="集美家居企业集团" py="JiMeiJiaJuShuiTunDian" aleph="JMJJSTD"/>
+<mall id="1821" lat="39.748683" lng="116.998716" logo="1821.jpg" type="32" nm="嘉亿龍家居博览中心" sinatopic="嘉亿龍家居博览中心" py="JiaYiLongJiaJuBoLanZhongXin" aleph="JYLJJBLZX"/>
+<mall id="1822" lat="39.750273" lng="117.020721" logo="1822.jpg" type="32" nm="金钥匙品牌家居" sinatopic="金钥匙品牌家居" py="JinYaoChiPinPaiJiaJu" aleph="JYCPPJJ"/>
+<mall id="1801" lat="39.847274" lng="116.342892" logo="1801.jpg" type="32" nm="居然之家(玉泉营店)" sinatopic="居然之家" py="JuRanZhiJia (YuQuanYingDian )" aleph="JRZJYQYD"/>
+<mall id="1802" lat="39.871989" lng="116.309123" logo="1802.jpg" type="32" nm="居然之家(丽泽路店)" sinatopic="居然之家丽泽店" py="JuRanZhiJia (LiZeLuDian )" aleph="JRZJLZLD"/>
+<mall id="1803" lat="39.991301" lng="116.434811" logo="1803.jpg" type="32" nm="居然之家(北四环店)" sinatopic="居然之家北四环店" py="JuRanZhiJia (BeiSiHuanDian )" aleph="JRZJBSHD"/>
+<mall id="1804" lat="39.959803" lng="116.288548" logo="1804.jpg" type="32" nm="居然之家(北京金源店)" sinatopic="居然之家金源店" py="JuRanZhiJia (BeiJingJinYuanDian )" aleph="JRZJBJJYD"/>
+<mall id="1805" lat="39.865136" lng="116.459574" logo="1805.jpg" type="32" nm="居然之家(十里河店)" sinatopic="居然之家(十里河店)" py="JuRanZhiJia (ShiLiHeDian )" aleph="JRZJSLHD"/>
+<mall id="1836" lat="40.124307" lng="116.642404" logo="1836.jpg" type="32" nm="居然之家（顺义店）" sinatopic="居然之家顺义店 " py="JuRanZhiJiaShunYiDian" aleph="JRZJSYD"/>
+<mall id="1806" lat="39.969412" lng="116.343447" logo="1806.jpg" type="32" nm="蓝景丽家(大钟寺店)" sinatopic="蓝景丽家官方微博" py="LanJingLiJia (DaZhongSiDian )" aleph="LJLJDZSD"/>
+<mall id="1823" lat="39.752172" lng="117.022507" logo="1823.jpg" type="32" nm="鹏大家具城" sinatopic="鹏大家具城" py="PengDaJiaJuCheng" aleph="PDJJC"/>
+<mall id="1832" lat="39.86292" lng="116.46529" logo="1832.jpg" type="32" nm="十里河灯具城" sinatopic="十里河灯具城" py="ShiLiHeDengJuCheng" aleph="SLHDJC"/>
+<mall id="1824" lat="39.996925" lng="116.372222" logo="1824.jpg" type="32" nm="万家灯火家具城" sinatopic="万家灯火家具城" py="WanJiaDengHuoJiaJuCheng" aleph="WJDHJJC"/>
+<mall id="1833" lat="39.873016" lng="116.277384" logo="1833.jpg" type="32" nm="万隆汇洋灯具城（丰台区）" sinatopic="万隆汇洋灯具城" py="WanLongHuiYangDengJuChengFengTaiQu" aleph="WLHYDJCFTQ"/>
+<mall id="1825" lat="39.748631" lng="116.994763" logo="1825.jpg" type="32" nm="香河好百年家具博览中心" sinatopic="香河好百年家具博览中心" py="XiangHeHaoBaiNianJiaJuBoLanZhongXin" aleph="XHHBNJJBLZX"/>
+<mall id="1826" lat="39.751075" lng="117.017089" logo="1826.jpg" type="32" nm="鑫亿隆家具文化广场" sinatopic="鑫亿隆家具文化广场" py="XinYiLongJiaJuWenHuaGuangChang" aleph="XYLJJWHGC"/>
+<mall id="1827" lat="39.764" lng="117.018" logo="1827.jpg" type="32" nm="中唐家具城" sinatopic="中唐家具城" py="ZhongTangJiaJuCheng" aleph="ZTJJC"/>
+</malls>

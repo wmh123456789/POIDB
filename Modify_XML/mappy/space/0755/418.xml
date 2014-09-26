@@ -1,0 +1,7 @@
+<space w="640" h="194">
+<floor id="-2" nar="-0.3628" nm="B2" brief="综合.便利.人气圣地" cx="640" cy="178"/>
+<floor id="-1" nar="-0.3628" nm="B1" brief="休闲.美颜.时尚之都" cx="640" cy="172"/>
+<floor id="1" nar="-0.3628" nm="L1" brief="名品.运动.合家反斗" cx="640" cy="188"/>
+<floor id="2" nar="-0.3656" nm="L2" brief="国际.奢华.五星服务" cx="640" cy="194"/>
+<floor id="3" nar="-0.3656" nm="L3" brief="美食.电影.艺术长廊" cx="640" cy="188"/>
+</space>

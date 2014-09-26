@@ -1,0 +1,12 @@
+<space w="640" h="560">
+<floor id="-1" nar="1.5441" nm="B1" brief="富一城" cx="640" cy="530"/>
+<floor id="1" nar="1.562" nm="F1" brief="名店城" cx="640" cy="529"/>
+<floor id="2" nar="1.5521" nm="F2" brief="吉之岛" cx="640" cy="560"/>
+<floor id="3" nar="1.5595" nm="F3" brief="俏衣裳" cx="640" cy="545"/>
+<floor id="4" nar="1.5434" nm="F4" brief="中华数码城" cx="640" cy="505"/>
+<floor id="5" nar="1.5396" nm="F5" brief="F5" cx="640" cy="470"/>
+<floor id="6" nar="1.5385" nm="F6" brief="F6" cx="640" cy="494"/>
+<floor id="7" nar="1.5271" nm="F7" brief="F7" cx="640" cy="493"/>
+<floor id="8" nar="1.5517" nm="F8" brief="F8" cx="640" cy="500"/>
+<floor id="9" nar="1.5352" nm="F9" brief="F9" cx="640" cy="500"/>
+</space>

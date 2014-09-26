@@ -1,0 +1,4 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="4521" lat="30.579051" lng="103.958272" logo="4521.jpg" type="256" nm="双流机场T1航站楼" sinatopic="双流机场" py="ShuangLiuJiChang T1HangZhanLou" aleph="SLJCHZL"/>
+<mall id="4522" lat="30.57521" lng="103.95875" logo="4522.jpg" type="256" nm="双流机场T2航站楼" py="ShuangLiuJiChang T2HangZhanLou" aleph="SLJCHZL"/>
+</malls>

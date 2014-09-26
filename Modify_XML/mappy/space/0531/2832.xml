@@ -1,0 +1,6 @@
+<space w="0" h="0">
+<floor id="1" nar="1.6016" nm="1F1" brief="家具家饰馆" cx="640" cy="400"/>
+<floor id="2" nar="1.6012" nm="1F2" brief="家具家饰馆" cx="640" cy="450"/>
+<floor id="3" nar="1.5996" nm="2F1" brief="装饰材料馆" cx="640" cy="500"/>
+<floor id="4" nar="1.6026" nm="2F2" brief="装饰材料馆" cx="640" cy="550"/>
+</space>

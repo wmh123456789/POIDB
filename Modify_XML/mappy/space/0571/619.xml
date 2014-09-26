@@ -1,0 +1,7 @@
+<space w="640" h="270">
+<floor id="1" nar="0.1864" nm="1F" brief="国际风" cx="640" cy="250"/>
+<floor id="2" nar="0.1864" nm="2F" brief="时尚控" cx="640" cy="265"/>
+<floor id="3" nar="0.1864" nm="3F" brief="悠闲派" cx="640" cy="260"/>
+<floor id="4" nar="0.1864" nm="4F" brief="乐翻天" cx="640" cy="265"/>
+<floor id="5" nar="0.1864" nm="5F" brief="饕餮客" cx="640" cy="270"/>
+</space>

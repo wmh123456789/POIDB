@@ -1,0 +1,14 @@
+<space w="640" h="1050">
+<floor id="-1" nar="2.3363" nm="B1" brief="特色集市" cx="640" cy="300"/>
+<floor id="1" nar="2.334" nm="F1" brief="摩登精品" cx="640" cy="340"/>
+<floor id="2" nar="2.334" nm="F2" brief="时尚丽人" cx="640" cy="240"/>
+<floor id="3" nar="2.334" nm="F3" brief="都市风情" cx="640" cy="240"/>
+<floor id="4" nar="2.3325" nm="F4" brief="欢乐生活" cx="640" cy="240"/>
+<floor id="5" nar="0" nm="F5" brief="休闲时光" cx="640" cy="1020"/>
+<floor id="6" nar="0" nm="F6" brief="休闲时光" cx="640" cy="1050"/>
+<floor id="7" nar="0" nm="F7" brief="休闲时光" cx="640" cy="1050"/>
+<floor id="8" nar="0" nm="F8" brief="休闲时光" cx="640" cy="1050"/>
+<floor id="9" nar="0" nm="F9" brief="休闲时光" cx="640" cy="1050"/>
+<floor id="10" nar="0" nm="F10" brief="休闲时光" cx="640" cy="1050"/>
+<floor id="11" nar="0" nm="F11" brief="休闲时光" cx="640" cy="1050"/>
+</space>

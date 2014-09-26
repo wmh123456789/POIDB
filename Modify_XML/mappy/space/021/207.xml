@@ -1,0 +1,11 @@
+<space w="640" h="269">
+<floor id="1" nar="-1.2885" nm="F1" brief="F1" cx="640" cy="269"/>
+<floor id="2" nar="-1.2885" nm="F2" brief="F2" cx="640" cy="184"/>
+<floor id="3" nar="-1.2885" nm="F3" brief="淑女装/女鞋/包袋/内衣及饰品" cx="640" cy="184"/>
+<floor id="4" nar="-1.2885" nm="F4" brief="仕女装/职业女装/童装童品" cx="640" cy="184"/>
+<floor id="5" nar="-1.2885" nm="F5" brief="绅士装/男装/内衣及饰品" cx="640" cy="184"/>
+<floor id="6" nar="-1.2885" nm="F6" brief="休闲男装/箱包/客户服务中心" cx="640" cy="184"/>
+<floor id="7" nar="-1.2885" nm="F7" brief="时尚运动服饰/户外用品/游泳健身服" cx="640" cy="184"/>
+<floor id="8" nar="-1.2885" nm="F8" brief="运动品牌服饰/按摩健身/体育用品" cx="640" cy="184"/>
+<floor id="9" nar="-1.2885" nm="F9" brief="床上布艺/餐具/除味器皿/小家电" cx="640" cy="184"/>
+</space>

@@ -1,0 +1,10 @@
+<space w="640" h="450">
+<floor id="-1" nar="2.3634" nm="B1" brief="惬意生活" cx="640" cy="450"/>
+<floor id="0" nar="2.3877" nm="LG" brief="奢侈品位" cx="640" cy="420"/>
+<floor id="1" nar="2.4036" nm="1F" brief="奢侈品位" cx="640" cy="400"/>
+<floor id="2" nar="2.3882" nm="2F" brief="时尚前沿" cx="640" cy="400"/>
+<floor id="3" nar="2.3869" nm="3F" brief="经典品位" cx="640" cy="420"/>
+<floor id="4" nar="2.3902" nm="4F" brief="快意人生" cx="640" cy="420"/>
+<floor id="5" nar="2.3918" nm="5F" brief="时尚玩味" cx="640" cy="420"/>
+<floor id="6" nar="2.3854" nm="6F" brief="异域食风" cx="640" cy="420"/>
+</space>

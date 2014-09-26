@@ -1,0 +1,6 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2923" lat="45.753017" lng="126.695387" logo="2923.jpg" type="32" nm="东方家园" sinatopic="东方家园orientcity" py="DongFangJiaYuan" aleph="DFJY"/>
+<mall id="2924" lat="45.747267" lng="126.650734" logo="2924.jpg" type="32" nm="哈尔滨海龙灯具城" sinatopic="哈尔滨海龙灯具城" py="HaErBinHaiLongDengJuCheng" aleph="HEBHLDJC"/>
+<mall id="2921" lat="45.766831" lng="126.684524" logo="2921.jpg" type="32" nm="居然之家(先锋店)" sinatopic="居然之家（先锋店）" py="JuRanZhiJia (XianFengDian )" aleph="JRZJXFD"/>
+<mall id="2922" lat="45.762673" lng="126.600829" logo="2922.jpg" type="32" nm="居然之家(爱建店)" sinatopic="居然之家哈尔滨爱建店" py="JuRanZhiJia (AiJianDian )" aleph="JRZJAJD"/>
+</malls>

@@ -1,0 +1,6 @@
+<space w="640" h="496">
+<floor id="1" nar="0.324" nm="1F" brief="楼层导航" cx="640" cy="496"/>
+<floor id="2" nar="0.324" nm="2F" brief="国际流行名品" cx="640" cy="496"/>
+<floor id="3" nar="0.324" nm="3F" brief="高级时尚男装" cx="640" cy="496"/>
+<floor id="4" nar="0.324" nm="4F" brief="高级女装会所" cx="640" cy="496"/>
+</space>

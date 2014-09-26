@@ -1,0 +1,9 @@
+<space w="640" h="576">
+<floor id="1" nar="0.1347" nm="A" brief="A" cx="640" cy="284"/>
+<floor id="2" nar="0.1306" nm="B1F" brief="B1F" cx="640" cy="576"/>
+<floor id="3" nar="0.1318" nm="B2F" brief="B2F" cx="640" cy="259"/>
+<floor id="4" nar="0.1324" nm="C1F" brief="C1F" cx="640" cy="400"/>
+<floor id="5" nar="0.1324" nm="C2F" brief="C2F" cx="640" cy="337"/>
+<floor id="6" nar="0.1324" nm="C3F" brief="C3F" cx="640" cy="329"/>
+<floor id="7" nar="0.1324" nm="C4F" brief="C4F" cx="640" cy="330"/>
+</space>

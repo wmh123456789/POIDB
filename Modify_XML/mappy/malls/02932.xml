@@ -1,0 +1,9 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3825" lat="34.211208" lng="108.931589" logo="3825.jpg" type="32" nm="大明宫建材家居含光路店" py="DaMingGongJianCaiJiaJuHanGuangLuDian" aleph="DMGJCJJHGLD"/>
+<mall id="3830" lat="34.24214" lng="108.954871" logo="3830.jpg" type="32" nm="家春秋国际美居中心" sinatopic="家春秋国际美居中心" py="JiaChunQiuGuoJiMeiJuZhongXin" aleph="JCQGJMJZX"/>
+<mall id="3826" lat="34.310547" lng="108.929301" logo="3826.jpg" type="32" nm="居然之家" sinatopic="居然之家" py="JuRanZhiJia" aleph="JRZJ"/>
+<mall id="3827" lat="34.204402" lng="108.946896" logo="3827.jpg" type="32" nm="三森家居建材城" sinatopic="三森家居建材城" py="SanSenJiaJuJianCaiCheng" aleph="SSJJJCC"/>
+<mall id="3828" lat="34.258966" lng="108.931782" logo="3828.jpg" type="32" nm="世纪金花美居生活家" sinatopic="世纪金花1988" py="ShiJiJinHuaMeiJuShengHuoJia" aleph="SJJHMJSHJ"/>
+<mall id="3831" lat="34.28067" lng="108.85943" logo="3831.jpg" type="32" nm="万国酒店用品贸易中心" sinatopic="万国酒店用品贸易中心" py="WanGuoJiuDianYongPinMaoYiZhongXin" aleph="WGJDYPMYZX"/>
+<mall id="3829" lat="34.24029" lng="108.89862" logo="3829.jpg" type="32" nm="西安中天新世纪" sinatopic="西安中天新世纪" py="XiAnZhongTianXinShiJi" aleph="XAZTXSJ"/>
+</malls>

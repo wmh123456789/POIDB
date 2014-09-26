@@ -1,0 +1,9 @@
+<space w="640" h="370">
+<floor id="1" nar="1.5567" nm="A1F" brief="精品服饰-名表-眼镜-GOLF" cx="640" cy="370"/>
+<floor id="2" nar="1.5621" nm="A2F" brief="内衣-家居-汽车-皮草-儿童" cx="640" cy="321"/>
+<floor id="3" nar="1.5626" nm="B1F" brief="皮具-皮鞋" cx="640" cy="310"/>
+<floor id="4" nar="1.5626" nm="B2F" brief="运动-户外-体育-健身" cx="640" cy="320"/>
+<floor id="5" nar="1.5655" nm="C1F" brief="国际-眼镜-美妆-餐饮" cx="640" cy="315"/>
+<floor id="6" nar="1.5638" nm="C2F" brief="男装-女装" cx="640" cy="320"/>
+<floor id="7" nar="1.5638" nm="C3F" brief="餐饮-图书-烟酒-通信" cx="640" cy="320"/>
+</space>

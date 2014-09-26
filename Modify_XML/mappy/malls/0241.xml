@@ -1,0 +1,14 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="1902" lat="41.802451" lng="123.471015" logo="1902.jpg" type="1" nm="大悦城" sinatopic="沈阳中街大悦城" py="DaYueCheng" aleph="DYC"/>
+<mall id="1913" lat="41.81209" lng="123.43298" logo="1913.jpg" type="1" nm="华府天地" sinatopic="华府天地购物中心" py="HuaFuTianDi" aleph="HFTD"/>
+<mall id="1903" lat="41.802465" lng="123.454512" logo="1903.jpg" type="1" nm="皇城恒隆广场" sinatopic="皇城恒隆官方微博" py="HuangChengHengLongGuangChang" aleph="HCHLGC"/>
+<mall id="1910" lat="41.789635" lng="123.405921" logo="1910.jpg" type="1" nm="欧亚联营" sinatopic="欧亚-沈阳联营公司" py="OuYaLianYing" aleph="OYLY"/>
+<mall id="1916" lat="41.775818" lng="123.434317" logo="1916.jpg" type="1" nm="尚泰百货" sinatopic="尚泰百货沈阳万象城店" py="ShangTaiBaiHuo" aleph="STBH"/>
+<mall id="1907" lat="41.792783" lng="123.433068" logo="1907.jpg" type="1" nm="沈阳百联购物中心" sinatopic="沈阳百联购物中心" py="ShenYangBaiLianGouWuZhongXin" aleph="SYBLGWZX"/>
+<mall id="1914" lat="41.799609" lng="123.433805" logo="1914.jpg" type="1" nm="市府恒隆广场" sinatopic="沈阳市府恒隆广场" py="ShiFuHengLongGuangChang" aleph="SFHLGC"/>
+<mall id="1901" lat="41.7839" lng="123.437" logo="1901.jpg" type="1" nm="万象城" sinatopic="万象城" py="WanXiangCheng" aleph="WXC"/>
+<mall id="1905" lat="41.7927" lng="123.3988" logo="1905.jpg" type="1" nm="万达广场(太原街店)" sinatopic="沈阳太原街万达广场" py="WanDaGuangChang (TaiYuanJieDian )" aleph="WDGCTYJD"/>
+<mall id="1906" lat="41.781165" lng="123.360203" logo="1906.jpg" type="1" nm="万达广场(铁西店)" sinatopic="沈阳铁西万达广场" py="WanDaGuangChang (TieXiDian )" aleph="WDGCTXD"/>
+<mall id="1918" lat="41.800555" lng="123.454866" logo="1918.jpg" type="1" nm="兴隆大家庭" sinatopic="沈阳中街兴隆大家庭" py="XingLongDaJiaTing" aleph="XLDJT"/>
+<mall id="1904" lat="41.794276" lng="123.402252" logo="1904.jpg" type="1" nm="伊势丹百货" sinatopic="伊势丹百货" py="YiShiDanBaiHuo" aleph="YSDBH"/>
+</malls>

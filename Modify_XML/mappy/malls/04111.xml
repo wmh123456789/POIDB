@@ -1,0 +1,11 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="1007" lat="38.91696" lng="121.63573" logo="1007.jpg" type="1" nm="百年城(太平洋百货)" sinatopic="百年城(太平洋百货)" py="BaiNianCheng (TaiPingYangBaiHuo )" aleph="BNCTPYBH"/>
+<mall id="1010" lat="38.909721" lng="121.609345" logo="1010.jpg" type="1" nm="大连奥林匹克购物广场" py="DaLianAoLinPiKeGouWuGuangChang" aleph="DLALPKGWGC"/>
+<mall id="1011" lat="39.09633" lng="121.71257" logo="1011.jpg" type="1" nm="大连福佳新天地购物广场" py="DaLianFuJiaXinTianDiGouWuGuangChang" aleph="DLFJXTDGWGC"/>
+<mall id="1002" lat="38.9179" lng="121.6322" logo="1002.jpg" type="1" nm="久光百货" sinatopic="久光百货" py="JiuGuangBaiHuo" aleph="JGBH"/>
+<mall id="1009" lat="38.899" lng="121.587" logo="1009.jpg" type="1" nm="凯德和平广场" sinatopic="凯德和平广场" py="KaiDeHePingGuangChang" aleph="KDHPGC"/>
+<mall id="1001" lat="38.916218" lng="121.635244" logo="1001.jpg" type="1" nm="麦凯乐大连总店" sinatopic="麦凯乐大连总店" py="MaiKaiLeDaLianZongDian" aleph="MKLDLZD"/>
+<mall id="1006" lat="38.911178" lng="121.586214" logo="1006.jpg" type="1" nm="麦凯乐西安路" sinatopic="麦凯乐西安路店" py="MaiKaiLeXiAnLu" aleph="MKLXAL"/>
+<mall id="1013" lat="38.91454" lng="121.58669" logo="1013.jpg" type="1" nm="天兴罗斯福" sinatopic="天兴罗斯福" py="TianXingLuoSiFu" aleph="TXLSF"/>
+<mall id="1012" lat="38.91962" lng="121.62985" logo="1012.jpg" type="1" nm="香榭里广场" sinatopic="大连香榭里广场" py="XiangXieLiGuangChang" aleph="XXLGC"/>
+</malls>

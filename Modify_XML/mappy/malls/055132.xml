@@ -1,0 +1,6 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="4124" lat="31.845551" lng="117.345689" logo="4124.jpg" type="32" nm="第六空间大都会" sinatopic="合肥-第六空间" py="DiLiuKongJianDaDouHui" aleph="DLKJDDH"/>
+<mall id="4121" lat="31.877485" lng="117.322183" logo="4121.jpg" type="32" nm="红星美凯龙(政务区店)" sinatopic="红星美凯龙合肥站" py="HongXingMeiKaiLong (ZhengWuQuDian )" aleph="HXMKLZWQD"/>
+<mall id="4122" lat="31.868184" lng="117.325811" logo="4122.jpg" type="32" nm="居然之家(环宇店)" sinatopic="居然之家合肥环宇店" py="JuRanZhiJia (HuanYuDian )" aleph="JRZJHYD"/>
+<mall id="4123" lat="31.741131" lng="117.287701" logo="4123.jpg" type="32" nm="居然之家(滨湖店)" sinatopic="居然之家合肥滨湖店" py="JuRanZhiJia (BinHuDian )" aleph="JRZJBHD"/>
+</malls>

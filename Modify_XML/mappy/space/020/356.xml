@@ -1,0 +1,8 @@
+<space w="640" h="420">
+<floor id="1" nar="-1.2015" nm="1F" brief="LUXURY ARTICLE" cx="640" cy="420"/>
+<floor id="2" nar="-1.2058" nm="2F" brief="GIRLS FASHION" cx="640" cy="380"/>
+<floor id="3" nar="-1.2031" nm="3F" brief="LADIES FASHION" cx="640" cy="400"/>
+<floor id="4" nar="-1.1702" nm="4F" brief="MENS FASHION" cx="640" cy="410"/>
+<floor id="5" nar="-1.1965" nm="5F" brief="SPORTS&amp;CASUAL" cx="640" cy="370"/>
+<floor id="6" nar="-1.2146" nm="6F" brief="LIVING FASHION" cx="640" cy="380"/>
+</space>

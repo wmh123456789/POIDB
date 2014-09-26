@@ -1,0 +1,12 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3550" lat="29.5307" lng="106.56629" logo="3550.jpg" type="32" nm="百安居南坪店" sinatopic="百安居南坪店" py="BaiAnJuNanPingDian" aleph="BAJNPD"/>
+<mall id="3551" lat="29.602316" lng="106.493928" logo="3551.jpg" type="32" nm="红星美凯龙" sinatopic="重庆红星美凯龙江北店" py="HongXingMeiKaiLong" aleph="HXMKL"/>
+<mall id="3552" lat="29.582669" lng="106.525481" logo="3552.jpg" type="32" nm="建玛特江北店" sinatopic="建玛特江北店" py="JianMaTeJiangBeiDian" aleph="JMTJBD"/>
+<mall id="3554" lat="29.5575" lng="106.5261" logo="3554.jpg" type="32" nm="居然之家(金源店)" sinatopic="居然之家重庆金源店" py="JuRanZhiJia (JinYuanDian )" aleph="JRZJJYD"/>
+<mall id="3555" lat="29.580887" lng="106.506832" logo="3555.jpg" type="32" nm="聚信国际建材城" sinatopic="聚信国际建材城" py="JuXinGuoJiJianCaiCheng" aleph="JXGJJCC"/>
+<mall id="3556" lat="29.478524" lng="106.566648" logo="3556.jpg" type="32" nm="铠恩国际家居名都" py="KaiEnGuoJiJiaJuMingDou" aleph="KEGJJJMD"/>
+<mall id="3557" lat="29.530824" lng="106.565194" logo="3557.jpg" type="32" nm="美克美家(南坪店)" sinatopic="重庆-美克美家(南坪店)" py="MeiKeMeiJia (NanPingDian )" aleph="MKMJNPD"/>
+<mall id="3558" lat="29.58422" lng="106.54637" logo="3558.jpg" type="32" nm="檀香道壹号" sinatopic="重庆-檀香道壹号" py="TanXiangDaoYiHao" aleph="TXDYH"/>
+<mall id="3553" lat="29.5109" lng="106.4629" logo="3553.jpg" type="32" nm="重庆居然之家(二郎店)" sinatopic="居然之家重庆二郎店" py="ZhongQingJuRanZhiJia (ErLangDian )" aleph="ZQJRZJELD"/>
+<mall id="3560" lat="29.667156" lng="106.560985" logo="3560.jpg" type="32" nm="中国西部建材城" py="ZhongGuoXiBuJianCaiCheng" aleph="ZGXBJCC"/>
+</malls>

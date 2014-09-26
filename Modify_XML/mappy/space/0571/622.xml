@@ -1,0 +1,15 @@
+<space w="640" h="1120">
+<floor id="-1" nar="0.0306" nm="AB1" brief="AB1" cx="640" cy="1120"/>
+<floor id="1" nar="1.5912" nm="AF1" brief="AF1" cx="640" cy="976"/>
+<floor id="2" nar="1.616" nm="AF2" brief="AF2" cx="640" cy="845"/>
+<floor id="3" nar="1.5951" nm="AF3" brief="AF3" cx="640" cy="860"/>
+<floor id="4" nar="0.0188" nm="AF4" brief="AF4" cx="640" cy="690"/>
+<floor id="5" nar="0.0257" nm="AF5" brief="AF5" cx="640" cy="340"/>
+<floor id="6" nar="1.6013" nm="BF1" brief="BF1" cx="640" cy="490"/>
+<floor id="7" nar="1.6014" nm="BF2" brief="BF2" cx="640" cy="530"/>
+<floor id="8" nar="1.5979" nm="BF3" brief="BF3" cx="640" cy="480"/>
+<floor id="9" nar="1.5978" nm="BF4" brief="BF4" cx="640" cy="490"/>
+<floor id="10" nar="1.5875" nm="BF5" brief="BF5" cx="640" cy="470"/>
+<floor id="11" nar="1.5872" nm="BF6" brief="BF6" cx="640" cy="490"/>
+<floor id="12" nar="1.5708" nm="BF7" brief="BF7" cx="640" cy="500"/>
+</space>

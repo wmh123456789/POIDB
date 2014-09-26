@@ -1,0 +1,4 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3932" lat="34.44194" lng="108.7602" logo="3932.jpg" type="256" nm="西安咸阳国际机场T2航站楼" sinatopic="西安咸阳国际机场" py="XiAnXianYangGuoJiJiChang T2HangZhanLou" aleph="XAXYGJJCHZL"/>
+<mall id="3933" lat="34.44194" lng="108.7602" logo="3933.jpg" type="256" nm="西安咸阳国际机场T3航站楼" sinatopic="西安咸阳国际机场" py="XiAnXianYangGuoJiJiChang T3HangZhanLou" aleph="XAXYGJJCHZL"/>
+</malls>

@@ -1,0 +1,11 @@
+<space w="640" h="640">
+<floor id="1" nar="2.06" nm="1GF" brief="1期GF" cx="640" cy="325"/>
+<floor id="2" nar="2.0594" nm="1UG" brief="1期UG" cx="640" cy="281"/>
+<floor id="3" nar="2.062" nm="1F1" brief="1期F1" cx="640" cy="316"/>
+<floor id="4" nar="2.0614" nm="1F2" brief="1期F2" cx="640" cy="289"/>
+<floor id="5" nar="-2.7515" nm="2GF" brief="2期GF" cx="640" cy="573"/>
+<floor id="6" nar="-2.7585" nm="2UG" brief="2期UG" cx="640" cy="640"/>
+<floor id="7" nar="-2.7259" nm="2F1" brief="2期F1" cx="640" cy="589"/>
+<floor id="8" nar="-3.0775" nm="3GF" brief="3期GF" cx="640" cy="311"/>
+<floor id="9" nar="-3.0746" nm="3UG" brief="3期UG" cx="640" cy="276"/>
+</space>

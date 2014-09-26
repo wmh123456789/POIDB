@@ -1,0 +1,7 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3624" lat="31.19254" lng="121.347538" logo="3624.jpg" type="256" nm="虹桥机场T1航站楼" sinatopic="虹桥机场" py="HongQiaoJiChang T1HangZhanLou" aleph="HQJCHZL"/>
+<mall id="3625" lat="31.195716" lng="121.328034" logo="3625.jpg" type="256" nm="虹桥机场T2航站楼" sinatopic="上海机场" py="HongQiaoJiChang T2HangZhanLou" aleph="HQJCHZL"/>
+<mall id="3621" lat="31.1513" lng="121.8089" logo="3621.jpg" type="256" nm="浦东机场T1航站楼" sinatopic="浦东机场" py="PuDongJiChang T1HangZhanLou" aleph="PDJCHZL"/>
+<mall id="3622" lat="31.1496" lng="121.8029" logo="3622.jpg" type="256" nm="浦东机场T2航站楼" sinatopic="浦东机场" py="PuDongJiChang T2HangZhanLou" aleph="PDJCHZL"/>
+<mall id="3623" lat="31.1505" lng="121.8062" logo="3623.jpg" type="256" nm="浦东机场连廊" sinatopic="浦东机场" py="PuDongJiChangLianLang" aleph="PDJCLL"/>
+</malls>

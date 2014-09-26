@@ -1,0 +1,12 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2002" lat="26.577311" lng="106.707512" logo="2002.jpg" type="1" nm="国晨百货" sinatopic="国晨百货" py="GuoChenBaiHuo" aleph="GCBH"/>
+<mall id="2003" lat="26.584569" lng="106.711781" logo="2003.jpg" type="1" nm="国贸广场总店" sinatopic="贵阳国贸广场" py="GuoMaoGuangChangZongDian" aleph="GMGCZD"/>
+<mall id="2012" lat="26.568785" lng="106.689885" logo="2012.jpg" type="1" nm="花果园购物中心" sinatopic="Garland花果园购物中心" py="HuaGuoYuanGouWuZhongXin" aleph="HGYGWZX"/>
+<mall id="2005" lat="26.57162" lng="106.71557" logo="2005.jpg" type="1" nm="荔星名店" sinatopic="荔星名店" py="LiXingMingDian" aleph="LXMD"/>
+<mall id="2006" lat="26.57113" lng="106.71402" logo="2006.jpg" type="1" nm="荔星名品" sinatopic="荔星名品" py="LiXingMingPin" aleph="LXMP"/>
+<mall id="2007" lat="26.582036" lng="106.713263" logo="2007.jpg" type="1" nm="南国花锦购物中心" sinatopic="南国花锦购物中心" py="NanGuoHuaJinGouWuZhongXin" aleph="NGHJGWZX"/>
+<mall id="2001" lat="26.584677" lng="106.704921" logo="2001.jpg" type="1" nm="tp mall国贸时代购物公园" sinatopic="贵阳国贸时代tpmall" py="tp mallGuoMaoShiDaiGouWuGongYuan" aleph="GMSDGWGY"/>
+<mall id="2008" lat="26.577587" lng="106.706488" logo="2008.jpg" type="1" nm="星力百货瑞金店" sinatopic="星力百货瑞金店" py="XingLiBaiHuoRuiJinDian" aleph="XLBHRJD"/>
+<mall id="2009" lat="26.57757" lng="106.70648" logo="2009.jpg" type="1" nm="星力百货中山店" sinatopic="星力百货中山店" py="XingLiBaiHuoZhongShanDian" aleph="XLBHZSD"/>
+<mall id="2011" lat="26.58476" lng="106.71349" logo="2011.jpg" type="1" nm="智诚名店" sinatopic="智诚名店" py="ZhiChengMingDian" aleph="ZCMD"/>
+</malls>

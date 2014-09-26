@@ -1,0 +1,8 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2861" lat="28.230191" lng="112.954197" logo="2861.jpg" type="32" nm="安居乐" sinatopic="安居乐家居建材广场" py="AnJuLe" aleph="AJL"/>
+<mall id="2866" lat="28.177867" lng="112.984734" logo="2866.jpg" type="32" nm="红星美凯龙(贺龙店)" sinatopic="长沙红星美凯龙" py="HongXingMeiKaiLong (HeLongDian )" aleph="HXMKLHLD"/>
+<mall id="2868" lat="28.104321" lng="113.014799" logo="2868.jpg" type="32" nm="红星美凯龙(邵山建材店)" sinatopic="长沙红星美凯龙" py="HongXingMeiKaiLong (ShaoShanJianCaiDian )" aleph="HXMKLSSJCD"/>
+<mall id="2865" lat="28.13548" lng="113.035806" logo="2865.jpg" type="32" nm="居然之家(高桥店)" sinatopic="居然之家长沙高桥店" py="JuRanZhiJia (GaoQiaoDian )" aleph="JRZJGQD"/>
+<mall id="2862" lat="28.179378" lng="113.029876" logo="2862.jpg" type="32" nm="欧亚达家居(上河店)" sinatopic="欧亚达家居(上河店)" py="OuYaDaJiaJu (ShangHeDian )" aleph="OYDJJSHD"/>
+<mall id="2869" lat="28.215881" lng="112.912851" logo="2869.jpg" type="32" nm="郁金香建材市场" sinatopic="郁金香精品装饰建材城" py="YuJinXiangJianCaiShiChang" aleph="YJXJCSC"/>
+</malls>

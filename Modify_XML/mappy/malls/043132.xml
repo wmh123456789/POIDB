@@ -1,0 +1,9 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3851" lat="43.906966" lng="125.313398" logo="3851.jpg" type="32" nm="太阳城" sinatopic="太阳城" py="TaiYangCheng" aleph="TYC"/>
+<mall id="3855" lat="43.901389" lng="125.381802" logo="3855.jpg" type="32" nm="香江家居(长春)" sinatopic="金海马家居网上商城" py="XiangJiangJiaJu (ZhangChun )" aleph="XJJJZC"/>
+<mall id="3853" lat="43.87114" lng="125.27495" logo="3853.jpg" type="32" nm="长春月星家居" sinatopic="长春月星家居" py="ZhangChunYueXingJiaJu" aleph="ZCYXJJ"/>
+<mall id="3854" lat="43.897537" lng="125.361616" logo="3854.jpg" type="32" nm="长春吉盛伟邦" sinatopic="长春吉盛伟邦" py="ZhangChunJiShengWeiBang" aleph="ZCJSWB"/>
+<mall id="3856" lat="43.843511" lng="125.246686" logo="3856.jpg" type="32" nm="长春欧亚卖场" sinatopic="欧亚卖场" py="ZhangChunOuYaMaiChang" aleph="ZCOYMC"/>
+<mall id="3850" lat="43.910239" lng="125.376757" logo="3850.jpg" type="32" nm="中东瑞家家居广场" sinatopic="中东瑞家家居广场" py="ZhongDongRuiJiaJiaJuGuangChang" aleph="ZDRJJJGC"/>
+<mall id="3852" lat="43.871911" lng="125.371428" logo="3852.jpg" type="32" nm="中东大市场" sinatopic="中东大市场" py="ZhongDongDaShiChang" aleph="ZDDSC"/>
+</malls>

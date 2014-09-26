@@ -1,0 +1,8 @@
+<space w="640" h="960">
+<floor id="1" nar="-0" nm="AF1" brief="AF1" cx="640" cy="925"/>
+<floor id="2" nar="-0" nm="AF2" brief="AF2" cx="640" cy="400"/>
+<floor id="3" nar="-0" nm="AF3" brief="AF3" cx="640" cy="350"/>
+<floor id="4" nar="-0" nm="BF1" brief="BF1" cx="640" cy="960"/>
+<floor id="5" nar="0" nm="BF2" brief="BF2" cx="640" cy="330"/>
+<floor id="6" nar="0" nm="BF3" brief="BF3" cx="640" cy="335"/>
+</space>

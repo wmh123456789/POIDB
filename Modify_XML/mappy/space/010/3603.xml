@@ -1,0 +1,7 @@
+<space w="640" h="1250">
+<floor id="1" nar="0.1095" nm="3F1" brief="机场巴士/出租车" cx="493" cy="1250"/>
+<floor id="2" nar="0.1095" nm="3F2" brief="国际出发/国内国际到达" zoom="0.75,16" zoom-org="3.5" cx="493" cy="1190"/>
+<floor id="3" nar="0.1095" nm="3F3" brief="国内出发" zoom="0.75,16" zoom-org="3.5" cx="516" cy="1190"/>
+<floor id="4" nar="0.11" nm="3F4" brief="出发大厅" zoom="0.5,8" zoom-org="0.5" cx="640" cy="580"/>
+<floor id="5" nar="0.11" nm="3F5" brief="夹层" zoom="0.5,8" zoom-org="0.5" cx="640" cy="580"/>
+</space>

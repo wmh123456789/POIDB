@@ -1,0 +1,12 @@
+<space w="640" h="875">
+<floor id="-3" nar="1.6338" nm="B3" brief="地下车库" cx="640" cy="790"/>
+<floor id="-2" nar="1.6338" nm="B2" brief="地下车库" cx="640" cy="500"/>
+<floor id="-1" nar="0.0326" nm="B1" brief="食尚趣游馆" cx="640" cy="650"/>
+<floor id="1" nar="0.0229" nm="F1" brief="名品经典馆" cx="640" cy="700"/>
+<floor id="2" nar="0.0229" nm="F2" brief="风尚名品馆" cx="640" cy="875"/>
+<floor id="3" nar="0.0229" nm="F3" brief="优雅名媛馆" cx="640" cy="860"/>
+<floor id="4" nar="0.0229" nm="F4" brief="时尚淑女馆" cx="640" cy="800"/>
+<floor id="5" nar="0.0229" nm="F5" brief="清新少女馆" cx="640" cy="840"/>
+<floor id="6" nar="0.0229" nm="F6" brief="名流绅士馆" cx="640" cy="840"/>
+<floor id="7" nar="0.0229" nm="F7" brief="韵动休闲馆" cx="640" cy="840"/>
+</space>

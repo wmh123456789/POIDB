@@ -1,0 +1,5 @@
+<space w="640" h="500">
+<floor id="1" nar="0.1117" nm="1F1" brief="国内到达" cx="640" cy="500"/>
+<floor id="2" nar="0.1184" nm="1F2" brief="国内出发" cx="640" cy="500"/>
+<floor id="3" nar="0.1184" nm="1F3" brief="公共区" cx="640" cy="400"/>
+</space>

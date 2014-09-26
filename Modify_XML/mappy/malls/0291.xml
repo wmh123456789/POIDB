@@ -1,0 +1,14 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="905" lat="34.232721" lng="108.901811" logo="905.jpg" type="1" nm="金鹰国际购物中心(高新店)" sinatopic="西安金鹰时尚" py="JinYingGuoJiGouWuZhongXin (GaoXinDian )" aleph="JYGJGWZXGXD"/>
+<mall id="919" lat="34.22252" lng="108.94722" logo="919.jpg" type="1" nm="金鹰国际购物中心(小寨店)" sinatopic="西安金鹰时尚" py="JinYingGuoJiGouWuZhongXin (XiaoZhaiDian )" aleph="JYGJGWZXXZD"/>
+<mall id="909" lat="34.25926" lng="108.94842" logo="909.jpg" type="1" nm="开元商城" sinatopic="开元商城" py="KaiYuanShangCheng" aleph="KYSC"/>
+<mall id="911" lat="34.2598" lng="108.9502" logo="911.jpg" type="1" nm="民生百货(骡马市店)" sinatopic="骡马市购物中心" py="MinShengBaiHuo (LuoMaShiDian )" aleph="MSBHLMSD"/>
+<mall id="903" lat="34.2599" lng="108.9463" logo="903.jpg" type="1" nm="世纪金花(钟楼店)" sinatopic="世纪金花1998" py="ShiJiJinHua (ZhongLouDian )" aleph="SJJHZLD"/>
+<mall id="904" lat="34.2326" lng="108.90328" logo="904.jpg" type="1" nm="世纪金花(高新店)" sinatopic="世纪金花1998" py="ShiJiJinHua (GaoXinDian )" aleph="SJJHGXD"/>
+<mall id="906" lat="34.2569" lng="108.9473" logo="906.jpg" type="1" nm="世纪金花(南大街店)" sinatopic="世纪金花1998" py="ShiJiJinHua (NanDaJieDian )" aleph="SJJHNDJD"/>
+<mall id="915" lat="34.264439" lng="108.963558" logo="915.jpg" type="1" nm="万达广场(民乐园店)" sinatopic="西安区域万达广场" py="WanDaGuangChang (MinLeYuanDian )" aleph="WDGCMLYD"/>
+<mall id="917" lat="34.243801" lng="108.960468" logo="917.jpg" type="1" nm="万达广场(李家村店)" sinatopic="西安区域万达广场" py="WanDaGuangChang (LiJiaCunDian )" aleph="WDGCLJCD"/>
+<mall id="918" lat="34.26804" lng="108.96355" logo="918.jpg" type="1" nm="万达百货(万达广场民乐园店)" sinatopic="西安民乐园万达百货" py="WanDaBaiHuo (WanDaGuangChangMinLeYuanDian )" aleph="WDBHWDGCMLYD"/>
+<mall id="916" lat="34.2346" lng="108.924" logo="916.jpg" type="1" nm="怡丰城" sinatopic="西安怡丰城-vivocity" py="YiFengCheng" aleph="YFC"/>
+<mall id="901" lat="34.254135" lng="108.946631" logo="901.jpg" type="1" nm="中大国际" sinatopic="西安中大国际" py="ZhongDaGuoJi" aleph="ZDGJ"/>
+</malls>

@@ -1,0 +1,10 @@
+<space w="640" h="489">
+<floor id="-1" nar="-2.2877" nm="B1" brief="餐饮及个人护理" cx="640" cy="489"/>
+<floor id="1" nar="-2.338" nm="F1" brief="世界经典品牌" cx="640" cy="425"/>
+<floor id="2" nar="-2.338" nm="F2" brief="国际品牌" cx="640" cy="440"/>
+<floor id="3" nar="-2.338" nm="F3" brief="精致 休闲" cx="640" cy="439"/>
+<floor id="4" nar="-2.338" nm="F4" brief="精致 休闲" cx="640" cy="438"/>
+<floor id="5" nar="-2.338" nm="F5" brief="精致 休闲" cx="640" cy="439"/>
+<floor id="6" nar="-2.338" nm="F6" brief="精致 休闲" cx="640" cy="437"/>
+<floor id="7" nar="-2.338" nm="F7" brief="影城 餐饮" cx="640" cy="434"/>
+</space>

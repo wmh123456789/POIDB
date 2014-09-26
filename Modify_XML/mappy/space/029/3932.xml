@@ -1,0 +1,4 @@
+<space w="640" h="220">
+<floor id="1" nar="0.7214" nm="2F1" brief="到达厅" cx="640" cy="200"/>
+<floor id="20" nar="0.723" nm="2F2" brief="出发厅" cx="640" cy="220"/>
+</space>

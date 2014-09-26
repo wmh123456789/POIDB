@@ -1,0 +1,5 @@
+<space w="640" h="680">
+<floor id="3" nar="-1.2367" nm="F3" brief="旅游车总站" cx="640" cy="310"/>
+<floor id="5" nar="-1.2354" nm="F5" brief="出发层" cx="640" cy="680"/>
+<floor id="6" nar="-1.2354" nm="F6" brief="美食岛" cx="640" cy="640"/>
+</space>

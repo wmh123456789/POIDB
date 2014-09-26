@@ -1,0 +1,7 @@
+<space w="640" h="200">
+<floor id="-1" nar="0.8648" nm="B1" brief="炫彩活力馆" cx="640" cy="200"/>
+<floor id="1" nar="0.8648" nm="L1" brief="精品服饰馆" cx="640" cy="200"/>
+<floor id="2" nar="0.8651" nm="L2" brief="魅力流行馆" cx="640" cy="200"/>
+<floor id="3" nar="0.8652" nm="L3" brief="品味休闲会所" cx="640" cy="200"/>
+<floor id="4" nar="0.8648" nm="L4" brief="品味休闲会所" cx="640" cy="180"/>
+</space>

@@ -1,0 +1,10 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3810" lat="34.680685" lng="112.505126" logo="3810.jpg" type="32" nm="百年家居建材城金海马家居广场" sinatopic="洛阳百年家居建材城金海马家居广场" py="BaiNianJiaJuJianCaiChengJinHaiMaJiaJuGuangChang" aleph="BNJJJCCJHMJJGC"/>
+<mall id="3805" lat="34.692736" lng="112.453217" logo="3805.jpg" type="32" nm="大唐宫建材家居广场" sinatopic="大唐宫建材家居广场" py="DaTangGongJianCaiJiaJuGuangChang" aleph="DTGJCJJGC"/>
+<mall id="3806" lat="34.658586" lng="112.434152" logo="3806.jpg" type="32" nm="东方家居中心" sinatopic="东方家居中心" py="DongFangJiaJuZhongXin" aleph="DFJJZX"/>
+<mall id="3807" lat="34.612272" lng="112.442595" logo="3807.jpg" type="32" nm="红星美凯龙(牡丹店)" sinatopic="红星美凯龙_洛阳站" py="HongXingMeiKaiLong (MuDanDian )" aleph="HXMKLMDD"/>
+<mall id="3808" lat="34.659563" lng="112.385773" logo="3808.jpg" type="32" nm="金梦家居(上海市场店)" sinatopic="金梦家居(上海市场店)" py="JinMengJiaJu (ShangHaiShiChangDian )" aleph="JMJJSHSCD"/>
+<mall id="3812" lat="34.65955" lng="112.385912" logo="3812.jpg" type="32" nm="金梦家居(广州市场店)" sinatopic="洛阳金梦家居(广州市场店)" py="JinMengJiaJu (GuangZhouShiChangDian )" aleph="JMJJGZSCD"/>
+<mall id="3809" lat="34.658445" lng="112.431652" logo="3809.jpg" type="32" nm="居然之家" sinatopic="居然之家洛阳店" py="JuRanZhiJia" aleph="JRZJ"/>
+<mall id="3811" lat="34.658588" lng="112.434157" logo="3811.jpg" type="32" nm="时代家居东方馆" sinatopic="洛阳时代家居东方馆" py="ShiDaiJiaJuDongFangGuan" aleph="SDJJDFG"/>
+</malls>

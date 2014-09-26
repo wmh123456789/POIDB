@@ -1,0 +1,8 @@
+<space w="640" h="510">
+<floor id="1" nar="0.341" nm="F1" brief="首层：时尚" cx="640" cy="485"/>
+<floor id="2" nar="0.3371" nm="F2" brief="2层：潮流" cx="640" cy="510"/>
+<floor id="3" nar="0.341" nm="F3" brief="3层：活力" cx="640" cy="500"/>
+<floor id="4" nar="0.341" nm="F4" brief="4层：聚会" cx="640" cy="497"/>
+<floor id="5" nar="0.341" nm="F5" brief="5层：欢笑" cx="640" cy="495"/>
+<floor id="6" nar="0.341" nm="F6" brief="6层：温馨" cx="640" cy="495"/>
+</space>

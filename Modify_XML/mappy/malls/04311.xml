@@ -1,0 +1,7 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3906" lat="43.889451" lng="125.319403" logo="3906.jpg" type="1" nm="红旗路万达(长春)" sinatopic="长春红旗街万达广场" py="HongQiLuWanDa (ZhangChun )" aleph="HQLWDZC"/>
+<mall id="3907" lat="43.843453" lng="125.246667" logo="3907.jpg" type="1" nm="欧亚卖场" sinatopic="欧亚卖场" py="OuYaMaiChang" aleph="OYMC"/>
+<mall id="3908" lat="43.870418" lng="125.299987" logo="3908.jpg" type="1" nm="欧亚商都" sinatopic="长春欧亚集团欧亚商都" py="OuYaShangDou" aleph="OYSD"/>
+<mall id="3909" lat="43.88991" lng="125.31926" logo="3909.jpg" type="1" nm="人民广场万达" sinatopic="万达广场" py="RenMinGuangChangWanDa" aleph="RMGCWD"/>
+<mall id="3905" lat="43.890555" lng="125.318762" logo="3905.jpg" type="1" nm="卓展购物中心" py="ZhuoZhanGouWuZhongXin" aleph="ZZGWZX"/>
+</malls>

@@ -1,0 +1,12 @@
+<space w="640" h="496">
+<floor id="-1" nar="2.0117" nm="B1" brief="鲜品馆" cx="640" cy="496"/>
+<floor id="1" nar="2.0117" nm="1F" brief="世界名牌精品 女鞋 首饰" cx="640" cy="496"/>
+<floor id="2" nar="2.0117" nm="2F" brief="国际名牌青春服饰" cx="640" cy="496"/>
+<floor id="3" nar="2.0117" nm="3F" brief="名牌女装 手袋 配饰" cx="640" cy="496"/>
+<floor id="4" nar="2.0117" nm="4F" brief="青春便服 时尚配饰 日本美发" cx="640" cy="496"/>
+<floor id="5" nar="2.0117" nm="5F" brief="男士商务休闲服饰 时尚精品" cx="640" cy="496"/>
+<floor id="6" nar="2.0117" nm="6F" brief="生活用品 久光汇点" cx="640" cy="496"/>
+<floor id="7" nar="2.0117" nm="7F" brief="美丽馆 咖啡厅" cx="640" cy="496"/>
+<floor id="8" nar="2.0117" nm="8F" brief="食尚中心" cx="640" cy="496"/>
+<floor id="9" nar="2.0117" nm="9F" brief="食尚中心" cx="640" cy="496"/>
+</space>

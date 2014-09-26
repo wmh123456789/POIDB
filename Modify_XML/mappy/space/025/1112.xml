@@ -1,0 +1,8 @@
+<space w="640" h="833">
+<floor id="-1" nar="0.0512" nm="B1" brief="同曦美食广场" cx="640" cy="833"/>
+<floor id="1" nar="0.0512" nm="F1" brief="流行名品馆" cx="640" cy="773"/>
+<floor id="2" nar="0.0512" nm="F2" brief="新潮流行馆" cx="640" cy="783"/>
+<floor id="3" nar="0.0512" nm="F3" brief="缤纷淑女馆" cx="640" cy="758"/>
+<floor id="4" nar="0.0512" nm="F4" brief="时尚潮人馆" cx="640" cy="776"/>
+<floor id="5" nar="0.0512" nm="F5" brief="经典商务馆" cx="640" cy="771"/>
+</space>

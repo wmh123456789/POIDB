@@ -1,0 +1,9 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="816" lat="36.059462" lng="120.394478" logo="816.jpg" type="1" nm="百丽广场" sinatopic="青岛-百丽广场" py="BaiLiGuangChang" aleph="BLGC"/>
+<mall id="801" lat="36.06075" lng="120.395702" logo="801.jpg" type="1" nm="海信广场" sinatopic="青岛海信广场" py="HaiXinGuangChang" aleph="HXGC"/>
+<mall id="814" lat="36.109519" lng="120.447857" logo="814.jpg" type="1" nm="青岛证大大拇指广场" sinatopic="正大拇指广场" py="QingDaoZhengDaDaMuZhiGuangChang" aleph="QDZDDMZGC"/>
+<mall id="811" lat="36.0891" lng="120.379" logo="811.jpg" type="1" nm="万达广场" sinatopic="青岛万达广场" py="WanDaGuangChang" aleph="WDGC"/>
+<mall id="813" lat="36.08776" lng="120.37923" logo="813.jpg" type="1" nm="万达百货" sinatopic="青岛CBD万达百货" py="WanDaBaiHuo" aleph="WDBH"/>
+<mall id="815" lat="36.055371" lng="120.395662" logo="815.jpg" type="1" nm="心海广场" sinatopic="青岛心海广场" py="XinHaiGuangChang" aleph="XHGC"/>
+<mall id="802" lat="36.065093" lng="120.390011" logo="802.jpg" type="1" nm="阳光百货" sinatopic="阳光百货官方微博" py="YangGuangBaiHuo" aleph="YGBH"/>
+</malls>

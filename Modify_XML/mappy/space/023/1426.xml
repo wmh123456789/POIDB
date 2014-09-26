@@ -1,0 +1,8 @@
+<space w="640" h="570">
+<floor id="-1" nar="2.0632" nm="B1" brief="乐享运动/休闲/生活馆" cx="640" cy="270"/>
+<floor id="1" nar="2.0632" nm="F1" brief="国际名店街" cx="640" cy="330"/>
+<floor id="15" nar="-2.61" nm="F1M" brief="名品淑女配饰馆" cx="640" cy="570"/>
+<floor id="20" nar="2.0632" nm="F2" brief="名品淑女馆" cx="640" cy="350"/>
+<floor id="30" nar="2.0632" nm="F3" brief="名品绅士馆" cx="640" cy="350"/>
+<floor id="40" nar="2.0632" nm="F4" brief="名品皮具馆乐享童装馆" cx="640" cy="350"/>
+</space>

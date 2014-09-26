@@ -1,0 +1,11 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3101" lat="23.075219" lng="113.312894" logo="3101.jpg" type="32" nm="百安居(海珠店)" sinatopic="百安居" py="BaiAnJu (HaiZhuDian )" aleph="BAJHZD"/>
+<mall id="3102" lat="23.119155" lng="113.380242" logo="3102.jpg" type="32" nm="百安居(天河店)" sinatopic="百安居天河店" py="BaiAnJu (TianHeDian )" aleph="BAJTHD"/>
+<mall id="3107" lat="23.118856" lng="113.326214" logo="3107.jpg" type="32" nm="高德汇美居中心" py="GaoDeHuiMeiJuZhongXin" aleph="GDHMJZX"/>
+<mall id="3103" lat="23.119719" lng="113.41411" logo="3103.jpg" type="32" nm="皇庭家具广场" sinatopic="皇庭家具广场" py="HuangTingJiaJuGuangChang" aleph="HTJJGC"/>
+<mall id="3104" lat="23.201772" lng="113.263858" logo="3104.jpg" type="32" nm="黄石家私大广场" sinatopic="黄石家私大广场" py="HuangShiJiaSiDaGuangChang" aleph="HSJSDGC"/>
+<mall id="3108" lat="23.007342" lng="113.344064" logo="3108.jpg" type="32" nm="吉盛伟邦(番禺店)" sinatopic="吉盛伟邦(番禺店)" py="JiShengWeiBang (FanYuDian )" aleph="JSWBFYD"/>
+<mall id="3105" lat="23.085678" lng="113.2785" logo="3105.jpg" type="32" nm="金海马家居（海珠店）" sinatopic="广州金海马家具" py="JinHaiMaJiaJuHaiZhuDian" aleph="JHMJJHZD"/>
+<mall id="3106" lat="23.118049" lng="113.346535" logo="3106.jpg" type="32" nm="马会家居" py="MaHuiJiaJu" aleph="MHJJ"/>
+<mall id="3100" lat="23.013366" lng="113.312479" logo="3100.jpg" type="32" nm="万盛名家家具博览中心" sinatopic="万盛名家家具博览中心" py="WanShengMingJiaJiaJuBoLanZhongXin" aleph="WSMJJJBLZX"/>
+</malls>

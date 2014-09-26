@@ -1,0 +1,6 @@
+<space w="640" h="220">
+<floor id="-1" nar="-0.4809" nm="B1F" brief="B1F" cx="640" cy="220"/>
+<floor id="1" nar="-0.4809" nm="1F" brief="1F" cx="640" cy="200"/>
+<floor id="2" nar="-0.4809" nm="2F" brief="2F" cx="640" cy="200"/>
+<floor id="3" nar="-0.4809" nm="3F" brief="3F" cx="640" cy="200"/>
+</space>

@@ -1,0 +1,13 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2454" lat="45.759718" lng="126.604683" logo="2454.jpg" type="1" nm="百联哈尔滨购物中心" sinatopic="哈尔滨百联" py="BaiLianHaErBinGouWuZhongXin" aleph="BLHEBGWZX"/>
+<mall id="2455" lat="45.771336" lng="126.623652" logo="2455.jpg" type="1" nm="哈尔滨麦凯乐" sinatopic="麦凯乐哈尔滨总店微博" py="HaErBinMaiKaiLe" aleph="HEBMKL"/>
+<mall id="2460" lat="45.772094" lng="126.618939" logo="2460.jpg" type="1" nm="哈尔滨中央商城" py="HaErBinZhongYangShangCheng" aleph="HEBZYSC"/>
+<mall id="2461" lat="45.758781" lng="126.605995" logo="2461.jpg" type="1" nm="哈尔滨卓展购物中心" sinatopic="卓展购物中心哈尔滨站" py="HaErBinZhuoZhanGouWuZhongXin" aleph="HEBZZGWZX"/>
+<mall id="2453" lat="45.766818" lng="126.630033" logo="2453.jpg" type="1" nm="华燕莎奥特莱斯购物中心" sinatopic="燕莎奥特莱斯购物中心" py="HuaYanShaAoTeLaiSiGouWuZhongXin" aleph="HYSATLSGWZX"/>
+<mall id="2452" lat="45.77159" lng="126.61972" logo="2452.jpg" type="1" nm="金安国际购物广场" sinatopic="金安国际购物广场" py="JinAnGuoJiGouWuGuangChang" aleph="JAGJGWGC"/>
+<mall id="2456" lat="45.76094" lng="126.6467" logo="2456.jpg" type="1" nm="秋林国际购物中心" sinatopic="哈尔滨秋林国际购物中心" py="QiuLinGuoJiGouWuZhongXin" aleph="QLGJGWZX"/>
+<mall id="2457" lat="45.7722" lng="126.6202" logo="2457.jpg" type="1" nm="松雷(道里)" sinatopic="松雷集团" py="SongLei (DaoLi )" aleph="SLDL"/>
+<mall id="2458" lat="45.759101" lng="126.644224" logo="2458.jpg" type="1" nm="松雷(南岗)" sinatopic="松雷商业集团" py="SongLei (NanGang )" aleph="SLNG"/>
+<mall id="2459" lat="45.716381" lng="126.645581" logo="2459.jpg" type="1" nm="松雷(香坊)" py="SongLei (XiangFang )" aleph="SLXF"/>
+<mall id="2451" lat="45.74137" lng="126.67859" logo="2451.jpg" type="1" nm="万达百货" sinatopic="哈尔滨香坊万达百货" py="WanDaBaiHuo" aleph="WDBH"/>
+</malls>

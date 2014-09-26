@@ -1,0 +1,25 @@
+<space w="640" h="383">
+<floor id="-4" nar="1.6241" nm="MTR" brief="MTR" cx="640" cy="383"/>
+<floor id="-3" nar="1.6188" nm="LG" brief="LG" cx="640" cy="340"/>
+<floor id="-2" nar="1.6188" nm="GF" brief="GF" cx="640" cy="342"/>
+<floor id="-1" nar="1.6188" nm="UG" brief="UG" cx="640" cy="335"/>
+<floor id="0" nar="1.6188" nm="LB" brief="LB" cx="640" cy="337"/>
+<floor id="1" nar="1.6188" nm="1F" brief="1F" cx="640" cy="334"/>
+<floor id="2" nar="1.6188" nm="2F" brief="2F" cx="640" cy="334"/>
+<floor id="3" nar="1.6188" nm="3F" brief="3F" cx="640" cy="332"/>
+<floor id="4" nar="1.6188" nm="4F" brief="4F" cx="640" cy="331"/>
+<floor id="5" nar="1.6188" nm="5F" brief="5F" cx="640" cy="336"/>
+<floor id="6" nar="1.6188" nm="6F" brief="6F" cx="640" cy="335"/>
+<floor id="7" nar="1.6188" nm="7F" brief="7F" cx="640" cy="338"/>
+<floor id="21" nar="-3.1197" nm="21F" brief="21F" cx="640" cy="302"/>
+<floor id="22" nar="-3.1197" nm="22F" brief="22F" cx="640" cy="295"/>
+<floor id="23" nar="-3.1197" nm="23F" brief="23F" cx="640" cy="298"/>
+<floor id="24" nar="-3.1197" nm="24F" brief="24F" cx="640" cy="340"/>
+<floor id="25" nar="-3.1197" nm="25F" brief="25F" cx="640" cy="302"/>
+<floor id="26" nar="-3.1197" nm="26F" brief="26F" cx="640" cy="298"/>
+<floor id="27" nar="-3.1197" nm="27F" brief="27F" cx="640" cy="300"/>
+<floor id="28" nar="-3.1197" nm="28F" brief="28F" cx="640" cy="297"/>
+<floor id="29" nar="-3.1197" nm="29F" brief="29F" cx="640" cy="296"/>
+<floor id="30" nar="-3.1197" nm="30F" brief="30F" cx="640" cy="292"/>
+<floor id="31" nar="-3.1197" nm="31F" brief="31F" cx="640" cy="298"/>
+</space>

@@ -1,0 +1,7 @@
+<space w="640" h="300">
+<floor id="-1" nar="-0.0033" nm="B1" brief="好吃小街" cx="640" cy="280"/>
+<floor id="1" nar="-0.0033" nm="L1" brief="绅士大道" cx="640" cy="300"/>
+<floor id="2" nar="-0.0033" nm="L2" brief="名媛长廊" cx="640" cy="280"/>
+<floor id="3" nar="-0.0033" nm="L3" brief="艺家生活" cx="640" cy="280"/>
+<floor id="4" nar="-0.0033" nm="L4" brief="主题空间" cx="640" cy="280"/>
+</space>

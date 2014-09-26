@@ -1,0 +1,116 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="1701" lat="39.945258" lng="116.271113" logo="1701.jpg" type="1" nm="爱普奥特莱斯" py="AiPuAoTeLaiSi" aleph="APATLS"/>
+<mall id="192" lat="39.8433" lng="116.3707" logo="192.jpg" type="1" nm="BHG时尚百货(公益西桥店)" sinatopic="BHG时尚百货(公益西桥店)" py="BHGShiShangBaiHuo (GongYiXiQiaoDian )" aleph="SSBHGYXQD"/>
+<mall id="101" lat="39.971387" lng="116.434535" logo="101.jpg" type="1" nm="百盛购物中心(太阳宫店)" sinatopic="百盛太阳宫店" py="BaiShengGouWuZhongXin (TaiYangGongDian )" aleph="BSGWZXTYGD"/>
+<mall id="104" lat="39.913555" lng="116.411594" logo="104.jpg" type="1" nm="北京apm" sinatopic="北京apm" py="BeiJing apm" aleph="BJ"/>
+<mall id="149" lat="39.907829" lng="116.459161" logo="149.jpg" type="1" nm="北京银泰中心" sinatopic="北京银泰中心" py="BeiJingYinTaiZhongXin" aleph="BJYTZX"/>
+<mall id="170" lat="39.994085" lng="116.407104" logo="170.jpg" type="1" nm="北辰购物中心" sinatopic="北辰购物中心" py="BeiChenGouWuZhongXin" aleph="BCGWZX"/>
+<mall id="179" lat="39.992045" lng="116.40708" logo="179.jpg" type="1" nm="北辰时代生活广场" sinatopic="北辰时代生活广场" py="BeiChenShiDaiShengHuoGuangChang" aleph="BCSDSHGC"/>
+<mall id="185" lat="39.992051" lng="116.406645" logo="185.jpg" type="1" partner="1" nm="北辰时代名门" py="BeiChenShiDaiMingMen" aleph="BCSDMM"/>
+<mall id="1704" lat="39.969852" lng="116.491621" logo="1704.jpg" type="1" nm="北京颐堤港" sinatopic="颐堤港INDIGO" py="BeiJingYiDiGang" aleph="BJYDG"/>
+<mall id="168" lat="39.968234" lng="116.461649" logo="168.jpg" type="1" nm="比如世界购物中心" sinatopic="比如世界购物中心" py="BiRuShiJieGouWuZhongXin" aleph="BRSJGWZX"/>
+<mall id="174" lat="39.889196" lng="116.359559" logo="174.jpg" type="1" nm="菜百新世纪商场" sinatopic="菜百新世纪商场" py="CaiBaiXinShiJiShangChang" aleph="CBXSJSC"/>
+<mall id="139" lat="39.923429" lng="116.517898" logo="139.jpg" type="1" nm="朝阳大悦城" sinatopic="朝阳大悦城" py="ChaoYangDaYueCheng" aleph="CYDYC"/>
+<mall id="142" lat="39.908862" lng="116.307795" logo="142.jpg" type="1" nm="城乡华懋" py="ChengXiangHuaMao" aleph="CXHM"/>
+<mall id="159" lat="39.910237" lng="116.305916" logo="159.jpg" type="1" nm="城乡贸易中心" sinatopic="城乡贸易中心" py="ChengXiangMaoYiZhongXin" aleph="CXMYZX"/>
+<mall id="184" lat="39.984" lng="116.31" logo="184.jpg" type="1" nm="城乡仓储超市" sinatopic="城乡仓储超市" py="ChengXiangCangChuChaoShi" aleph="CXCCCS"/>
+<mall id="105" lat="39.9084" lng="116.303" logo="105.jpg" type="1" nm="翠微百货翠微店" sinatopic="翠微百货(翠微店)" py="CuiWeiBaiHuoCuiWeiDian" aleph="CWBHCWD"/>
+<mall id="106" lat="40.061142" lng="116.415258" logo="106.jpg" type="1" nm="翠微百货(龙德店)" sinatopic="翠微百货龙德店" py="CuiWeiBaiHuo (LongDeDian )" aleph="CWBHLDD"/>
+<mall id="134" lat="39.97733" lng="116.36623" logo="134.jpg" type="1" nm="翠微百货(牡丹园店)" sinatopic="翠微百货牡丹园店" py="CuiWeiBaiHuo (MuDanYuanDian )" aleph="CWBHMDYD"/>
+<mall id="135" lat="40.030369" lng="116.346274" logo="135.jpg" type="1" nm="翠微百货(清河店)" sinatopic="翠微百货清河店" py="CuiWeiBaiHuo (QingHeDian )" aleph="CWBHQHD"/>
+<mall id="198" lat="39.908061" lng="116.304614" logo="198.jpg" type="1" nm="翠微广场" py="CuiWeiGuangChang" aleph="CWGC"/>
+<mall id="128" lat="39.9707" lng="116.3207" logo="128.jpg" type="1" nm="当代商城中关村店" sinatopic="北京当代商城" py="DangDaiShangChengZhongGuanCunDian" aleph="DDSCZGCD"/>
+<mall id="143" lat="39.925523" lng="116.196132" logo="143.jpg" type="1" nm="当代商城(鼎城店)" sinatopic="北京当代商城" py="DangDaiShangCheng (DingChengDian )" aleph="DDSCDCD"/>
+<mall id="107" lat="39.909819" lng="116.412292" logo="107.jpg" type="1" nm="东方新天地" sinatopic="东方新天地" py="DongFangXinTianDi" aleph="DFXTD"/>
+<mall id="181" lat="39.950808" lng="116.458165" logo="181.jpg" type="1" nm="都汇天地" sinatopic="都汇天地购物中心" py="DouHuiTianDi" aleph="DHTD"/>
+<mall id="158" lat="39.989295" lng="116.481428" logo="158.jpg" type="1" nm="方恒购物中心" sinatopic="方恒购物中心" py="FangHengGouWuZhongXin" aleph="FHGWZX"/>
+<mall id="132" lat="39.9241" lng="116.4381" logo="132.jpg" type="1" nm="丰联广场" sinatopic="丰联广场购物中心" py="FengLianGuangChang" aleph="FLGC"/>
+<mall id="169" lat="39.952971" lng="116.356193" logo="169.jpg" type="1" nm="枫蓝国际购物中心" sinatopic="枫蓝国际购物中心" py="FengLanGuoJiGouWuZhongXin" aleph="FLGJGWZX"/>
+<mall id="195" lat="39.96254" lng="116.45706" logo="195.jpg" type="1" nm="凤凰汇" sinatopic="华润凤凰汇" py="FengHuangHui" aleph="FHH"/>
+<mall id="155" lat="39.89536" lng="116.46064" logo="155.jpg" type="1" nm="富力广场" sinatopic="VIVA北京富力广场" py="FuLiGuangChang" aleph="FLGC"/>
+<mall id="109" lat="39.91001" lng="116.4603" logo="109.jpg" type="1" nm="国贸商城" sinatopic="国贸商城" py="GuoMaoShangCheng" aleph="GMSC"/>
+<mall id="110" lat="39.897765" lng="116.420499" logo="110.jpg" type="1" nm="国瑞购物中心" sinatopic="国瑞购物中心" py="GuoRuiGouWuZhongXin" aleph="GRGWZX"/>
+<mall id="141" lat="39.966764" lng="116.342552" logo="141.jpg" type="1" nm="hQ尚客百货(大钟寺店)" sinatopic="hQ尚客百货商场" py="hQShangKeBaiHuo (DaZhongSiDian )" aleph="SKBHDZSD"/>
+<mall id="1708" lat="39.909401" lng="116.374598" logo="1708.jpg" type="1" nm="汉光百货" sinatopic="汉光百货" py="HanGuangBaiHuo" aleph="HGBH"/>
+<mall id="163" lat="39.907769" lng="116.427981" logo="163.jpg" type="1" nm="恒基燕莎" py="HengJiYanSha" aleph="HJYS"/>
+<mall id="117" lat="40.03062" lng="116.33309" logo="117.jpg" type="1" partner="1" nm="华润五彩城" sinatopic="五彩城" py="HuaRunWuCaiCheng" aleph="HRWCC"/>
+<mall id="130" lat="40.028578" lng="116.311325" logo="130.jpg" type="1" nm="华联商厦(上地店)" sinatopic="华联商厦(上地店)" py="HuaLianShangSha (ShangDiDian )" aleph="HLSSSDD"/>
+<mall id="156" lat="39.909107" lng="116.480031" logo="156.jpg" type="1" nm="华贸购物中心" sinatopic="华贸购物中心" py="HuaMaoGouWuZhongXin" aleph="HMGWZX"/>
+<mall id="173" lat="39.889464" lng="116.337455" logo="173.jpg" type="1" nm="华联商厦(广安门店)" sinatopic="华联商厦(广安门店)" py="HuaLianShangSha (GuangAnMenDian )" aleph="HLSSGAMD"/>
+<mall id="175" lat="39.973601" lng="116.295184" logo="175.jpg" type="1" nm="华联万柳购物中心" sinatopic="华联万柳购物中心" py="HuaLianWanLiuGouWuZhongXin" aleph="HLWLGWZX"/>
+<mall id="183" lat="40.0804" lng="116.3191" logo="183.jpg" type="1" nm="华联商厦(回龙观店)" sinatopic="BHG_Mall" py="HuaLianShangSha (HuiLongGuanDian )" aleph="HLSSHLGD"/>
+<mall id="191" lat="39.8368" lng="116.37" logo="191.jpg" type="1" nm="华联商厦公益西桥店" sinatopic="华联商厦公益西桥店" py="HuaLianShangShaGongYiXiQiaoDian" aleph="HLSSGYXQD"/>
+<mall id="196" lat="39.768" lng="116.143" logo="196.jpg" type="1" nm="华冠百货" sinatopic="华冠百货" py="HuaGuanBaiHuo" aleph="HGBH"/>
+<mall id="199" lat="39.866513" lng="116.293805" logo="199.jpg" type="1" nm="华堂商场" sinatopic="华堂商场官方" py="HuaTangShangChang" aleph="HTSC"/>
+<mall id="1709" lat="39.965601" lng="116.323511" logo="1709.jpg" type="1" nm="华宇时尚购物中心" sinatopic="华宇时尚购物中心" py="HuaYuShiShangGouWuZhongXin" aleph="HYSSGWZX"/>
+<mall id="167" lat="39.96823" lng="116.410344" logo="167.jpg" type="1" nm="环球贸易中心" sinatopic="环球贸易中心" py="HuanQiuMaoYiZhongXin" aleph="HQMYZX"/>
+<mall id="127" lat="39.9405" lng="116.5222" logo="127.jpg" type="1" nm="活力东方奥特莱斯工厂店" sinatopic="活力东方奥特莱斯工厂店" py="HuoLiDongFangAoTeLaiSiGongChangDian" aleph="HLDFATLSGCD"/>
+<mall id="111" lat="39.916694" lng="116.361466" logo="111.jpg" type="1" nm="金融街购物中心" sinatopic="金融街购物中心微博" py="JinRongJieGouWuZhongXin" aleph="JRJGWZX"/>
+<mall id="112" lat="39.958245" lng="116.289091" logo="112.jpg" type="1" nm="金源新燕莎MALL" py="JinYuanXinYanSha MALL" aleph="JYXYS"/>
+<mall id="154" lat="39.91604" lng="116.41994" logo="154.jpg" type="1" nm="金宝汇购物中心" sinatopic="金宝汇购物中心" py="JinBaoHuiGouWuZhongXin" aleph="JBHGWZX"/>
+<mall id="160" lat="39.981473" lng="116.312999" logo="160.jpg" type="1" nm="津乐汇" sinatopic="津乐汇" py="JinLeHui" aleph="JLH"/>
+<mall id="1713" lat="39.909129" lng="116.474682" logo="1713.jpg" type="1" nm="金地广场" sinatopic="金地广场" py="JinDiGuangChang" aleph="JDGC"/>
+<mall id="144" lat="39.961569" lng="116.494933" logo="144.jpg" type="1" nm="久隆百货" sinatopic="久隆百货" py="JiuLongBaiHuo" aleph="JLBH"/>
+<mall id="188" lat="39.909668" lng="116.373193" logo="188.jpg" type="1" nm="君太百货" sinatopic="北京君太百货" py="JunTaiBaiHuo" aleph="JTBH"/>
+<mall id="137" lat="39.995499" lng="116.466247" logo="137.jpg" type="1" nm="凯德MALL·望京" sinatopic="凯德MALL-望京" py="KaiDe MALLWangJing" aleph="KDWJ"/>
+<mall id="138" lat="39.941939" lng="116.352811" logo="138.jpg" type="1" nm="凯德MALL·西直门" sinatopic="凯德MALL西直门" py="KaiDe MALLXiZhiMen" aleph="KDXZM"/>
+<mall id="1705" lat="39.909103" lng="116.296839" logo="1705.jpg" type="1" nm="凯德晶品购物中心" sinatopic="凯德晶品购物中心" py="KaiDeJingPinGouWuZhongXin" aleph="KDJPGWZX"/>
+<mall id="1706" lat="39.970711" lng="116.441297" logo="1706.jpg" type="1" nm="凯德茂太阳宫" sinatopic="凯德Mall太阳宫" py="KaiDeMaoTaiYangGong" aleph="KDMTYG"/>
+<mall id="113" lat="39.940512" lng="116.432309" logo="113.jpg" type="1" nm="来福士购物中心" sinatopic="北京来福士" py="LaiFuShiGouWuZhongXin" aleph="LFSGWZX"/>
+<mall id="114" lat="39.948952" lng="116.473543" logo="114.jpg" type="1" nm="蓝色港湾国际商区" sinatopic="SOLANA蓝色港湾" py="LanSeGangWanGuoJiShangQu" aleph="LSGWGJSQ"/>
+<mall id="145" lat="39.922131" lng="116.449247" logo="145.jpg" type="1" nm="蓝岛大厦" sinatopic="北京蓝岛大厦" py="LanDaoDaSha" aleph="LDDS"/>
+<mall id="115" lat="39.916233" lng="116.411822" logo="115.jpg" type="1" nm="乐天银泰百货" sinatopic="王府井乐天银泰百货" py="LeTianYinTaiBaiHuo" aleph="LTYTBH"/>
+<mall id="161" lat="39.898294" lng="116.46162" logo="161.jpg" type="1" nm="乐成购物中心" sinatopic="乐成中心" py="LeChengGouWuZhongXin" aleph="LCGWZX"/>
+<mall id="178" lat="40.060236" lng="116.416377" logo="178.jpg" type="1" nm="龙德广场" sinatopic="龙德广场官方微博" py="LongDeGuangChang" aleph="LDGC"/>
+<mall id="1710" lat="39.76346" lng="116.33507" logo="1710.jpg" type="1" nm="绿地缤纷城" sinatopic="绿地缤纷城购物中心" py="Lu:DiBinFenCheng" aleph="LDBFC"/>
+<mall id="126" lat="39.979491" lng="116.314192" logo="126.jpg" type="1" nm="欧美汇" sinatopic="欧美汇" py="OuMeiHui" aleph="OMH"/>
+<mall id="162" lat="40.067023" lng="116.547708" logo="162.jpg" type="1" nm="欧陆时尚购物中心" py="OuLuShiShangGouWuZhongXin" aleph="OLSSGWZX"/>
+<mall id="189" lat="39.9124" lng="116.5966" logo="189.jpg" type="1" nm="plus365" sinatopic="plus365" py="plus365"/>
+<mall id="1711" lat="39.919573" lng="116.449839" logo="1711.jpg" type="1" nm="侨福芳草地" sinatopic="侨福芳草地" py="QiaoFuFangCaoDi" aleph="QFFCD"/>
+<mall id="176" lat="39.919741" lng="116.451363" logo="176.jpg" type="1" nm="SOHO尚都(南北塔)" sinatopic="SOHO尚都(南北塔)" py="SOHOShangDou (NanBeiTa )" aleph="SDNBT"/>
+<mall id="177" lat="39.918934" lng="116.450862" logo="177.jpg" type="1" nm="SOHO尚都(西塔)" sinatopic="SOHO尚都(西塔)" py="SOHOShangDou (XiTa )" aleph="SDXT"/>
+<mall id="164" lat="40.036" lng="116.5038" logo="164.jpg" type="1" nm="赛特奥特莱斯" sinatopic="赛特奥莱" py="SaiTeAoTeLaiSi" aleph="STATLS"/>
+<mall id="133" lat="39.93442" lng="116.45435" logo="133.jpg" type="1" nm="三里屯太古里" py="SanLiTunTaiGuLi" aleph="SLTTGL"/>
+<mall id="1714" lat="40.008152" lng="116.354415" logo="1714.jpg" type="1" nm="圣熙8号" py="ShengXi 8Hao" aleph="SXH"/>
+<mall id="116" lat="39.916457" lng="116.452224" logo="116.jpg" type="1" nm="世贸天阶" sinatopic="世贸天阶THEPLACE" py="ShiMaoTianJie" aleph="SMTJ"/>
+<mall id="146" lat="39.90615" lng="116.2259" logo="146.jpg" type="1" nm="石景山万达广场" sinatopic="北京石景山万达广场" py="ShiJingShanWanDaGuangChang" aleph="SJSWDGC"/>
+<mall id="182" lat="39.93427" lng="116.4737" logo="182.jpg" type="1" nm="世茂百货" sinatopic="北京世茂百货" py="ShiMaoBaiHuo" aleph="SMBH"/>
+<mall id="124" lat="39.85459" lng="116.36685" logo="124.jpg" type="1" nm="首地大峡谷购物中心" sinatopic="首地大峡谷官方微博" py="ShouDiDaXiaGuGouWuZhongXin" aleph="SDDXGGWZX"/>
+<mall id="1720" lat="39.756061" lng="116.184071" logo="1720.jpg" type="1" nm="首创奥特莱斯" sinatopic="首创奥特莱斯" py="ShouChuangAoTeLaiSi" aleph="SCATLS"/>
+<mall id="131" lat="39.966711" lng="116.325751" logo="131.jpg" type="1" nm="双安商场" sinatopic="双安商场" py="ShuangAnShangChang" aleph="SASC"/>
+<mall id="165" lat="40.0118" lng="116.5824" logo="165.jpg" type="1" nm="斯普瑞斯奥特莱斯" sinatopic="北京斯普瑞斯奥莱" py="SiPuRuiSiAoTeLaiSi" aleph="SPRSATLS"/>
+<mall id="147" lat="39.888766" lng="116.341108" logo="147.jpg" type="1" nm="天虹（广安门店）" sinatopic="北京宣武天虹" py="TianHongGuangAnMenDian" aleph="THGAMD"/>
+<mall id="148" lat="39.95912" lng="116.44216" logo="148.jpg" type="1" nm="天虹(国展店)" sinatopic="北京国展天虹百货" py="TianHong (GuoZhanDian )" aleph="THGZD"/>
+<mall id="187" lat="40.000849" lng="116.393564" logo="187.jpg" type="1" nm="天虹(新奥店)" sinatopic="北京新奥天虹" py="TianHong (XinAoDian )" aleph="THXAD"/>
+<mall id="171" lat="39.731779" lng="116.342549" logo="171.jpg" type="1" nm="王府井百货(大兴店)" sinatopic="王府井百货集团" py="WangFuJingBaiHuo (DaXingDian )" aleph="WFJBHDXD"/>
+<mall id="180" lat="40.010878" lng="116.468985" logo="180.jpg" type="1" nm="望京华彩商业中心" sinatopic="望京华彩商业中心" py="WangJingHuaCaiShangYeZhongXin" aleph="WJHCSYZX"/>
+<mall id="157" lat="39.992325" lng="116.33825" logo="157.jpg" type="1" nm="五道口购物中心" sinatopic="五道口购物中心" py="WuDaoKouGouWuZhongXin" aleph="WDKGWZX"/>
+<mall id="118" lat="39.910353" lng="116.372777" logo="118.jpg" type="1" nm="西单大悦城" sinatopic="大悦城官方微博" py="XiDanDaYueCheng" aleph="XDDYC"/>
+<mall id="119" lat="39.912569" lng="116.374518" logo="119.jpg" type="1" nm="西单商场" sinatopic="北京西单商场" py="XiDanShangChang" aleph="XDSC"/>
+<mall id="186" lat="39.9161" lng="116.3733" logo="186.jpg" type="1" nm="西单109婚庆大楼" sinatopic="西单109婚庆大楼" py="XiDan 109HunQingDaLou" aleph="XDHQDL"/>
+<mall id="190" lat="39.908457" lng="116.374502" logo="190.jpg" type="1" nm="西单文化广场77街购物中心" sinatopic="西单文化广场77街购物中心" py="XiDanWenHuaGuangChang 77JieGouWuZhongXin" aleph="XDWHGCJGWZX"/>
+<mall id="194" lat="39.911281" lng="116.374226" logo="194.jpg" type="1" nm="西单购物中心" sinatopic="西单购物中心" py="XiDanGouWuZhongXin" aleph="XDGWZX"/>
+<mall id="120" lat="39.978571" lng="116.315627" logo="120.jpg" type="1" nm="新中关" sinatopic="Gate新中关" py="XinZhongGuan" aleph="XZG"/>
+<mall id="125" lat="39.947521" lng="116.371443" logo="125.jpg" type="1" nm="新华百货" py="XinHuaBaiHuo" aleph="XHBH"/>
+<mall id="136" lat="39.910855" lng="116.479655" logo="136.jpg" type="1" nm="新光天地" sinatopic="新光天地" py="XinGuangTianDi" aleph="XGTD"/>
+<mall id="140" lat="39.9871" lng="116.4801" logo="140.jpg" type="1" nm="新世界利莹百货" sinatopic="新世界望京店" py="XinShiJieLiYingBaiHuo" aleph="XSJLYBH"/>
+<mall id="152" lat="39.896991" lng="116.417512" logo="152.jpg" type="1" nm="新世界百货(崇文门店)" sinatopic="北京新世界百货" py="XinShiJieBaiHuo (ChongWenMenDian )" aleph="XSJBHCWMD"/>
+<mall id="1712" lat="39.999972" lng="116.389815" logo="1712.jpg" type="1" nm="新奥购物中心" sinatopic="北京新奥购物中心" py="XinAoGouWuZhongXin" aleph="XAGWZX"/>
+<mall id="1719" lat="40.001696" lng="116.392019" logo="1719.jpg" type="1" nm="新奥工美大厦" sinatopic="新奥工美大厦" py="XinAoGongMeiDaSha" aleph="XAGMDS"/>
+<mall id="121" lat="39.949028" lng="116.463101" logo="121.jpg" type="1" nm="燕莎友谊商城" py="YanShaYouYiShangCheng" aleph="YSYYSC"/>
+<mall id="122" lat="39.876884" lng="116.488439" logo="122.jpg" type="1" nm="燕莎奥特莱斯购物中心" py="YanShaAoTeLaiSiGouWuZhongXin" aleph="YSATLSGWZX"/>
+<mall id="1716" lat="39.958897" lng="116.290962" logo="1716.jpg" type="1" nm="燕莎友谊商场(金源燕莎店)" sinatopic="燕莎" py="YanShaYouYiShangChang (JinYuanYanShaDian )" aleph="YSYYSCJYYSD"/>
+<mall id="166" lat="39.916058" lng="116.498849" logo="166.jpg" type="1" nm="阳光新城市广场" sinatopic="朝阳阳光新城市广场" py="YangGuangXinChengShiGuangChang" aleph="YGXCSGC"/>
+<mall id="172" lat="40.042518" lng="116.421843" logo="172.jpg" type="1" nm="易事达广场" sinatopic="易事达广场" py="YiShiDaGuangChang" aleph="YSDGC"/>
+<mall id="197" lat="39.8763" lng="116.2963" logo="197.jpg" type="1" nm="亿客隆万丰购物中心" sinatopic="亿客隆万丰购物中心" py="YiKeLongWanFengGouWuZhongXin" aleph="YKLWFGWZX"/>
+<mall id="108" lat="39.94005" lng="116.43546" logo="108.jpg" type="1" nm="银座Mall" sinatopic="银座百货" py="YinZuo Mall" aleph="YZ"/>
+<mall id="193" lat="39.843568" lng="116.386416" logo="193.jpg" type="1" nm="银泰百货(大红门店)" sinatopic="银泰百货大红门店" py="YinTaiBaiHuo (DaHongMenDian )" aleph="YTBHDHMD"/>
+<mall id="129" lat="40.09597" lng="116.29002" logo="129.jpg" type="1" nm="永旺国际商城购物中心" sinatopic="永旺国际商城购物中心" py="YongWangGuoJiShangChengGouWuZhongXin" aleph="YWGJSCGWZX"/>
+<mall id="123" lat="39.922401" lng="116.438901" logo="123.jpg" type="1" nm="悠唐广场" sinatopic="悠唐广场" py="YouTangGuangChang" aleph="YTGC"/>
+<mall id="1717" lat="39.99068" lng="116.432483" logo="1717.jpg" type="1" nm="远洋未来" sinatopic="远洋未来广场_北京" py="YuanYangWeiLai" aleph="YYWL"/>
+<mall id="150" lat="39.9091" lng="116.3448" logo="150.jpg" type="1" nm="长安商场" sinatopic="北京市长安商场" py="ZhangAnShangChang" aleph="ZASC"/>
+<mall id="153" lat="39.981173" lng="116.312706" logo="153.jpg" type="1" nm="中关村广场购物中心" sinatopic="中关村广场购物中心" py="ZhongGuanCunGuangChangGouWuZhongXin" aleph="ZGCGCGWZX"/>
+<mall id="102" lat="39.897238" lng="116.374985" logo="102.jpg" type="1" nm="庄胜崇光" sinatopic="庄胜崇光百货SOGO" py="ZhuangShengChongGuang" aleph="ZSCG"/>
+<mall id="1707" lat="39.913538" lng="116.278734" logo="1707.jpg" type="1" nm="卓展购物中心" sinatopic="卓展购物中心" py="ZhuoZhanGouWuZhongXin" aleph="ZZGWZX"/>
+<mall id="151" lat="39.83804" lng="116.28533" logo="151.jpg" type="1" nm="资和信百货" sinatopic="资和信百货" py="ZiHeXinBaiHuo" aleph="ZHXBH"/>
+</malls>

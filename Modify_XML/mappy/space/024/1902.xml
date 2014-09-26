@@ -1,0 +1,25 @@
+<space w="640" h="420">
+<floor id="1" nar="0.2961" nm="AF1" brief="响亮" cx="640" cy="340"/>
+<floor id="2" nar="0.2944" nm="AF2" brief="热烈" cx="640" cy="340"/>
+<floor id="3" nar="0.2944" nm="AF3" brief="他和她" cx="640" cy="340"/>
+<floor id="4" nar="0.2944" nm="AF4" brief="发现" cx="640" cy="340"/>
+<floor id="5" nar="0.2944" nm="AF5" brief="小憩" cx="640" cy="340"/>
+<floor id="6" nar="-2.8274" nm="BB1" brief="奇妙" cx="640" cy="320"/>
+<floor id="7" nar="-2.8274" nm="BF1" brief="都市" cx="640" cy="310"/>
+<floor id="8" nar="-2.8274" nm="BF2" brief="优雅" cx="640" cy="320"/>
+<floor id="9" nar="-2.8274" nm="BF3" brief="星期五" cx="640" cy="335"/>
+<floor id="10" nar="-2.8274" nm="BF4" brief="竞技" cx="640" cy="320"/>
+<floor id="11" nar="-2.8274" nm="BF5" brief="思想" cx="640" cy="320"/>
+<floor id="12" nar="0.2788" nm="CB1" brief="呵护" cx="640" cy="300"/>
+<floor id="13" nar="0.2788" nm="CF1" brief="大街" cx="640" cy="300"/>
+<floor id="14" nar="0.2788" nm="CF2" brief="经典" cx="640" cy="300"/>
+<floor id="15" nar="0.2788" nm="CF3" brief="简洁" cx="640" cy="300"/>
+<floor id="16" nar="0.2788" nm="CF4" brief="操场" cx="640" cy="300"/>
+<floor id="17" nar="0.2788" nm="CF5" brief="团聚" cx="640" cy="300"/>
+<floor id="18" nar="0.2806" nm="DB1" brief="缤纷" cx="640" cy="380"/>
+<floor id="19" nar="0.2806" nm="DF1" brief="视野" cx="640" cy="395"/>
+<floor id="20" nar="0.2806" nm="DF2" brief="概念" cx="640" cy="380"/>
+<floor id="21" nar="0.2794" nm="DF3" brief="外太空" cx="640" cy="420"/>
+<floor id="22" nar="0.2794" nm="DF4" brief="梦幻岛" cx="640" cy="420"/>
+<floor id="23" nar="0.2794" nm="DF5" brief="梦幻岛" cx="640" cy="420"/>
+</space>

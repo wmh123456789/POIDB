@@ -1,0 +1,8 @@
+<space w="640" h="700">
+<floor id="-1" nar="0.0045" nm="B1" brief="太阳" cx="640" cy="670"/>
+<floor id="1" nar="0.0045" nm="F1" brief="大地" cx="640" cy="700"/>
+<floor id="2" nar="0.0045" nm="F2" brief="天空" cx="640" cy="650"/>
+<floor id="3" nar="0.0045" nm="F3" brief="星空" cx="640" cy="640"/>
+<floor id="4" nar="0.0045" nm="F4" brief="森林" cx="640" cy="620"/>
+<floor id="5" nar="0.0045" nm="F5" brief="宇宙" cx="640" cy="630"/>
+</space>

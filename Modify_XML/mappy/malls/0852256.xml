@@ -1,0 +1,4 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3711" lat="22.315049" lng="113.935027" logo="3711.jpg" type="256" nm="香港国际机场T1航站楼" sinatopic="香港國際機場" py="XiangGangGuoJiJiChang T1HangZhanLou" aleph="XGGJJCHZL"/>
+<mall id="3712" lat="22.315049" lng="113.935027" logo="3712.jpg" type="256" nm="香港国际机场T2航站楼" sinatopic="香港國際機場" py="XiangGangGuoJiJiChang T2HangZhanLou" aleph="XGGJJCHZL"/>
+</malls>

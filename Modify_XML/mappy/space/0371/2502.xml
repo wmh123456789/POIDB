@@ -1,0 +1,9 @@
+<space w="640" h="500">
+<floor id="-1" nar="-1.5606" nm="B1F" brief="品味生活" cx="640" cy="400"/>
+<floor id="1" nar="-1.5606" nm="1F" brief="国际名品" cx="640" cy="500"/>
+<floor id="2" nar="-1.5606" nm="2F" brief="知性名媛" cx="640" cy="500"/>
+<floor id="3" nar="-1.5606" nm="3F" brief="时尚淑女" cx="640" cy="500"/>
+<floor id="4" nar="-1.5606" nm="4F" brief="优雅俊士" cx="640" cy="500"/>
+<floor id="5" nar="-1.5606" nm="5F" brief="炫彩风尚" cx="640" cy="500"/>
+<floor id="6" nar="-1.5614" nm="6F" brief="6F" cx="640" cy="500"/>
+</space>

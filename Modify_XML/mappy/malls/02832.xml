@@ -1,0 +1,12 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="3350" lat="30.638759" lng="104.055314" logo="3350.jpg" type="32" nm="博美装饰城南门店" sinatopic="博美装饰城南门店" py="BoMeiZhuangShiChengNanMenDian" aleph="BMZSCNMD"/>
+<mall id="3355" lat="30.685367" lng="104.034254" logo="3355.jpg" type="32" nm="成都东方家园青羊店" sinatopic="东方家园orientcity" py="ChengDouDongFangJiaYuanQingYangDian" aleph="CDDFJYQYD"/>
+<mall id="3352" lat="30.651377" lng="104.046487" logo="3352.jpg" type="32" nm="川豪家世界" sinatopic="川豪家世界" py="ChuanHaoJiaShiJie" aleph="CHJSJ"/>
+<mall id="3353" lat="30.673644" lng="104.002091" logo="3353.jpg" type="32" nm="创美金沙国际家居广场" sinatopic="享受生活-创美家居" py="ChuangMeiJinShaGuoJiJiaJuGuangChang" aleph="CMJSGJJJGC"/>
+<mall id="3354" lat="30.632832" lng="104.032996" logo="3354.jpg" type="32" nm="东方家园红牌楼店" sinatopic="东方家园orientcity" py="DongFangJiaYuanHongPaiLouDian" aleph="DFJYHPLD"/>
+<mall id="3356" lat="30.601569" lng="104.064858" logo="3356.jpg" type="32" nm="富森美家居国际商城" sinatopic="富森美家居" py="FuSenMeiJiaJuGuoJiShangCheng" aleph="FSMJJGJSC"/>
+<mall id="3357" lat="30.677905" lng="104.092074" logo="3357.jpg" type="32" nm="华达家居体验馆" sinatopic="华达家居体验馆" py="HuaDaJiaJuTiYanGuan" aleph="HDJJTYG"/>
+<mall id="3351" lat="30.615939" lng="104.074675" logo="3351.jpg" type="32" nm="今朝装饰整体生态家居卖场" sinatopic="今朝装饰整体生态家居卖场" py="JinChaoZhuangShiZhengTiShengTaiJiaJuMaiChang" aleph="JCZSZTSTJJMC"/>
+<mall id="3359" lat="30.592817" lng="104.094257" logo="3359.jpg" type="32" nm="居然之家(琉璃店)" sinatopic="居然之家成都店" py="JuRanZhiJia (LiuLiDian )" aleph="JRZJLLD"/>
+<mall id="3358" lat="30.694552" lng="104.084609" logo="3358.jpg" type="32" nm="亿家天下国际建材中心" sinatopic="亿家天下国际建材中心" py="YiJiaTianXiaGuoJiJianCaiZhongXin" aleph="YJTXGJJCZX"/>
+</malls>

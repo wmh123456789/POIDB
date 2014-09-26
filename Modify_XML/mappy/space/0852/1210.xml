@@ -1,0 +1,5 @@
+<space w="640" h="851">
+<floor id="1" nar="0.17" nm="1F" brief="美容香水及化妆品" cx="640" cy="515"/>
+<floor id="2" nar="0.17" nm="2F" brief="时尚" cx="640" cy="476"/>
+<floor id="3" nar="0.1166" nm="3F" brief="钟表和珠宝" cx="640" cy="851"/>
+</space>

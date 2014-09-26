@@ -1,0 +1,7 @@
+<space w="640" h="357">
+<floor id="-1" nar="-1.5402" nm="B1" brief="百纳生活空间" cx="640" cy="257"/>
+<floor id="1" nar="-1.6531" nm="L1" brief="百纳精品空间" cx="640" cy="357"/>
+<floor id="2" nar="-1.7235" nm="L2" brief="百纳时尚空间" cx="640" cy="294"/>
+<floor id="3" nar="-1.7235" nm="L3" brief="百纳潮流空间" cx="640" cy="281"/>
+<floor id="4" nar="-1.7235" nm="L4" brief="百纳体验空间" cx="640" cy="298"/>
+</space>

@@ -1,0 +1,9 @@
+<space w="640" h="750">
+<floor id="-2" nar="-0.0032" nm="B2" brief="趣品廊" cx="640" cy="307"/>
+<floor id="-1" nar="-0.0032" nm="B1" brief="荟珍阙" cx="640" cy="750"/>
+<floor id="1" nar="-0.0032" nm="L1" brief="明星汇" cx="640" cy="750"/>
+<floor id="2" nar="-0.0032" nm="L2" brief="风尚际" cx="640" cy="750"/>
+<floor id="3" nar="-0.0032" nm="L3" brief="潮尚地" cx="640" cy="750"/>
+<floor id="4" nar="-0.0032" nm="L4" brief="动感界" cx="640" cy="750"/>
+<floor id="5" nar="-0.0032" nm="L5" brief="百味坊" cx="640" cy="750"/>
+</space>

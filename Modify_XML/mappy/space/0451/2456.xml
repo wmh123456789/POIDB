@@ -1,0 +1,14 @@
+<space w="640" h="475">
+<floor id="-2" nar="-2.248" nm="B2" brief="停车位" cx="640" cy="465"/>
+<floor id="-1" nar="-2.248" nm="B1" brief="LIFE-STYLE超市" cx="640" cy="460"/>
+<floor id="1" nar="-2.248" nm="F1" brief="国际名品" cx="640" cy="470"/>
+<floor id="2" nar="-2.248" nm="F2" brief="潮流男装" cx="640" cy="470"/>
+<floor id="3" nar="-2.248" nm="F3" brief="经典女装" cx="640" cy="475"/>
+<floor id="4" nar="-2.248" nm="F4" brief="潮流女装" cx="640" cy="470"/>
+<floor id="5" nar="-2.248" nm="F5" brief="男士休闲" cx="640" cy="470"/>
+<floor id="6" nar="-2.248" nm="F6" brief="健康装备" cx="640" cy="470"/>
+<floor id="7" nar="-2.248" nm="F7" brief="家居用品" cx="640" cy="470"/>
+<floor id="8" nar="-2.248" nm="F8" brief="时尚先锋俱乐部" cx="640" cy="470"/>
+<floor id="9" nar="-2.248" nm="F9" brief="现代餐厅" cx="640" cy="450"/>
+<floor id="10" nar="-2.248" nm="F10" brief="现代餐厅" cx="640" cy="450"/>
+</space>

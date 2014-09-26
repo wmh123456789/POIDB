@@ -1,0 +1,4 @@
+<space w="640" h="400">
+<floor id="1" nar="-0.0201" nm="F1" brief="F1" cx="640" cy="400"/>
+<floor id="2" nar="-0.0201" nm="F2" brief="F2" cx="640" cy="390"/>
+</space>

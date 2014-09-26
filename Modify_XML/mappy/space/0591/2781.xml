@@ -1,0 +1,10 @@
+<space w="640" h="580">
+<floor id="-2" nar="-1.5554" nm="B2F" brief="格调之家 瓷材软装馆" cx="640" cy="496"/>
+<floor id="-1" nar="-1.5554" nm="B1F" brief="风格家居 地板门窗臻品馆" cx="640" cy="496"/>
+<floor id="1" nar="-1.5606" nm="1F" brief="全球风尚 顶级卫浴馆" cx="640" cy="580"/>
+<floor id="2" nar="-1.5585" nm="2F" brief="别致灯饰 橱衣柜典藏馆" cx="640" cy="496"/>
+<floor id="3" nar="-1.5585" nm="3F" brief="时尚客厅 沙发主题馆" cx="640" cy="496"/>
+<floor id="4" nar="-1.5585" nm="4F" brief="萨巴堡 睡美人体验馆" cx="640" cy="496"/>
+<floor id="5" nar="-1.5585" nm="5F" brief="原木生活 生态自然馆" cx="640" cy="496"/>
+<floor id="6" nar="-1.5585" nm="6F" brief="欧美宫廷 古典主义馆" cx="640" cy="496"/>
+</space>

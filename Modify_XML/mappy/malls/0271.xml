@@ -1,0 +1,11 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="1508" lat="30.722" lng="114.188" logo="1508.jpg" type="1" nm="百联奥特莱斯广场" sinatopic="百联奥特莱斯广场" py="BaiLianAoTeLaiSiGuangChang" aleph="BLATLSGC"/>
+<mall id="1502" lat="30.57775" lng="114.29014" logo="1502.jpg" type="1" nm="大洋百货中山店" sinatopic="大洋百货中山店" py="DaYangBaiHuoZhongShanDian" aleph="DYBHZSD"/>
+<mall id="1503" lat="30.5808" lng="114.2948" logo="1503.jpg" type="1" nm="汉阳商场" sinatopic="汉阳商场" py="HanYangShangChang" aleph="HYSC"/>
+<mall id="1504" lat="30.60645" lng="114.28332" logo="1504.jpg" type="1" nm="华氏百货" sinatopic="华氏百货" py="HuaShiBaiHuo" aleph="HSBH"/>
+<mall id="1512" lat="30.578886" lng="114.264591" logo="1512.jpg" type="1" nm="K11" sinatopic="武汉K11" py="K11"/>
+<mall id="1507" lat="30.525515" lng="114.355354" logo="1507.jpg" type="1" nm="群光广场" sinatopic="武汉群光广场" py="QunGuangGuangChang" aleph="QGGC"/>
+<mall id="1505" lat="30.589106" lng="114.343761" logo="1505.jpg" type="1" nm="销品茂" sinatopic="销品茂" py="XiaoPinMao" aleph="XPM"/>
+<mall id="1506" lat="30.527066" lng="114.353977" logo="1506.jpg" type="1" nm="新世界百货(武昌店)" sinatopic="武汉新世界百货武昌店" py="XinShiJieBaiHuo (WuChangDian )" aleph="XSJBHWCD"/>
+<mall id="1501" lat="30.582045" lng="114.27406" logo="1501.jpg" type="1" nm="庄胜崇光百货" sinatopic="武汉庄胜崇光百货商场" py="ZhuangShengChongGuangBaiHuo" aleph="ZSCGBH"/>
+</malls>

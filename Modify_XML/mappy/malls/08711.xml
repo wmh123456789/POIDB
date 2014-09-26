@@ -1,0 +1,6 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2101" lat="25.03963" lng="102.714985" logo="2101.jpg" type="1" nm="金鹰购物中心昆明店" sinatopic="昆明金鹰购物广场" py="JinYingGouWuZhongXinKunMingDian" aleph="JYGWZXKMD"/>
+<mall id="2102" lat="25.010615" lng="102.684639" logo="2102.jpg" type="1" nm="金鹰购物中心南亚店" sinatopic="昆明金鹰南亚购物中心" py="JinYingGouWuZhongXinNanYaDian" aleph="JYGWZXNYD"/>
+<mall id="2104" lat="25.043" lng="102.7018" logo="2104.jpg" type="1" nm="美辰百货" sinatopic="美辰百货" py="MeiChenBaiHuo" aleph="MCBH"/>
+<mall id="2103" lat="25.042074" lng="102.714811" logo="2103.jpg" type="1" nm="新西南广场" sinatopic="新西南广场" py="XinXiNanGuangChang" aleph="XXNGC"/>
+</malls>

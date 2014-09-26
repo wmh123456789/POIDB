@@ -11,6 +11,16 @@ def NewInnerFolder(NewName):
 		os.mkdir("./"+FolderName+"/"+NewName)
 	pass
 
+def BuildNoSpaceMallNameDict(SourceDir, OutFile = 'NoSpaceMallNameDict.csv'):
+	NoSpaceMallNameDict = {}
+	fp = open(OutFile,'w')
+	for name in os.listdir(SourceDir):
+		if not '=' in name:
+			NoSpaceMallNameDict.update({name.replace(' ',''):name})
+			fp.write(name.replace(' ','')+','+name+'\n')
+	fp.close()
+
+
 
 def PickFile(SourceDir,SubDir,TargetDir):
 	for BldName in os.listdir(SourceDir):
@@ -59,16 +69,20 @@ def PickWiFiFile(SourceDir,TargetDir):
 			for Floor in listFiles(os.path.join(SourceDir,BldName)):
 				if os.path.isdir(os.path.join(SourceDir,BldName,Floor)):
 					pass
-					# WiFiFile = os.path.join(SourceDir,BldName,Floor,'data.wifi')
-					# if os.path.isfile(WiFiFile):
-					# 	shutil.copy(WiFiFile,os.path.join(TargetDir,BldName,Floor+'.wifi'))
+					WiFiFile = os.path.join(SourceDir,BldName,Floor,'data.wifi')
+					if os.path.isfile(WiFiFile):
+						shutil.copy(WiFiFile,os.path.join(TargetDir,BldName,Floor+'.wifi'))
 				elif os.path.splitext(Floor)[1] == '.params':
 					print Floor
-					shutil.copy(os.path.join(SourceDir,BldName,Floor)
-						,os.path.join(TargetDir,BldName))
+					# shutil.copy(os.path.join(SourceDir,BldName,Floor)
+					# 	,os.path.join(TargetDir,BldName))
 
 
-
+def PickMallXML(SourceDir,TargetDir):
+	for path, folders, files in os.walk(SourceDir):
+		for f in files:
+			if 'mall.xml' in f:
+				shutil.copy(os.path.join(path,f),TargetDir)
 
 def PickXMLFile(SourceDir,SubDir,TargetDir):
 	for BldName in os.listdir(SourceDir):
@@ -128,9 +142,9 @@ def BName2BID(RootDir):
 	pass
 
 
-
-# SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\XiDanDaYueCheng\Binary"
-# TargetDir = u"D:\WiSLAM\WiSLAMOK\XiDanDaYueCheng"
+# MallName = 'YanShaYouYiShangCheng'
+# SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
+# TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
 # CopyBiMap(SourceDir,TargetDir)
 
 # SourceDir = "E:\= AllDataSet\= Malls Info in ShangHai"
@@ -143,11 +157,21 @@ def BName2BID(RootDir):
 
 # SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK"
 # SubDir = "Binary"
-TargetDir = u"D:\map_xml"
+# TargetDir = u"D:\map_xml"
 # PickXMLFile(SourceDir,SubDir,TargetDir)
 
-# SourceDir = "D:\WiSLAM\WiSLAMOK"
+# SourceDir = "D:\WiSLAM\NotWiSLAMOK"
 # TargetDir = "D:\WiSLAM\WiFiFilesOnly"
 # PickWiFiFile(SourceDir,TargetDir)
 
-BName2BID(TargetDir)
+# TargetDir = u"D:\map_xml"
+# BName2BID(TargetDir)
+
+# rootpath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
+# TargetDir = 'D:\WiSLAM\miao'
+# PickMallXML(rootpath,TargetDir)
+
+
+SourceDir = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
+TargetDir = 'E:\= Workspaces\Python Space\Modify_XML\NoSpaceMallNameDict.csv'
+BuildNoSpaceMallNameDict(SourceDir,TargetDir)

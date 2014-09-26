@@ -1,0 +1,21 @@
+<space w="640" h="500">
+<floor id="-1" nar="0.029" nm="1B1" brief="1B1" cx="640" cy="500"/>
+<floor id="1" nar="0.0274" nm="1F1" brief="1F1" cx="640" cy="400"/>
+<floor id="2" nar="0.0274" nm="1F2" brief="1F2" cx="640" cy="350"/>
+<floor id="3" nar="0.0274" nm="1F3" brief="1F3" cx="640" cy="400"/>
+<floor id="4" nar="0.0274" nm="1F4" brief="1F4" cx="640" cy="400"/>
+<floor id="5" nar="0.0274" nm="1F5" brief="1F5" cx="640" cy="400"/>
+<floor id="6" nar="0.0227" nm="1F6" brief="1F6" cx="640" cy="500"/>
+<floor id="7" nar="0.027" nm="2F1" brief="2F1" cx="640" cy="300"/>
+<floor id="8" nar="0.028" nm="2F2" brief="2F2" cx="640" cy="300"/>
+<floor id="9" nar="0.0336" nm="2F3" brief="2F3" cx="640" cy="500"/>
+<floor id="10" nar="0.029" nm="3F1" brief="3F1" cx="640" cy="500"/>
+<floor id="11" nar="0.0242" nm="3F2" brief="3F2" cx="640" cy="500"/>
+<floor id="12" nar="0.0295" nm="4B1" brief="4B1" cx="640" cy="500"/>
+<floor id="13" nar="0.0316" nm="4F1" brief="4F1" cx="640" cy="350"/>
+<floor id="14" nar="0.0316" nm="4F2" brief="4F2" cx="640" cy="350"/>
+<floor id="15" nar="0.0316" nm="4F3" brief="4F3" cx="640" cy="350"/>
+<floor id="16" nar="0.0316" nm="4F4" brief="4F4" cx="640" cy="350"/>
+<floor id="17" nar="0.0316" nm="4F5" brief="4F5" cx="640" cy="350"/>
+<floor id="18" nar="0.0316" nm="4F6" brief="4F6" cx="640" cy="350"/>
+</space>

@@ -1,0 +1,6 @@
+<malls baseurl="http://110.76.39.140/logo/mall">
+<mall id="2784" lat="26.070163" lng="119.285439" logo="2784.jpg" type="32" nm="百安居鼓楼店" sinatopic="百安居鼓楼店" py="BaiAnJuGuLouDian" aleph="BAJGLD"/>
+<mall id="2782" lat="26.073357" lng="119.345571" logo="2782.jpg" type="32" nm="国际家具广场" sinatopic="国际家具广场" py="GuoJiJiaJuGuangChang" aleph="GJJJGC"/>
+<mall id="2783" lat="26.069348" lng="119.286193" logo="2783.jpg" type="32" nm="好百年家居鼓楼店" sinatopic="好百年家居鼓楼店" py="HaoBaiNianJiaJuGuLouDian" aleph="HBNJJGLD"/>
+<mall id="2781" lat="26.062366" lng="119.293641" logo="2781.jpg" type="32" nm="红星美凯龙福州三迪商场" sinatopic="红星美凯龙福州商场" py="HongXingMeiKaiLongFuZhouSanDiShangChang" aleph="HXMKLFZSDSC"/>
+</malls>

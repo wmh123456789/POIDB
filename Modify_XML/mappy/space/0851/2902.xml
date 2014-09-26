@@ -1,0 +1,7 @@
+<space w="640" h="960">
+<floor id="-1" nar="-2.29" nm="B1" brief="家装建材馆" cx="640" cy="960"/>
+<floor id="1" nar="-2.29" nm="F1" brief="瓷砖洁具馆" cx="640" cy="850"/>
+<floor id="2" nar="-2.29" nm="F2" brief="软床沙发馆、儿童家具馆" cx="640" cy="880"/>
+<floor id="3" nar="-2.29" nm="F3" brief="板式家具馆、实木家具馆" cx="640" cy="870"/>
+<floor id="4" nar="-2.29" nm="F4" brief="欧美家具馆、墙纸布艺馆" cx="640" cy="870"/>
+</space>

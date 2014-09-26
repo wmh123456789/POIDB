@@ -1,0 +1,12 @@
+<space w="640" h="780">
+<floor id="-1" nar="1.04" nm="B1" brief="美味添香" cx="640" cy="780"/>
+<floor id="1" nar="1.04" nm="F1" brief="尊贵品味" cx="640" cy="540"/>
+<floor id="2" nar="1.04" nm="F2" brief="活力少女" cx="640" cy="530"/>
+<floor id="3" nar="1.04" nm="F3" brief="典雅女人" cx="640" cy="515"/>
+<floor id="4" nar="1.04" nm="F4" brief="格调男人" cx="640" cy="530"/>
+<floor id="5" nar="1.04" nm="F5" brief="动感青春" cx="640" cy="510"/>
+<floor id="6" nar="1.04" nm="F6" brief="温暖天地" cx="640" cy="458"/>
+<floor id="7" nar="1.04" nm="F7" brief="生活之家" cx="640" cy="460"/>
+<floor id="8" nar="1.04" nm="F8" brief="家电世界" cx="640" cy="435"/>
+<floor id="9" nar="1.04" nm="F8M" brief="休闲餐厅" cx="640" cy="430"/>
+</space>
