@@ -142,10 +142,10 @@ def BName2BID(RootDir):
 	pass
 
 
-# MallName = 'YanShaYouYiShangCheng'
-# SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
-# TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
-# CopyBiMap(SourceDir,TargetDir)
+MallName = 'XinZhongGuan'
+SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
+TargetDir = "D:\WiSLAM\WiSLAMOK\\"+MallName
+CopyBiMap(SourceDir,TargetDir)
 
 # SourceDir = "E:\= AllDataSet\= Malls Info in ShangHai"
 # NewScanFolders(SourceDir)
@@ -172,6 +172,6 @@ def BName2BID(RootDir):
 # PickMallXML(rootpath,TargetDir)
 
 
-SourceDir = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
-TargetDir = 'E:\= Workspaces\Python Space\Modify_XML\NoSpaceMallNameDict.csv'
-BuildNoSpaceMallNameDict(SourceDir,TargetDir)
+# SourceDir = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
+# TargetDir = 'E:\= Workspaces\Python Space\Modify_XML\NoSpaceMallNameDict.csv'
+# BuildNoSpaceMallNameDict(SourceDir,TargetDir)

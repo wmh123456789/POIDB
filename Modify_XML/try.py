@@ -1,5 +1,7 @@
-def myfun(a=-1,b=-2,c,d):
-	print a,b,c,d
-	pass
+print 'XinaAdafkj'.lower()
+print set(['1','1'])
 
-myfun(1,2,3,4)
+myfile = 'E:\= Workspaces\Git\POIDB\Pinyin2Hanzi\OurWords.csv'
+data = open(myfile).read()
+print data.decode('gbk')
+
