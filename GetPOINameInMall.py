@@ -36,7 +36,7 @@ if __name__ == '__main__':
 	RootPath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\'
 	MallNameList = ['KaiDeMaoTaiYangGong']
 	SubPath = '\Binary\\'
-	OutputPath = 'E:\POIClassify\TagThePOI\\'
+	OutputPath = 'E:\= POIClassify\TagThePOI\\'
 	OutPutShopNames(RootPath,MallNameList,SubPath,OutputPath)
 
 

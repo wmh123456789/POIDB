@@ -160,9 +160,9 @@ CopyBiMap(SourceDir,TargetDir)
 # TargetDir = u"D:\map_xml"
 # PickXMLFile(SourceDir,SubDir,TargetDir)
 
-# SourceDir = "D:\WiSLAM\NotWiSLAMOK"
-# TargetDir = "D:\WiSLAM\WiFiFilesOnly"
-# PickWiFiFile(SourceDir,TargetDir)
+SourceDir = "D:\WiSLAM\NotWiSLAMOK"
+TargetDir = "D:\WiSLAM\upload"
+PickWiFiFile(SourceDir,TargetDir)
 
 # TargetDir = u"D:\map_xml"
 # BName2BID(TargetDir)
