@@ -128,6 +128,7 @@ def CNNamelistFilter(Namelist):
 
 '''
 Match the Name by lower case
+Return Boolean value
 '''
 def MatchNameByLowerCase(Name,NameList):
 	NameLow = Name.lower()
@@ -160,7 +161,7 @@ def UpdateNameByECDict(DB,ECDict):
 				DB[key].update({'cnname':name})
 				print 'New Name Added:',name 
 				N += 1
-			else:
+			else: # Cannot find EnName
 				NewNames.append(EnName)
 				print 'Cannot find:',EnName 
 			pass
@@ -189,6 +190,8 @@ def UpdateNameByECDict(DB,ECDict):
 		else: # Name matches
 			pass
 	print 'Find name pairs:', N
+
+	# TODO: output the conflict name pairs 
 
 	return CNNamelistFilter(NewNames)
 
@@ -281,6 +284,9 @@ The format of the BrandDB record:
 {BrID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
 The format of the POIDB record:
 {PID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
+@Param input：PIDlist,Namelist,CnNamelist,EnNamelist,Typelist,Taglist,Phonelist,Storylist
+@Param output：BrandDB
+
 '''
 
 def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=[],
@@ -305,6 +311,7 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 	if Storylist == []:
 		Storylist = EmptyList(N)	
 
+	# initialize the input POI DB
 	NewItems = {pid:{'name':name,'cnname':cnname,'enname':enname,'type':typ,'tag':tag,'phone':phone,'story':story} 
 					for pid,name,cnname,enname,typ,tag,phone,story in 
 					zip(PIDlist,Namelist,CnNamelist,EnNamelist,Typelist,Taglist,Phonelist,Storylist)}
@@ -312,7 +319,7 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 
 	# Search By Name
 	for pid in NewItems:
-		if NewItems[pid]['name'] in  NameIndex:
+		if NewItems[pid]['name'] in  NameIndex:  #Current POI info is in BrandDB
 			NewBrRecord = {'name':NewItems[pid]['name'],
 			 			 'cnname':NewItems[pid]['cnname'],
 						 'enname':NewItems[pid]['enname'],	
@@ -320,12 +327,12 @@ def UpdateBrandDBbyPOIlist(BrandDB,PIDlist,Namelist=[],CnNamelist=[],EnNamelist=
 						 'tag':NewItems[pid]['tag'],
 						 'phone':NewItems[pid]['phone'],
 						 'story':NewItems[pid]['story']}
-			BrID_cur = NameIndex[NewItems[pid]['name']][0]
+			BrID_cur = NameIndex[NewItems[pid]['name']][0] # Assume the first BrID is matched.
 			# print BrID_cur
 			Record_M = MergeBrandDBRecord(NewBrRecord,BrandDB[BrID_cur])
 			BrandDB.update({BrID_cur:Record_M})
 			pass
-		else:
+		else: #Current POI info is not in BrandDB
 		
 			# # For Debug
 			# if NewItems[pid]['name'] == 'Coach' and len(BrandDB)>250:
@@ -372,10 +379,10 @@ def UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB={}):
 	return BrandDB
 
 
-
 '''
 Update dict by append the val_list
 {key:[val1]} + {key:[val2]} = {key:[val1,val2]}
+Can be useed in tag-merge, or generating name index 
 '''
 def UpdateDictbyAppend(DB,items):
 	for key in items.keys():
@@ -476,19 +483,21 @@ def IndexByLowerName(DB,NameField):
 
 '''
 Query the brand info in BrandDB by name 
+@Param output: {name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}
+NOTE: it DOESNOT return the BrID
 '''
 def QueryBrInfoByName(name,BrandDB,NameIndex={}):
 	if NameIndex == {}:
 		NameIndex = IndexByName(BrandDB,'name')
 	if name in NameIndex:
-		return BrandDB[NameIndex[name][0]]
+		return BrandDB[NameIndex[name][0]] # Retern the first BrID in Nameindex as default
 	else:
 		return {}
 
 
 '''
 Query the brand info in BrandDB by names in the Namelist
-For dupulicated name, it gives dupulicated record 
+NOTE：For dupulicated name, it gives dupulicated record 
 Input NameList: [name1,name2,....]
 Output format: [{name:name1,type:XX,...},{name:name2,type:XXX...},...]
 '''
@@ -505,6 +514,7 @@ def QueryBrInfoByNameList(Namelist,BrandDB,NameIndex={}):
 
 '''
 Insert Infromation into POI list
+NOTE: PIDlist and Nameist should match
 Output format: {PID:{name:...,cnname:...,enname:...,type:...,tag:[tag1,tag2,...]}}
 '''
 def InsertInfoInPOIList(PIDlist,Namelist,BrandDB):
@@ -516,17 +526,18 @@ def InsertInfoInPOIList(PIDlist,Namelist,BrandDB):
 	return POIDB
 
 
-
 '''
 write DB to data file
+The order of the values is given by OutputOrder
+Ex.  OutputOrder = ['name','phone','type','tag','story']
 '''
 def WriteDBtoDAT(DB,OutputOrder,DBFilePath):
 	fp_db = open(DBFilePath,'w')
-	# OutputOrder = ['name','phone','type','tag','story']
-	key = OutputOrder[0]
-	fp_db.write('\t'.join(OutputOrder)+'\n')
+	if 'pid' in OutputOrder:
+		OutputOrder.pop('pid')
+	fp_db.write('\t'.join(['ID']+OutputOrder)+'\n')
 	for keyid in DB:
-		fp_db.write(keyid+'\t'+StrRecord(DB[keyid],'\t',OutputOrder[1:])+'\n')
+		fp_db.write(keyid+'\t'+StrRecord(DB[keyid],'\t',OutputOrder)+'\n')
 		
 	fp_db.close()
 
@@ -590,7 +601,7 @@ def main():
 
 	# POIDB = InsertInfoInPOIList(PIDlist,Namelist,BrandDB)
 	# fp_poi = open('.\TXT\POIDB.csv','w')
-	OutputOrder = ['pid','name','phone','type','tag','story']
+	OutputOrder = ['name','phone','type','tag','story']
 	# fp_poi.write(','.join(['pid']+OutputOrder)+'\n')
 	# for pid in POIDB:
 	# 	fp_poi.write(pid+','+StrRecord(POIDB[pid],',',OutputOrder)+'\n')
@@ -635,7 +646,7 @@ def main2():
 	FilePath = '.\BrandE-CDict.csv'
 	KeyList = ['enname','cnname']
 	ECdata = ReadCSV(FilePath,KeyList)
-	print ECdata[2]
+	# print ECdata[2]
 
 		# Add Mall 1 into DB
 	KeyList = ['pid','name','type','tag','phone','story']
@@ -649,7 +660,7 @@ def main2():
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
 
 	DBFilePath = '.\TXT\BrandDB.txt'
-	OutputOrder = ['pid','name','cnname','enname','type']
+	OutputOrder = ['name','cnname','enname','type']
 	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
 

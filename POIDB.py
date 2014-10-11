@@ -51,7 +51,7 @@ def InitDB_JD(RootPath,CVSFileName):
 	fp.close()
 
 '''
-Merge the repieted brand
+Merge the duplicated brand
 '''
 def CompactPOIDB(RootPath,CVSFileName):
 	fp = open(os.path.join(RootPath,CVSFileName),'r')

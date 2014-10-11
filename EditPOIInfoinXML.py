@@ -270,7 +270,7 @@ def test2():
 	BrandDB = UpdateBrandDBbyPOIlistFile(KeyList,FilePath,BrandDB)
 
 	DBFilePath = '.\TXT\BrandDB.txt'
-	OutputOrder = ['pid','cnname','enname']
+	OutputOrder = ['cnname','enname']
 	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
 	FilePath = '.\BrandE-CDict.csv'
@@ -279,7 +279,7 @@ def test2():
 	NewCnList,NewEnList = UpdateNameByECDict(BrandDB,ECDict)
 
 	DBFilePath = '.\TXT\BrandDB2.txt'
-	OutputOrder = ['pid','cnname','enname']
+	OutputOrder = ['cnname','enname']
 	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
 	NewNameFilePath = '.\TXT\NewNamesToAdd.txt'
