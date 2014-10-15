@@ -1,6 +1,0 @@
-<space w="640" h="270">
-<floor id="-1" nar="-0" nm="B1" brief="到达层" cx="640" cy="200"/>
-<floor id="1" nar="-0" nm="1F" brief="站台层" cx="640" cy="270"/>
-<floor id="2" nar="-0" nm="2F" brief="候车层" cx="640" cy="250"/>
-<floor id="3" nar="-0" nm="3F" brief="高架夹层" cx="640" cy="250"/>
-</space>

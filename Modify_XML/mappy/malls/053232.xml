@@ -1,7 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="2981" lat="36.026473" lng="120.144945" logo="2981.jpg" type="32" nm="福瀛建材装饰城" py="FuYingJianCaiZhuangShiCheng" aleph="FYJCZSC"/>
-<mall id="2982" lat="36.096852" lng="120.390627" logo="2982.jpg" type="32" nm="富尔玛国际家居博览中心" sinatopic="富尔玛家居" py="FuErMaGuoJiJiaJuBoLanZhongXin" aleph="FEMGJJJBLZX"/>
-<mall id="2983" lat="36.091124" lng="120.367332" logo="2983.jpg" type="32" nm="海博家居敦化路店" sinatopic="青岛海博家居" py="HaiBoJiaJuDunHuaLuDian" aleph="HBJJDHLD"/>
-<mall id="2984" lat="36.073459" lng="120.374252" logo="2984.jpg" type="32" nm="海博家居胶州店" sinatopic="青岛海博家居" py="HaiBoJiaJuJiaoZhouDian" aleph="HBJJJZD"/>
-<mall id="2985" lat="36.089071" lng="120.346459" logo="2985.jpg" type="32" nm="海博家居欧美国际馆" sinatopic="青岛海博家居" py="HaiBoJiaJuOuMeiGuoJiGuan" aleph="HBJJOMGJG"/>
-</malls>

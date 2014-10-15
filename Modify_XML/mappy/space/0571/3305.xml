@@ -1,7 +1,0 @@
-<space w="640" h="300">
-<floor id="1" nar="-1.5835" nm="1F" brief="1F现代家具" cx="640" cy="300"/>
-<floor id="2" nar="-1.5835" nm="2F" brief="2F现代家具" cx="640" cy="300"/>
-<floor id="3" nar="-1.5835" nm="3F" brief="3F现代家具" cx="640" cy="300"/>
-<floor id="4" nar="-1.5811" nm="4F" brief="4F实木家具" cx="640" cy="250"/>
-<floor id="5" nar="-1.5811" nm="5F" brief="5F办公家具" cx="640" cy="250"/>
-</space>

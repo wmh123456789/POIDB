@@ -1,6 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="3886" lat="38.906624" lng="121.563307" logo="3886.jpg" type="32" nm="金盛国际家居" sinatopic="金盛集团" py="JinShengGuoJiJiaJu" aleph="JSGJJJ"/>
-<mall id="3890" lat="39.085021" lng="121.685759" logo="3890.jpg" type="32" nm="居然之家（大连店）" sinatopic="na" py="JuRanZhiJiaDaLianDian" aleph="JRZJDLD"/>
-<mall id="3887" lat="38.904908" lng="121.579004" logo="3887.jpg" type="32" nm="幸福家居大世界" py="XingFuJiaJuDaShiJie" aleph="XFJJDSJ"/>
-<mall id="3888" lat="38.885271" lng="121.591927" logo="3888.jpg" type="32" nm="月星家居(大连)" sinatopic="大连月星家居" py="YueXingJiaJu (DaLian )" aleph="YXJJDL"/>
-</malls>

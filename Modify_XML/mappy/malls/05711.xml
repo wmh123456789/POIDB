@@ -1,9 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="622" lat="30.272538" lng="120.161471" logo="622.jpg" type="1" nm="杭州大厦购物中心" sinatopic="杭州大厦购物城" py="HangZhouDaShaGouWuZhongXin" aleph="HZDSGWZX"/>
-<mall id="617" lat="30.253164" lng="120.217641" logo="617.jpg" type="1" nm="NOVO百货(万象城店)" sinatopic="NOVO杭州" py="NOVOBaiHuo (WanXiangChengDian )" aleph="BHWXCD"/>
-<mall id="623" lat="30.251887" lng="120.214765" logo="623.jpg" type="1" nm="尚泰百货" sinatopic="杭州尚泰百货" py="ShangTaiBaiHuo" aleph="STBH"/>
-<mall id="606" lat="30.251695" lng="120.214269" logo="606.jpg" type="1" nm="万象城购物中心" sinatopic="杭州万象城MIXC" py="WanXiangChengGouWuZhongXin" aleph="WXCGWZX"/>
-<mall id="614" lat="30.293678" lng="120.099044" logo="614.jpg" type="1" nm="印象城购物中心" sinatopic="印象城购物中心" py="YinXiangChengGouWuZhongXin" aleph="YXCGWZX"/>
-<mall id="611" lat="30.257774" lng="120.173752" logo="611.jpg" type="1" nm="中都百货(庆春店)" sinatopic="中都百货(庆春店)" py="ZhongDouBaiHuo (QingChunDian )" aleph="ZDBHQCD"/>
-<mall id="619" lat="31.966611" lng="120.897699" logo="619.jpg" type="1" nm="中南购物中心" sinatopic="中南购物中心" py="ZhongNanGouWuZhongXin" aleph="ZNGWZX"/>
-</malls>

@@ -1,5 +1,0 @@
-<space w="640" h="410">
-<floor id="-1" nar="0.0682" nm="B1" brief="到达层" cx="640" cy="390"/>
-<floor id="1" nar="0.0667" nm="F1" brief="站台层" cx="640" cy="380"/>
-<floor id="2" nar="0.065" nm="F2" brief="出发层" cx="640" cy="410"/>
-</space>

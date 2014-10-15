@@ -1,9 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="2205" lat="26.06256" lng="119.29272" logo="2205.jpg" type="1" nm="宝龙城市广场" sinatopic="宝龙城市广场-福州" py="BaoLongChengShiGuangChang" aleph="BLCSGC"/>
-<mall id="2202" lat="26.036877" lng="119.275558" logo="2202.jpg" type="1" nm="仓山万达广场" sinatopic="福州仓山万达广场官方微博" py="CangShanWanDaGuangChang" aleph="CSWDGC"/>
-<mall id="2207" lat="26.067734" lng="119.312966" logo="2207.jpg" type="1" nm="大利嘉城" sinatopic="大利嘉城" py="DaLiJiaCheng" aleph="DLJC"/>
-<mall id="2203" lat="26.050903" lng="119.305207" logo="2203.jpg" type="1" nm="东方百货群升店" sinatopic="东方百货群升店" py="DongFangBaiHuoQunShengDian" aleph="DFBHQSD"/>
-<mall id="2204" lat="26.052648" lng="119.31695" logo="2204.jpg" type="1" nm="东方百货元洪店" sinatopic="东方百货元洪店" py="DongFangBaiHuoYuanHongDian" aleph="DFBHYHD"/>
-<mall id="2206" lat="26.0583" lng="119.3424" logo="2206.jpg" type="1" nm="金融街万达广场" sinatopic="福州金融街万达广场" py="JinRongJieWanDaGuangChang" aleph="JRJWDGC"/>
-<mall id="2201" lat="26.06478" lng="119.28925" logo="2201.jpg" type="1" nm="万象城购物中心" sinatopic="福州万象城" py="WanXiangChengGouWuZhongXin" aleph="WXCGWZX"/>
-</malls>

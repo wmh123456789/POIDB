@@ -1,8 +1,0 @@
-<space w="640" h="500">
-<floor id="-1" nar="-2.8381" nm="B1" brief="B1" cx="640" cy="500"/>
-<floor id="1" nar="-2.8381" nm="F1" brief="化妆品 饰品" cx="640" cy="500"/>
-<floor id="2" nar="-2.8381" nm="F2" brief="女装 服装修改" cx="640" cy="500"/>
-<floor id="3" nar="-2.8381" nm="F3" brief="男装 饰品" cx="640" cy="500"/>
-<floor id="4" nar="-2.8381" nm="4F" brief="运动 户外" cx="640" cy="500"/>
-<floor id="5" nar="-2.8381" nm="5F" brief="皮鞋 皮具 箱包" cx="640" cy="500"/>
-</space>

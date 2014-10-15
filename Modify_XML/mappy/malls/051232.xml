@@ -1,6 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="3766" lat="31.39306" lng="120.6331" logo="3766.jpg" type="32" nm="汇海隆家居世博广场" py="HuiHaiLongJiaJuShiBoGuangChang" aleph="HHLJJSBGC"/>
-<mall id="3767" lat="31.380776" lng="120.634552" logo="3767.jpg" type="32" nm="家具博览中心" py="JiaJuBoLanZhongXin" aleph="JJBLZX"/>
-<mall id="3769" lat="31.380913" lng="120.633769" logo="3769.jpg" type="32" nm="蠡口东方明珠家具城" py="LiKouDongFangMingZhuJiaJuCheng" aleph="LKDFMZJJC"/>
-<mall id="3768" lat="31.310801" lng="120.590701" logo="3768.jpg" type="32" nm="月星家居" sinatopic="苏州月星家居广场" py="YueXingJiaJu" aleph="YXJJ"/>
-</malls>

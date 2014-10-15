@@ -1,9 +1,0 @@
-<space w="640" h="300">
-<floor id="-1" nar="0.0634" nm="B1" brief="赤" cx="640" cy="300"/>
-<floor id="0" nar="0.0634" nm="M" brief="橙" cx="640" cy="300"/>
-<floor id="1" nar="0.0633" nm="L1" brief="黄" cx="640" cy="300"/>
-<floor id="2" nar="0.0633" nm="L2" brief="绿" cx="640" cy="300"/>
-<floor id="3" nar="0.0633" nm="L3" brief="青" cx="640" cy="300"/>
-<floor id="4" nar="0.0633" nm="L4" brief="蓝" cx="640" cy="300"/>
-<floor id="5" nar="0.0633" nm="L5" brief="紫" cx="640" cy="300"/>
-</space>

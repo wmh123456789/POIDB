@@ -1,8 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="3155" lat="22.5642" lng="114.1089" logo="3155.jpg" type="32" nm="好百年国际家居广场深圳总店" sinatopic="好百年国际家居广场深圳总店" py="HaoBaiNianGuoJiJiaJuGuangChangShenZhenZongDian" aleph="HBNGJJJGCSZZD"/>
-<mall id="3151" lat="22.538195" lng="114.032448" logo="3151.jpg" type="32" nm="红星美凯龙深圳世纪中心" sinatopic="红星美凯龙深圳香蜜湖商场" py="HongXingMeiKaiLongShenZhenShiJiZhongXin" aleph="HXMKLSZSJZX"/>
-<mall id="3156" lat="22.609178" lng="114.129281" logo="3156.jpg" type="32" nm="金泰家具批发中心" sinatopic="金泰家具批发中心" py="JinTaiJiaJuPiFaZhongXin" aleph="JTJJPFZX"/>
-<mall id="3152" lat="22.569758" lng="114.11006" logo="3152.jpg" type="32" nm="美庭品味家居罗湖店" py="MeiTingPinWeiJiaJuLuoHuDian" aleph="MTPWJJLHD"/>
-<mall id="3150" lat="22.539602" lng="114.029406" logo="3150.jpg" type="32" nm="世纪中心（香蜜湖店）" sinatopic="世纪中心-家居" py="ShiJiZhongXinXiangMiHuDian" aleph="SJZXXMHD"/>
-<mall id="3153" lat="22.541103" lng="114.11006" logo="3153.jpg" type="32" nm="世纪中心宝安店" py="ShiJiZhongXinBaoAnDian" aleph="SJZXBAD"/>
-</malls>

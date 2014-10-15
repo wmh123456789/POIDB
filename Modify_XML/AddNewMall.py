@@ -5,12 +5,12 @@ from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import ElementTree,Element  
 
 # Config the basic Information of the mall
-MallID = '7005'
-MallInfo = {'ShortNM':'XSJCX',
-				 'PY':'XinShiJieCaiXuanBaiHuo',
-				'CHN':u'新世界彩旋百货'}
-# FloorList = ['F2']
-FloorList = ['B2','B1','F1','F2','F3','F4','F5','F6','F7','F8']
+MallID = '7998'
+MallInfo = {'ShortNM':'MSRA',
+				 'PY':'MSRA',
+				'CHN':u'微软'}
+FloorList = ['2F']
+# FloorList = ['B2','B1','F1','F2','F3','F4','F5']
 
 filePathSpace = 'E:\MDBGenerate\mappy\space\\010\\'+MallID+'.xml'
 filePathMalls = 'E:\MDBGenerate\mappy\malls\\0101.xml'

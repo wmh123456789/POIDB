@@ -1,9 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="2751" lat="34.77338" lng="113.719177" logo="2751.jpg" type="32" nm="丹尼斯4天地" sinatopic="丹尼斯4天地" py="DanNiSi 4TianDi" aleph="DNSTD"/>
-<mall id="2752" lat="34.77552" lng="113.71968" logo="2752.jpg" type="32" nm="丹尼斯5天地" sinatopic="丹尼斯5天地" py="DanNiSi 5TianDi" aleph="DNSTD"/>
-<mall id="2754" lat="34.77811" lng="113.720054" logo="2754.jpg" type="32" nm="丹尼斯6天地" sinatopic="丹尼斯6天地" py="DanNiSi 6TianDi" aleph="DNSTD"/>
-<mall id="2762" lat="34.73582" lng="113.636071" logo="2762.jpg" type="32" nm="佳和家居陇海路店" py="JiaHeJiaJuLongHaiLuDian" aleph="JHJJLHLD"/>
-<mall id="2763" lat="34.758778" lng="113.60298" logo="2763.jpg" type="32" nm="佳和家居秦岭路店" py="JiaHeJiaJuQinLingLuDian" aleph="JHJJQLLD"/>
-<mall id="2755" lat="34.7501" lng="113.736" logo="2755.jpg" type="32" nm="居然之家" sinatopic="居然之家郑州店" py="JuRanZhiJia" aleph="JRZJ"/>
-<mall id="2757" lat="34.810976" lng="113.655455" logo="2757.jpg" type="32" nm="郑州欧凯龙北环店" sinatopic="河南欧凯龙家居有限公司" py="ZhengZhouOuKaiLongBeiHuanDian" aleph="ZZOKLBHD"/>
-</malls>

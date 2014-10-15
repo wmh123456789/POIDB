@@ -1,8 +1,0 @@
-<space w="640" h="550">
-<floor id="1" nar="-0.1938" nm="1F" brief="精品馆" cx="640" cy="500"/>
-<floor id="2" nar="-0.1913" nm="2F" brief="绅士馆" cx="640" cy="500"/>
-<floor id="3" nar="-0.1953" nm="3F" brief="淑女馆" cx="640" cy="550"/>
-<floor id="4" nar="-0.1973" nm="4F" brief="少淑女馆" cx="640" cy="550"/>
-<floor id="5" nar="-0.1973" nm="5F" brief="运动休闲馆" cx="640" cy="550"/>
-<floor id="6" nar="-0.1973" nm="6F" brief="儿童家居馆" cx="640" cy="550"/>
-</space>

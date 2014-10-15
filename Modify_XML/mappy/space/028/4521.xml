@@ -1,4 +1,0 @@
-<space w="640" h="300">
-<floor id="1" nar="1.1672" nm="F1" brief="到达" zoom="0.5,8" zoom-org="0.5" cx="640" cy="180"/>
-<floor id="2" nar="1.1698" nm="F2" brief="出发" zoom="0.5,8" zoom-org="0.5" cx="640" cy="300"/>
-</space>

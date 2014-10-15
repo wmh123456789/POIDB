@@ -1,6 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="3937" lat="34.30552" lng="117.21546" logo="3937.jpg" type="32" nm="红星美凯龙(复兴店)" sinatopic="红星美凯龙徐州站" py="HongXingMeiKaiLong (FuXingDian )" aleph="HXMKLFXD"/>
-<mall id="3938" lat="34.301691" lng="117.215793" logo="3938.jpg" type="32" nm="淮东国际家具广场" sinatopic="淮东国际家具广场" py="HuaiDongGuoJiJiaJuGuangChang" aleph="HDGJJJGC"/>
-<mall id="3936" lat="34.270269" lng="117.184982" logo="3936.jpg" type="32" nm="金海马" sinatopic="金海马" py="JinHaiMa" aleph="JHM"/>
-<mall id="3939" lat="34.248745" lng="117.228126" logo="3939.jpg" type="32" nm="金地锦绣" sinatopic="徐州金地锦绣" py="JinDiJinXiu" aleph="JDJX"/>
-</malls>

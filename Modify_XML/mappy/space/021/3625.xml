@@ -1,6 +1,0 @@
-<space w="640" h="540">
-<floor id="1" nar="-1.5074" nm="F1" brief="F1" cx="640" cy="330"/>
-<floor id="2" nar="-1.5074" nm="F2" brief="F2" zoom="0.5,8" zoom-org="0.5" cx="640" cy="350"/>
-<floor id="25" nar="-1.5112" nm="F2.5" brief="F2.5" zoom="0.5,8" zoom-org="0.5" cx="640" cy="305"/>
-<floor id="30" nar="-1.5096" nm="F3" brief="F3" zoom="0.5,8" zoom-org="0.5" cx="640" cy="540"/>
-</space>

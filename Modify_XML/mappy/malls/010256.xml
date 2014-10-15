@@ -1,5 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="3601" lat="40.08085" lng="116.58793" logo="3601.jpg" type="256" nm="北京首都国际机场T1" sinatopic="首都机场官方微博" py="BeiJingShouDouGuoJiJiChang T1" aleph="BJSDGJJC"/>
-<mall id="3602" lat="40.07981" lng="116.59409" logo="3602.jpg" type="256" nm="北京首都国际机场T2" sinatopic="首都机场官方微博" py="BeiJingShouDouGuoJiJiChang T2" aleph="BJSDGJJC"/>
-<mall id="3603" lat="40.05553" lng="116.61496" logo="3603.jpg" type="256" nm="北京首都国际机场T3" sinatopic="首都机场官方微博" py="BeiJingShouDouGuoJiJiChang T3" aleph="BJSDGJJC"/>
-</malls>

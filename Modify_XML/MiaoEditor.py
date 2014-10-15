@@ -6,7 +6,7 @@ from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import ElementTree,Element  
 from bs4 import BeautifulSoup,Tag
 
-xmlpath = 'D:\WiSLAM\miao'
+xmlpath = 'D:\WiSLAM\miao\mall'
 GPSpath = 'NewGPSBJ.csv'
 pinyindir = u'..\Pinyin2Hanzi'
 KeyWordDict = {'beijing':u'北京',
@@ -37,7 +37,8 @@ def Name2CNName(name,PinyinDict):
 			cnname += word.decode().encode('utf8')
 	# print cnname
 	for w in list(set(unknownword)):
-		print w
+		# print w
+		pass
 	return cnname
 
 

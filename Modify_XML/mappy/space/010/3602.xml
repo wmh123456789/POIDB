@@ -1,6 +1,0 @@
-<space w="640" h="310">
-<floor id="-1" nar="-1.4568" nm="2B1" brief="地下美食街" cx="640" cy="120"/>
-<floor id="1" nar="-1.4568" nm="2F1" brief="国内国际到达" zoom="0.5,8" zoom-org="0.5" cx="640" cy="190"/>
-<floor id="2" nar="-1.4568" nm="2F2" brief="国内/国际出发" zoom="0.5,8" zoom-org="0.5" cx="640" cy="310"/>
-<floor id="3" nar="-1.4568" nm="2F3" brief="美食休闲" cx="640" cy="130"/>
-</space>

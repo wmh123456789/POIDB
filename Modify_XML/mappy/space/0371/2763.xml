@@ -1,8 +1,0 @@
-<space w="640" h="1395">
-<floor id="-1" nar="0" nm="B1" brief="睡眠寝具" cx="640" cy="760"/>
-<floor id="1" nar="0" nm="1F" brief="沙发客厅家具" cx="640" cy="1270"/>
-<floor id="2" nar="0" nm="2F" brief="板式套房家具/藤器/电视柜" cx="640" cy="1385"/>
-<floor id="3" nar="0" nm="3F" brief="板木/松木/韩式儿童家具" cx="640" cy="1375"/>
-<floor id="4" nar="0" nm="4F" brief="实木/欧美家具" cx="640" cy="1395"/>
-<floor id="5" nar="0" nm="5F" brief="办公书房家具" cx="640" cy="1380"/>
-</space>

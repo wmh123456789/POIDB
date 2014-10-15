@@ -1,9 +1,0 @@
-<space w="640" h="200">
-<floor id="-1" nar="0" nm="B1" brief="潮流前线/美食广场" cx="640" cy="180"/>
-<floor id="1" nar="0" nm="L1" brief="时尚精品" cx="640" cy="185"/>
-<floor id="2" nar="0" nm="L2" brief="时尚名媛" cx="640" cy="175"/>
-<floor id="3" nar="0" nm="L3" brief="特色餐饮/时尚休闲" cx="640" cy="160"/>
-<floor id="4" nar="0" nm="L4" brief="儿童乐园" cx="640" cy="160"/>
-<floor id="5" nar="0" nm="L5" brief="影院/游乐/乐器" cx="640" cy="160"/>
-<floor id="6" nar="0" nm="L6" brief="影院" cx="640" cy="200"/>
-</space>

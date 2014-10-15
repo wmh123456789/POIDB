@@ -1,8 +1,0 @@
-<space w="640" h="300">
-<floor id="-1" nar="1.5618" nm="B1" brief="五金涂料超市 地板 壁纸 楼梯 吊顶" cx="640" cy="300"/>
-<floor id="1" nar="1.5538" nm="1F" brief="瓷砖 洁具 音响" cx="640" cy="250"/>
-<floor id="2" nar="1.5672" nm="2F" brief="沙发 床具 地毯" cx="640" cy="260"/>
-<floor id="3" nar="1.5672" nm="3F" brief="现代家具 儿童家居" cx="640" cy="250"/>
-<floor id="4" nar="1.5672" nm="4F" brief="古典家具 实木家具 红木家具 窗帘" cx="640" cy="250"/>
-<floor id="5" nar="1.5672" nm="5F" brief="家装 壁橱 门窗 壁柜门 厨房电器" cx="640" cy="255"/>
-</space>

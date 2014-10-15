@@ -1,8 +1,0 @@
-<space w="640" h="496">
-<floor id="-1" nar="-0.5764" nm="B1" brief="综合超市" cx="640" cy="496"/>
-<floor id="1" nar="-0.5778" nm="1F" brief="流行名品馆" cx="640" cy="496"/>
-<floor id="2" nar="-0.5778" nm="2F" brief="新潮少女馆" cx="640" cy="496"/>
-<floor id="3" nar="-0.5778" nm="3F" brief="都会少淑馆" cx="640" cy="496"/>
-<floor id="4" nar="-0.5778" nm="4F" brief="绅士休闲馆" cx="640" cy="496"/>
-<floor id="5" nar="-0.5778" nm="5F" brief="家庭儿童馆" cx="640" cy="496"/>
-</space>

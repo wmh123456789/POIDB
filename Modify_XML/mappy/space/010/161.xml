@@ -1,7 +1,0 @@
-<space w="640" h="340">
-<floor id="-2" nar="-1.5781" nm="B2" brief="华联精品超市" cx="640" cy="340"/>
-<floor id="-1" nar="-1.5781" nm="B1" brief="美食 家居" cx="640" cy="210"/>
-<floor id="1" nar="-1.5781" nm="F1" brief="精品 商务" cx="640" cy="280"/>
-<floor id="2" nar="-1.5781" nm="F2" brief="休闲 生活" cx="640" cy="250"/>
-<floor id="3" nar="-1.5781" nm="F3" brief="儿童 音乐" cx="640" cy="230"/>
-</space>

@@ -1,6 +1,0 @@
-<space w="640" h="600">
-<floor id="1" nar="0.2083" nm="1F" brief="Classic 品味经典" cx="640" cy="600"/>
-<floor id="2" nar="0.1918" nm="2F" brief="Vogue  品味时尚" cx="640" cy="600"/>
-<floor id="3" nar="0.1758" nm="3F" brief="Life 品味生活" cx="640" cy="550"/>
-<floor id="4" nar="0.1545" nm="4F" brief="Connoisseur 品味美食家" cx="640" cy="550"/>
-</space>

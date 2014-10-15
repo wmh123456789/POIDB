@@ -1,7 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="712" lat="24.47666" lng="118.15779" logo="712.jpg" type="1" nm="来雅百货(加州店)" sinatopic="厦门加州来雅" py="LaiYaBaiHuo (JiaZhouDian )" aleph="LYBHJZD"/>
-<mall id="710" lat="24.482928" lng="118.121124" logo="710.jpg" type="1" nm="磐基名品中心" sinatopic="磐基名品中心" py="PanJiMingPinZhongXin" aleph="PJMPZX"/>
-<mall id="705" lat="24.4755" lng="118.159783" logo="705.jpg" type="1" nm="瑞景商业广场" sinatopic="瑞景商业广场" py="RuiJingShangYeGuangChang" aleph="RJSYGC"/>
-<mall id="707" lat="24.500993" lng="118.126411" logo="707.jpg" type="1" nm="SM城市广场" sinatopic="厦门-SM城市广场" py="SMChengShiGuangChang" aleph="CSGC"/>
-<mall id="702" lat="24.5006" lng="118.1257" logo="702.jpg" type="1" nm="SM新生活广场" sinatopic="厦门SM新生活广场" py="SMXinShengHuoGuangChang" aleph="XSHGC"/>
-</malls>

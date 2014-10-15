@@ -1,8 +1,0 @@
-<space w="640" h="600">
-<floor id="-1" nar="0.9869" nm="B1" brief="B1" cx="640" cy="400"/>
-<floor id="1" nar="1.0577" nm="F1" brief="F1" cx="640" cy="600"/>
-<floor id="2" nar="1.0353" nm="F2" brief="F2" cx="640" cy="500"/>
-<floor id="3" nar="1.0364" nm="F3" brief="F3" cx="640" cy="500"/>
-<floor id="4" nar="0.9901" nm="F4" brief="F4" cx="640" cy="500"/>
-<floor id="5" nar="0.9744" nm="F5" brief="F5" cx="640" cy="500"/>
-</space>

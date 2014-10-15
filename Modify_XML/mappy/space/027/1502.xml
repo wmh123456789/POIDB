@@ -1,9 +1,0 @@
-<space w="640" h="754">
-<floor id="1" nar="1.0597" nm="F1" brief="国际名品馆" cx="640" cy="330"/>
-<floor id="2" nar="1.0598" nm="F2" brief="时尚少女馆" cx="640" cy="754"/>
-<floor id="3" nar="1.0598" nm="F3" brief="都会俪人馆" cx="640" cy="754"/>
-<floor id="4" nar="1.0598" nm="F4" brief="绅士名品馆" cx="640" cy="754"/>
-<floor id="5" nar="1.0598" nm="F5" brief="运动休闲馆" cx="640" cy="754"/>
-<floor id="6" nar="1.0598" nm="F6" brief="温馨生活馆" cx="640" cy="754"/>
-<floor id="7" nar="1.0598" nm="F7" brief="美食生活馆" cx="640" cy="754"/>
-</space>

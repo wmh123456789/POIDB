@@ -1,9 +1,0 @@
-<space w="640" h="602">
-<floor id="-2" nar="0.0201" nm="B2" brief="地下停车场" cx="640" cy="565"/>
-<floor id="1" nar="0.0274" nm="F1" brief="国际时空" cx="640" cy="601"/>
-<floor id="2" nar="0.0274" nm="F2" brief="名流世界" cx="640" cy="602"/>
-<floor id="3" nar="0.0274" nm="F3" brief="品质世界" cx="640" cy="602"/>
-<floor id="4" nar="0.0274" nm="F4" brief="动感地带" cx="640" cy="599"/>
-<floor id="5" nar="0.0274" nm="F5" brief="生活美苑" cx="640" cy="599"/>
-<floor id="6" nar="0.0201" nm="F6" brief="美食娱乐广场" cx="640" cy="559"/>
-</space>

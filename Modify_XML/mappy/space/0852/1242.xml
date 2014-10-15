@@ -1,8 +1,0 @@
-<space w="640" h="440">
-<floor id="-2" nar="2.6051" nm="2G" brief="二期G层" cx="640" cy="419"/>
-<floor id="-1" nar="1.0686" nm="UG" brief="一期UG层" cx="640" cy="437"/>
-<floor id="1" nar="1.0682" nm="F1" brief="一期F1层" cx="640" cy="403"/>
-<floor id="2" nar="2.6251" nm="2UG" brief="二期UG层" cx="640" cy="440"/>
-<floor id="3" nar="1.069" nm="G" brief="一期G层" cx="640" cy="407"/>
-<floor id="4" nar="2.6251" nm="2F1" brief="二期F1层" cx="640" cy="435"/>
-</space>

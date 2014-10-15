@@ -1,9 +1,0 @@
-<space w="640" h="202">
-<floor id="-1" nar="0.0668" nm="B1" brief="综合生活" cx="640" cy="196"/>
-<floor id="1" nar="0.0672" nm="F1" brief="精品生活" cx="640" cy="202"/>
-<floor id="2" nar="0.0673" nm="F2" brief="时尚生活" cx="640" cy="191"/>
-<floor id="3" nar="0.0668" nm="F3" brief="健康生活" cx="640" cy="187"/>
-<floor id="4" nar="0.0666" nm="F4" brief="未来生活" cx="640" cy="197"/>
-<floor id="5" nar="0.0618" nm="F5" brief="餐饮娱乐" cx="640" cy="196"/>
-<floor id="6" nar="0.0668" nm="F6" brief="健身培训" cx="640" cy="196"/>
-</space>

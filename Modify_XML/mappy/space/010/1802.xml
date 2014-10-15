@@ -1,9 +1,0 @@
-<space w="640" h="460">
-<floor id="-2" nar="0" nm="B2" brief="装饰材料" cx="640" cy="400"/>
-<floor id="-1" nar="0" nm="B1" brief="装饰材料" cx="640" cy="400"/>
-<floor id="1" nar="0" nm="1F" brief="洁具瓷砖石材" cx="640" cy="460"/>
-<floor id="2" nar="0" nm="2F" brief="家具家饰" cx="640" cy="460"/>
-<floor id="3" nar="0" nm="3F" brief="家具家饰" cx="640" cy="460"/>
-<floor id="4" nar="0" nm="4F" brief="家具家饰" cx="640" cy="460"/>
-<floor id="5" nar="0" nm="5F" brief="家具家饰" cx="640" cy="460"/>
-</space>

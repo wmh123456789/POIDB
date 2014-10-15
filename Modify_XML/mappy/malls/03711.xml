@@ -1,6 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="2509" lat="34.785576" lng="113.681154" logo="2509.jpg" type="1" nm="国贸360" sinatopic="郑州国贸360广场" py="GuoMao 360" aleph="GM"/>
-<mall id="2501" lat="34.752914" lng="113.666415" logo="2501.jpg" type="1" nm="华联商厦" sinatopic="郑州华联商厦" py="HuaLianShangSha" aleph="HLSS"/>
-<mall id="2503" lat="34.747147" lng="113.603032" logo="2503.jpg" type="1" nm="万达广场" sinatopic="中原万达广场官方微博" py="WanDaGuangChang" aleph="WDGC"/>
-<mall id="2502" lat="34.769388" lng="113.682436" logo="2502.jpg" type="1" nm="正道花园百货" sinatopic="郑州正道花园百货" py="ZhengDaoHuaYuanBaiHuo" aleph="ZDHYBH"/>
-</malls>

@@ -1,9 +1,0 @@
-<space w="640" h="448">
-<floor id="-1" nar="0.2584" nm="B1" brief="超市温馨家居生活" cx="640" cy="448"/>
-<floor id="1" nar="0.2561" nm="F1" brief="靓装美钻愉悦生活" cx="640" cy="394"/>
-<floor id="2" nar="0.2567" nm="F2" brief="美丽优雅乐享生活" cx="640" cy="394"/>
-<floor id="3" nar="0.2584" nm="F3" brief="淑女时间传递生活" cx="640" cy="394"/>
-<floor id="4" nar="0.2584" nm="F4" brief="魅力男士休闲生活" cx="640" cy="394"/>
-<floor id="5" nar="0.2584" nm="F5" brief="户外运动炫彩生活" cx="640" cy="394"/>
-<floor id="6" nar="0.2584" nm="F6" brief="童趣美食精彩生活" cx="640" cy="406"/>
-</space>

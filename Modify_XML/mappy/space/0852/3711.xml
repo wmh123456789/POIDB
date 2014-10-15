@@ -1,6 +1,0 @@
-<space w="640" h="1227">
-<floor id="1" nar="1.9195" nm="F5" brief="到达层" zoom="0.75,16" zoom-org="3.5" cx="640" cy="1227"/>
-<floor id="2" nar="1.9131" nm="F6" brief="出发层" zoom="0.75,16" zoom-org="3.5" cx="640" cy="1030"/>
-<floor id="3" nar="1.9104" nm="F7" brief="办理登机手续" zoom="0.5,8" zoom-org="0.5" cx="640" cy="281"/>
-<floor id="4" nar="1.8957" nm="F8" brief="美食夹层" cx="640" cy="640"/>
-</space>

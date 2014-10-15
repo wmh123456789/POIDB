@@ -1,7 +1,0 @@
-<space w="640" h="300">
-<floor id="-1" nar="-0.0011" nm="B1" brief="B1层" cx="640" cy="300"/>
-<floor id="1" nar="-0.0012" nm="F1" brief="1层" cx="640" cy="300"/>
-<floor id="2" nar="-0.0012" nm="F2" brief="2层" cx="640" cy="300"/>
-<floor id="3" nar="-0.0011" nm="F3" brief="3层" cx="640" cy="300"/>
-<floor id="4" nar="-0.0011" nm="F4" brief="4层" cx="640" cy="300"/>
-</space>

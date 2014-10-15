@@ -1,9 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="1407" lat="29.5589" lng="106.5788" logo="1407.jpg" type="1" nm="大都会广场" sinatopic="重庆大都会广场" py="DaDouHuiGuangChang" aleph="DDHGC"/>
-<mall id="1424" lat="29.528473" lng="106.562088" logo="1424.jpg" type="1" nm="东方商厦(重庆店)" sinatopic="东方商厦(重庆店)" py="DongFangShangSha (ZhongQingDian )" aleph="DFSSZQD"/>
-<mall id="1417" lat="29.525404" lng="106.569357" logo="1417.jpg" type="1" nm="万达广场(南坪店)" sinatopic="重庆南坪万达广场" py="WanDaGuangChang (NanPingDian )" aleph="WDGCNPD"/>
-<mall id="1418" lat="29.5281" lng="106.5694" logo="1418.jpg" type="1" nm="万达百货" sinatopic="重庆南坪万达百货" py="WanDaBaiHuo" aleph="WDBH"/>
-<mall id="1426" lat="29.630293" lng="106.565351" logo="1426.jpg" type="1" nm="西部奥特莱斯" sinatopic="重庆西部奥特莱斯" py="XiBuAoTeLaiSi" aleph="XBATLS"/>
-<mall id="1425" lat="29.556018" lng="106.575172" logo="1425.jpg" type="1" nm="英利国际购物中心" sinatopic="英利国际购物中心" py="YingLiGuoJiGouWuZhongXin" aleph="YLGJGWZX"/>
-<mall id="1422" lat="29.557959" lng="106.577395" logo="1422.jpg" type="1" nm="重庆时代广场" sinatopic="重庆时代广场" py="ZhongQingShiDaiGuangChang" aleph="ZQSDGC"/>
-</malls>

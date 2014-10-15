@@ -1,6 +1,0 @@
-<space w="640" h="620">
-<floor id="1" nar="0.1807" nm="AF1" brief="A区" cx="640" cy="460"/>
-<floor id="2" nar="0.1807" nm="BF1" brief="B区" cx="640" cy="470"/>
-<floor id="3" nar="0.1807" nm="CF1" brief="C区" cx="640" cy="300"/>
-<floor id="4" nar="0.1807" nm="DF1" brief="D区" cx="640" cy="620"/>
-</space>

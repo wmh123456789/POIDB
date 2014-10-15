@@ -1,6 +1,0 @@
-<space w="640" h="430">
-<floor id="-1" nar="-0.0045" nm="B1" brief="茶几/电视柜/餐桌/床垫" cx="640" cy="350"/>
-<floor id="1" nar="-0.0045" nm="F1" brief="沙发软体家具" cx="640" cy="423"/>
-<floor id="2" nar="-0.0045" nm="F2" brief="板式家具" cx="640" cy="430"/>
-<floor id="3" nar="-0.0045" nm="F3" brief="实木家具" cx="640" cy="417"/>
-</space>

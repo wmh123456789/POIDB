@@ -1,7 +1,0 @@
-<malls baseurl="http://110.76.39.140/logo/mall">
-<mall id="2301" lat="38.042774" lng="114.511356" logo="2301.jpg" type="1" nm="北国商城" sinatopic="北国商城官方微博" py="BeiGuoShangCheng" aleph="BGSC"/>
-<mall id="2302" lat="38.041743" lng="114.527579" logo="2302.jpg" type="1" nm="北国先天下" sinatopic="北国先天下" py="BeiGuoXianTianXia" aleph="BGXTX"/>
-<mall id="2303" lat="38.02361" lng="114.53011" logo="2303.jpg" type="1" nm="怀特国际商城" sinatopic="怀特国际商城" py="HuaiTeGuoJiShangCheng" aleph="HTGJSC"/>
-<mall id="2305" lat="38.043533" lng="114.549232" logo="2305.jpg" type="1" nm="乐汇城" sinatopic="乐汇城" py="LeHuiCheng" aleph="LHC"/>
-<mall id="2304" lat="38.0244" lng="114.5477" logo="2304.jpg" type="1" nm="裕华万达广场" sinatopic="裕华万达广场" py="YuHuaWanDaGuangChang" aleph="YHWDGC"/>
-</malls>

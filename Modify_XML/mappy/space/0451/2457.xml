@@ -1,7 +1,0 @@
-<space w="640" h="500">
-<floor id="1" nar="0.3765" nm="F1" brief="鞋 首饰 时尚表 化妆品" cx="640" cy="500"/>
-<floor id="2" nar="0.3765" nm="F2" brief="淑女装 箱包配饰 眼镜" cx="640" cy="470"/>
-<floor id="3" nar="0.3765" nm="F3" brief="少淑装 内衣 饰品" cx="640" cy="470"/>
-<floor id="4" nar="0.3765" nm="F4" brief="男装 男装配饰 羊绒" cx="640" cy="460"/>
-<floor id="5" nar="0.3765" nm="F5" brief="女士内衣 针棉内衣 家饰" cx="640" cy="470"/>
-</space>

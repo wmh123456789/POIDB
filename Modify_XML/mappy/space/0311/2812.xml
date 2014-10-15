@@ -1,9 +1,0 @@
-<space w="640" h="1007">
-<floor id="-1" nar="0.071" nm="B1" brief="小件/床垫综合馆" cx="640" cy="1007"/>
-<floor id="1" nar="0.071" nm="F1" brief="软体家具艺术馆" cx="640" cy="906"/>
-<floor id="2" nar="0.071" nm="F2" brief="精品实木体验馆" cx="640" cy="899"/>
-<floor id="3" nar="0.071" nm="F3" brief="品牌实木雅居管" cx="640" cy="899"/>
-<floor id="4" nar="0.071" nm="F4" brief="时尚板式风情馆" cx="640" cy="904"/>
-<floor id="5" nar="0.071" nm="F5" brief="办公家具现代馆" cx="640" cy="894"/>
-<floor id="6" nar="0.071" nm="F6" brief="红木家具典藏馆" cx="640" cy="908"/>
-</space>

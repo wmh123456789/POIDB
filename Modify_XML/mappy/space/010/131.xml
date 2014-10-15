@@ -1,8 +1,0 @@
-<space w="640" h="630">
-<floor id="-1" nar="0.0535" nm="B1" brief="精品超市" cx="640" cy="630"/>
-<floor id="1" nar="0.0535" nm="1F" brief="国际品味" cx="640" cy="610"/>
-<floor id="2" nar="0.0535" nm="2F" brief="成熟韵味" cx="640" cy="590"/>
-<floor id="3" nar="0.0535" nm="3F" brief="少淑风尚" cx="640" cy="600"/>
-<floor id="4" nar="0.0535" nm="4F" brief="绅士风范" cx="640" cy="590"/>
-<floor id="5" nar="0.0535" nm="5F" brief="居家时光" cx="640" cy="600"/>
-</space>

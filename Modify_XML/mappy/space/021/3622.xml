@@ -1,5 +1,0 @@
-<space w="640" h="240">
-<floor id="1" nar="-1.2522" nm="F1" brief="一层" zoom="0.5,8" zoom-org="0.5" cx="640" cy="200"/>
-<floor id="2" nar="-1.2493" nm="F2" brief="二层" zoom="0.5,8" zoom-org="0.5" cx="640" cy="170"/>
-<floor id="3" nar="-1.2506" nm="F3" brief="三层" zoom="0.5,8" zoom-org="0.5" cx="640" cy="240"/>
-</space>
