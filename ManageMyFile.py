@@ -142,10 +142,10 @@ def BName2BID(RootDir):
 	pass
 
 
-MallName = 'XinZhongGuan'
-SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
-TargetDir = "D:\WiSLAM\WiSLAMOK\\"+MallName
-CopyBiMap(SourceDir,TargetDir)
+# MallName = 'XinZhongGuan'
+# SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
+# TargetDir = "D:\WiSLAM\WiSLAMOK\\"+MallName
+# CopyBiMap(SourceDir,TargetDir)
 
 # SourceDir = "E:\= AllDataSet\= Malls Info in ShangHai"
 # NewScanFolders(SourceDir)
@@ -155,20 +155,23 @@ CopyBiMap(SourceDir,TargetDir)
 # TargetDir = "E:\MDBGenerate\MDB_Modify_SH\ToAssign"
 # PickFileToAssign(SourceDir,SubDir,TargetDir)
 
-# SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK"
-# SubDir = "Binary"
-# TargetDir = u"D:\map_xml"
-# PickXMLFile(SourceDir,SubDir,TargetDir)
+SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK"
+SubDir = "Binary"
+TargetDir = u"D:\map_xml"
+PickXMLFile(SourceDir,SubDir,TargetDir)
 
-SourceDir = "D:\WiSLAM\WiSLAMOK"
-TargetDir = "D:\WiSLAM\WiFiFilesOnly"
-PickWiFiFile(SourceDir,TargetDir)
+# SourceDir = "D:\WiSLAM\WiSLAMOK"
+# SourceDir = "D:\WiSLAM\NotWiSLAMOK"
+# # SourceDir = "D:\WiSLAM\FootSLAMOK"
+# TargetDir = "D:\WiSLAM\WiFiFilesOnly"
+# PickWiFiFile(SourceDir,TargetDir)
 
 # TargetDir = u"D:\map_xml"
 # BName2BID(TargetDir)
 
+
 # rootpath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
-# TargetDir = 'D:\WiSLAM\miao'
+# TargetDir = 'D:\map_xml'
 # PickMallXML(rootpath,TargetDir)
 
 
