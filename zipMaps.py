@@ -15,8 +15,19 @@ def zipFolder(folder,zipPath):
 	zip = zipfile.ZipFile(zipPath+'.zip', 'w', zipfile.ZIP_DEFLATED)
 	for root, dirs, files in os.walk(folder):
 		for f in files:
-			zip.write(os.path.join(root, f), os.path.join(root,f).replace(folder+os.sep, ''))
+			zip.write(os.path.join(root, f), os.path.join(os.path.basename(folder),f))
 	zip.close()
+
+def md5ZipFile(name):
+	zipf = zipfile.ZipFile(name)
+	cont = ''
+	for zn in zipf.namelist():
+		cont += str(zn)
+	for ze in zipf.filelist:
+		cont += str(ze.CRC)
+	m = hashlib.md5()
+	m.update(cont)
+	return m.hexdigest()
 
 def md5File(name):
 	m = hashlib.md5()  
@@ -47,7 +58,7 @@ def uploadZipFiles(root):
 		if not validateZipFile(localFile):
 			continue
 		validCount += 1
-		fmd5 = md5File(localFile)
+		fmd5 = md5ZipFile(localFile)
 		_id = long(f.replace('.zip',''))
 		
 		res = mdb.find_one({'_id':_id})
@@ -117,6 +128,6 @@ zip_path = os.path.join(xml_path,'tmp')
 initEnv()
 zipFiles(xml_path, zip_path)
 uploadZipFiles(zip_path)
-# deletePath(zip_path)
+#deletePath(zip_path)
 
 destroyEnv()
