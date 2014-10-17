@@ -68,7 +68,6 @@ def PickWiFiFile(SourceDir,TargetDir):
 		if BldName[0]!= '=' and os.path.isdir(os.path.join(SourceDir,BldName)):
 			for Floor in listFiles(os.path.join(SourceDir,BldName)):
 				if os.path.isdir(os.path.join(SourceDir,BldName,Floor)):
-					pass
 					WiFiFile = os.path.join(SourceDir,BldName,Floor,'data.wifi')
 					if os.path.isfile(WiFiFile):
 						shutil.copy(WiFiFile,os.path.join(TargetDir,BldName,Floor+'.wifi'))
@@ -142,9 +141,9 @@ def BName2BID(RootDir):
 	pass
 
 
-# MallName = 'XinZhongGuan'
+# MallName = 'HuaRunWuCaiCheng'
 # SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
-# TargetDir = "D:\WiSLAM\WiSLAMOK\\"+MallName
+# TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
 # CopyBiMap(SourceDir,TargetDir)
 
 # SourceDir = "E:\= AllDataSet\= Malls Info in ShangHai"
@@ -160,14 +159,17 @@ SubDir = "Binary"
 TargetDir = u"D:\map_xml"
 PickXMLFile(SourceDir,SubDir,TargetDir)
 
+TargetDir = u"D:\map_xml"
+BName2BID(TargetDir)
+
+
 # SourceDir = "D:\WiSLAM\WiSLAMOK"
 # SourceDir = "D:\WiSLAM\NotWiSLAMOK"
-# # SourceDir = "D:\WiSLAM\FootSLAMOK"
+# SourceDir = "D:\WiSLAM\FootSLAMOK"
 # TargetDir = "D:\WiSLAM\WiFiFilesOnly"
 # PickWiFiFile(SourceDir,TargetDir)
 
-# TargetDir = u"D:\map_xml"
-# BName2BID(TargetDir)
+
 
 
 # rootpath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
