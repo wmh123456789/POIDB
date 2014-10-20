@@ -76,5 +76,7 @@ C = {'123':{'type': '\xe6\x9c\x8d\xe8\xa3\x85', 'tag': ['\xe5\xa5\xb3\xe8\xa3\x8
 # print len(Records)
 # print Records[488+i]['name'],Records[487+i]['name'],Records[486+i]['name']
 
+x = int(13)
+y = int(10)
 
-print "ad adfa adf  ".replace(' ','')
+print x%10
