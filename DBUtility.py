@@ -661,6 +661,7 @@ def main2():
 
 	DBFilePath = '.\TXT\BrandDB.txt'
 	OutputOrder = ['name','cnname','enname','type']
+	print BrandDB[3]
 	WriteDBtoDAT(BrandDB,OutputOrder,DBFilePath)
 
 
