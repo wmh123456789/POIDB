@@ -6,17 +6,6 @@ from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import ElementTree,Element  
 from bs4 import BeautifulSoup,Tag
 
-xmlpath = 'D:\WiSLAM\miao\mall'
-GPSpath = 'NewGPSBJ.csv'
-pinyindir = u'..\Pinyin2Hanzi'
-KeyWordDict = {'beijing':u'北京',
-				'mall':u'mall',
-				'dian':u'店',
-				'shangcheng':u'商城',
-				'shangchang':u'商场',
-				'gouwuzhongxin':u'购物中心',
-				'guangchang':u'广场'}
-
 def SoupFile(FilePath):
 	FileLines = open(FilePath,'r').readlines()
 	FileText = ' '.join(FileLines)
@@ -109,6 +98,16 @@ def UpdateMiaoForMalls(XMLPath,GPSFile,PinyinDict):
 			fp.close()
 
 def main():
+	xmlpath = 'D:\WiSLAM\miao\mall'
+	GPSpath = 'NewGPSBJ.csv'
+	pinyindir = u'..\Pinyin2Hanzi'
+	KeyWordDict = {'beijing':u'北京',
+					'mall':u'mall',
+					'dian':u'店',
+					'shangcheng':u'商城',
+					'shangchang':u'商场',
+					'gouwuzhongxin':u'购物中心',
+					'guangchang':u'广场'}
 
 	# PinyinFile = u'..\Pinyin2Hanzi\BJ.txt'
 	# PinyinFileList = [u'..\Pinyin2Hanzi\BJ.txt',

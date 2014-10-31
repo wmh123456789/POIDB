@@ -141,10 +141,10 @@ def BName2BID(RootDir):
 	pass
 
 
-MallName = 'FangHengGouWuZhongXin'
-SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
-TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
-CopyBiMap(SourceDir,TargetDir)
+# MallName = 'OuMeiHui'
+# SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
+# TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
+# CopyBiMap(SourceDir,TargetDir)
 
 # SourceDir = "E:\= AllDataSet\= Malls Info in ShangHai"
 # NewScanFolders(SourceDir)
@@ -171,9 +171,8 @@ PickWiFiFile(SourceDir,TargetDir)
 
 
 
-
 # rootpath = 'E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK'
-# TargetDir = 'D:\map_xml'
+# TargetDir = 'D:\WiSLAM\miao\mall'
 # PickMallXML(rootpath,TargetDir)
 
 

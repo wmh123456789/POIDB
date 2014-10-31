@@ -9,7 +9,7 @@ import time
 import datetime
 
 
-global mdb,r,sftp,sshc
+global mdb,r,sftp1,sshc1,sftp0,sshc0
 
 def zipFolder(folder,zipPath):
 	zip = zipfile.ZipFile(zipPath+'.zip', 'w', zipfile.ZIP_DEFLATED)
@@ -83,7 +83,8 @@ def uploadFile(localFile, remotePath):
 	if not remotePath.endswith('/'):
 		remotePath = remotePath + '/'
 	
-	sftp.put(localFile, remotePath + os.path.basename(localFile))
+	sftp0.put(localFile, remotePath + os.path.basename(localFile))
+	sftp1.put(localFile, remotePath + os.path.basename(localFile))
 	
 def zipFiles(root, zipPath):
 	st = time.time()
@@ -107,20 +108,27 @@ def deletePath(path):
 
 def initEnv():
 	global r,mdb
-	global sshc,sftp
+	global sshc0,sftp0,sshc1,sftp1
 	r = pymongo.Connection(host='115.28.129.220')
 	mdb = r.ika.map_xml
 	#ftp = ftplib.FTP(host='114.215.154.80', user='root', passwd='nexd65535')
-	sshc = ssh.SSHClient()
-	sshc.set_missing_host_key_policy(ssh.AutoAddPolicy())
-	sshc.connect(hostname='114.215.154.80',username='root',password='nexd65535')
-	sftp = sshc.open_sftp()	
+	sshc0 = ssh.SSHClient()
+	sshc0.set_missing_host_key_policy(ssh.AutoAddPolicy())
+	sshc0.connect(hostname='114.215.154.80',username='root',password='nexd65535')
+	sftp0 = sshc0.open_sftp()	
+
+	sshc1 = ssh.SSHClient()
+	sshc1.set_missing_host_key_policy(ssh.AutoAddPolicy())
+	sshc1.connect(hostname='115.28.110.217',username='root',password='nexd65535')
+	sftp1 = sshc1.open_sftp()	
+
 	
 def destroyEnv():
 	global r
-	global sshc
+	global sshc1,sshc0
 	r.disconnect()
-	sshc.close()
+	sshc1.close()
+	sshc0.close()
 			
 xml_path = 'D:\map_xml'
 zip_path = os.path.join(xml_path,'tmp')
