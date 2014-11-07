@@ -113,10 +113,11 @@ def NewScanFolders(SourceDir):
 
 
 def CopyBiMap (SourceDir,TargetDir):
-	for FileName in listFiles(SourceDir):
+	# Copy map param and mall xml
+	for FileName in listFiles(SourceDir) or 'mall.xml' in FileName:
 		if os.path.splitext(FileName)[1][1:] == "params":
 			shutil.copy(os.path.join(SourceDir,FileName),TargetDir)
-
+	# Copy Bimap
 	SourceDir = os.path.join(SourceDir,"routed")
 	for MapName in listFiles(SourceDir):
 		bodyName = os.path.splitext(MapName)[0]
@@ -141,7 +142,7 @@ def BName2BID(RootDir):
 	pass
 
 
-# MallName = 'OuMeiHui'
+# MallName = 'ShiJingShanWanDaGuangChang'
 # SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
 # TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
 # CopyBiMap(SourceDir,TargetDir)
@@ -164,8 +165,8 @@ def BName2BID(RootDir):
 
 
 # SourceDir = "D:\WiSLAM\WiSLAMOK"
-SourceDir = "D:\WiSLAM\NotWiSLAMOK"
-# SourceDir = "D:\WiSLAM\FootSLAMOK"
+# SourceDir = "D:\WiSLAM\NotWiSLAMOK"
+SourceDir = "D:\WiSLAM\FootSLAMOK"
 TargetDir = "D:\WiSLAM\WiFiFilesOnly"
 PickWiFiFile(SourceDir,TargetDir)
 
