@@ -165,8 +165,8 @@ def BName2BID(RootDir):
 
 
 # SourceDir = "D:\WiSLAM\WiSLAMOK"
-# SourceDir = "D:\WiSLAM\NotWiSLAMOK"
-SourceDir = "D:\WiSLAM\FootSLAMOK"
+SourceDir = "D:\WiSLAM\NotWiSLAMOK"
+# SourceDir = "D:\WiSLAM\FootSLAMOK"
 TargetDir = "D:\WiSLAM\WiFiFilesOnly"
 PickWiFiFile(SourceDir,TargetDir)
 
