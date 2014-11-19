@@ -122,8 +122,10 @@ def CopyBiMap (SourceDir,TargetDir):
 	for MapName in listFiles(SourceDir):
 		bodyName = os.path.splitext(MapName)[0]
 		if bodyName.split("_")[0] == "ExtPath" and bodyName.split("_")[1] != "ExtPath":
-			if os.path.isdir(os.path.join(TargetDir,bodyName.split("_")[3])):
-				shutil.copy(os.path.join(SourceDir,MapName),os.path.join(TargetDir,bodyName.split("_")[3]))
+			floordir = os.path.join(TargetDir,bodyName.split("_")[3])
+			if not os.path.isdir(floordir):
+				os.mkdir(floordir)
+			shutil.copy(os.path.join(SourceDir,MapName),floordir)
 
 
 def GetBIDFromXML(FilePath):
@@ -142,7 +144,7 @@ def BName2BID(RootDir):
 	pass
 
 
-# MallName = 'ShiJingShanWanDaGuangChang'
+# MallName = 'MSRA2'
 # SourceDir = "E:\MDBGenerate\= MDB_Modify_BJ\= ModifiedOK\\"+MallName+"\Binary"
 # TargetDir = "D:\WiSLAM\NotWiSLAMOK\\"+MallName
 # CopyBiMap(SourceDir,TargetDir)
