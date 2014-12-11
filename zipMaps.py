@@ -130,8 +130,8 @@ def destroyEnv():
 	sshc1.close()
 	sshc0.close()
 			
-# xml_path = 'D:\map_xml'
-xml_path = 'D:\map_xml_sh'
+xml_path = 'D:\map_xml'
+# xml_path = 'D:\map_xml_sh'
 zip_path = os.path.join(xml_path,'tmp')
 
 initEnv()
