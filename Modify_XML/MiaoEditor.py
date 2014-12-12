@@ -1,10 +1,13 @@
 # coding=utf-8
 #Edit Miao xml file
+# input is bd09 GPS system
+
 import os
 import XMLEditorLib as XE
 from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import ElementTree,Element  
 from bs4 import BeautifulSoup,Tag
+from CoordUtil import *
 
 def SoupFile(FilePath):
 	FileLines = open(FilePath,'r').readlines()
@@ -61,6 +64,7 @@ def GetPinyinDict(pinyindir):
 		PinyinDict = GetKVDict(os.path.join(pinyindir,afile),PinyinDict)
 	return PinyinDict
 
+# GPS Dict : {MallName:[lat,lng]}
 def GetGPSDict(gpsfile):	
 	SpaceMark = ',' # for csv file
 	GPSDict = {}
@@ -68,7 +72,19 @@ def GetGPSDict(gpsfile):
 		words = [word.strip() for word in line.split(SpaceMark)]
 		if len(words) >= 3 :
 			GPSDict.update({words[0]:[words[1],words[2]]})
+	ConvertGPSDict(GPSDict)  # Convert Baidu GPS to GCJ GPS
 	return GPSDict
+
+# Convert Baidu GPS to GCJ GPS
+def ConvertGPSDict(GPSDict):
+	for key in GPSDict:
+		lat = float(GPSDict[key][0])
+		lng = float(GPSDict[key][1])
+		glat,glng = bd09_to_gcj02(lat,lng)
+		GPSDict.update({key:[str(glat),str(glng)]})
+
+
+
 
 def UpdateMalltoMiao(soup,GPSDict,PinyinDict):
 	name = soup.mall['name']
@@ -76,12 +92,13 @@ def UpdateMalltoMiao(soup,GPSDict,PinyinDict):
 	GPSText = 'none'
 	if name in GPSDict:
 		GPSText = str(GPSDict[name][0])+','+str(GPSDict[name][1])
+		if soup.mall.gps.string:
+			soup.mall.gps.string.replaceWith(GPSText)
+		else:
+			soup.mall.gps.string = GPSText
 	else:
 		print 'Cannot find the GPS of: ',name
-	if soup.mall.gps.string:
-		soup.mall.gps.string.replaceWith(GPSText)
-	else:
-		soup.mall.gps.string = GPSText
+	
 	return soup
 
 def UpdateMiaoForMalls(XMLPath,GPSFile,PinyinDict):
@@ -89,13 +106,14 @@ def UpdateMiaoForMalls(XMLPath,GPSFile,PinyinDict):
 	for afile in os.listdir(XMLPath):
 		if '.mall.xml' in afile:
 			mallname = afile.split('.')[0]
-			soup = SoupFile(os.path.join(XMLPath,afile))
-			soup = UpdateMalltoMiao(soup,GPSDict,PinyinDict)
-			# output the new miao xml
-			outpath = os.path.join(XMLPath,mallname+'.miao.xml')
-			fp = open(outpath,'w')
-			fp.write(str(soup).encode('utf8'))
-			fp.close()
+			if mallname in GPSDict:
+				soup = SoupFile(os.path.join(XMLPath,afile))
+				soup = UpdateMalltoMiao(soup,GPSDict,PinyinDict)
+				# output the new miao xml
+				outpath = os.path.join(XMLPath,mallname+'.miao.xml')
+				fp = open(outpath,'w')
+				fp.write(str(soup).encode('utf8'))
+				fp.close()
 
 def main():
 	xmlpath = 'D:\WiSLAM\miao\mall'
