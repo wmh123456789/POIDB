@@ -5,13 +5,12 @@ from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import ElementTree,Element  
 
 # Config the basic Information of the mall
-MallID = '7992'
-MallInfo = {'ShortNM':'MSRA2',
-				 'PY':'MSRA2',
-				'CHN':u'微软大厦2号'}
+MallID = '7995'
+MallInfo = {'ShortNM':'KK',
+				 'PY':'Kuike',
+				'CHN':u'奎科大厦'}
 # FloorList = ['B2S','B2N','B1S','B1N','L1S','L1N','L2S','L2N','L3','L4']
-FloorList = ['1F','2F','3F','7F','8F','9F','10F',
-				'11F','12F','13F','14F'] # To del a mall, make '' in the list
+FloorList = ['F4','F5'] # To del a mall, make '' in the list
 
 filePathSpace = 'E:\MDBGenerate\mappy\space\\010\\'+MallID+'.xml'
 filePathMalls = 'E:\MDBGenerate\mappy\malls\\0101.xml'

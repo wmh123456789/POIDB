@@ -117,7 +117,7 @@ def UpdateMiaoForMalls(XMLPath,GPSFile,PinyinDict):
 
 def main():
 	xmlpath = 'D:\WiSLAM\miao\mall'
-	GPSpath = 'NewGPSBJ.csv'
+	GPSpath = 'NewGPSSH.csv'
 	pinyindir = u'..\Pinyin2Hanzi'
 	KeyWordDict = {'beijing':u'北京',
 					'mall':u'mall',

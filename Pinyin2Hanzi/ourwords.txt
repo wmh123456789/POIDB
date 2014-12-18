@@ -1,4 +1,4 @@
-﻿aiqinhaigouwuzhongxin,爱琴海购物中心
+aiqinhaigouwuzhongxin,爱琴海购物中心
 aiqinhaigouwuzhongxin,爱琴海购物中心
 baishenggouwuzhongxin,百盛购物中心
 beichenshidaimingmen,北辰时代名门
@@ -52,3 +52,8 @@ yongwangguojishangchenggouwuzhongxin,永旺国际商城购物中心
 yishidaguangchang,易事达广场
 zihexinbaihuo,资和信百货
 zhuozhangouwuzhongxin,卓展购物中心
+sohuwangluodasha,搜狐网络大厦
+tongfangd7,同方大厦
+ganghuihenglongguangchang,港汇恒隆广场
+guojinzhongxinshangchang,国金中心广场
+k11gouwuyishuzhongxin,K11购物中心
