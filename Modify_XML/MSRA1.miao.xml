@@ -1,0 +1,20 @@
+<mall cnname="msra1" floorcount="17" id="10107993" name="MSRA1">
+<floor id="101079930001" string="2F"></floor>
+<floor id="101079930002" string="1F"></floor>
+<floor id="101079930003" string="4F"></floor>
+<floor id="101079930004" string="3F"></floor>
+<floor id="101079930005" string="9F"></floor>
+<floor id="101079930006" string="17F"></floor>
+<floor id="101079930007" string="10F"></floor>
+<floor id="101079930008" string="11F"></floor>
+<floor id="101079930009" string="13F"></floor>
+<floor id="101079930010" string="12F"></floor>
+<floor id="101079930011" string="15F"></floor>
+<floor id="101079930012" string="16F"></floor>
+<floor id="101079930013" string="5F"></floor>
+<floor id="101079930014" string="6F"></floor>
+<floor id="101079930015" string="7F"></floor>
+<floor id="101079930016" string="8F"></floor>
+<floor id="101079930017" string="14F"></floor>
+<gps>116.310719655,39.9792287782</gps>
+</mall>

@@ -22,7 +22,7 @@ def BuildNoSpaceMallNameDict(SourceDir, OutFile = 'NoSpaceMallNameDict.csv'):
 
 
 
-def PickFile(SourceDir,SubDir,TargetDir):
+def PickFile(SourceDir,SubDir,TargetDsoupir):
 	for BldName in os.listdir(SourceDir):
 		if not os.path.isdir(os.path.join(TargetDir,BldName)):
 			os.mkdir(os.path.join(TargetDir,BldName))
