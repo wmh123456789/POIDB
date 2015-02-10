@@ -115,6 +115,28 @@ def UpdateMiaoForMalls(XMLPath,GPSFile,PinyinDict):
 				fp.write(str(soup).encode('utf8'))
 				fp.close()
 
+# Make a fake miao file for test
+def FakeMiao(cnname,FloorList,CityCode,MallID,MallName,GPS):
+
+	soup = BeautifulSoup()
+	mall_tag = soup.new_tag('mall')
+	mall_tag['cnname'] = cnname
+	mall_tag['floorcount'] = str(len(FloorList))
+	mall_tag['id'] = CityCode + MallID
+	mall_tag['name'] = MallName
+	soup.append(mall_tag)
+
+	for fid,floorname in  enumerate(FloorList):
+		floor_tag = soup.new_tag('floor')
+		floor_tag['id'] = CityCode+MallID+str(10001+fid)[1:]
+		floor_tag['string'] = MallName
+		soup.mall.append(floor_tag)
+
+	gps_tag = soup.new_tag('gps',GPS)
+	soup.prettify()
+	return soup
+
+
 def main():
 	xmlpath = 'D:\WiSLAM\miao\mall'
 	GPSpath = 'NewGPSSH.csv'

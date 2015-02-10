@@ -4,16 +4,25 @@ import XMLEditorLib as XE
 from xml.etree import ElementTree as ET
 from xml.etree.ElementTree import ElementTree,Element  
 
-# Config the basic Information of the mall
-MallID = '7995'
-MallInfo = {'ShortNM':'KK',
-				 'PY':'Kuike',
-				'CHN':u'奎科大厦'}
-# FloorList = ['B2S','B2N','B1S','B1N','L1S','L1N','L2S','L2N','L3','L4']
-FloorList = ['F4','F5'] # To del a mall, make '' in the list
 
-filePathSpace = 'E:\MDBGenerate\mappy\space\\010\\'+MallID+'.xml'
-filePathMalls = 'E:\MDBGenerate\mappy\malls\\0101.xml'
+# Config the basic Information of the mall
+MallID = '8027'
+MallInfo = {'ShortNM':'CWSOHOD',
+				 'PY':'ChaoWaiSOHOD',
+				'CHN':u'朝外SOHO D座'}
+# FloorList = ['B2S','B2N','B1S','B1N','L1S','L1N','L2S','L2N','L3','L4']
+FloorList = ['B1',
+		     '1F', '2F', '3F', '4F', '5F', '6F' ,'7F', '8F', '9F', '10F',
+		     '11F','12F'
+		     # ,'13F','14F','15F','16F','17F','18F','19F','20F',
+		     # '21F','22F','23F','24F','25F','26F','27F','28F','29F'
+		     # , '30F',
+		     # '31F','32F','33F','34F','35F','36F'
+		     ] # To del a mall, make '' in the list
+
+RootPath = 'E:\Personal\MinghuiWang\Git\mappy'
+filePathSpace = RootPath+'\space\\010\\'+MallID+'.xml'
+filePathMalls = RootPath+'\malls\\0101.xml'
 filePathLog = 'NewBeijing.log'
 
 # Creat a new XML file in Space
