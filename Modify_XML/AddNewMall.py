@@ -6,15 +6,15 @@ from xml.etree.ElementTree import ElementTree,Element
 
 
 # Config the basic Information of the mall
-MallID = '8027'
-MallInfo = {'ShortNM':'CWSOHOD',
-				 'PY':'ChaoWaiSOHOD',
-				'CHN':u'朝外SOHO D座'}
+MallID = '8031'
+MallInfo = {'ShortNM':'YHSOHOD',
+				 'PY':'YinHeSOHOD',
+				'CHN':u'银河SOHO D座'}
 # FloorList = ['B2S','B2N','B1S','B1N','L1S','L1N','L2S','L2N','L3','L4']
 FloorList = ['B1',
 		     '1F', '2F', '3F', '4F', '5F', '6F' ,'7F', '8F', '9F', '10F',
-		     '11F','12F'
-		     # ,'13F','14F','15F','16F','17F','18F','19F','20F',
+		     '11F','12F','13F','14F','15F','16F','17F'
+		     # ,'18F','19F','20F',
 		     # '21F','22F','23F','24F','25F','26F','27F','28F','29F'
 		     # , '30F',
 		     # '31F','32F','33F','34F','35F','36F'
